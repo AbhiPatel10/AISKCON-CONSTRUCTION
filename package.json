@@ -1,0 +1,25 @@
+{
+  "name": "aiskcon-construction",
+  "version": "1.0.0",
+  "description": "`HTML`\r `CSS`\r `JavaScript`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write '**/*.js'",
+    "lint": "eslint '**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhiPatel10/AISKCON-CONSTRUCTION.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbhiPatel10/AISKCON-CONSTRUCTION/issues"
+  },
+  "homepage": "https://github.com/AbhiPatel10/AISKCON-CONSTRUCTION#readme",
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "prettier": "^2.8.4"
+  }
+}

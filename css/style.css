@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #046C5C;
+  --secondary: #0F2F51;
+}
