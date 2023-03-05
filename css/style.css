@@ -7,3 +7,14 @@
   --primary: #046C5C;
   --secondary: #0F2F51;
 }
+
+a{
+  text-decoration: none;
+}
+
+.hov p{
+  transition: transform .2s;
+}
+.hov p:hover{
+  transform: scale(1.02);
+}
