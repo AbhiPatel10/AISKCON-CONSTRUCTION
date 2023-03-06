@@ -18,3 +18,11 @@ a{
 .hov p:hover{
   transform: scale(1.02);
 }
+
+.contactColor p{
+  color: rgba(0, 0, 0, 0.678);
+}
+
+h6{
+  color: #13131add;
+}
