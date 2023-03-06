@@ -1,9 +1,264 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
   --primary: #046C5C;
   --secondary: #0F2F51;
+}
+
+.navBar1{
+  background-color: aliceblue;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 79px;
+}
+
+.list1{
+  height: 79px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-size: 16.5px;
+}
+
+i{
+  color: rgb(48, 61, 203);
+}
+
+.list1 a{
+  text-decoration: none;
+  color: black;
+}
+
+#logo{
+  height: 40px;
+  width: 100px;
+  text-align: center;
+}
+
+.list1 a:hover, .list2 a:hover{
+  color: blue;
+}
+
+#bt1:hover{
+  cursor: pointer;
+}
+
+#bt1{
+  padding: 10px;
+  font-size: large;
+  background-color: rgb(48, 61, 203);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.drop1, .drop2{
+  display: none;
+  list-style: none;
+  position: absolute;
+  left: 240px;
+  top: 16px;
+  margin-top: 12px;
+  width: 227px;
+  padding: 15px;
+}
+
+.drop2{
+  left: 392px;
+  width: 175px;
+}
+
+.empty{
+  height: 20px;
+}
+
+.drop1 ul, .drop2 ul{
+  border: 1.5px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.drop1 a, .drop2 a{
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+}
+
+.drop1 li, .drop2 li{
+  list-style: none;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.drop1 li:hover, .drop2 li:hover{
+  background-color: rgba(225, 225, 225, 0.811);
+}
+
+@media(width <= 1225px){
+  .drop1{
+    left: 225px;
+  }
+  .drop2{
+    left: 377px;
+  }
+}
+
+@media(width <= 1170px){
+  .drop1{
+    left: 200px;
+  }
+  .drop2{
+    left: 342px;
+  }
+}
+
+@media(width <= 1080px){
+  .drop1{
+    left: 160px;
+  }
+  .drop2{
+    left: 312px;
+  }
+}
+
+#bt2{
+  display: none;
+  position: relative;
+  top: -59px;
+  left: 94vw;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#bt2 i{
+  font-size: 20px;
+}
+
+.navBar2{
+  text-align: center;
+  background-color: aliceblue;
+  padding-top: 10px;
+  display: none;
+  overflow: hidden;
+  animation-name: mobNav;
+  animation-duration: 1s;
+}
+@keyframes mobNav {
+  0%   {height: 0;}
+  100% {height: 324px;}
+}
+
+.list2{
+  list-style: none;
+  font-size: 16.5px;
+}
+
+.list2 li{
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+
+.list2 a{
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.navBar2 button{
+  padding: 10px;
+  font-size: large;
+  background-color: rgb(48, 61, 203);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.drop3, .drop4{
+  display: none;
+  list-style: none;
+  width: 50%;
+  margin: auto;
+}
+
+.drop3 ul, .drop4 ul{
+  list-style: none;
+  border: 1.5px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.drop3 li, .drop4 li{
+  border-radius: 5px;
+}
+
+.drop3 li:hover, .drop4 li:hover{
+  background-color: rgba(225, 225, 225, 0.811);
+}
+
+@media(width <= 1030px){
+  #bt2{
+    display: block;
+  }
+  .list1 li{
+    visibility: hidden;
+  }
+  #logo{
+    visibility: visible;
+    margin-left: 15px;
+  }
+}
+@media(width <= 900px){
+  #bt2{
+    left: 92vw;
+  }
+}
+@media(width <= 794px){
+  #logo{
+      position: relative;
+      top: 20px;
+  }
+}
+@media(width <= 700px){
+  #bt2{
+    left: 90vw;
+  }
+}
+@media(width <= 773px){
+  #logo{
+    position: relative;
+    top: 20px;
+  }
+}
+@media(width <= 560px){
+  #bt2{
+    left: 88vw;
+  }
+}
+@media(width <= 450px){
+  #bt2{
+    left: 85vw;
+  }
+}
+@media(width <= 350px){
+  #bt2{
+    left: 82vw;
+  }
+}
+@media(width <= 300px){
+  #bt2{
+    left: 78vw;
+  }
 }
