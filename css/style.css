@@ -15,7 +15,7 @@ a{
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1250px;
   margin: auto;
   font-family: 'Poppins', sans-serif;
 }
@@ -35,7 +35,7 @@ ul {
 }
 
 .footer-col {
-  width: 23%;
+  /* width: 23%; */
   padding: 0 20px;
 }
 
@@ -77,15 +77,23 @@ ul {
 
 .footer-brand{
   text-align: center;
-  width: 30%;
-  padding: 0 20px;
+  width: 36%;
   line-height: 1.5;
   color: #0f0135;
 }
 
-.footer-col .social-links{
-  padding-left: 12px;
+.service{
+  width: 23%;
 }
+
+.repair{
+  width: 18%
+}
+
+.contact{
+  width: 23%;
+}
+
 
 .footer-col .social-links a {
   display: inline-block;
