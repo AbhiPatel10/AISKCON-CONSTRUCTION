@@ -1,57 +1,18 @@
-const showDrop=(str)=>{
-    document.querySelector(str).style.display = 'block';
-};
-const hideDrop=(str)=>{
-    document.querySelector(str).style.display = 'none';
-};
-
 document.querySelector('#services').addEventListener('mouseover', ()=>{
-    showDrop('.drop1');
-    document.getElementById('services').innerHTML = 'Services <i class="fas fa-chevron-circle-up">';
-    document.querySelector('#services').style.color = 'blue';
-    document.querySelector('#services').style.cursor = 'pointer';
-});
-document.querySelector('.drop1').addEventListener('mouseover', ()=>{
-    document.getElementById('services').innerHTML = 'Services <i class="fas fa-chevron-circle-up">';
-    showDrop('.drop1');
-    document.querySelector('#services').style.color = 'blue';
-    document.querySelector('.drop1').style.cursor = 'pointer';
-});
-document.querySelector('.drop1').addEventListener('mouseout', ()=>{
-    document.getElementById('services').innerHTML = 'Services <i class="fas fa-chevron-circle-down">';
-    hideDrop('.drop1');
-    document.querySelector('#services').style.color = 'black';
+    document.querySelector('#services i').setAttribute('class', 'fas fa-chevron-circle-up');
 });
 document.querySelector('#services').addEventListener('mouseout', ()=>{
-    document.getElementById('services').innerHTML = 'Services <i class="fas fa-chevron-circle-down">';
-    hideDrop('.drop1');
-    document.querySelector('#services').style.color = 'black';
+    document.querySelector('#services i').setAttribute('class', 'fas fa-chevron-circle-down');
 });
 
 document.querySelector('#repair').addEventListener('mouseover', ()=>{
-    showDrop('.drop2');
-    document.getElementById('repair').innerHTML = 'Improvement & Repair <i class="fas fa-chevron-circle-up">';
-    document.querySelector('#repair').style.color = 'blue';
-    document.querySelector('#repair').style.cursor = 'pointer';
-});
-document.querySelector('.drop2').addEventListener('mouseover', ()=>{
-    showDrop('.drop2');
-    document.getElementById('repair').innerHTML = 'Improvement & Repair <i class="fas fa-chevron-circle-up">';
-    document.querySelector('#repair').style.color = 'blue';
-    document.querySelector('.drop2').style.cursor = 'pointer';
-});
-document.querySelector('.drop2').addEventListener('mouseout', ()=>{
-    document.getElementById('repair').innerHTML = 'Improvement & Repair <i class="fas fa-chevron-circle-down">';
-    hideDrop('.drop2');
-    document.querySelector('#repair').style.color = 'black';
+    document.querySelector('#repair i').setAttribute('class', 'fas fa-chevron-circle-up');
 });
 document.querySelector('#repair').addEventListener('mouseout', ()=>{
-    document.getElementById('repair').innerHTML = 'Improvement & Repair <i class="fas fa-chevron-circle-down">';
-    hideDrop('.drop2');
-    document.querySelector('#repair').style.color = 'black';
+    document.querySelector('#repair i').setAttribute('class', 'fas fa-chevron-circle-down');
 });
 
-document.querySelector('#bt2').addEventListener('click', ()=>{
+document.querySelector('#bt2 button').addEventListener('click', ()=>{
     document.getElementById('ser').setAttribute('class', 'fas fa-chevron-circle-down');
     document.getElementById('rep').setAttribute('class', 'fas fa-chevron-circle-down');
     document.querySelector('.drop3').style.display = 'none';

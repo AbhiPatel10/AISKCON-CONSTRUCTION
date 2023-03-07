@@ -14,11 +14,18 @@
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.fullNav{
   height: 79px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .list1{
-  height: 79px;
+  width: 950px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -37,13 +44,8 @@ i{
 }
 
 #logo{
-  height: 40px;
-  width: 100px;
+  width: 122px;
   text-align: center;
-}
-
-#home{
-  margin-left: 180px;
 }
 
 .list1 a:hover, .list2 a:hover{
@@ -66,25 +68,17 @@ i{
 
 .drop1, .drop2{
   display: none;
-  list-style: none;
   position: absolute;
-  left: 388px;
-  top: 16px;
-  margin-top: 12px;
-  width: 227px;
-  padding: 15px;
-}
-
-.drop2{
-  left: 508px;
-  width: 175px;
+  min-width: 160px;
+  z-index: 1;
 }
 
 .empty{
   height: 20px;
 }
 
-.drop1 ul, .drop2 ul{
+.non-empty{
+  background-color: aliceblue;
   border: 1.5px solid gray;
   padding: 10px;
   border-radius: 5px;
@@ -105,38 +99,37 @@ i{
   background-color: rgba(225, 225, 225, 0.811);
 }
 
-@media(width <= 1225px){
-  .drop1{
-    left: 370px;
-  }
-  .drop2{
-    left: 490px;
-  }
+#up-key1, #up-key2{
+  display: none;
 }
-
-@media(width <= 1170px){
-  .drop1{
-    left: 360px;
-  }
-  .drop2{
-    left: 470px;
-  }
+#services:hover #up-key1{
+  display: block;
 }
-
-@media(width <= 1100px){
-  .drop1{
-    left: 340px;
-  }
-  .drop2{
-    left: 440px;
-  }
+#services:hover #down-key1{
+  display: none;
+}
+#repair:hover #up-key2{
+  display: block;
+}
+#repair:hover #down-key2{
+  display: none;
+}
+#services:hover, #repair:hover{
+  color: blue;
+  cursor: pointer;
+}
+#services:hover .drop1{
+  display: block;
+}
+#repair:hover .drop2{
+  display: block;
 }
 
 #bt2{
   display: none;
-  position: relative;
-  top: -59px;
-  left: 94vw;
+  padding: 19px;
+}
+#bt2 button{
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -216,66 +209,7 @@ i{
   #bt2{
     display: block;
   }
-  .list1 li{
-    visibility: hidden;
-  }
-  #logo{
-    visibility: visible;
-    margin-left: 15px;
-  }
-}
-@media(width <= 968px){
-  #logo{
-      position: relative;
-      top: 20px;
-  }
-}
-@media(width <= 900px){
-  #bt2{
-    left: 92vw;
-  }
-}
-@media(width <= 773px){
-  #logo{
-    position: relative;
-    top: 20px;
-  }
-}
-@media(width <= 700px){
-  #bt2{
-    left: 90vw;
-  }
-}
-@media(width <= 560px){
-  #bt2{
-    left: 88vw;
-  }
-}
-@media(width <= 450px){
-  #bt2{
-    left: 85vw;
-  }
-}
-@media(width <= 350px){
-  #bt2{
-    left: 82vw;
-  }
-}
-@media(width <= 338px){
-  #logo{
-    right: 105px;
-  }
-}
-@media(width <= 300px){
-  #logo{
-    right: 90px;
-  }
-  #bt2{
-    left: 78vw;
-  }
-}
-@media(width <= 280px){
-  #logo{
-    right: 80px;
+  .list1{
+    display: none;
   }
 }
