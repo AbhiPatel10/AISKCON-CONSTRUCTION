@@ -52,6 +52,8 @@ document.querySelector('#repair').addEventListener('mouseout', ()=>{
 });
 
 document.querySelector('#bt2').addEventListener('click', ()=>{
+    document.getElementById('ser').setAttribute('class', 'fas fa-chevron-circle-down');
+    document.getElementById('rep').setAttribute('class', 'fas fa-chevron-circle-down');
     document.querySelector('.drop3').style.display = 'none';
     document.querySelector('.drop4').style.display = 'none';
     if(document.querySelector('.navBar2').style.display == 'block')
@@ -67,14 +69,24 @@ document.querySelector('#bt2').addEventListener('click', ()=>{
 });
 
 document.querySelector('#services2').addEventListener('click', ()=>{
+    document.getElementById('rep').setAttribute('class', 'fas fa-chevron-circle-down');
     document.querySelector('.drop4').style.display = 'none';
+    if(document.getElementById('ser').getAttribute('class').localeCompare('fas fa-chevron-circle-down') == 0)
+        document.getElementById('ser').setAttribute('class', 'fas fa-chevron-circle-up');
+    else
+        document.getElementById('ser').setAttribute('class', 'fas fa-chevron-circle-down');
     if(document.querySelector('.drop3').style.display == 'block')
         document.querySelector('.drop3').style.display = 'none';
     else
         document.querySelector('.drop3').style.display = 'block';
 });
 document.querySelector('#repair2').addEventListener('click', ()=>{
+    document.getElementById('ser').setAttribute('class', 'fas fa-chevron-circle-down');
     document.querySelector('.drop3').style.display = 'none';
+    if(document.getElementById('rep').getAttribute('class').localeCompare('fas fa-chevron-circle-down') == 0)
+        document.getElementById('rep').setAttribute('class', 'fas fa-chevron-circle-up');
+    else
+        document.getElementById('rep').setAttribute('class', 'fas fa-chevron-circle-down');
     if(document.querySelector('.drop4').style.display == 'block')
         document.querySelector('.drop4').style.display = 'none';
     else
@@ -98,6 +110,8 @@ document.querySelector('#repair2').addEventListener('mouseout', ()=>{
 let items = document.querySelectorAll('.navBar2 a');
 items.forEach((element)=>{
     element.addEventListener('click', ()=>{
+        document.getElementById('ser').setAttribute('class', 'fas fa-chevron-circle-down');
+        document.getElementById('rep').setAttribute('class', 'fas fa-chevron-circle-down');
         document.querySelector('.drop3').style.display = 'none';
         document.querySelector('.drop4').style.display = 'none';
     });
