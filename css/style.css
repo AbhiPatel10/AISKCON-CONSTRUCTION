@@ -42,6 +42,10 @@ i{
   text-align: center;
 }
 
+#home{
+  margin-left: 180px;
+}
+
 .list1 a:hover, .list2 a:hover{
   color: blue;
 }
@@ -64,7 +68,7 @@ i{
   display: none;
   list-style: none;
   position: absolute;
-  left: 240px;
+  left: 388px;
   top: 16px;
   margin-top: 12px;
   width: 227px;
@@ -72,7 +76,7 @@ i{
 }
 
 .drop2{
-  left: 392px;
+  left: 508px;
   width: 175px;
 }
 
@@ -103,28 +107,28 @@ i{
 
 @media(width <= 1225px){
   .drop1{
-    left: 225px;
+    left: 370px;
   }
   .drop2{
-    left: 377px;
+    left: 490px;
   }
 }
 
 @media(width <= 1170px){
   .drop1{
-    left: 200px;
+    left: 360px;
   }
   .drop2{
-    left: 342px;
+    left: 470px;
   }
 }
 
-@media(width <= 1080px){
+@media(width <= 1100px){
   .drop1{
-    left: 160px;
+    left: 340px;
   }
   .drop2{
-    left: 312px;
+    left: 440px;
   }
 }
 
@@ -208,7 +212,7 @@ i{
   background-color: rgba(225, 225, 225, 0.811);
 }
 
-@media(width <= 1030px){
+@media(width <= 1136px){
   #bt2{
     display: block;
   }
@@ -220,26 +224,26 @@ i{
     margin-left: 15px;
   }
 }
-@media(width <= 900px){
-  #bt2{
-    left: 92vw;
-  }
-}
-@media(width <= 794px){
+@media(width <= 968px){
   #logo{
       position: relative;
       top: 20px;
   }
 }
-@media(width <= 700px){
+@media(width <= 900px){
   #bt2{
-    left: 90vw;
+    left: 92vw;
   }
 }
 @media(width <= 773px){
   #logo{
     position: relative;
     top: 20px;
+  }
+}
+@media(width <= 700px){
+  #bt2{
+    left: 90vw;
   }
 }
 @media(width <= 560px){
@@ -257,8 +261,21 @@ i{
     left: 82vw;
   }
 }
+@media(width <= 338px){
+  #logo{
+    right: 105px;
+  }
+}
 @media(width <= 300px){
+  #logo{
+    right: 90px;
+  }
   #bt2{
     left: 78vw;
+  }
+}
+@media(width <= 280px){
+  #logo{
+    right: 80px;
   }
 }
