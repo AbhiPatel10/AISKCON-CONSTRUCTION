@@ -278,6 +278,18 @@ i{
   line-height: 1.5;
   color: #0f0135;
 }
+.footer-logo{
+  width: 100%; 
+  height: 170px; 
+  overflow: hidden;
+}
+
+.footer-logo img{
+  transform: scale(1.7);
+  width: 200px;
+  height: 200px;
+  /* margin: -150px 0px 0px -150px; */
+}
 .service{
   width: 23%;
 }
