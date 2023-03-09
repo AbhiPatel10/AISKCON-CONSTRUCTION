@@ -348,3 +348,28 @@ i{
 }
 
 /* FOOTER END */
+
+.col{
+
+  text-align: center;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 0px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  transform: scale(1.7);
+}
