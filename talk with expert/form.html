@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Appointment</title>
+	<style> 
+		
+		.form-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background-color: rgba(0,0,0,0.5);
+			position: fixed;
+			margin-top: 1px;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 3;
+            overflow: auto;
+			transition: opacity 0.3s ease, visibility 0.3s ease;  
+		} 
+		
+		.form-container.show {
+			opacity: 0.4;
+			visibility: visible;
+		}
+		
+		form {
+			display: flex;
+			flex-direction: column;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 20px rgba(245, 9, 9, 0.5);
+			max-width: 400px;
+			width: 100%;
+		}
+		
+		form label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bolder;
+		}
+		
+		form input[type="text"],
+		form input[type="email"],
+		form input[type="tel"],
+		form input[type="date"],
+		form input[type="time"],
+		form textarea {
+			margin-bottom: 10px;
+			padding: 5px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			font-size: 16px;
+			width: 100%;
+		}
+		
+		form input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		
+		form input[type="submit"]:hover {
+			background-color: #cca0ca80;
+		}
+        select {
+  font-size: 16px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+	</style> 
+</head>
+<body>
+	<div class="form-container" id="form-container">
+		<form>
+			<h1> </h1>
+			<h1> </h1>
+            <h1>Appointment Booking Form</h1>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" required>
+			<label for="date">Date:</label>
+			<input type="date" id="date" name="date" required>
+			<label for="time">Time:</label>
+			<input type="time" id="time" name="time" required>
+			<label for="city">City:</label>
+			<input type="text" id="city" name="city" required>
+            <label for="recepient">Recepient:</label>
+            <select id="recepient" name="recepient">
+                <option value="select">Select</option>
+                <option value="online">Online</option>
+                <option value="offline">Offline</option>
+              </select>
+			<label for="location">Location:</label>
+			<input type="text" id="location" name="location" required>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" rows="5" required></textarea>
+			<input type="submit" value="Send Message">
+		</form>
+    </div>
+</body>
