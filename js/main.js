@@ -1,3 +1,4 @@
+// Navbar start
 document.querySelector('#services').addEventListener('mouseover', ()=>{
     document.querySelector('#services i').setAttribute('class', 'fas fa-chevron-circle-up');
 });
@@ -77,3 +78,4 @@ items.forEach((element)=>{
         document.querySelector('.drop4').style.display = 'none';
     });
 });
+// Navbar end
