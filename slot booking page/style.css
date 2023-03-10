@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar start */
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+.navBar1{
+    background-color: aliceblue;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.fullNav{
+    height: 79px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list1{
+    width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 16.5px;
+}
+
+.navBar1 i, .navBar2 i{
+    color: rgb(48, 61, 203);
+}
+
+.list1 a{
+    text-decoration: none;
+    color: black;
+}
+
+#logo{
+    text-align: center;
+}
+#logo img{
+    height: 75px;
+}
+
+.list1 a:hover, .list2 a:hover{
+    color: blue;
+}
+
+#bt1:hover{
+    cursor: pointer;
+}
+
+#bt1{
+    padding: 10px;
+    font-size: large;
+    background-color: rgb(48, 61, 203);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.drop1, .drop2{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.empty{
+    height: 20px;
+}
+
+.non-empty{
+    background-color: aliceblue;
+    border: 1.5px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.drop1 a, .drop2 a{
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+}
+
+.drop1 li, .drop2 li{
+    list-style: none;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.drop1 li:hover, .drop2 li:hover{
+    background-color: rgba(225, 225, 225, 0.811);
+}
+
+#up-key1, #up-key2{
+    display: none;
+}
+#services:hover #up-key1{
+    display: block;
+}
+#services:hover #down-key1{
+    display: none;
+}
+#repair:hover #up-key2{
+    display: block;
+}
+#repair:hover #down-key2{
+    display: none;
+}
+#services:hover, #repair:hover{
+    color: blue;
+    cursor: pointer;
+}
+#services:hover .drop1{
+    display: block;
+}
+#repair:hover .drop2{
+    display: block;
+}
+
+#bt2{
+    display: none;
+    padding: 19px;
+}
+#bt2 button{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#bt2 i{
+    font-size: 20px;
+}
+
+.navBar2{
+    text-align: center;
+    background-color: aliceblue;
+    padding-top: 10px;
+    display: none;
+    overflow: hidden;
+    animation-name: mobNav;
+    animation-duration: 1s;
+}
+@keyframes mobNav {
+    0%   {height: 0;}
+    100% {height: 324px;}
+}
+
+.list2{
+    list-style: none;
+    font-size: 16.5px;
+}
+
+.list2 li{
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+.list2 a{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.navBar2 button{
+    padding: 10px;
+    font-size: large;
+    background-color: rgb(48, 61, 203);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.drop3, .drop4{
+    display: none;
+    list-style: none;
+    width: 50%;
+    margin: auto;
+}
+
+.drop3 ul, .drop4 ul{
+    list-style: none;
+    border: 1.5px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.drop3 li, .drop4 li{
+    border-radius: 5px;
+}
+
+.drop3 li:hover, .drop4 li:hover{
+    background-color: rgba(225, 225, 225, 0.811);
+}
+
+@media(width <= 1136px){
+    #bt2{
+        display: block;
+    }
+    .list1{
+        display: none;
+    }
+}
+/* Navbar end */
+
+/* Slot Booking start */
+#slotForm h3{
+    width: 414px;
+    margin-bottom: 20px;
+    border-bottom: 1.5px solid black;
+    color: rgb(48, 61, 203);
+}
+
+#slotForm{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#slotForm p{
+    display: none;
+    color: red;
+}
+
+#slotForm span{
+    color: red;
+    visibility: hidden;
+}
+
+.form-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 415px;
+    margin: 5px;
+}
+
+.form-input label{
+    color: #003363;
+}
+
+.form-input input, .form-input select, .form-input textarea{
+    color: #555;
+    width: 300px;
+    outline: none;
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+    line-height: 38px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.form-input select{
+   padding: 11px;
+}
+
+#formBT button{
+    font-size: larger;
+    width: 300px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(48, 61, 203);
+    border: none;
+    border-radius: 6px;
+}
+
+#formBT{
+    margin-top: 16px;
+}
+#formBT button:hover{
+    cursor: pointer;
+}
+
+@media(width <= 550px){
+    .form-input{
+        flex-direction: column;
+        align-items: start;
+        margin: 10px;
+        width: 300px;
+    }
+    #slotForm h3{
+        width: 300px;
+    }
+}
+@media(width <= 390px){
+    .form-input, #slotForm h3, .form-input input, .form-input select, .form-input textarea{
+        width: 250px;
+    }
+}
+@media(width <= 300px){
+    .form-input, #slotForm h3, .form-input input, .form-input select, .form-input textarea{
+        width: 200px;
+    }
+}
+/* Slot Booking end */
