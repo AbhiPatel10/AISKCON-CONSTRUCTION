@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="form-container" id="form-container">
+      <form>
+        <h1> </h1>
+        <h1> </h1>
+		
+        <h1>Appointment Booking Form</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required />
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required />
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required />
+        <label for="recepient">Recepient:</label>
+        <select id="recepient" name="recepient">
+          <option value="select">Select</option>
+          <option value="online">Online</option>
+          <option value="offline">Offline</option>
+        </select>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <input type="submit" value="Send Message" />
+      </form>
+    </div>
+  </body>
+</html>
