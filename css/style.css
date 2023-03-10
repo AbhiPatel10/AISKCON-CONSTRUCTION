@@ -11,6 +11,7 @@
   --secondary: #0F2F51;
 }
 
+/* Navbar start */
 a{
   text-decoration: none;
 }
@@ -43,7 +44,7 @@ ul {
   font-size: 16.5px;
 }
 
-i{
+.navBar1 i, .navBar2 i{
   color: rgb(48, 61, 203);
 }
 
@@ -53,8 +54,10 @@ i{
 }
 
 #logo{
-  width: 122px;
   text-align: center;
+}
+#logo img{
+  height: 75px;
 }
 
 .list1 a:hover, .list2 a:hover{
@@ -222,6 +225,7 @@ i{
     display: none;
   }
 }
+/* Navbar end */
 
 /* Footer START */
 .footer {
