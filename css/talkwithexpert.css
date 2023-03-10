@@ -1,0 +1,209 @@
+/* TALK WITH EXPERT PAGE STARTS  */
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Shantell+Sans:wght@300;400&family=Tilt+Neon&family=Tilt+Warp&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tilt Neon', cursive;
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.image {
+  flex: 1;
+  margin-right: 20px;
+  height: 450px;
+  /* width: 100px; */
+  max-width: 400px;
+}
+
+.text {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+
+.button-1 {
+  padding: 10px;
+  background-color: #0c6161;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+
+.button:hover {
+  background-color: #cedde9;
+}
+
+.button-1:hover {
+  background-color: #cedde9;
+}
+
+.button i {
+  margin-right: 5px;
+}
+
+.button-1 i {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .image {
+    margin-right: 0;
+    margin-bottom: 20px;
+    /* height: 20px; */
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .button {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+
+  .button-1 {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 35%;
+  }
+}
+/* TALK WITH EXPERT ENDS  */
+/* FORM STARTS  */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  margin-top: 1px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  overflow: auto;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.form-container.show {
+  opacity: 0.4;
+  visibility: visible;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(245, 9, 9, 0.5);
+  max-width: 400px;
+  width: 100%;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+form input[type='text'],
+form input[type='email'],
+form input[type='tel'],
+form input[type='date'],
+form input[type='time'],
+form textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  width: 100%;
+}
+
+form input[type='submit'] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form input[type='submit']:hover {
+  background-color: #cca0ca80;
+}
+select {
+  font-size: 16px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+/* FORM ENDS  */
