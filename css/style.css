@@ -355,16 +355,12 @@ ul {
 /* TALK WITH EXPERT PAGE STARTS  */
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Shantell+Sans:wght@300;400&family=Tilt+Neon&family=Tilt+Warp&display=swap');
 
-/* body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Tilt Neon', cursive;
-  background-color: #f2f2f2;
-} */
+
 
 .container-expert {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+  
   justify-content: center;
   align-items: center;
   margin-top: 50px;
@@ -377,7 +373,7 @@ ul {
   align-items: center;
   max-width: 1200px;
   width: 90%;
-  background-color: white;
+  background-color: rgba(253, 247, 247, 0.836);
   border-radius: 5px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
