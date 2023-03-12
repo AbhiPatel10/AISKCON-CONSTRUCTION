@@ -366,13 +366,12 @@ ul {
 
 .whyChooseUs-section{
   /* background: url('https://www.designesia.com/themes/buildpro/images/background/bg-1.jpg'); */
-  background-position: 50% -170px;
-  color: #ddd;
-  padding: 0;
+  background: url('https://cdn.mos.cms.futurecdn.net/gR7iK8FgkNszFcBpfDJ2GT-1600-80.jpg.webp');
+  background-size: cover;
 }
 .overlay{
-  /* background: rgba(0,0,0,.7); */
-  background-size: cover;
+  background: rgba(0, 0, 0, 0.747);
+  /* background-size: cover; */
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -389,25 +388,25 @@ ul {
   flex-wrap: wrap;
   margin: 40px;
   /* color: #ffffff; */
-  color: black;
+  color: #ffffff;
   
 }
 .block{
   display: flex;
-  width: 31%;
+  width: 31.5%;
   margin: 10px;
 }
 
 
 .tick-icon i{
   color: #ffd200;
-  color: #0c0664;
+  color: #ffffff;
   padding-right: 8px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .col h3{
-  font-size: 17px;
+  font-size: 15px;
   font-family: 'Montserrat',Arial, Helvetica, sans-serif;
   line-height: normal;
   margin-bottom: 5px;
@@ -420,15 +419,13 @@ ul {
 }
 .col hr{
   margin-top: 10px;
-  width: 40%;
+  width: 30%;
   /* color: #0f0135; */
   border: none;
   border-radius: 5px;
   height: 3px;
-  background-color: #0c0664;
+  background-color: white
 }
-
-
 @media(max-width: 767px) {
   .block {
       width: 40%;
