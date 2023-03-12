@@ -381,9 +381,9 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  width: 90%;
-  background-color: rgba(253, 247, 247, 0.836);
+  max-width: 1100px;
+  width: 100%;
+  background-color: rgb(252, 252, 252);
   border-radius: 5px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -461,7 +461,7 @@ ul {
   margin-right: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 805px) {
   .content-1 {
     flex-direction: column;
     padding: 10px;
