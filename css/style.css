@@ -413,9 +413,9 @@ ul {
 }
 .col p{
   font-family: 'Montserrat',Arial, Helvetica, sans-serif;
-  font-size: smaller;
-  line-height: 1.7;
-  letter-spacing: 0.1rem;
+  font-size: 13px;
+  line-height: 1.6;
+  letter-spacing: 0.099rem;
 }
 .col hr{
   margin-top: 10px;
