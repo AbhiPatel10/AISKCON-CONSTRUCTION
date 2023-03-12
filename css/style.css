@@ -364,18 +364,20 @@ ul {
 
 /* FOOTER END */
 
+
+/* Why choose us Start */
+
 .whyChooseUs-section{
-  /* background: url('https://www.designesia.com/themes/buildpro/images/background/bg-1.jpg'); */
   background: url('https://cdn.mos.cms.futurecdn.net/gR7iK8FgkNszFcBpfDJ2GT-1600-80.jpg.webp');
   background-size: cover;
+  padding: 0;
 }
 .overlay{
-  background: rgba(0, 0, 0, 0.747);
-  /* background-size: cover; */
-  padding-top: 80px;
+  background: rgba(0, 0, 0, 0.73);
+  background-size: cover;
+  padding-top: 70px;
   padding-bottom: 80px;
 }
-
 .container2{
   background-size: cover;
   padding-right: 15px;
@@ -389,33 +391,31 @@ ul {
   margin: 40px;
   /* color: #ffffff; */
   color: #ffffff;
-  
+  letter-spacing: 0.1rem;
 }
 .block{
   display: flex;
   width: 31.5%;
   margin: 10px;
 }
-
-
-.tick-icon i{
-  color: #ffd200;
+.block i{
   color: #ffffff;
   padding-right: 8px;
   font-size: 25px;
 }
-
 .col h3{
   font-size: 15px;
   font-family: 'Montserrat',Arial, Helvetica, sans-serif;
   line-height: normal;
   margin-bottom: 5px;
   font-weight: 600;
+  letter-spacing: 0.01rem;
 }
 .col p{
   font-family: 'Montserrat',Arial, Helvetica, sans-serif;
   font-size: smaller;
   line-height: 1.7;
+  letter-spacing: 0.1rem;
 }
 .col hr{
   margin-top: 10px;
@@ -437,3 +437,5 @@ ul {
       width: 100%;
   }
 }
+
+/* why choose us end */
