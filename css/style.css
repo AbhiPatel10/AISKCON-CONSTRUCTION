@@ -364,18 +364,12 @@ ul {
 
 /* FOOTER END */
 /* TALK WITH EXPERT PAGE STARTS  */
-@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Shantell+Sans:wght@300;400&family=Tilt+Neon&family=Tilt+Warp&display=swap');
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Tilt Neon', cursive;
-  background-color: #f2f2f2;
-}
 
 .container-expert {
   display: flex;
   flex-direction: column;
+
   justify-content: center;
   align-items: center;
   margin-top: 50px;
@@ -386,9 +380,9 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  width: 90%;
-  background-color: white;
+  max-width: 1100px;
+  width: 100%;
+  background-color: rgb(252, 252, 252);
   border-radius: 5px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -398,7 +392,6 @@ body {
   flex: 1;
   margin-right: 20px;
   height: 450px;
-  /* width: 100px; */
   max-width: 400px;
 }
 
@@ -467,7 +460,7 @@ body {
   margin-right: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 805px) {
   .content-1 {
     flex-direction: column;
     padding: 10px;
@@ -476,7 +469,6 @@ body {
   .image-1 {
     margin-right: 0;
     margin-bottom: 20px;
-    /* height: 20px; */
   }
 
   .button-container {
