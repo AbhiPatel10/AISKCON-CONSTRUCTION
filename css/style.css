@@ -362,4 +362,130 @@ ul {
   }
 }
 
+
 /* FOOTER END */
+/* TALK WITH EXPERT PAGE STARTS  */
+
+
+.container-expert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.content-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  background-color: rgb(252, 252, 252);
+  border-radius: 5px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.image-1 {
+  flex: 1;
+  margin-right: 20px;
+  height: 450px;
+  max-width: 400px;
+}
+
+.text-contact {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-2 {
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+
+.button-1 {
+  padding: 10px;
+  background-color: #0c6161;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+
+.button-2:hover {
+  background-color: #cedde9;
+}
+
+.button-1:hover {
+  background-color: #cedde9;
+}
+
+.button-2 i {
+  margin-right: 5px;
+}
+
+.button-1 i {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 805px) {
+  .content-1 {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .image-1 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+
+  .button-2 {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+
+  .button-1 {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 35%;
+  }
+}
+/* TALK WITH EXPERT ENDS  */
+
