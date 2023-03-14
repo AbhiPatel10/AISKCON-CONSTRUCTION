@@ -426,13 +426,14 @@ ul {
   height: 3px;
   background-color: white
 }
-@media(max-width: 767px) {
+
+@media(max-width: 1250px) {
   .block {
-      width: 40%;
+      width: 30%;
       margin-bottom: 30px;
   }
 }
-@media(max-width: 574px) {
+@media(max-width: 767px) {
   .block {
       width: 100%;
   }
