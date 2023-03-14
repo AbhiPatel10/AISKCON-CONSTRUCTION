@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    background-color: aliceblue;
 }
 
 /* Navbar start */
@@ -222,11 +223,42 @@ ul {
 /* Navbar end */
 
 /* Slot Booking start */
-#slotForm h3{
-    width: 414px;
-    margin-bottom: 20px;
-    border-bottom: 1.5px solid black;
+.aptForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info{
+    width: 638px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+.info img{
+    width: 300px;
+    margin: 0 auto 0 auto;
+}
+#infoHead, #para{
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+#infoHead h1{
     color: rgb(48, 61, 203);
+}
+#infoHead{
+    border-left: 6px solid rgb(48, 61, 203);
+}
+#infoHead h3, #para{
+    color: #003260;
+}
+@media(width <= 382px){
+    .info{
+        font-size: small;
+    }
 }
 
 #slotForm{
@@ -235,7 +267,7 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
+    padding: 30px;
 }
 
 #slotForm p{
@@ -257,11 +289,11 @@ ul {
 }
 
 .form-input label{
-    color: #003363;
+    color: #003260;
 }
 
 .form-input input, .form-input select, .form-input textarea{
-    color: #555;
+    color: #3b3b3b;
     width: 300px;
     outline: none;
     border: 1px solid #d2d2d2;
@@ -304,12 +336,12 @@ ul {
     }
 }
 @media(width <= 390px){
-    .form-input, #slotForm h3, .form-input input, .form-input select, .form-input textarea{
+    .form-input, #slotForm h3, .form-input input, .form-input select, .form-input textarea, #slotForm button{
         width: 250px;
     }
 }
 @media(width <= 300px){
-    .form-input, #slotForm h3, .form-input input, .form-input select, .form-input textarea{
+    .form-input, #slotForm h3, .form-input input, .form-input select, .form-input textarea, #slotForm button{
         width: 200px;
     }
 }

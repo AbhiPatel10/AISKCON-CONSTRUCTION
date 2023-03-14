@@ -113,80 +113,93 @@
     <!-- Navbar Section Finished -->
 
     <!-- Slot Booking start -->
-    <form action="#" id="slotForm" name="slotForm" onsubmit="return validateForm()">
-        <h3>Book Appointment</h3>
-        <div class="form-input">
-            <label for="name">Name <span>*</span></label>
-            <div>
-                <input type="text" name="name" id="name" placeholder="Enter Your Name">
-                <p>This field is required!</p>
+    <div class="aptForm">
+        <div class="info">
+            <div id="infoHead">
+                <h1>Book an appointment</h1>
+                <h3>Book now, build your dream later.</h3>
             </div>
+            <p id="para">
+                Thank you for considering AISKCON Construction for your next construction project. We are dedicated to providing high-quality workmanship and exceptional customer service. To get started, simply schedule an appointment with one of our experienced project managers. We'll take the time to listen to your needs, answer your questions, and provide a comprehensive estimate for your project. Contact us today to schedule your appointment and begin building your dream project.
+            </p>
+            <img src="./aiskconImg.png" alt="AISKCON-Construction">
         </div>
-        <div class="form-input">
-            <label for="email">Email <span>*</span></label>
-            <div>
-                <input type="email" name="email" id="email" placeholder="Enter Your Email">
-                <p>Enter a valid email address!</p>
-            </div>
+        <div class="infoMain">
+            <form action="#" id="slotForm" name="slotForm" onsubmit="return validateForm()">
+                <div class="form-input">
+                    <label for="name">Name <span>*</span></label>
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                        <p>This field is required!</p>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="email">Email <span>*</span></label>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                        <p>Enter a valid email address!</p>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="phone">Phone <span>*</span></label>
+                    <div>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone">
+                        <p>Phone must be 10 digits long!</p>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="date">Date <span>*</span></label>
+                    <div>
+                        <input type="date" name="date" id="date">
+                        <p>Choose a date!</p>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="time">Time <span>*</span></label>
+                    <div>
+                        <input type="time" name="time" id="time">
+                        <p>Pick a time!</p>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="time">Mode <span>*</span></label>
+                    <div>
+                        <select name="mode" id="mode">
+                            <option value="">Select</option>
+                            <option value="online">Online</option>
+                            <option value="offline">Offline</option>
+                        </select>
+                        <p>Choose appointment mode!</p>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="address">Address <span>*</span></label>
+                    <div>
+                        <input type="text" name="address" id="address" placeholder="Enter Your Address">
+                        <p>Enter your address!</p>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="pin-code">Postal Code <span>*</span></label>
+                    <div>
+                        <input type="text" name="pin-code" id="pin-code" placeholder="Enter Your Postal Code">
+                        <p>Postal code must be 6 digits long!</p>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="pin-code">Message <span>*</span></label>
+                    <div>
+                        <textarea name="message" id="message" cols="30" rows="1" placeholder="Enter your project details here..."></textarea>
+                        <p>Enter project details!</p>
+                    </div>
+                </div>
+                <div class="form-input" id="formBT">
+                    <label for="btn" style="visibility: hidden;">Submit</label>
+                    <button type="submit" id="btn" name="btn" value="submit">Submit</button>
+                </div>
+            </form>
         </div>
-        <div class="form-input">
-            <label for="phone">Phone <span>*</span></label>
-            <div>
-                <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone">
-                <p>Phone must be 10 digits long!</p>
-            </div>
-        </div>
-        <div class="form-input">
-            <label for="date">Date <span>*</span></label>
-            <div>
-                <input type="date" name="date" id="date">
-                <p>Choose a date!</p>
-            </div>
-        </div>
-        <div class="form-input">
-            <label for="time">Time <span>*</span></label>
-            <div>
-                <input type="time" name="time" id="time">
-                <p>Pick a time!</p>
-            </div>
-        </div>
-        <div class="form-input">
-            <label for="time">Mode <span>*</span></label>
-            <div>
-                <select name="mode" id="mode">
-                    <option value="">Select</option>
-                    <option value="online">Online</option>
-                    <option value="offline">Offline</option>
-                </select>
-                <p>Choose appointment mode!</p>
-            </div>
-        </div>
-        <div class="form-input">
-            <label for="address">Address <span>*</span></label>
-            <div>
-                <input type="text" name="address" id="address" placeholder="Enter Your Address">
-                <p>Enter your address!</p>
-            </div>
-        </div>
-        <div class="form-input">
-            <label for="pin-code">Postal Code <span>*</span></label>
-            <div>
-                <input type="text" name="pin-code" id="pin-code" placeholder="Enter Your Postal Code">
-                <p>Postal code must be 6 digits long!</p>
-            </div>
-        </div>
-        <div class="form-input">
-            <label for="pin-code">Message <span>*</span></label>
-            <div>
-                <textarea name="message" id="message" cols="30" rows="1" placeholder="Enter your project details here..."></textarea>
-                <p>Enter project details!</p>
-            </div>
-        </div>
-        <div class="form-input" id="formBT">
-            <label for="btn" style="visibility: hidden;">Submit</label>
-            <button type="submit" id="btn" name="btn" value="submit">Submit</button>
-        </div>
-    </form>
+    </div>
     <!-- Slot Booking end -->
 
     <script src="./script.js"></script>
