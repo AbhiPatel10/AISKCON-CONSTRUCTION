@@ -516,7 +516,7 @@ ul {
 /* Why choose us Start */
 
 .whyChooseUs-section{
-  background: url('https://www.nerolac.com/sites/default/files/uploads/blog/8-shades-of-blue-banner-8.jpg');
+  background: url('/img/bg/whychooseus.jpg');
   background-size: cover;
   padding: 0;
 }
