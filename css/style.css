@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -488,4 +489,82 @@ ul {
   }
 }
 /* TALK WITH EXPERT ENDS  */
+
+.testimonials{
+  margin: 50px;
+}
+
+.t-heading{
+  width: 60%;
+  text-align: center;
+}
+.t-heading h1 {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+  color: #07021a;
+  font-weight: 650;
+}
+.t-heading p{
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: #00000092;
+  text-align: justify;
+}
+.swiper {
+  width: 95%;
+  height: 100%;
+  z-index: 0;
+}
+
+.t-container{
+  display: flex ;
+  /* margin-top: 100px; */
+  position: relative;
+  height: 300px;
+  align-items: center;
+}
+.swiper-slide {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card{
+  width: 90%;
+  height: 220px;
+  border: 12px solid rgba(159, 158, 158, 0.244);
+  border-radius: 5px;
+}
+.card-content{
+  margin: 15px;
+}
+.card-content p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.95rem;
+  color: #00000092;
+  text-align: justify;
+}
+.card-content h2{
+  margin-top: 5px;
+}
+
+
+@media(max-width: 1100px) {
+  .card-content p {
+    font-size: smaller;
+  }
+  
+  .t-heading p{
+    font-size: smaller;
+  }
+
+  .t-heading{
+    width: 100%;
+
+  }
+
+}
 
