@@ -548,7 +548,10 @@ ul {
   text-align: justify;
 }
 .card-content h2{
+  font-family: 'Poppins', sans-serif;
   margin-top: 5px;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 

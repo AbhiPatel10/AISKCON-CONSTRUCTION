@@ -82,6 +82,7 @@ items.forEach((element)=>{
 
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
+    // centeredSlides: true,
     breakpoints: {  
         '480': {
           slidesPerView: 1,
@@ -108,7 +109,9 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
 
-    // autoplay: {
-    //     // delay: 2000,
-    // },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+    },
+    grabCursor: true,
 });
