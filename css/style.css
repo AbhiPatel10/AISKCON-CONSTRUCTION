@@ -394,6 +394,7 @@ ul {
   margin-right: 20px;
   height: 450px;
   max-width: 400px;
+  width: 100%;
 }
 
 .text-contact {
@@ -491,7 +492,11 @@ ul {
 /* TALK WITH EXPERT ENDS  */
 
 .testimonials{
-  margin: 50px;
+  /* max-width: 1250px; */
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .t-heading{
@@ -509,7 +514,6 @@ ul {
   margin-bottom: 10px;
   font-family: 'Open Sans', sans-serif;
   color: #00000092;
-  text-align: justify;
 }
 .swiper {
   width: 95%;
@@ -537,6 +541,7 @@ ul {
   height: 220px;
   border: 12px solid rgba(159, 158, 158, 0.244);
   border-radius: 5px;
+  overflow: hidden;
 }
 .card-content{
   margin: 15px;
@@ -548,8 +553,9 @@ ul {
   text-align: justify;
 }
 .card-content h2{
+  position: absolute;
+  bottom: 60px;
   font-family: 'Poppins', sans-serif;
-  margin-top: 5px;
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -566,8 +572,11 @@ ul {
 
   .t-heading{
     width: 100%;
-
   }
-
+}
+@media(max-width: 574px) {
+  .t-heading h1{
+    font-size: 30px
+  }
 }
 
