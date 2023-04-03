@@ -303,6 +303,9 @@ ul {
 .contact{
   width: 23%;
 }
+.social-links{
+  margin-left: 10px;
+}
 .footer-col .social-links a {
   display: inline-block;
   height: 40px;
@@ -351,15 +354,33 @@ ul {
 }
 
 /*responsive*/
-@media(max-width: 767px) {
+@media(max-width: 920px) {
   .footer-col {
-      width: 50%;
+      width: 20%;
       margin-bottom: 30px;
   }
+
+  .footer-brand{
+    width: 30%;
+  }
+  .footer-logo img{
+    transform: scale(1.15);
+  }
+
+  .footer-col .social-links a{
+    margin: 30px 25px 10px 10px;
+  }
+
 }
-@media(max-width: 574px) {
+@media(max-width: 767px) {
   .footer-col {
       width: 100%;
+  }
+  .footer-logo img{
+    transform: scale(1.5);
+  }
+  .footer-col .social-links a{
+    margin: 30px 25px 10px 0px;
   }
 }
 
@@ -491,8 +512,86 @@ ul {
 }
 /* TALK WITH EXPERT ENDS  */
 
+/* Why choose us Start */
+
+.whyChooseUs-section{
+  background: url('/img/bg/whychooseus.jpg');
+  background-size: cover;
+  padding: 0;
+}
+.overlay{
+  background: rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+.container2{
+  background-size: cover;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.r{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+  /* color: #ffffff; */
+  color: #ffffff;
+  letter-spacing: 0.1rem;
+}
+.block{
+  display: flex;
+  width: 31.5%;
+  margin: 10px;
+}
+.block i{
+  color: #ffffff;
+  padding-right: 8px;
+  font-size: 25px;
+}
+.col h3{
+  font-size: 1.17rem;
+  /* font-size: 16px; */
+  font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+  line-height: normal;
+  margin-bottom: 5px;
+  font-weight: 550;
+  letter-spacing: 0.01rem;
+}
+.col p{
+  font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-size: 0.87rem;
+  line-height: 1.5;
+  letter-spacing: 0.099rem;
+}
+.col hr{
+  margin-top: 10px;
+  width: 30%;
+  /* color: #0f0135; */
+  border: none;
+  border-radius: 5px;
+  height: 3px;
+  background-color: white
+}
+
+@media(max-width: 1250px) {
+  .block {
+      width: 30%;
+      margin-bottom: 30px;
+  }
+}
+@media(max-width: 767px) {
+  .block {
+      width: 100%;
+  }
+}
+
+/* why choose us end */
+
+/* Testinomials Start */
 .testimonials{
-  /* max-width: 1250px; */
   width: 90%;
   margin: auto;
   margin-top: 5%;
@@ -558,6 +657,7 @@ ul {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
+  color: #1e3051;
 }
 
 
@@ -579,4 +679,4 @@ ul {
     font-size: 30px
   }
 }
-
+/* Testinomials end */
