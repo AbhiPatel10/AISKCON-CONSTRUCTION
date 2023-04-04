@@ -676,3 +676,72 @@ ul {
 }
 
 /* why choose us end */
+
+/* Get in Touch Start */
+.getintouch{
+  width: 90%;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.getintouch-heading{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.getintouch-heading h1{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+.getintouch-heading p{
+  font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.628);
+  line-height: 1.5;
+}
+.getintouch-row{
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.getintouch-contact-cards{
+  width: 23%;
+  margin: 1% auto 1%;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.326);
+  background: linear-gradient(109.6deg, rgb(25, 23, 23) 11.2%, rgb(11, 132, 145) 91.1%);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  height: 200px;
+  line-height: 2;
+  color: white;
+}
+.getintouch-icon{
+  align-items: center;
+}
+.getintouch-card-content{
+  width: 100%;
+  text-align: center;
+}
+.getintouch-card-content h3{
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.886);
+  letter-spacing: 1.2px;
+}
+.getintouch-card-content p{
+  font-size: 0.85rem;
+  line-height: 2;
+}
+@media (max-width: 1200px) {
+  .getintouch-contact-cards{
+    width: 45%;
+
+  }
+}
+@media(max-width: 767px) {
+  .getintouch-contact-cards{
+    width: 100%;
+  }
+}
+/* Get in Touch End */
