@@ -676,3 +676,246 @@ ul {
 }
 
 /* why choose us end */
+
+
+/* Hero Section */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    opacity: 1;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url('../img/bg/herobackground.jpg');
+    /* opacity: 0.8; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+
+.content{
+    max-width: 100%;
+    /* margin: 50px 0px; */
+    /* display: block; */
+    padding: 220px 0px;
+}
+
+.content h2{
+    color: white;
+    text-transform: uppercase; 
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    /* line-height: 10%; */
+    text-align: center;
+    /* display: block; */
+}
+
+
+
+.content p{
+    font-size: 16px;
+    font-weight: 500;
+    align-content: center;
+    color: white;
+    text-align: center;
+    padding: 0px 300px;
+    margin-top: -96px;
+}
+
+
+
+label{
+    display: none;
+}
+
+#check{
+    z-index: 3;
+    display: none;
+}
+
+/* Responsive styles */
+/* 960 */
+
+@media(max-width : 2035px){
+    .content{
+        margin-top: 22px;
+    }
+}
+
+@media(max-width : 1700px){
+    .content{
+        margin: 50px 0px;
+    }
+}
+
+@media(max-width : 1280px){
+    .content h2{
+        font-size: 61px;
+    }
+    .content{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width : 1024px){
+    .content h2{
+        font-size: 51px;
+    }
+    .content{
+        margin: -34px 0px;
+    }
+}
+
+
+@media(max-width : 1190px){
+    header .navigation{
+        display: none;
+    }
+}
+
+@media (max-width: 961px) {
+    header .navigation{
+        display: none;
+    }
+    header .logo{
+        display: none;
+    }
+
+    label{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    label:hover{
+        color: #fff;
+    }
+
+    label .close-btn{
+        display: none;
+    }
+
+    #check:checked ~ header .navigation{
+        z-index: 2;
+        position: fixed;
+        background: rgba(114, 223, 255, 0.9);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked ~ header .navigation a{
+        font-size: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+    
+    #check:checked ~ header label .menu-btn{
+        display: none;
+    }
+
+    #check:checked ~ header label .close-btn{
+        display: block;
+        z-index: 3;
+        position: fixed;
+    }
+
+    label .menu-btn{
+        position: absolute;
+    }
+
+    header .logo{
+        position: absolute;
+        bottom: -6px;
+    }
+
+    .content-p-container{
+        background-color: rgba(255, 255, 255, 0.5);
+        width: auto;
+        height: auto;
+        padding: 5px;
+        border: none;
+        border-radius: 8px;
+        margin-bottom: 40px;
+    }
+    .content h2{
+        line-height: 430px;
+        font-size: 5.2vw;
+    }
+
+}
+
+@media (max-width: 560px) {
+    content .info h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .content .info h2 span{
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .content .info p{
+        font-size: 14px;
+    }
+}
+
+/* ************************************************************* */
+/* Content  */
+.content {
+    margin: 0px;
+}
+
+.content #container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+.content #text1,
+.content #text2{
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 30pt;
+
+    text-align: center;
+    color: yellow;
+    user-select: none;
+}
+
+
+/* ************************************************** */
+
+/* @media(max-width: ) */
