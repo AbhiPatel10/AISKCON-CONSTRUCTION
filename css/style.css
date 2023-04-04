@@ -594,13 +594,14 @@ ul {
 .testimonials{
   width: 90%;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 4%;
   margin-bottom: 5%;
 }
 
 .t-heading{
   width: 60%;
   text-align: center;
+  margin-bottom: 1%;
 }
 .t-heading h1 {
   font-family: 'Poppins', sans-serif;
@@ -611,20 +612,24 @@ ul {
 }
 .t-heading p{
   margin-bottom: 10px;
+  margin-top: 0 !important;
   font-family: 'Open Sans', sans-serif;
   color: #00000092;
 }
 
 .t-container{
-  border: 1px solid black;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 10px;
+  width: 95%;
+  margin: auto;
 }
 .t-card{
-  border: 1px solid green;
   line-height: 2;
   border-radius: 10px;
+  box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.17);
+
+  padding: 15px;
 }
 #t-card-1{
   grid-row: 1/3;
@@ -634,4 +639,38 @@ ul {
 }
 #t-card-5{
   grid-column: -3/span 2;
+}
+.t-card-head{
+  display: flex;
+  align-items: center;
+}
+.t-card-head img{
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.t-card p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+.t-card-head p{
+  margin-top: 0;
+}
+@media(max-width: 1136px){
+  .t-container{
+    grid-template-columns: repeat(3,1fr);
+  }
+  #t-card-2{
+    grid-row: 1/2;
+  }
+  #t-card-5{
+    grid-column: span 3/ span 4;
+  }
+}
+
+@media(max-width: 767px) {
+  .t-container{
+    display: block;
+  }
 }
