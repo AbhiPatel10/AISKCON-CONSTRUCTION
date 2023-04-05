@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -678,7 +679,7 @@ ul {
 /* why choose us end */
 
 /* FEATURED WORK STARTS  */
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@600&display=swap');
+
 .feature-box {
   max-width: auto;
   padding: 25px;
@@ -690,6 +691,7 @@ ul {
 
 .heading-featurebox {
   text-align: center;
+  font-family: 'Exo', sans-serif;
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 50px;
