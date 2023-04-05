@@ -704,11 +704,21 @@ ul {
 }
 .general-info-content{
   margin-top: 20%;
-  /* text-align: center; */
 }
 .general-info-content h1{
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 2.3rem;
   font-weight: 400;
+}
+@media(max-width: 1136px){
+ .general-info-card{
+  width: 48%;
+  margin-bottom: 1%;
+ }
+}
+@media(max-width: 767px) {
+  .general-info-card{
+    width: 100%;
+   }
 }
 /* General Info End */
