@@ -728,11 +728,11 @@ ul {
 .getintouch-card-content h3{
   font-size: 1.4rem;
   margin-bottom: 10px;
-  color: rgba(255, 255, 255, 0.886);
+  color: rgb(255, 255, 255);
   letter-spacing: 1.2px;
 }
 .getintouch-card-content p{
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 2;
   color: rgba(255, 255, 255, 0.833);
 }
