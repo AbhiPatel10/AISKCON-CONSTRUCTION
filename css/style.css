@@ -712,19 +712,20 @@ ul {
   padding: 20px;
   border-radius: 15px;
   text-align: center;
-  height: 200px;
+  height: 220px;
   line-height: 2;
   color: white;
 }
 .getintouch-icon{
   align-items: center;
+  margin-bottom: 15px;
 }
 .getintouch-card-content{
   width: 100%;
   text-align: center;
 }
 .getintouch-card-content h3{
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 15px;
   color: rgba(255, 255, 255, 0.886);
   letter-spacing: 1.2px;
