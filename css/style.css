@@ -691,6 +691,7 @@ ul {
   width: 24%;
   margin: auto;
   height: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.317);
   border-radius: 10px;
   box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.17);
   text-align: center;
@@ -701,6 +702,7 @@ ul {
 .general-info-icon{
   font-size: 4rem; 
   color: #1e3050;
+  /* color: gray; */
 }
 .general-info-content{
   margin-top: 20%;
@@ -709,6 +711,7 @@ ul {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 2.3rem;
   font-weight: 400;
+  margin-bottom: 1px;
 }
 @media(max-width: 1136px){
  .general-info-card{
