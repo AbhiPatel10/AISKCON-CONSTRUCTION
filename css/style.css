@@ -681,32 +681,34 @@ ul {
 
 .general-info{
   width: 90%;
-  /* height: 200px; */
   margin: 4% auto 4% auto;
-  border: 1px solid black;
 }
 .general-info-row{
   display: flex;
   flex-wrap: wrap;
 }
-.general-info-col{
-  width: 50%;
-  height: 100%;
-  border: 1px solid red;
+.general-info-card{
+  width: 24%;
+  margin: auto;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.17);
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.general-info-card{
-  width: 50%;
-  height: 250px;
-  border: 5px solid green;
-  margin: 0 10px;
-  overflow: hidden;
+.general-info-icon{
+  font-size: 4rem; 
+  color: #1e3050;
 }
-.general-info-card i{
-  font-size: 4rem;
-  padding: 30px;
+.general-info-content{
+  margin-top: 20%;
+  /* text-align: center; */
+}
+.general-info-content h1{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
 }
 /* General Info End */
