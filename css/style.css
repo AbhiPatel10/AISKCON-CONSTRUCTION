@@ -676,3 +676,37 @@ ul {
 }
 
 /* why choose us end */
+
+/* General Info Start */
+
+.general-info{
+  width: 90%;
+  /* height: 200px; */
+  margin: 4% auto 4% auto;
+  border: 1px solid black;
+}
+.general-info-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.general-info-col{
+  width: 50%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.general-info-card{
+  width: 50%;
+  height: 250px;
+  border: 5px solid green;
+  margin: 0 10px;
+  overflow: hidden;
+}
+.general-info-card i{
+  font-size: 4rem;
+  padding: 30px;
+}
+/* General Info End */
