@@ -713,7 +713,7 @@ ul {
   line-height: 2;
   border-radius: 10px;
   box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.17);
-
+  border: 1px solid rgba(0, 0, 0, 0.276);
   padding: 15px;
 }
 #testinomial-card-1{
