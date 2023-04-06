@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@200&family=Montserrat:wght@500&family=Quicksand:wght@500&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -748,3 +749,87 @@ ul {
   }
 }
 /* Get in Touch End */
+/* Our Services starts */
+.services-heading{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+ }
+ .services-box {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   max-width: 90%;
+   margin: 0 auto;
+   padding: 15px;
+   box-sizing: border-box;
+ }
+
+ .servicesection-image {
+   width: calc(33.33% - 20px);
+   margin-bottom: 20px;
+   box-sizing: border-box;
+   position: relative;
+ }
+
+ .servicesection-image img {
+   border-radius: 10px;
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   transition: all 0.3s ease;
+ }
+
+ .servicesection-image:hover img {
+   transform: scale(1.1);
+   opacity: 1;
+ }
+ .servicesection-image h3 {
+   margin: 20px 0 10px;
+   font-size: 20px;
+   font-weight: bold;
+   font-family: 'Quicksand', sans-serif;
+ }
+
+ .servicesection-image p {
+   margin: 0 0 20px;
+   font-size: 16px;
+   line-height: 1.4;
+   font-family: 'Chivo', sans-serif;
+ }
+
+ .read-more {
+   display: inline-block;
+   padding: 8px 15px;
+   border: 1px solid #000;
+   border-radius: 20px;
+   text-decoration: none;
+   font-size: 16px;
+   color: #000;
+   transition: all 0.3s ease;
+ }
+
+ .read-more:hover {
+   background-color: #000;
+   color: #fff;
+ }
+
+ @media (max-width: 1200px) {
+   .servicesection-image {
+     width: calc(50% - 20px);
+   }
+   .services-heading{
+     font-size: 35px;
+   }
+ }
+
+ @media (max-width: 768px) {
+   .servicesection-image {
+     width: 100%;
+   }
+   .services-heading{
+     font-size: 30px;
+   }
+ }
+
+/* Our Services ends */
