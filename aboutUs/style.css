@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h1{
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+/* How it started Start */
+.how-it-started{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+/* .how-it-started h1{
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+} */
+/* .how-it-started p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+} */
+/* How it Started End */
+
+/* Founders Started */
+.founders{
+    background-color: #1c55a416;
+    padding: 25px;
+    width: 100%;
+}
+.founders-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+.founders-col{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+.founders-card{
+    width: 400px;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    padding: 25px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 10px 10px 2px rgba(0, 0, 0, 0.17);
+}
+.founders-card img{
+    width: 150px;
+    height: 150px;
+}
+.founders-card h3{
+    margin: 5px 0px;
+    font-size: 1.5rem;
+}
+.founders-card h5{
+    margin-bottom: 20px;
+}
+
+@media(max-width:1100px){
+    .founders-col{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+}
+
+@media(max-width:500px){
+    .founders-card{
+        width: 90%;
+    }
+}
+/* Founders End */
+
+/* team started */
+.team{
+    width: 100%;
+}
+.team-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    max-width: 1500px;
+    margin: auto;
+}
+.team-content{
+    width: 50%;
+}
+.team-content img{
+    width: 550px;
+    width: 95%;
+    height: 90%;
+}
+
+@media(max-width:1100px){
+    .team-content{
+        width: 100%;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+}
+/* team end */
+
