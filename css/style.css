@@ -751,6 +751,8 @@ ul {
 /* Get in Touch End */
 /* Our Services starts */
 .services-heading{
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
