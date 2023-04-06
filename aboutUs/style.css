@@ -18,15 +18,6 @@ p{
     text-align: center;
     padding: 20px;
 }
-/* .how-it-started h1{
-    font-family: 'Mulish', sans-serif;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-} */
-/* .how-it-started p{
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
-} */
 /* How it Started End */
 
 /* Founders Started */
@@ -85,7 +76,9 @@ p{
 
 /* team started */
 .team{
+    margin: 20px 0;
     width: 100%;
+    padding: 25px;
 }
 .team-container{
     display: flex;
@@ -99,11 +92,11 @@ p{
 }
 .team-content img{
     width: 550px;
-    width: 95%;
-    height: 90%;
+    width: 85%;
+    height: 83%;
 }
 
-@media(max-width:1100px){
+@media(max-width:767px){
     .team-content{
         width: 100%;
         margin-bottom: 2%;
@@ -111,4 +104,91 @@ p{
     }
 }
 /* team end */
+
+
+/* Vision Started */
+.vision{
+    margin: 20px 0;
+    width: 100%;
+    padding: 25px;
+}
+.vision-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    max-width: 1500px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.vision-content{
+    width: 50%;
+}
+.vision-content img{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+@media(max-width:767px){
+    .vision-content{
+        width: 100%;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+}
+/* Vision End */
+
+/* Hire us Start */
+.hireus-box{
+    background-color: #fac213;
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    top: 90px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.17);
+  }
+  .hireus-content{
+    width: 90%;
+    margin: auto;
+  }
+  .hireus-content button{
+    border: none;
+    background-color: #1C55A4;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #ffe493;
+    cursor: pointer;
+    transition: 0.3s all ease;
+  }
+  .hireus-content button:hover{
+    opacity: 0.7;
+  }
+  .hireus-content h1{
+    color: rgba(0, 0, 0, 0.719);
+    font-size: 2rem;
+    /* letter-spacing: 0.1rem; */
+  }
+  
+  @media (max-width: 767px) {
+    .hireus-content button {
+      width: 100px;
+    }
+    .hireus-content h1{
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Hire us End */
 
