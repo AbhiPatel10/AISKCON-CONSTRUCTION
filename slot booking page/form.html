@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/280f5d0d38.js" crossorigin="anonymous"></script>
-    <script src="./formValidation.js"></script>
 </head>
 <body>
     <!-- Navbar Section Started -->
@@ -113,17 +112,11 @@
     <!-- Navbar Section Finished -->
 
     <!-- Slot Booking start -->
+    <div id="infoHead">
+        <h1>Book an appointment</h1>
+        <h3>Book now, build your dream later.</h3>
+    </div>
     <div class="aptForm">
-        <div class="info">
-            <div id="infoHead">
-                <h1>Book an appointment</h1>
-                <h3>Book now, build your dream later.</h3>
-            </div>
-            <p id="para">
-                Thank you for considering AISKCON Construction for your next construction project. We are dedicated to providing high-quality workmanship and exceptional customer service. To get started, simply schedule an appointment with one of our experienced project managers. We'll take the time to listen to your needs, answer your questions, and provide a comprehensive estimate for your project. Contact us today to schedule your appointment and begin building your dream project.
-            </p>
-            <img src="./aiskconImg.png" alt="AISKCON-Construction">
-        </div>
         <div class="infoMain">
             <form action="#" id="slotForm" name="slotForm" onsubmit="return validateForm()">
                 <div class="form-input">
@@ -201,6 +194,70 @@
         </div>
     </div>
     <!-- Slot Booking end -->
+
+    <!-- Footer Section Started -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col footer-brand">
+                    <div class="footer-logo">
+                        <img src="./aiskconImg.png" alt="" srcset="">
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col service">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Interior Designing</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Construction Management</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Seepage Analysis</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Consultancy Services</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Environmental Services</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Retrofication</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Destructive & NDT Testing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col repair">
+                    <h4>Repairs</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Home repairs</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Kitchen repairs</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Bathroom repair</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Furniture repair</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Plumbing & pipes</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i> Appliance repairs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-house"></i> Address</a></li>
+                        <li><a href="#"><i class="fa-solid fa-envelope"></i> aiskconofficial@gmail.com</a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> +91-9636243488</a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> +91-9717010172</a></li>
+                        <li><a href="#"><i class="fa-solid fa-phone"></i> +91-6306849492</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <hr style="margin: 0 auto; width: 90%; margin-top: 10px;">
+
+            <div class="root">
+                <div class="footer-copyright">
+                    Copyright © 2023 <a href="#">Aiskcon</a>, All Right Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Section Finished -->
 
     <script src="./script.js"></script>
 </body>

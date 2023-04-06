@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Appointment Booking</title>
+	<style>
+		body {
+			background-color: #F2F2F2;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		h1 {
+			font-size: 4em;
+			color: #333;
+			margin: 0;
+			padding: 0;
+			animation-name: slide-in;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 0.5s;
+			opacity: 0;
+			transform: translateX(-100%);
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+		}
+
+		button {
+			padding: 10px 20px;
+			font-size: 1.5em;
+			border: none;
+			background-color: #FFC300;
+			color: #333;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+			animation-name: fade-in;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+			animation-delay: 1s;
+			opacity: 0;
+			transform: translateY(100%);
+			transition: all 0.3s ease-in-out;
+		}
+
+		button:hover {
+			background-color: #FF5733;
+			color: #fff;
+			transform: scale(1.1);
+			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		@keyframes slide-in {
+			0% {
+				transform: translateX(-100%);
+				opacity: 0;
+			}
+			100% {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+
+		@keyframes fade-in {
+			0% {
+				opacity: 0;
+				transform: translateY(100%);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Appointment Booking</h1>
+		<button>Book Now</button>
+	</div>
+</body>
+</html>
