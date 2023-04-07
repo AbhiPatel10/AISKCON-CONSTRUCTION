@@ -971,6 +971,11 @@ ul {
 .button-material:hover {
   background-color: #cedde9;
 }
+@media screen and (max-width: 1160px) {
+  .image-quality {
+    height: 400px;
+    width: 85%;
+  }}
 
 @media screen and (max-width: 1000px) {
   .text-qualitymaterial h1{
@@ -978,7 +983,7 @@ ul {
     text-align: left;
 }
   .text-qualitymaterial p{
-    font-size: 13px;
+    font-size: 14px;
     margin-left: 0px;
 }}
 
