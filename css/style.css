@@ -898,6 +898,54 @@ ul {
 }
 /* Get in Touch End */
 
+/* General Info Start */
+
+.general-info{
+  width: 90%;
+  margin: 4% auto 4% auto;
+}
+.general-info-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.general-info-card{
+  width: 24%;
+  margin: auto;
+  height: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.317);
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.17);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.general-info-icon{
+  font-size: 4rem; 
+  color: #1e3050;
+  /* color: gray; */
+}
+.general-info-content{
+  margin-top: 20%;
+}
+.general-info-content h1{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+  margin-bottom: 1px;
+}
+@media(max-width: 1136px){
+ .general-info-card{
+  width: 48%;
+  margin-bottom: 1%;
+ }
+}
+@media(max-width: 767px) {
+  .general-info-card{
+    width: 100%;
+   }
+}
+/* General Info End */
 /* Testinomials Start */
 .testimonials{
   width: 90%;
