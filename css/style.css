@@ -910,13 +910,10 @@ ul {
 .content-quality {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   align-items: center;
-  max-width: 1100px;
-  width: 100%;
+  max-width: 90%;
   background-color: rgb(252, 252, 252);
   border-radius: 5px;
-  box-shadow: 0 15px 15px rgba(17, 0, 0, 0.1);
   padding: 20px;
 }
 
@@ -924,7 +921,7 @@ ul {
   flex: 1;
   margin-right: 10px;
   height: 600px; 
-  max-width: 100%; 
+  max-width: 80%; 
   object-fit: cover; 
 }
 
@@ -1032,10 +1029,62 @@ ul {
     width: 50%;
   }
 }
-/* Build with quality starts */
+/* Build with quality ends */
 
 
 
+
+
+
+
+/* General Info Start */
+
+.general-info{
+  width: 90%;
+  margin: 4% auto 4% auto;
+}
+.general-info-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.general-info-card{
+  width: 24%;
+  margin: auto;
+  height: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.317);
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.17);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.general-info-icon{
+  font-size: 4rem; 
+  color: #1e3050;
+  /* color: gray; */
+}
+.general-info-content{
+  margin-top: 20%;
+}
+.general-info-content h1{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+  margin-bottom: 1px;
+}
+@media(max-width: 1136px){
+ .general-info-card{
+  width: 48%;
+  margin-bottom: 1%;
+ }
+}
+@media(max-width: 767px) {
+  .general-info-card{
+    width: 100%;
+   }
+}
+/* General Info End */
 /* Testinomials Start */
 .testimonials{
   width: 90%;
