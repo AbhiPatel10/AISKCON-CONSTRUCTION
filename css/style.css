@@ -429,7 +429,6 @@ ul {
   margin-right: 20px;
   height: 450px;
   max-width: 400px;
-  width: 100%;
 }
 
 .text-contact {
@@ -600,6 +599,7 @@ ul {
     }
   }
 }
+
 /* PLANNING CONTRUCTION AND REBUILDING ENDS */
 /* Why choose us Start */
 
@@ -686,6 +686,7 @@ ul {
   font-family: 'Exo', sans-serif;
   color:#364b36 ;
   background-color: #cccccc;
+  z-index: 0;
   
 }
 
@@ -709,7 +710,6 @@ ul {
 
 .imagegallery {
   width: calc(33.33% - 20px);
-  
   height: 300px;
   margin: 10px;
   cursor: pointer;
@@ -747,7 +747,7 @@ ul {
 
 .imagegallery:hover {
   transform: scale(1.05) rotate(2deg);
-  z-index: 1;
+  z-index: 0;
 }
 
 .imagegallery:hover ~ .imagegallery img {
