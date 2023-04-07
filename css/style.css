@@ -21,7 +21,8 @@ ul {
   list-style: none;
 }
 .navBar1 {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
+  background-color: white;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -526,77 +527,54 @@ ul {
 /* TALK WITH EXPERT ENDS  */
 /* PLANNING CONTRUCTION AND REBUILDING STARTS */
 .planning-section {
-  padding: 25px;
+  margin: 4% auto;
   display: flex;
   flex-wrap: wrap;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Poppins', sans-serif;
   background-color: ghostwhite;
+  background-color: rgb(246, 246, 246);
 }
 
 .box-plansection {
   flex-basis: calc(100% / 3 );
-  max-height: 250px;
+  height: 300px;
+  /* max-height: 250px; */
   margin: 0px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-plansection-content{
+  padding: 60px;
+}
+.box-plansection-content p{
+  font-family: 'Poppins', sans-serif;
+  width: 98%;
+  line-height: 1.5;
+  font-size: 0.9rem;
 }
 
-.image-plan {
+.box-plansection img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: ease 0.3s all;
+}
+.box-plansection img:hover{
+  transform: scale(1.1);
 }
 
-.section-heading {
-  margin: 20px;
-  border-bottom: 2px solid rgb(223, 134, 134);
-
-  padding: 3px;
+.box-plansection-content h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #1C55A4;
   width: 50px;
-}
-
-.section-text {
-  margin: 18px;
-  height: 400px;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 812px) {
-  .box-plansection {
-    flex-basis: calc(100%);
-  }
-
-  .box-plansection:nth-child(1),
-  .box-plansection:nth-child(4),
-  .box-plansection:nth-child(5) {
-    order: 1;
-  }
-
-  .box-plansection:nth-child(2),
-  .box-plansection:nth-child(3),
-  .box-plansection:nth-child(6) {
-    order: 2;
-  }
-  .section-heading {
-    padding-left: 0px;
-    margin-top: 25px;
-  }
-
-  .image-plan {
-    max-height: 250px;
-  }
-
-  .section-text {
-    padding: 20px;
-    max-height: 200px;
-  }
-  @media screen and (max-width: 400px) {
-    .section-text {
-      padding: 0px;
-      font-size: 14px;
-      max-height: 200px;
-    }
-    .image-plan {
-      max-height: 200px;
-    }
+  .box-plansection{
+    flex-basis: 100%;
   }
 }
 
@@ -683,8 +661,9 @@ ul {
 .feature-box {
   max-width: auto;
   padding: 25px;
-  font-family: 'Exo', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color:#364b36 ;
+  color: black;
   background-color: #cccccc;
   z-index: 0;
   
@@ -692,11 +671,10 @@ ul {
 
 .heading-featurebox {
   padding-top: 20px;
-  padding-top: 20px;
   text-align: center;
-  font-family: 'Exo', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 50px;
 }
 
@@ -739,6 +717,11 @@ ul {
   font-weight: bold;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+.image-text1 p{
+  font-size: 0.8rem;
 }
 
 .imagegallery:hover img {
@@ -746,7 +729,7 @@ ul {
 }
 
 .imagegallery:hover {
-  transform: scale(1.05) rotate(2deg);
+  transform: scale(1.02) rotate(1.5deg);
   z-index: 0;
 }
 
@@ -900,141 +883,71 @@ ul {
 /* Get in Touch End */
 
 /* Build with quality starts */
-.container-buildquality{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+.buildquality{
+  width: 100%;
+  margin: auto;
+
 }
 
-.content-quality {
+.buildquality-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  max-width: 90%;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  width: 100%;
+  /* margin: auto; */
   background-color: rgb(252, 252, 252);
   border-radius: 5px;
   padding: 20px;
 }
 
-.image-quality {
-  flex: 1;
-  margin-right: 10px;
-  height: 600px; 
-  max-width: 80%; 
-  object-fit: cover; 
+.buildquality-container img {
+  width: 60%;
+  margin: auto;
+  max-width: 600px;
 }
 
-.text-qualitymaterial {
-  flex: 1;
+.buildquality-content {
+  width: 40%;
+  margin: auto;
   padding: 15px; 
 }
-
-.text-qualitymaterial h1{
-  text-align: center;
+.buildquality-content h1{
   font-size: 35px;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 10px; 
 }
-.text-qualitymaterial p{
-    font-family: 'Quicksand', sans-serif;
+.buildquality-content p{
+  font-family: 'Quicksand', sans-serif;
   font-size: 18px;
   line-height: 1.5; 
   margin-bottom: 20px; 
 }
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.button-material {
+.buildquality-button button {
   padding: 10px;
   background-color: #0c6161;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  margin-right: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-  height: 50px;
+  width: 150px; 
+  height: 50px; 
 }
-.button-material:hover {
+.buildquality-button button:hover {
   background-color: #cedde9;
 }
-@media screen and (max-width: 1160px) {
-  .image-quality {
-    height: 400px;
-    width: 85%;
-  }}
 
-@media screen and (max-width: 1000px) {
-  .text-qualitymaterial h1{
-    font-size: 25px;
-    text-align: left;
-}
-  .text-qualitymaterial p{
-    font-size: 14px;
-    margin-left: 0px;
-}}
-
-
-@media screen and (max-width: 940px) {
-  .content-quality {
-    flex-direction: column;
-    padding: 15px;
-    
-  }
-
-  .image-quality {
-    margin-right: 0;
-    margin-bottom: 20px;
-    height: 450px;
+@media(max-width:813px){
+  .buildquality-container img{
     width: 90%;
   }
-  .text-qualitymaterial h1{
-    text-align: center;
-    font-size: 35px;
-}
-  .text-qualitymaterial p{
-    font-size: 15px;
-    margin-left: 0px;
-}
-  .button-container {
-    flex-direction: column;
-  }
-
-  .button-material {
-    margin-right: 0;
-    margin-bottom: 10px;
-    width: 35%;
+  .buildquality-content{
+    width: 90%;
   }
 }
 
-@media screen and (max-width: 400px) {
-    .text-qualitymaterial h1{
-      text-align: left;
-       font-size: 30px;
-  }
-  .text-qualitymaterial p{
-       font-size: 14px;
-       margin-left: 3px;
-  }
-  .button-material {
-    margin-right: 0;
-    margin-bottom: 10px;
-    width: 50%;
-  }
-}
 /* Build with quality ends */
 
 
