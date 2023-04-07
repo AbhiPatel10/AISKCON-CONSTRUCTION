@@ -899,6 +899,150 @@ ul {
 }
 /* Get in Touch End */
 
+/* Build with quality starts */
+.container-buildquality{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.content-quality {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 90%;
+  background-color: rgb(252, 252, 252);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.image-quality {
+  flex: 1;
+  margin-right: 10px;
+  height: 600px; 
+  max-width: 80%; 
+  object-fit: cover; 
+}
+
+.text-qualitymaterial {
+  flex: 1;
+  padding: 15px; 
+}
+
+.text-qualitymaterial h1{
+  text-align: center;
+  font-size: 35px;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px; 
+}
+.text-qualitymaterial p{
+    font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  line-height: 1.5; 
+  margin-bottom: 20px; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.button-material {
+  padding: 10px;
+  background-color: #0c6161;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+.button-material:hover {
+  background-color: #cedde9;
+}
+@media screen and (max-width: 1160px) {
+  .image-quality {
+    height: 400px;
+    width: 85%;
+  }}
+
+@media screen and (max-width: 1000px) {
+  .text-qualitymaterial h1{
+    font-size: 25px;
+    text-align: left;
+}
+  .text-qualitymaterial p{
+    font-size: 14px;
+    margin-left: 0px;
+}}
+
+
+@media screen and (max-width: 940px) {
+  .content-quality {
+    flex-direction: column;
+    padding: 15px;
+    
+  }
+
+  .image-quality {
+    margin-right: 0;
+    margin-bottom: 20px;
+    height: 450px;
+    width: 90%;
+  }
+  .text-qualitymaterial h1{
+    text-align: center;
+    font-size: 35px;
+}
+  .text-qualitymaterial p{
+    font-size: 15px;
+    margin-left: 0px;
+}
+  .button-container {
+    flex-direction: column;
+  }
+
+  .button-material {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .text-qualitymaterial h1{
+      text-align: left;
+       font-size: 30px;
+  }
+  .text-qualitymaterial p{
+       font-size: 14px;
+       margin-left: 3px;
+  }
+  .button-material {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+}
+/* Build with quality ends */
+
+
+
+
+
+
+
 /* General Info Start */
 
 .general-info{
