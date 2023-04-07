@@ -186,7 +186,7 @@ p {
 .meet{
   margin: 4% 0;   
   background-color: #1c55a416;
-  padding: 5% 0;
+  padding: 60px 0;
   width: 100%;
 }
 .meet-container{
@@ -202,6 +202,7 @@ p {
   width: 50%;
 }
 .meet-content img{
+  margin: 10px;
   width: 95%;
   border-radius: 5px;
 }
@@ -244,63 +245,9 @@ p {
 }
 /* Mission End */
 
-/* Hire us Start */
-.hireus-box {
-  background-color: #fac213;
-  width: 90%;
-  height: 200px;
-  margin: auto;
-  position: relative;
-  top: 90px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.17);
-}
-.hireus-content {
-  width: 90%;
-  margin: auto;
-}
-.hireus-content button {
-  border: none;
-  background-color: #1c55a4;
-  color: white;
-  padding: 5px;
-  margin-top: 20px;
-  width: 20%;
-  height: 45px;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  color: #ffe493;
-  cursor: pointer;
-  transition: 0.3s all ease;
-}
-.hireus-content button:hover {
-  opacity: 0.7;
-}
-.hireus-content h1 {
-  color: rgba(0, 0, 0, 0.719);
-  font-size: 2rem;
-  /* letter-spacing: 0.1rem; */
-}
-
-@media (max-width: 767px) {
-  .hireus-content button {
-    width: 100px;
-  }
-  .hireus-content h1 {
-    font-size: 1.5rem;
-  }
-}
-
-/* Hire us End */
-
 /* General Info Start */
-
 .general-info {
-  padding: 100px 0;
+  padding: 60px 0;
   width: 100%;
   margin: 0 auto 0 auto;
   background-color: #1c55a416;
