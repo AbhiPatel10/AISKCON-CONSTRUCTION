@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+a{
+  color: #1c55a4;
+}
 h1 {
   font-family: 'Mulish', sans-serif;
   margin-bottom: 20px;
@@ -16,7 +18,7 @@ p {
 
 /* Hero Section Start */
 .hero-bg{
-  height: 500px;
+  height: 450px;
 }
 #slide-1{
   background: url('/img/bg/slide1.jpg');
@@ -29,7 +31,7 @@ p {
 #slide-3{
   background: url('/img/bg/slide3.jpg');
   background-size: cover;
-  background-position: 0px -280px;
+  background-position: 0px -200px;
 }
 #slide-4{
   background: url('/img/bg/slide4.jpg');
@@ -38,15 +40,26 @@ p {
 }
 #slide-5{
   background: url('/img/bg/slide5.jpg');
-  background-size: cover;
   background-position: 0px -250px;
+  background-size: cover;
+}
+@media(max-width:973px){
+  #slide-3{
+    background-position: 0px 0px;
+  }
+  #slide-4{
+    background-position: 0px 0px;
+  }
+  #slide-5{
+    background-position: 0px 0px;
+  }
 }
 /* Hero Section End */
 
 /* How it started Start */
 .how-it-started {
   width: 70%;
-  margin: 4% auto;
+  margin: 3% auto;
   text-align: center;
   padding: 20px;
 }
@@ -140,8 +153,8 @@ p {
 
 /* Vision Started */
 .vision {
-  margin: 20px 0;
-  width: 100%;
+  margin: 20px auto;
+  width: 80%;
 }
 .vision-container {
   display: flex;
@@ -152,7 +165,7 @@ p {
   align-items: center;
 }
 .vision-content {
-  width: 40%;
+  width: 50%;
   /* margin: auto; */
 }
 .vision-content img {
@@ -168,6 +181,68 @@ p {
   }
 }
 /* Vision End */
+
+/* Meet Start */
+.meet{
+  margin: 4% 0;   
+  background-color: #1c55a416;
+  padding: 5% 0;
+  width: 100%;
+}
+.meet-container{
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.meet-content{
+  width: 50%;
+}
+.meet-content img{
+  width: 95%;
+  border-radius: 5px;
+}
+
+@media(max-width: 767px){
+  .meet-content{
+    width: 100%;
+  }
+}
+/* Meet End */
+
+/* Mission Start */
+.mission {
+  margin: 20px auto;
+  width: 90%;
+}
+.mission-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.mission-content {
+  width: 50%;
+  margin: auto;
+}
+.mission-content img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .mission-content {
+    width: 100%;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+}
+/* Mission End */
 
 /* Hire us Start */
 .hireus-box {
