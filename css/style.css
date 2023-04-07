@@ -246,8 +246,9 @@ ul {
 
 /* Footer START */
 .footer {
-  background-color: #f8f9fa;
+  background-color: #cccccc;
   padding: 70px 0;
+  padding-top: 160px;
 }
 .container {
   max-width: 1250px;
@@ -1169,3 +1170,55 @@ ul {
   }
 }
 /* Testinomial End */
+/* Hire us Start */
+.hireus-box{
+  background-color: #fac213;
+  width: 90%;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  top: 90px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.17);
+}
+.hireus-content{
+  width: 90%;
+  margin: auto;
+}
+.hireus-content button{
+  border: none;
+  background-color: #1C55A4;
+  color: white;
+  padding: 5px;
+  margin-top: 20px;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #ffe493;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.hireus-content button:hover{
+  opacity: 0.7;
+}
+.hireus-content h1{
+  color: rgba(0, 0, 0, 0.719);
+  font-size: 2rem;
+  /* letter-spacing: 0.1rem; */
+}
+
+@media (max-width: 767px) {
+  .hireus-content button {
+    width: 100px;
+  }
+  .hireus-content h1{
+    font-size: 1.5rem;
+  }
+}
+
+/* Hire us End */
