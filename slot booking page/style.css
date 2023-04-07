@@ -289,7 +289,8 @@ ul {
 
 .aptForm {
   margin: 20px auto;
-  max-width: 700px;
+  max-width: 1100px;
+  border-radius: 10px;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -301,6 +302,13 @@ ul {
 
 .infoMain {
   animation: slideUp 1s ease-in-out;
+}
+
+.input-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .form-input {
@@ -317,6 +325,31 @@ ul {
   margin-bottom: 5px;
 }
 
+.empty-item{
+  display: none;
+}
+
+@media(width < 1040px){
+  .empty-item{
+    display: block;
+  }
+  .emptyBT-item2{
+    display: none;
+  }
+}
+
+@media(width < 720px){
+  .empty-item{
+    display: none;
+  }
+  .emptyBT-item1{
+    display: none;
+  }
+  #formBT{
+    text-align: center;
+  }
+}
+
 @media(width > 767px){
   .form-input input[type="text"],
   .form-input input[type="email"],
@@ -325,7 +358,7 @@ ul {
   .form-input input[type="time"],
   .form-input select,
   .form-input textarea {
-      width: 100%;
+      width: 300px;
       padding: 13px;
       font-size: 16px;
       border-radius: 5px;
@@ -416,6 +449,8 @@ ul {
 
 .form-input {
   position: relative;
+  margin: 10px;
+  width: 300px;
   margin-bottom: 40px;
   animation: slideUp 1s ease;
 }
@@ -435,7 +470,7 @@ ul {
 }
 
 .form-input input, .form-input select, .form-input textarea {
-  width: 100%;
+  width: 300px;
   height: 50px;
   font-size: 16px;
   font-weight: 600;
@@ -478,6 +513,7 @@ ul {
   .form-input input, .form-input select, .form-input textarea {
     height: 40px;
     padding: 8.5px;
+    border-radius: 5px;
   }
   #btn {
     height: 40px;
