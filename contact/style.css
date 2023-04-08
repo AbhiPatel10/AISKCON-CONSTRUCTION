@@ -1,0 +1,12 @@
+.hero{
+	background: url('/img/bg/roads.jpg');
+	height: 300px;
+	background-size: cover;
+}
+.hero-heading{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 2rem;
+}
