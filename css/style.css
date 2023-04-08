@@ -78,6 +78,9 @@ ul {
   outline: none;
   border: none;
   border-radius: 5px;
+}
+
+#bt1 a, #mobBT a{
   color: white;
 }
 
