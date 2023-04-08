@@ -399,10 +399,9 @@ ul {
     margin: 30px 25px 10px 0px;
   }
 }
-
 /* FOOTER END */
-/* TALK WITH EXPERT PAGE STARTS  */
 
+/* TALK WITH EXPERT PAGE STARTS  */
 .container-expert {
   display: flex;
   flex-direction: column;
@@ -1225,5 +1224,44 @@ ul {
     font-size: 1.5rem;
   }
 }
-
 /* Hire us End */
+
+/* Faq Start */
+.faq{
+  width: 80%;
+  margin: auto;
+}
+.faq-block{
+  margin: 15px;
+  background-color: #f4efef;
+  padding: 14px;
+  border-radius: 5px;
+  font-family: 'poppins', sans-serif;
+}
+.faq-question{
+  font-size: 0.7rem;
+  letter-spacing: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.822);
+  cursor: pointer;
+}
+.faq-question i{
+  text-align: right;
+}
+.faq-answer{
+  display: none;
+  margin: 20px;
+  line-height: 1.6;
+  font-family: 'poppins', sans-serif;
+}
+.faq-heading{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #07021a;
+  font-weight: 650;
+}
+/* Faq End */
