@@ -247,8 +247,9 @@ ul {
 
 /* Footer START */
 .footer {
-  background-color: #f8f9fa;
+  background-color: #cccccc;
   padding: 70px 0;
+  padding-top: 160px;
 }
 .container {
   max-width: 1250px;
@@ -429,7 +430,6 @@ ul {
   margin-right: 20px;
   height: 450px;
   max-width: 400px;
-  width: 100%;
 }
 
 .text-contact {
@@ -600,6 +600,7 @@ ul {
     }
   }
 }
+
 /* PLANNING CONTRUCTION AND REBUILDING ENDS */
 /* Why choose us Start */
 
@@ -686,6 +687,7 @@ ul {
   font-family: 'Exo', sans-serif;
   color:#364b36 ;
   background-color: #cccccc;
+  z-index: 0;
   
 }
 
@@ -709,7 +711,6 @@ ul {
 
 .imagegallery {
   width: calc(33.33% - 20px);
-  
   height: 300px;
   margin: 10px;
   cursor: pointer;
@@ -747,7 +748,7 @@ ul {
 
 .imagegallery:hover {
   transform: scale(1.05) rotate(2deg);
-  z-index: 1;
+  z-index: 0;
 }
 
 .imagegallery:hover ~ .imagegallery img {
@@ -898,6 +899,198 @@ ul {
   }
 }
 /* Get in Touch End */
+/* Build with quality starts */
+.container-buildquality{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.content-quality {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 90%;
+  background-color: rgb(252, 252, 252);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.image-quality {
+  flex: 1;
+  margin-right: 10px;
+  height: 600px; 
+  max-width: 80%; 
+  object-fit: cover; 
+}
+
+.text-qualitymaterial {
+  flex: 1;
+  padding: 15px; 
+}
+
+.text-qualitymaterial h1{
+  text-align: center;
+  font-size: 35px;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px; 
+}
+.text-qualitymaterial p{
+    font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  line-height: 1.5; 
+  margin-bottom: 20px; 
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.button-material {
+  padding: 10px;
+  background-color: #0c6161;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+.button-material:hover {
+  background-color: #cedde9;
+}
+@media screen and (max-width: 1160px) {
+  .image-quality {
+    height: 400px;
+    width: 85%;
+  }}
+
+@media screen and (max-width: 1000px) {
+  .text-qualitymaterial h1{
+    font-size: 25px;
+    text-align: left;
+}
+  .text-qualitymaterial p{
+    font-size: 14px;
+    margin-left: 0px;
+}}
+
+
+@media screen and (max-width: 940px) {
+  .content-quality {
+    flex-direction: column;
+    padding: 15px;
+    
+  }
+
+  .image-quality {
+    margin-right: 0;
+    margin-bottom: 20px;
+    height: 450px;
+    width: 90%;
+  }
+  .text-qualitymaterial h1{
+    text-align: center;
+    font-size: 35px;
+}
+  .text-qualitymaterial p{
+    font-size: 15px;
+    margin-left: 0px;
+}
+  .button-container {
+    flex-direction: column;
+  }
+
+  .button-material {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .text-qualitymaterial h1{
+      text-align: left;
+       font-size: 30px;
+  }
+  .text-qualitymaterial p{
+       font-size: 14px;
+       margin-left: 3px;
+  }
+  .button-material {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+}
+/* Build with quality ends */
+
+
+
+
+
+
+
+/* General Info Start */
+
+.general-info{
+  width: 90%;
+  margin: 4% auto 4% auto;
+}
+.general-info-row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.general-info-card{
+  width: 24%;
+  margin: auto;
+  height: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.317);
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.17);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.general-info-icon{
+  font-size: 4rem; 
+  color: #1e3050;
+  /* color: gray; */
+}
+.general-info-content{
+  margin-top: 20%;
+}
+.general-info-content h1{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+  margin-bottom: 1px;
+}
+@media(max-width: 1136px){
+ .general-info-card{
+  width: 48%;
+  margin-bottom: 1%;
+ }
+}
+@media(max-width: 767px) {
+  .general-info-card{
+    width: 100%;
+   }
+}
+/* General Info End */
 /* Testinomials Start */
 .testimonials{
   width: 90%;
@@ -982,6 +1175,59 @@ ul {
   }
 }
 /* Testinomial End */
+/* Hire us Start */
+.hireus-box{
+  background-color: #fac213;
+  width: 90%;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  top: 90px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.17);
+}
+.hireus-content{
+  width: 90%;
+  margin: auto;
+}
+.hireus-content button{
+  border: none;
+  background-color: #1C55A4;
+  color: white;
+  padding: 5px;
+  margin-top: 20px;
+  width: 20%;
+  height: 45px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: #ffe493;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.hireus-content button:hover{
+  opacity: 0.7;
+}
+.hireus-content h1{
+  color: rgba(0, 0, 0, 0.719);
+  font-size: 2rem;
+  /* letter-spacing: 0.1rem; */
+}
+
+@media (max-width: 767px) {
+  .hireus-content button {
+    width: 100px;
+  }
+  .hireus-content h1{
+    font-size: 1.5rem;
+  }
+}
+
+/* Hire us End */
+
 /* Our Services starts */
 .services-heading{
   padding-top: 30px;
