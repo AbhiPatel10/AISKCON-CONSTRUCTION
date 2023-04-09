@@ -400,10 +400,9 @@ ul {
     margin: 30px 25px 10px 0px;
   }
 }
-
 /* FOOTER END */
-/* TALK WITH EXPERT PAGE STARTS  */
 
+/* TALK WITH EXPERT PAGE STARTS  */
 .container-expert {
   display: flex;
   flex-direction: column;
@@ -1225,92 +1224,44 @@ ul {
     font-size: 1.5rem;
   }
 }
-
 /* Hire us End */
 
-/* Our Services starts */
-.services-heading{
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-  font-size: 40px;
-  font-family: 'Montserrat', sans-serif;
- }
- .services-box {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   max-width: 90%;
-   margin: 0 auto;
-   padding: 15px;
-   box-sizing: border-box;
- }
-
- .servicesection-image {
-   width: calc(33.33% - 20px);
-   margin-bottom: 20px;
-   box-sizing: border-box;
-   position: relative;
- }
-
- .servicesection-image img {
-   border-radius: 10px;
-   width: 100%;
-   height: 200px;
-   object-fit: cover;
-   transition: all 0.3s ease;
- }
-
- .servicesection-image:hover img {
-   transform: scale(1.1);
-   opacity: 1;
- }
- .servicesection-image h3 {
-   margin: 20px 0 10px;
-   font-size: 20px;
-   font-weight: bold;
-   font-family: 'Quicksand', sans-serif;
- }
-
- .servicesection-image p {
-   margin: 0 0 20px;
-   font-size: 16px;
-   line-height: 1.4;
-   font-family: 'Chivo', sans-serif;
- }
-
- .read-more {
-   display: inline-block;
-   padding: 8px 15px;
-   border: 1px solid #000;
-   border-radius: 20px;
-   text-decoration: none;
-   font-size: 16px;
-   color: #000;
-   transition: all 0.3s ease;
- }
-
- .read-more:hover {
-   background-color: #000;
-   color: #fff;
- }
-
- @media (max-width: 1200px) {
-   .servicesection-image {
-     width: calc(50% - 20px);
-   }
-   .services-heading{
-     font-size: 35px;
-   }
- }
-
- @media (max-width: 768px) {
-   .servicesection-image {
-     width: 100%;
-   }
-   .services-heading{
-     font-size: 30px;
-   }
- }
-
-/* Our Services ends */
+/* Faq Start */
+.faq{
+  width: 80%;
+  margin: auto;
+}
+.faq-block{
+  margin: 15px;
+  background-color: #f4efef;
+  padding: 14px;
+  border-radius: 5px;
+  font-family: 'poppins', sans-serif;
+}
+.faq-question{
+  font-size: 0.7rem;
+  letter-spacing: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.822);
+  cursor: pointer;
+}
+.faq-question i{
+  text-align: right;
+}
+.faq-answer{
+  display: none;
+  margin: 20px;
+  line-height: 1.6;
+  font-family: 'poppins', sans-serif;
+}
+.faq-heading{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #07021a;
+  font-weight: 650;
+}
+/* Faq End */
