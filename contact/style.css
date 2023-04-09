@@ -1,8 +1,9 @@
 /* Hero Section Start */
 .hero {
-  background: url('/img/bg/roads.jpg');
+  background: url('/img/bg/contact_us.jpg');
   height: 300px;
   background-size: cover;
+  background-position: -68px 0px;
 }
 .hero-heading {
   display: flex;
@@ -20,7 +21,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 0px;
+  margin-bottom: 4%;
 }
 .content-1 {
   display: flex;
