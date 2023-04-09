@@ -1,12 +1,123 @@
-.hero{
-	background: url('/img/bg/roads.jpg');
-	height: 300px;
-	background-size: cover;
+/* Hero Section Start */
+.hero {
+  background: url('/img/bg/roads.jpg');
+  height: 300px;
+  background-size: cover;
 }
-.hero-heading{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	font-size: 2rem;
+.hero-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2rem;
+  color: white;
 }
+/* Hero Section End */
+
+/* TALK WITH EXPERT PAGE STARTS  */
+.container-expert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.content-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  background-color: white;
+  padding: 20px;
+}
+.image-1 {
+  flex: 1;
+  margin-right: 20px;
+  height: 450px;
+  width: 100%;
+  max-width: 400px;
+}
+.text-contact h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 2.1em;
+  line-height: 1.5;
+}
+.text-contact p {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.button-2 {
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+.button-1 {
+  padding: 10px;
+  background-color: #0c6161;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+.button-2:hover {
+  background-color: #cedde9;
+}
+.button-1:hover {
+  background-color: #cedde9;
+}
+.button-2 i {
+  margin-right: 5px;
+}
+.button-1 i {
+  margin-right: 5px;
+}
+@media screen and (max-width: 805px) {
+  .content-1 {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .image-1 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .button-2 {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+  .button-1 {
+    margin-bottom: 10px;
+    width: 35%;
+  }
+}
+/* TALK WITH EXPERT ENDS  */
