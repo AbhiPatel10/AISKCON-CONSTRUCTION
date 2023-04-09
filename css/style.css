@@ -1268,3 +1268,110 @@ ul {
   font-weight: 650;
 }
 /* Faq End */
+
+/* awards section starts */
+.AWARDSEC-BOX1 {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.awards-heading {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  text-decoration: underline;
+
+}
+
+.award-innerbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.award-box {
+  width: calc(18%);
+  padding: 13px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.award-box:last-child {
+  margin-right: 0;
+}
+
+.award-box img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  max-width: 100%;
+}
+
+.award-box p {
+  font-family: 'Quicksand', sans-serif;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.award-box h6 {
+  font-family: 'Chivo', sans-serif;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .award-box {
+    width: calc(25% - 20px);
+    align-items: center;
+  text-align: center;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .award-box {
+    width: calc(33.33% - 20px);
+    margin-right: 10px;
+    align-items: center;
+  text-align: center;
+  }
+
+  .award-box:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .award-box {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    align-items: center;
+  text-align: center;
+  }
+
+  .award-box:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+.award-box {
+  width: 100%;
+  margin-right: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.award-box img {
+  display: inline-block;
+}
+}
+/* awards ends */
