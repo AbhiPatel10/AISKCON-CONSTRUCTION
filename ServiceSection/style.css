@@ -43,8 +43,8 @@
    }
   
    .servicesection-image {
-     width: calc(33.33% - 20px);
-     margin-bottom: 20px;
+     width: calc(31%);
+     margin: 20px 0px;
      box-sizing: border-box;
      position: relative;
    }
