@@ -466,7 +466,7 @@ ul {
 
 .button-1 {
   padding: 10px;
-  background-color: #0c6161;
+  background-color: #0077cc;
   color: white;
   border: none;
   border-radius: 5px;
@@ -521,7 +521,7 @@ ul {
   .button-1 {
     margin-right: 0;
     margin-bottom: 10px;
-    width: 35%;
+    width: 50%;
   }
 }
 /* TALK WITH EXPERT ENDS  */
