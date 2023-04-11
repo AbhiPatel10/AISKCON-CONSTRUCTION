@@ -1246,10 +1246,11 @@ ul {
 	column-gap: 20px;
 }
 
-.attribute-in-common-box h4 {
+.attribute-in-common-box ul li {
   padding: 5px;
 	display: flex;
 	align-items: center;
+  font-weight: 600;
 	font-family: 'Quicksand', sans-serif;
 	margin-top: 0;
 }
