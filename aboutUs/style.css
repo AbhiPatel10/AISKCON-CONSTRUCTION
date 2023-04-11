@@ -18,7 +18,7 @@ p {
 
 /* Hero Section Start */
 .hero-bg{
-  height: 450px;
+  height: calc(100vh - 79px);
 }
 #slide-1{
   background: url('/img/bg/slide1.jpg');
