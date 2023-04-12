@@ -125,3 +125,75 @@
   }
 }
 /* TALK WITH EXPERT ENDS  */
+
+/* Get in Touch Start */
+.getintouch{
+  width: 90%;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.getintouch-heading{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.getintouch-heading h1{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+.getintouch-heading p{
+  font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.628);
+  line-height: 1.5;
+}
+.getintouch-row{
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.getintouch-contact-cards{
+  width: 23%;
+  margin: 1% auto 1%;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.326);
+  /* background: linear-gradient(109.6deg, rgb(25, 23, 23) 11.2%, rgb(11, 132, 145) 91.1%); */
+  background-color: #1C55A4;
+  padding: 26px;
+  border-radius: 12px;
+  text-align: center;
+  height: 220px;
+  line-height: 2;
+  color: white;
+}
+.getintouch-icon{
+  align-items: center;
+  margin-bottom: 5px;
+}
+.getintouch-card-content{
+  width: 100%;
+  text-align: center;
+}
+.getintouch-card-content h3{
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1.2px;
+}
+.getintouch-card-content p{
+  font-size: 1.1rem;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.833);
+}
+@media (max-width: 1200px) {
+  .getintouch-contact-cards{
+    width: 45%;
+
+  }
+}
+@media(max-width: 767px) {
+  .getintouch-contact-cards{
+    width: 100%;
+  }
+}
+/* Get in Touch End */
