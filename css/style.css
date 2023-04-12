@@ -1257,6 +1257,31 @@ ul {
   margin: 20px;
   line-height: 1.6;
   font-family: 'poppins', sans-serif;
+  overflow: hidden;
+}
+.open{
+  animation-name: faqOpen;
+  animation-duration: 1.5s;
+}
+@keyframes faqOpen {
+  from{
+    max-height: 0;
+  }
+  to{
+    max-height: 1000px;
+  }
+}
+.close{
+  animation-name: faqClose;
+  animation-duration: 0.5s;
+}
+@keyframes faqClose {
+  from{
+    max-height: 1000px;
+  }
+  to{
+    max-height: 0;
+  }
 }
 .faq-heading{
   font-family: 'Poppins', sans-serif;

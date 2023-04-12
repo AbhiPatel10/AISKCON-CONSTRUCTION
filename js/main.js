@@ -107,3 +107,59 @@ faqQuestions.forEach((question) => {
     }
   });
 });
+
+let faqQues = ['Why do I need an interior designer?', 'Why is Aiskcon perfect for your design?', 'What services are included under home interior design?', 'What will be the timelines for my project completion?', 'What are the trending interior design styles?'];
+
+let faqAns = ['You can think of an interior designer as a film director. Their job is to monitor every minute detail from start to the final cut. From pre-production to the final edit, their perspective is responsible for shaping the final product. Similarly, interior designers are professionals who are able to gauge your needs and tastes to deliver your dream home. They assist you in getting custom-designed pieces that fit perfectly into your beautiful vision. From raw materials to finished products, they take care of everything!', 'Aiskcon is the perfect partner who can build your home interiors just the way you want! Our design experts customize designs as per your needs. They will listen to your ideas and suggest options. At Livspace, we incorporate advanced technology into our modular solutions to create flawless interiors and also to expedite the process of making your dream home a reality. So, book your consultation today with India\'s Most Trusted Home Interiors Brand, Livspace and talk to our designers about your project.', 'You can think of an interior designer as a film director. Their job is to monitor every minute detail from start to the final cut. From pre-production to the final edit, their perspective is responsible for shaping the final product. Similarly, interior designers are professionals who are able to gauge your needs and tastes to deliver your dream home. They assist you in getting custom-designed pieces that fit perfectly into your beautiful vision. From raw materials to finished products, they take care of everything!', 'You can think of an interior designer as a film director. Their job is to monitor every minute detail from start to the final cut. From pre-production to the final edit, their perspective is responsible for shaping the final product. Similarly, interior designers are professionals who are able to gauge your needs and tastes to deliver your dream home. They assist you in getting custom-designed pieces that fit perfectly into your beautiful vision. From raw materials to finished products, they take care of everything!', 'You can think of an interior designer as a film director. Their job is to monitor every minute detail from start to the final cut. From pre-production to the final edit, their perspective is responsible for shaping the final product. Similarly, interior designers are professionals who are able to gauge your needs and tastes to deliver your dream home. They assist you in getting custom-designed pieces that fit perfectly into your beautiful vision. From raw materials to finished products, they take care of everything!'];
+
+if(document.querySelector('.faq-content')){
+  faqQues.forEach((element, index)=>{
+    document.querySelector('.faq-content').innerHTML += 
+    '<div class="faq-block" id="block' + index + '">' +
+    '<div class="faq-question">' +
+      '<h2>' + (index+1) + '. ' +  element + '</h2>' + 
+      '<i class="fa-solid fa-plus fa-xl" id="plusMinus' + index + '"></i>' + 
+    '</div>' + 
+    '<div class="faq-answer close" id="answer' + index + '">' + 
+      '<p>' + faqAns[index] + '</p>' +
+    '</div>' +
+  '</div>';
+  });
+}
+
+if(document.querySelector('.faq-question')){
+  faqQues.forEach((element, index)=>{
+    document.querySelector('#block' + index).addEventListener('click', ()=>{
+      if(document.querySelector('#answer' + index).style.display == 'block')
+      {
+        document.querySelector('#plusMinus' + index).classList.replace('fa-minus', 'fa-plus');
+        document.querySelectorAll('.faq-answer').forEach((element)=>{
+          element.classList.replace('open', 'close');
+        });
+        setTimeout(()=>{
+          document.querySelector('#answer' + index).style.display = 'none';
+        }, 450);
+      }
+      else
+      {
+        document.querySelector('#answer' + index).style.display = 'block';
+        document.querySelector('#plusMinus' + index).classList.replace('fa-plus', 'fa-minus');
+        document.querySelectorAll('.faq-answer').forEach((element)=>{
+          element.classList.replace('close', 'open');
+        });
+      }
+    });
+  });
+}
+
+if(document.querySelector('.faq-question')){
+  document.querySelectorAll('.faq-block').forEach((element, index)=>{
+    element.addEventListener('click', ()=>{
+      document.querySelectorAll('.faq-answer').forEach((ele, ind)=>{
+        if(index != ind){
+          ele.style.display = 'none';
+        }
+      });
+    });
+  });
+}
