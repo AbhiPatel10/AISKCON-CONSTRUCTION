@@ -23,7 +23,7 @@ ul {
   background-color: aliceblue;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .fullNav {
@@ -156,6 +156,7 @@ ul {
   width: 40px;
   height: 40px;
   cursor: pointer;
+  border: 2px solid #c3c3ca;
   border-radius: 5px;
 }
 
@@ -163,21 +164,44 @@ ul {
   font-size: 20px;
 }
 
+#mobNavParent{
+  position: fixed;
+  z-index: 1;
+}
+
 .navBar2 {
   text-align: center;
   background-color: aliceblue;
   padding-top: 10px;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: 1;
   display: none;
   overflow: hidden;
-  animation-name: mobNav;
-  animation-duration: 1s;
+}
+.navOpen{
+    animation-name: mobNav;
+    animation-duration: 1s;
 }
 @keyframes mobNav {
-  0% {
+  from {
     height: 0;
   }
-  100% {
+  to {
     height: 324px;
+  }
+}
+.navClose{
+    animation-name: mobNav2;
+    animation-duration: 1s;
+}
+@keyframes mobNav2 {
+  from {
+    height: 324px;
+  }
+  to {
+    height: 0;
   }
 }
 
@@ -202,7 +226,7 @@ ul {
   font-size: large;
   background-color: rgb(48, 61, 203);
   outline: none;
-  border: none;
+  border: #c1c4d2;
   border-radius: 5px;
   color: white;
   padding-top: 8px;
@@ -689,7 +713,6 @@ ul {
   color:#364b36 ;
   background-color: #cccccc;
   z-index: 0;
-  
 }
 
 .heading-featurebox {
@@ -707,7 +730,6 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 30px;
-  
 }
 
 .imagegallery {
