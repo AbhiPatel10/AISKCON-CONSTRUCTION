@@ -1036,13 +1036,6 @@ ul {
   }
 }
 /* Build with quality ends */
-
-
-
-
-
-
-
 /* General Info Start */
 
 .general-info{
@@ -1226,6 +1219,72 @@ ul {
   }
 }
 /* Hire us End */
+
+/* ATTRIBUTES IN COMMON STARTS  */
+.attribute-in-common {
+  max-height: 1200px;
+	margin: 0 auto;
+	padding: 30px 30px;
+	background-color: #f2f2f2;
+}
+
+.attribute-heading {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.attribute-in-common-box {
+  max-height: 1000px;
+	margin: 0 auto;
+	padding: 40px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	border-radius: 7px;
+	text-align: left;
+	column-count: 3;
+	column-gap: 20px;
+}
+
+.attribute-in-common-box ul li {
+  padding: 5px;
+	display: flex;
+	align-items: center;
+  font-weight: 600;
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 0;
+}
+
+.attribute-in-common-box .fa-regular {
+	font-size: 13px;
+	margin-right: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+	.attribute-in-common {
+		padding: 30px 10px;
+	}
+	
+	.attribute-in-common-box {
+		padding: 30px;
+		column-count: 2;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.attribute-in-common {
+    max-height: 900px;
+		font-size: 14px;
+		padding: 30px 10px;
+	}
+	.attribute-in-common-box {
+    max-height: auto;
+		padding: 30px;
+		column-count: 1;
+	}
+}
+/* ATTRIBUTES IN COMMON ENDS */
+
+
 
 /* Faq Start */
 .faq{
