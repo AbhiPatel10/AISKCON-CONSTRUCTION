@@ -15,7 +15,7 @@ To get an overview of the project, read the README.md Here are some steps to hel
 
  -   Fill the ***"Ready for review"*** template. This template helps reviewers understand your changes as well as the purpose of your pull request.
  
- -  Link PR to issue. 
+ -  Link issue to PR . 
 
  - We may ask for changes to be made before a PR can be merged, either using suggested changes or pull request comments. You can make any other changes in your fork, then commit them to your branch.
  - As you update your PR and apply changes, ***mark each conversation as resolved.***
