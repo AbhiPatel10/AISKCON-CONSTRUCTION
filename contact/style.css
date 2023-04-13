@@ -1,9 +1,11 @@
 /* Hero Section Start */
 .hero {
   background: url('/img/bg/contact_us.jpg');
-  height: 300px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: -68px 0px;
+  background-attachment: fixed;
 }
 .hero-heading {
   background-color: black;
@@ -12,7 +14,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
 }
 /* Hero Section End */
