@@ -1,0 +1,200 @@
+/* Hero Section Start */
+.hero {
+  background: url('/img/bg/contact_us.jpg');
+  height: 200px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80% 0px;
+}
+.hero-heading {
+  background-color: black;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.5rem;
+  color: white;
+}
+/* Hero Section End */
+
+/* TALK WITH EXPERT PAGE STARTS  */
+.container-expert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 4%;
+}
+.content-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  background-color: white;
+  padding: 20px;
+}
+.image-1 {
+  flex: 1;
+  margin-right: 20px;
+  height: 450px;
+  width: 100%;
+  max-width: 400px;
+}
+.text-contact h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 2.1em;
+  line-height: 1.5;
+}
+.text-contact p {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.button-2 {
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+.button-1 {
+  padding: 10px;
+  background-color: #0c6161;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+.button-2:hover {
+  background-color: #cedde9;
+}
+.button-1:hover {
+  background-color: #cedde9;
+}
+.button-2 i {
+  margin-right: 5px;
+}
+.button-1 i {
+  margin-right: 5px;
+}
+@media screen and (max-width: 805px) {
+  .content-1 {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .image-1 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .button-2 {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+  .button-1 {
+    margin-bottom: 10px;
+    width: 35%;
+  }
+}
+/* TALK WITH EXPERT ENDS  */
+
+/* Get in Touch Start */
+.getintouch{
+  width: 90%;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.getintouch-heading{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.getintouch-heading h1{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+.getintouch-heading p{
+  font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.628);
+  line-height: 1.5;
+}
+.getintouch-row{
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.getintouch-contact-cards{
+  width: 23%;
+  margin: 1% auto 1%;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.326);
+  /* background: linear-gradient(109.6deg, rgb(25, 23, 23) 11.2%, rgb(11, 132, 145) 91.1%); */
+  background-color: #1C55A4;
+  padding: 26px;
+  border-radius: 12px;
+  text-align: center;
+  height: 220px;
+  line-height: 2;
+  color: white;
+}
+.getintouch-icon{
+  align-items: center;
+  margin-bottom: 5px;
+}
+.getintouch-card-content{
+  width: 100%;
+  text-align: center;
+}
+.getintouch-card-content h3{
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1.2px;
+}
+.getintouch-card-content p{
+  font-size: 1.1rem;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.833);
+}
+@media (max-width: 1200px) {
+  .getintouch-contact-cards{
+    width: 45%;
+
+  }
+}
+@media(max-width: 767px) {
+  .getintouch-contact-cards{
+    width: 100%;
+  }
+}
+/* Get in Touch End */
