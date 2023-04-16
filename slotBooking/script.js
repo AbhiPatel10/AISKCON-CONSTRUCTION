@@ -156,5 +156,5 @@ inBoxes.forEach((element)=>{
 if(document.querySelector('.footer-copyright')){
     let year = new Date();
     year = year.getFullYear();
-    document.querySelector('.footer-copyright').innerHTML = 'Copyright &#169; ' + year + ' <a href="#">Aiskcon</a>, All Right Reserved';
+    document.querySelector('.footer-copyright').innerHTML = 'Copyright &#169; ' + year + ' <a href="/">Aiskcon</a>, All Right Reserved';
 }
