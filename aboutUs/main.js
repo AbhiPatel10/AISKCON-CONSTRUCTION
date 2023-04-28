@@ -10,3 +10,10 @@ const swiper = new Swiper('.swiper', {
     disableOnInteraction:false,
   },
 });
+
+
+if(document.querySelector('.footer-copyright')){
+  let year = new Date();
+  year = year.getFullYear();
+  document.querySelector('.footer-copyright').innerHTML = 'Copyright &#169; ' + year + ' <a href="/">Aiskcon</a>, All Right Reserved';
+}

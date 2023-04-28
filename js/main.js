@@ -20,12 +20,16 @@ document.querySelector('#bt2 button').addEventListener('click', () => {
   document.querySelector('.drop4').style.display = 'none';
   if (document.querySelector('.navBar2').style.display == 'block')
    {
-    document.querySelector('.navBar2').style.display = 'none';
+    document.querySelector('.navBar2').classList.replace('navOpen', 'navClose');
     document.querySelector('.navBar1').style.boxShadow = 'none';
+    setTimeout(()=>{
+      document.querySelector('.navBar2').style.display = 'none';
+    }, 750);
   } 
   else
    {
     document.querySelector('.navBar2').style.display = 'block';
+    document.querySelector('.navBar2').classList.replace('navClose', 'navOpen');
     document.querySelector('.navBar1').style.boxShadow ='0px 24px 3px -24px gray';
   }
 });
@@ -107,3 +111,10 @@ faqQuestions.forEach((question) => {
     }
   });
 });
+
+
+if(document.querySelector('.footer-copyright')){
+  let year = new Date();
+  year = year.getFullYear();
+  document.querySelector('.footer-copyright').innerHTML = 'Copyright &#169; ' + year + ' <a href="/">Aiskcon</a>, All Right Reserved';
+}
