@@ -143,6 +143,12 @@
   margin-right: 0;
   margin-bottom: 20px;
 }
+.contents-cont img:hover{
+  transform: scale(1.1);
+  opacity: 1;
+  transition: 1s ease-in-out;
+
+}
 
 .inner-items h1{
   font-size: 31px;
@@ -255,6 +261,12 @@
   outline: none;
   margin-left: 20px;
   margin-right: 20px;
+}
+.contents-right img:hover{
+  transform: scale(1.1);
+  opacity: 1;
+  transition: 1s ease-in-out;
+
 }
 
 .inner-itemsleft h1 {
