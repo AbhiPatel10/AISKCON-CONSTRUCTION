@@ -53,6 +53,7 @@ ul {
 .list1 a {
   text-decoration: none;
   color: black;
+  transition: 0.2s ease all;
 }
 
 #logo {
@@ -545,7 +546,7 @@ ul {
 }
 
 .imagegallery img {
-  border-radius: 3%;
+  border-radius: 10px;
   width: 90%;
   margin: auto;
   height: 220px;
@@ -555,7 +556,7 @@ ul {
 
 .image-text1 {
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   left: 20px;
   transform-origin: top right;
   transform: scale(0);
@@ -564,9 +565,9 @@ ul {
   text-align: center;
   color: white;
   font-size: 10px;
-  font-weight: bold;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.8);
+  border-bottom-left-radius: 7px;
 }
 
 .imagegallery:hover img {
@@ -663,19 +664,18 @@ ul {
 
 .content-quality {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   border-radius: 5px;
 }
 
 .image-quality {
   width: 50%;
-  transform: scale(0.9);
 }
 
 .text-qualitymaterial {
   width: 50%;
   padding: 20px 40px;
-
 }
 
 .text-qualitymaterial h1{
@@ -697,8 +697,6 @@ ul {
   justify-content: center;
   align-items: center;
 }
-
-
 .button-material {
   padding: 10px;
   background-color: #0c6161;
@@ -718,68 +716,25 @@ ul {
 .button-material:hover {
   background-color: #cedde9;
 }
-@media screen and (max-width: 1160px) {
-  .image-quality {
-    height: 400px;
-    width: 85%;
-  }}
 
-@media screen and (max-width: 1000px) {
-  .text-qualitymaterial h1{
-    font-size: 25px;
-    text-align: left;
-}
-  .text-qualitymaterial p{
-    font-size: 14px;
-    margin-left: 0px;
-}}
-
-
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 767px) {
   .content-quality {
-    flex-direction: column;
-    padding: 15px;
-    
+    width: 100%;
   }
 
   .image-quality {
     margin-right: 0;
     margin-bottom: 20px;
-    height: 450px;
-    width: 90%;
+    width: 100%;
   }
-  .text-qualitymaterial h1{
+
+  .button-material {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .text-qualitymaterial{
+    width: 100%;
     text-align: center;
-    font-size: 35px;
-  }
-  .text-qualitymaterial p{
-    font-size: 15px;
-    margin-left: 0px;
-  }
-  .button-container {
-    flex-direction: column;
-  }
-
-  .button-material {
-    margin-right: 0;
-    margin-bottom: 10px;
-    width: 35%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-    .text-qualitymaterial h1{
-      text-align: left;
-       font-size: 30px;
-  }
-  .text-qualitymaterial p{
-       font-size: 14px;
-       margin-left: 3px;
-  }
-  .button-material {
-    margin-right: 0;
-    margin-bottom: 10px;
-    width: 50%;
   }
 }
 /* Build with quality ends */
@@ -804,6 +759,10 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s all ease;
+}
+.general-info-card:hover{
+  transform: scale(1.05);
 }
 .general-info-icon{
   font-size: 4rem; 
