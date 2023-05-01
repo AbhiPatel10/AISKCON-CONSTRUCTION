@@ -548,7 +548,7 @@ ul {
   border-radius: 3%;
   width: 90%;
   margin: auto;
-  height: 230px;
+  height: 220px;
   object-fit: cover;
   transition: filter 0.5s ease-out;
 }
