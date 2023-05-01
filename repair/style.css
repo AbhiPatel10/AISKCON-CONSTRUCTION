@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* hero section start */
+.hero{
+  background: url('/img/bg/repair2.jpg');
+  height: 300px;
+  background-size: cover;
+}
+.hero-overlay{
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.hero-heading{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+/* hero section end */
+
+/* home repair section start */
+.home-repair, 
+.home-repair1{
+  width: 90%;
+  margin: 50px auto;
+  
+}
+.home-repair-container,
+.home-repair-container1{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.home-repair-col,
+.home-repair-col1{
+  width: 40%;
+  margin: auto;
+ 
+}
+.home-repair-col img,
+.home-repair-col1 img{
+  width: 100%;
+}
+.home-repair-col h1,
+.home-repair-col1 h1{
+  font-family: 'Mulish', sans-serif;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+ 
+}
+.home-repair-col p,
+.home-repair-col1 p{
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+.home-repair-col button,
+.home-repair-col1 button{
+  margin: 20px 0;
+  padding: 15px 10px;
+  background-color: #0077cc;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+.home-repair-col button:hover,
+.home-repair-col1 button:hover{
+  opacity: 0.5;
+}
+@media (max-width: 767px) {
+    .home-repair-container,
+    .home-repair-container1 {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .home-repair-col,
+    .home-repair-col1 {
+      width: 90%;
+      
+    }
+  
+    .home-repair-col:first-child {
+      order: 2;
+    }
+  
+    .home-repair-col:last-child {
+      order: 1;
+    }
+  }
+
+/* home repair section end */
