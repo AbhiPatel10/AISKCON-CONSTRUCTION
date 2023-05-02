@@ -36,7 +36,7 @@ ul {
 }
 
 .list1 {
-  width: 950px;
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -181,6 +181,7 @@ ul {
   z-index: 1;
   display: none;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .navBar2 pre{
   display: flex;
@@ -196,7 +197,7 @@ ul {
     height: 0;
   }
   to {
-    height: 268px;
+    height: 210px;
   }
 }
 .navClose{
@@ -205,10 +206,10 @@ ul {
 }
 @keyframes mobNav2 {
   from {
-    height: 268px;
+    height: 210px;
   }
   to {
-    height: 0;
+    height: 0px;
   }
 }
 
