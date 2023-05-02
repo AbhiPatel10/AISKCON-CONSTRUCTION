@@ -47,7 +47,11 @@ ul {
 
 .navBar1 i,
 .navBar2 i {
-  color: rgb(48, 61, 203);
+  /* color: rgb(48, 61, 203); */
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .list1 a {
@@ -58,8 +62,10 @@ ul {
 
 #logo {
   text-align: center;
+  margin-left: 5px;
 }
 #logo img {
+  transform: scale(1.2);
   height: 75px;
 }
 
@@ -99,7 +105,7 @@ ul {
 
 .non-empty {
   background-color: white;
-  border: 1.5px solid gray;
+  border: 1.5px solid rgba(128, 128, 128, 0.395);
   padding: 10px;
   border-radius: 5px;
 }
@@ -229,18 +235,6 @@ ul {
   color: black;
 }
 
-.navBar2 button {
-  padding: 10px;
-  font-size: large;
-  background-color: rgb(48, 61, 203);
-  outline: none;
-  border: #c1c4d2;
-  border-radius: 5px;
-  color: white;
-  padding-top: 8px;
-  padding-bottom: 10px;
-  cursor: pointer;
-}
 
 .drop3,
 .drop4 {
@@ -280,7 +274,7 @@ ul {
 
 /* Footer START */
 .footer {
-  background-color: #cccccc;
+  background-color: #1c55a416;
   padding: 70px 0;
   padding-top: 160px;
 }
@@ -700,7 +694,9 @@ ul {
 }
 .button-material {
   padding: 10px;
-  background-color: #0c6161;
+  /* background-color: #0c6161; */
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
   color: white;
   border: none;
   border-radius: 5px;
@@ -761,23 +757,27 @@ ul {
   align-items: center;
   justify-content: center;
   transition: 0.3s all ease;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .general-info-card:hover{
   transform: scale(1.05);
 }
 .general-info-icon{
   font-size: 4rem; 
-  color: #1e3050;
-  /* color: gray; */
 }
 .general-info-content{
   margin-top: 20%;
+
 }
 .general-info-content h1{
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 2.3rem;
   font-weight: 400;
   margin-bottom: 1px;
+  
 }
 @media(max-width: 1136px){
  .general-info-card{
@@ -897,7 +897,8 @@ ul {
 }
 .hireus-content button{
   border: none;
-  background-color: #1C55A4;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
   color: white;
   padding: 5px;
   margin-top: 20px;
