@@ -36,7 +36,7 @@ ul {
 }
 
 .list1 {
-  width: 60%;
+  gap: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
