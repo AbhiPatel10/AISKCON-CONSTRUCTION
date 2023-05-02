@@ -701,6 +701,8 @@ ul {
 .button-material {
   padding: 10px;
   background-color: #0c6161;
+    background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
   color: white;
   border: none;
   border-radius: 5px;
@@ -1035,5 +1037,14 @@ ul {
 /* Faq End */
 
 /* Hero start */
-
+.hero{
+  height: 500px;
+}
+.hero-overlay{
+  height: 100%;
+  /* background-color: #00000086; */
+  background-image: url("../img/logo/AISCKON LOGO.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 /* Hero End */
