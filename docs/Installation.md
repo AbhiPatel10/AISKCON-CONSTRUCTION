@@ -2,7 +2,7 @@
 # Installation Guidelines
 
 
-##  Cloning a repository
+##  Cloning a repository-
 &bull; On GitHub.com, navigate to the main page of the repository..
 -  Above the list of files, **click  Code**. 
 
