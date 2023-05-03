@@ -48,7 +48,7 @@ ul {
 .navBar1 i,
 .navBar2 i {
   /* color: rgb(48, 61, 203); */
-  background-color: #2a2a72;
+  color: #2a2a72;
   background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -71,7 +71,10 @@ ul {
 
 .list1 a:hover,
 .list2 a:hover {
-  color: blue;
+  color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #bt1:hover {
