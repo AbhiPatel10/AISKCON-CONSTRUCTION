@@ -1041,6 +1041,7 @@ ul {
   width: 90%;
   margin: auto;
   max-width: 1500px;
+  user-select: none;
 }
 .hero-container{
   height: 100%;
@@ -1063,7 +1064,6 @@ ul {
   background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  user-select: none;
 }
 .hero-content p{
   font-family: 'Poppins', sans-serif;
