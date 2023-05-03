@@ -1038,13 +1038,72 @@ ul {
 
 /* Hero start */
 .hero{
-  height: 500px;
+  width: 90%;
+  margin: auto;
+  max-width: 1500px;
 }
-.hero-overlay{
+.hero-container{
   height: 100%;
-  /* background-color: #00000086; */
-  background-image: url("../img/logo/AISCKON LOGO.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+.hero-content{
+  width: 50%;
+  padding: 30px;
+}
+.hero-content h1{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  font-size: 3.5rem;
+  font-weight: 650;
+  color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-content p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+.hero-content button{
+  margin: 30px 0;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
+  opacity: 0.9;
+  transition: 0.3s all ease;
+}
+.hero-content button:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.hero-img{
+  width: 50%;
+  text-align: center;
+}
+.hero-img img{
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
+@media(max-width: 767px){
+  .hero-content{
+    width: 100%;
+    padding: 5px;
+  }
+  .hero-content h1{
+    font-size: 2rem;
+  }
+  .hero-img{
+    width: 100%;
+  }
 }
 /* Hero End */
