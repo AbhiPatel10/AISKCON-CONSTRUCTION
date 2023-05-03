@@ -124,8 +124,6 @@
 .contents-cont{
   padding: 20px;
   border-radius: 10px;
-  border-right: 1px solid black ;
-  
   display: flex;
   color: #fff;
   margin: 20px 20px;
@@ -163,7 +161,8 @@
   font-size: 16px;
   padding: 25px;
   color: #000;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
 }
 
 
@@ -221,8 +220,7 @@
  }
  .inner-items p{
   font-size: 15px;
-  overflow-y: auto;
-  max-height: 200px;
+
  
 
  }
@@ -242,7 +240,6 @@
 .contents-right {
   padding: 20px;
   border-radius: 10px;
-  border-left: 1px solid black ;
   display: flex;
   color: #fff;
   margin: 20px 20px;
@@ -281,7 +278,8 @@
   font-size: 16px;
   padding: 25px;
   color: #000;
-  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
 }
 @media (max-width: 990px) {
   .inner-itemsleft h1{
@@ -308,7 +306,7 @@
     margin: 20px 0;
   }
 
-  /* Add this new rule to swap image and text order */
+  
   .contents-right img {
     order: 1;
   }
@@ -338,9 +336,7 @@
  }
  .inner-itemsleft p{
   font-size: 15px;
-  overflow-y: auto;
-  max-height: 200px;
- 
+  
 
  }
 
