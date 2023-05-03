@@ -30,7 +30,7 @@
     padding-bottom: 30px;
     text-align: center;
     font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
    }
    .services-box {
      display: flex;
@@ -65,7 +65,8 @@
      margin: 20px 0 10px;
      font-size: 20px;
      font-weight: bold;
-     font-family: 'Quicksand', sans-serif;
+     font-family: 'Poppins', sans-serif;
+     letter-spacing: 0.5px;
    }
   
    .servicesection-image p {
