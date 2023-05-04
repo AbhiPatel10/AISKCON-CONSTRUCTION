@@ -1115,7 +1115,7 @@ ul {
   }
 }
 /* Particle.js */
-canvas {
+/* canvas {
   display: block;
   vertical-align: bottom;
 }
@@ -1128,7 +1128,7 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-} /* ---- stats.js ---- */
+} 
 .count-particles {
   background: #000022;
   position: absolute;
@@ -1159,5 +1159,5 @@ canvas {
 }
 .count-particles {
   border-radius: 0 0 3px 3px;
-}
+} */
 /* Hero End */
