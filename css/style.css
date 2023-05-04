@@ -701,6 +701,8 @@ ul {
 .button-material {
   padding: 10px;
   background-color: #0c6161;
+    background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
   color: white;
   border: none;
   border-radius: 5px;
@@ -1035,5 +1037,128 @@ ul {
 /* Faq End */
 
 /* Hero start */
-
+.hero{
+  width: 90%;
+  margin: auto;
+  max-width: 1500px;
+  user-select: none;
+  padding: 20px 0;
+}
+.hero-container{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+.hero-content{
+  width: 50%;
+  padding: 30px;
+}
+.hero-content h1{
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  font-size: 3.5rem;
+  font-weight: 650;
+  color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-content p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+}
+.hero-content button{
+  margin: 30px 0;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
+  opacity: 0.9;
+  transition: 0.3s all ease;
+}
+.hero-content button:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.hero-img{
+  width: 50%;
+  text-align: center;
+  z-index: -1;
+}
+.hero-img img{
+  width: 100%;
+  height: auto;
+  max-width: 550px;
+}
+@media(max-width:1024px){
+  .hero-content h1{
+    font-size: 5vw
+  }
+}
+@media(max-width: 767px){
+  .hero-content{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+  }
+  .hero-content h1{
+    font-size: 8vw;
+  }
+  .hero-img{
+    width: 100%;
+  }
+}
+/* Particle.js */
+/* canvas {
+  display: block;
+  vertical-align: bottom;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+} 
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+} */
 /* Hero End */
