@@ -65,11 +65,7 @@
           </li>
           <li><a href="./aboutUs">About</a></li>
           <li><a href="./contact">Contact</a></li>
-          <li>
-            <!-- <button id="bt1">
-              <a href="./slotBooking/form.html">Book Appointment</a>
-            </button> -->
-          </li>
+          <li></li>
         </ul>
         <div id="bt2">
           <button><i class="fa-solid fa-bars"></i></button>
@@ -119,7 +115,6 @@
 
           <li><a href="./aboutUs">About</a></li>
           <li><a href="./contact">Contact</a></li>
-          <!-- <li><button id="mobBT"><a href="./slotBooking/form.html">Book Appointment</a></button></li> -->
         </ul>
       </nav>
     </div>
@@ -127,13 +122,31 @@
 
     <!-- Hero Section Start -->
 
-    <section class="hero">
+    <!-- <div id="particles-js"></div>
+    <div class="count-particles">
+      <span class="js-count-particles">--</span>
+    </div> -->
 
+    <section class="hero-main">
+      <div class="hero-main-container">
+        <div class="hero-content">
+          <h1>
+            Transforming <br />The Built<br />
+            World
+          </h1>
+          <p>
+            "Quality is never an accident. <br />It is always the result of
+            Intelligent effort." - John Ruskin
+          </p>
+          <button>Book Us</button>
+        </div>
+        <div class="hero-img">
+          <img src="./img/vectors/hero.gif" alt="" srcset="" />
+        </div>
+      </div>
     </section>
-
     <!-- Hero Section End -->
 
-   
     <!-- FEATURED WORK STARTS -->
     <div class="feature-box">
       <h1 class="heading-featurebox">Featured Work</h1>
@@ -203,30 +216,39 @@
       </div>
     </div>
     <!-- BUILD WITH QUALITY ENDS -->
-    <!-- ATTRIBUTES IN COMMON SECTION STARTS -->
-    <div class="attribute-in-common">
-      <h2 class="attribute-heading">WHAT ATTRIBUTES DO OUR TEAM HAVE IN COMMON ?</h2>
-      <div class="attribute-in-common-box">
-        <ul>
-          <li><i class="fa-regular fa-circle-dot"></i>Ongoing Learner</li>
-          <li><i class="fa-regular fa-circle-dot"></i>Team Player</li>
-          <li><i class="fa-regular fa-circle-dot"></i>Problem Solver</li>
-          <li><i class="fa-regular fa-circle-dot"></i>Continually strives for Excellence</li>
-          <li><i class="fa-regular fa-circle-dot"></i>Attentive to Details</li>
-          <li><i class="fa-regular fa-circle-dot"></i>Takes Ownership Of Work</li>
-          <li><i class="fa-regular fa-circle-dot"></i>Efficient Worker</li>
-          <li><i class="fa-regular fa-circle-dot"></i>Resilient</li>
-          <li><i class="fa-regular fa-circle-dot"></i>Reliable</li>
-          <li><i class="fa-regular fa-circle-dot"></i>Articulate</li>
-          <li><i class="fa-regular fa-circle-dot"></i>Good Memory Recall </li>
-          <li><i class="fa-regular fa-circle-dot"></i>Various Educational Backgrounds</li>
-          <li><i class="fa-regular fa-circle-dot"></i>Contruction Management, Civil Engineer, Architecture, Interior Design</li>
-        </ul>
-      </div>
-    </div>
-    
-    <!-- ATTRIBUTES IN COMMON SECTION ENDS -->
 
+    <!-- Talk with Experts Section starts  -->
+    <section class="container-expert">
+      <div class="content-1">
+        <img
+          class="image-1"
+          src="/img/vectors/customer-support.png"
+          alt="Image-Talk with expert person"
+        />
+        <div class="text-contact">
+          <h1>Contact With Our Experts</h1>
+          <p>
+            Book your appointment to talk to our experts who will assist you
+            with all your doubts regarding our services.
+          </p>
+          <div>
+            <div class="button-container">
+              <button class="button-1">
+                <i class="fa fa-phone"></i> Contact
+              </button>
+              <button
+                class="button-1"
+                id="form-open"
+                onclick="window.location.href = '/slotBooking/form.html';"
+              >
+                <i class="fa fa-calendar"></i> Book Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Talk with Experts Section ends  -->
 
     <!-- General Info Section Start -->
     <section class="general-info">
@@ -702,6 +724,8 @@
 
     <!-- Footer Section Finished -->
 
+    <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
     <script src="./js/main.js"></script>
   </body>
 </html>
