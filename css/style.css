@@ -537,38 +537,42 @@ ul {
 }
 
 .imagegallery {
-  width: calc(100%/3);
-  height: 250px;
+  width: 30%;
+  height: 220px;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
   justify-content: center;
   position: relative;
+  margin: 1% 1%;
 }
 
 .imagegallery img {
   border-radius: 10px;
-  width: 90%;
+  width: 100%;
   margin: auto;
-  height: 220px;
+  height: inherit;
   object-fit: cover;
   transition: filter 0.5s ease-out;
 }
 
 .image-text1 {
   position: absolute;
-  bottom: 15px;
-  left: 20px;
+  bottom: 0;
+  left: 0;
   transform-origin: top right;
   transform: scale(0);
   opacity: 0;
   transition: all 0.3s ease;
   text-align: center;
   color: white;
-  font-size: 10px;
+  font-size: 9px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.8);
   border-bottom-left-radius: 7px;
+}
+.image-text1 p{
+  font-family: 'Poppins', sans-serif;
 }
 
 .imagegallery:hover img {
@@ -595,12 +599,6 @@ ul {
     width: calc(50% - 20px);
   }
 
-  .image-text1 {
-    bottom: 10px;
-    left: 17px;
-    transform-origin: top left;
-  }
-
   .imagegallery:hover img {
     filter: brightness(100%);
   }
@@ -625,12 +623,6 @@ ul {
     width: 100%;
   }
 
-  .image-text1 {
-    bottom: 10px;
-    left: 30px;
-    transform-origin: top left;
-  }
-
   .imagegallery:hover img {
     filter: brightness(100%);
   }
@@ -652,7 +644,6 @@ ul {
 @media screen and (max-width: 767px){
   .imagegallery{
     width: 100%;
-   
   }
 }
 /* FEATURED WORK ENDS */
@@ -930,72 +921,6 @@ ul {
 }
 /* Hire us End */
 
-/* ATTRIBUTES IN COMMON STARTS  */
-.attribute-in-common {
-  max-height: 1200px;
-	margin: 0 auto;
-	padding: 30px 30px;
-	background-color: #f2f2f2;
-}
-
-.attribute-heading {
-	font-family: 'Montserrat', sans-serif;
-	text-align: center;
-	margin-bottom: 25px;
-}
-
-.attribute-in-common-box {
-  max-height: 1000px;
-	margin: 0 auto;
-	padding: 40px;
-	background-color: #fff;
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-	border-radius: 7px;
-	text-align: left;
-	column-count: 3;
-	column-gap: 20px;
-}
-
-.attribute-in-common-box ul li {
-  padding: 5px;
-	display: flex;
-	align-items: center;
-  font-weight: 600;
-	font-family: 'Quicksand', sans-serif;
-	margin-top: 0;
-}
-
-.attribute-in-common-box .fa-regular {
-	font-size: 13px;
-	margin-right: 10px;
-}
-
-@media only screen and (max-width: 767px) {
-	.attribute-in-common {
-		padding: 30px 10px;
-	}
-	
-	.attribute-in-common-box {
-		padding: 30px;
-		column-count: 2;
-	}
-}
-@media only screen and (max-width: 400px) {
-	.attribute-in-common {
-    max-height: 900px;
-		font-size: 14px;
-		padding: 30px 10px;
-	}
-	.attribute-in-common-box {
-    max-height: auto;
-		padding: 30px;
-		column-count: 1;
-	}
-}
-/* ATTRIBUTES IN COMMON ENDS */
-
-
-
 /* Faq Start */
 .faq{
   width: 80%;
@@ -1162,3 +1087,115 @@ ul {
   border-radius: 0 0 3px 3px;
 } */
 /* Hero End */
+
+/* TALK WITH EXPERT PAGE STARTS  */
+.container-expert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 4%;
+}
+.content-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  background-color: white;
+  padding: 20px;
+}
+.image-1 {
+  flex: 1;
+  margin-right: 20px;
+  height: 450px;
+  width: 100%;
+  max-width: 400px;
+}
+.text-contact{
+  width: 70%;
+}
+.text-contact h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 2.1em;
+  line-height: 1.5;
+}
+.text-contact p {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.button-2 {
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+.button-1 {
+  padding: 10px;
+  background-color: #0c6161;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+}
+.button-2:hover {
+  background-color: #cedde9;
+}
+.button-1:hover {
+  background-color: #cedde9;
+}
+.button-2 i {
+  margin-right: 5px;
+}
+.button-1 i {
+  margin-right: 5px;
+}
+@media screen and (max-width: 805px) {
+  .content-1 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .image-1 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .button-2 {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+  .button-1 {
+    margin-bottom: 10px;
+    width: 35%;
+  }
+}
+/* TALK WITH EXPERT ENDS  */
