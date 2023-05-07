@@ -166,6 +166,7 @@ if(document.querySelector('.footer-copyright')){
 }
 
 const submitForm = (userJSON)=>{
+    console.log(userJSON)
     fetch(apiEndpoint+"/email", {
         method: 'POST',
         headers: {
@@ -175,9 +176,9 @@ const submitForm = (userJSON)=>{
     })
     .then(response => response.json())
     .then(data => {
-        console.log('API response:', data);
+        console.log(data);
     })
     .catch(error => {
-        console.error('API error:', error);
+        console.error(error);
     });
 };

@@ -1,7 +1,27 @@
 const nodemailer = require("nodemailer");
+const Joi = require("joi");
 
 exports.sendMail = async(req, res) => {
+  const schema = Joi.object({
+    name: Joi.string().required(),
+    email: Joi.string().email().required(),
+    phone: Joi.string().required(),
+    date: Joi.string().required(),
+    time: Joi.string().required(),
+    mode: Joi.string().required(),
+    address: Joi.string().required(),
+    pinCode: Joi.string().required(),
+    message: Joi.string().required(),
+  });
+
   try {
+    const {error} = schema.validate(req.body);
+    if (error) {
+      return res.status(400).json({
+        message: "Validation error",
+        error: error,
+      });
+    }
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -22,7 +42,7 @@ exports.sendMail = async(req, res) => {
       <p>Time: ${req.body.time}</p>
       <p>Mode: ${req.body.mode}</p>
       <p>Address: ${req.body.address}</p>
-      <p>Pin Code: ${req.body['pin-code']}</p>
+      <p>Pin Code: ${req.body.pinCode}</p>
       <p>Message: ${req.body.message}</p>
     `
     });
