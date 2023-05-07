@@ -5,14 +5,15 @@ exports.sendMail = async(req, res) => {
   const schema = Joi.object({
     name: Joi.string().required(),
     email: Joi.string().email().required(),
-    phone: Joi.string().required(),
+    phone: Joi.number().required(),
     date: Joi.string().required(),
     time: Joi.string().required(),
     mode: Joi.string().required(),
     address: Joi.string().required(),
-    pinCode: Joi.string().required(),
+    pinCode: Joi.number().required(),
     message: Joi.string().required(),
   });
+  
 
   try {
     const {error} = schema.validate(req.body);
