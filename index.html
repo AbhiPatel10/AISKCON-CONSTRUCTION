@@ -16,6 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -126,15 +128,14 @@
     <!-- Navbar Section Finished -->
 
     <!-- Hero Section Start -->
-
-    <!-- <div id="particles-js"></div>
+    <div id="particles-js"></div>
     <div class="count-particles">
       <span class="js-count-particles">--</span>
-    </div> -->
+    </div>
 
     <section class="hero">
       <div class="hero-container">
-        <div class="hero-content">
+        <div class="hero-content"  data-aos="fade-up" data-aos-duration="2000">
           <h1>
             Transforming <br />The Built<br />
             World
@@ -153,10 +154,10 @@
     <!-- Hero Section End -->
 
     <!-- FEATURED WORK STARTS -->
-    <div class="feature-box">
-      <h1 class="heading-featurebox">Featured Work</h1>
-      <div class="work-gallery">
-        <div class="imagegallery">
+    <div class="feature-box" >
+      <h1 class="heading-featurebox" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">Featured Work</h1>
+      <div class="work-gallery" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="imagegallery" >
           <img src="/img/bg/hotel.jpg" />
           <div class="image-text1">
             <p>Hotel Construction</p>
@@ -197,13 +198,14 @@
     <!-- FEATURED WORK ENDS -->
     <!-- BUILD WITH QYALITY SECTION -->
     <div class="container-buildquality">
-      <div class="content-quality">
+      <div class="content-quality" >
         <img
           class="image-quality"
           src="./img/vectors/build-with-quality.jpg"
           alt="Image- build-with-quality"
+          data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000"
         />
-        <div class="text-qualitymaterial">
+        <div class="text-qualitymaterial" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000">
           <h1>Build With Quality Materials</h1>
           <p>
             Every project we work on we always use selected materials to give
@@ -224,13 +226,14 @@
 
     <!-- Talk with Experts Section starts  -->
     <section class="container-expert">
-      <div class="content-1">
+      <div class="content-1" >
         <img
+          data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000"
           class="image-1"
           src="/img/vectors/customer-support.png"
           alt="Image-Talk with expert person"
         />
-        <div class="text-contact">
+        <div class="text-contact" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
           <h1>Contact With Our Experts</h1>
           <p>
             Book your appointment to talk to our experts who will assist you
@@ -258,7 +261,7 @@
     <!-- General Info Section Start -->
     <section class="general-info">
       <div class="general-info-row">
-        <div class="general-info-card">
+        <div class="general-info-card" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">
           <div>
             <div class="general-info-icon">
               <i class="fa-regular fa-clock"></i>
@@ -269,7 +272,7 @@
             </div>
           </div>
         </div>
-        <div class="general-info-card">
+        <div class="general-info-card" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
           <div>
             <div class="general-info-icon">
               <i class="fa-regular fa-file-lines"></i>
@@ -280,7 +283,7 @@
             </div>
           </div>
         </div>
-        <div class="general-info-card">
+        <div class="general-info-card" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500">
           <div>
             <div class="general-info-icon">
               <i class="fa-regular fa-comment"></i>
@@ -291,7 +294,7 @@
             </div>
           </div>
         </div>
-        <div class="general-info-card">
+        <div class="general-info-card" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2000">
           <div>
             <div class="general-info-icon">
               <i class="fa-solid fa-award"></i>
@@ -311,13 +314,13 @@
       <div class="whychooseus-overlay">
         <div class="whychooseus-container">
           <div class="whychooseus-row">
-            <div class="whychooseus-coloumn">
+            <div class="whychooseus-coloumn" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
               <h2>Why Choose us?</h2>
               <hr />
               <br />
             </div>
           </div>
-          <div class="whychooseus-row">
+          <div class="whychooseus-row" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
             <div class="whychooseus-block">
               <i class="fa-solid fa-check"></i>
               <div class="whychooseus-coloumn">
@@ -353,7 +356,7 @@
             </div>
           </div>
 
-          <div class="whychooseus-row">
+          <div class="whychooseus-row" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2000">
             <div class="whychooseus-block">
               <i class="fa-solid fa-check"></i>
               <div class="whychooseus-coloumn">
@@ -397,8 +400,8 @@
     <!-- Testimonials Start -->
     <section class="testimonials">
       <div style="display: flex; justify-content: center; align-items: center">
-        <div class="testinomial-header">
-          <h1>Our Clients Say!</h1>
+        <div class="testinomial-header" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+          <h1 >Our Clients Say!</h1>
           <p>
             Our customer satisfaction is our top priority. To do this, we pay
             attention to your concerns, difficulties, and ambitions and
@@ -410,7 +413,7 @@
       </div>
 
       <div class="testinomial-container">
-        <div class="testinomial-card" id="testinomial-card-1">
+        <div class="testinomial-card" id="testinomial-card-1" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
           <div class="testinomial-card-head">
             <img src="/img/vectors/user.jpg" alt="img" />
             <div style="line-height: 1.4; font-size: 0.9rem">
@@ -427,7 +430,7 @@
             out of the park.
           </p>
         </div>
-        <div class="testinomial-card" id="testinomial-card-2">
+        <div class="testinomial-card" id="testinomial-card-2" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000">
           <div class="testinomial-card-head">
             <img src="/img/vectors/user.jpg" alt="img" />
             <div style="line-height: 1.4; font-size: 0.9rem">
@@ -442,7 +445,7 @@
             your ambassadors.
           </p>
         </div>
-        <div class="testinomial-card">
+        <div class="testinomial-card" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="1000">
           <div class="testinomial-card-head">
             <img src="/img/vectors/user.jpg" alt="img" />
             <div style="line-height: 1.4; font-size: 0.9rem">
@@ -454,7 +457,7 @@
             As somebody who has pretty much tried all new age banks/fintechs,
           </p>
         </div>
-        <div class="testinomial-card">
+        <div class="testinomial-card" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
           <div class="testinomial-card-head">
             <img src="/img/vectors/user.jpg" alt="img" />
             <div style="line-height: 1.4; font-size: 0.9rem">
@@ -466,7 +469,7 @@
             As somebody who has pretty much tried all new age banks/fintechs,
           </p>
         </div>
-        <div class="testinomial-card" id="testinomial-card-5">
+        <div class="testinomial-card" id="testinomial-card-5" data-aos="fade-up-left" ata-aos-easing="ease" data-aos-duration="1000">
           <div class="testinomial-card-head">
             <img src="/img/vectors/user.jpg" alt="img" />
             <div style="line-height: 1.4; font-size: 0.9rem">
@@ -487,11 +490,11 @@
 
     <!-- FAQ starts -->
     <section class="faq">
-      <div class="faq-heading">
+      <div class="faq-heading" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
         <h1>FAQs</h1>
       </div>
-      <div class="faq-content">
-        <div class="faq-block">
+      <div class="faq-content" >
+        <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="5000">
           <div class="faq-question">
             <h2>1. Why do I need an interior designer?</h2>
             <i class="fa-solid fa-plus fa-xl"></i>
@@ -510,7 +513,7 @@
             </p>
           </div>
         </div>
-        <div class="faq-block">
+        <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
           <div class="faq-question">
             <h2>2. Why is Aiskcon perfect for your design?</h2>
             <i class="fa-solid fa-plus fa-xl"></i>
@@ -528,7 +531,7 @@
             </p>
           </div>
         </div>
-        <div class="faq-block">
+        <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500">
           <div class="faq-question">
             <h2>3. What services are included under home interior design?</h2>
             <i class="fa-solid fa-plus fa-xl"></i>
@@ -547,7 +550,7 @@
             </p>
           </div>
         </div>
-        <div class="faq-block">
+        <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2000">
           <div class="faq-question">
             <h2>4. What will be the timelines for my project completion?</h2>
             <i class="fa-solid fa-plus fa-xl"></i>
@@ -566,7 +569,7 @@
             </p>
           </div>
         </div>
-        <div class="faq-block">
+        <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2500">
           <div class="faq-question">
             <h2>6. What are the trending interior design styles?</h2>
             <i class="fa-solid fa-plus fa-xl"></i>
@@ -591,7 +594,7 @@
 
     <!-- Hire Us Section Start -->
     <section class="hireus">
-      <div class="hireus-box">
+      <div class="hireus-box" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
         <div class="hireus-content">
           <h1>Transform your living space into a work of Art!</h1>
           <button>Hire us</button>
@@ -728,9 +731,12 @@
     </footer>
 
     <!-- Footer Section Finished -->
-
-    <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/main.js"></script>
   </body>
 </html>
