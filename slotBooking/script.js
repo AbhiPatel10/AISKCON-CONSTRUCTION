@@ -1,3 +1,5 @@
+const apiEndpoint = 'http://localhost:3000';
+
 // Navbar start
 document.querySelector('#services').addEventListener('mouseover', ()=>{
     document.querySelector('#services i').setAttribute('class', 'fas fa-chevron-circle-up');
@@ -83,7 +85,7 @@ items.forEach((element)=>{
 // Slot Booking start
 
 // eslint-disable-next-line
-const validateForm=()=>{
+const validateForm=(e)=>{
     let validate=(index)=>{
         let parent = arr[index].parentElement;
         arr[index].style.border = '1.5px solid red';
@@ -137,8 +139,12 @@ const validateForm=()=>{
     else
         document.getElementById('slotForm').elements[7].nextElementSibling.style.display = 'none';
 
-    if(notSubmit == 1)
-        return false;
+    if(notSubmit == 0){
+        const formData = new FormData(document.getElementById("slotForm"));
+        const formDataJson = JSON.stringify(Object.fromEntries(formData));
+        submitForm(formDataJson);
+    } 
+    else return false
 };
 
 let inBoxes = document.querySelectorAll('.form-input input, .form-input select, .form-input textarea');
@@ -158,3 +164,20 @@ if(document.querySelector('.footer-copyright')){
     year = year.getFullYear();
     document.querySelector('.footer-copyright').innerHTML = 'Copyright &#169; ' + year + ' <a href="/">Aiskcon</a>, All Right Reserved';
 }
+
+const submitForm = (userJSON)=>{
+    fetch(apiEndpoint+"/email", {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: userJSON
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('API response:', data);
+    })
+    .catch(error => {
+        console.error('API error:', error);
+    });
+};
