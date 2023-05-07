@@ -11,6 +11,12 @@ app.use(express.json());
 
 app.use("/email",sendMail);
 
+app.use("/",(req,res)=>{
+  res.status(200).json({
+    message: "Surver Running"
+  })
+})
+
 app.listen(3000,()=>{
   console.log("server started!")
 })
