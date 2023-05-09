@@ -250,7 +250,7 @@ p {
   padding: 60px 0;
   width: 100%;
   margin: 0 auto 0 auto;
-  background-color: #1c55a416;
+  /* background-color: #1c55a416; */
 }
 .general-info-row {
   display: flex;
