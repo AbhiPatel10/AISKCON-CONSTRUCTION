@@ -21,25 +21,25 @@ p {
   height: 450px;
 }
 #slide-1{
-  background: url('/img/bg/slide1.jpg');
+  background: url('../img/bg/slide1.jpg');
   background-size: cover;
 }
 #slide-2{
-  background: url('/img/bg/slide2.jpg');
+  background: url('../img/bg/slide2.jpg');
   background-size: cover;
 }
 #slide-3{
-  background: url('/img/bg/slide3.jpg');
+  background: url('../img/bg/slide3.jpg');
   background-size: cover;
   background-position: 0px -200px;
 }
 #slide-4{
-  background: url('/img/bg/slide4.jpg');
+  background: url('../img/bg/slide4.jpg');
   background-size: cover;
   background-position: 0px -100px;
 }
 #slide-5{
-  background: url('/img/bg/slide5.jpg');
+  background: url('../img/bg/slide5.jpg');
   background-position: 0px -250px;
   background-size: cover;
 }
