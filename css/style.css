@@ -47,7 +47,11 @@ ul {
 
 .navBar1 i,
 .navBar2 i {
-  color: rgb(48, 61, 203);
+  /* color: rgb(48, 61, 203); */
+  color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .list1 a {
@@ -58,14 +62,19 @@ ul {
 
 #logo {
   text-align: center;
+  margin-left: 5px;
 }
 #logo img {
+  transform: scale(1.2);
   height: 75px;
 }
 
 .list1 a:hover,
 .list2 a:hover {
-  color: blue;
+  color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #bt1:hover {
@@ -99,7 +108,7 @@ ul {
 
 .non-empty {
   background-color: white;
-  border: 1.5px solid gray;
+  border: 1.5px solid rgba(128, 128, 128, 0.395);
   padding: 10px;
   border-radius: 5px;
 }
@@ -229,18 +238,6 @@ ul {
   color: black;
 }
 
-.navBar2 button {
-  padding: 10px;
-  font-size: large;
-  background-color: rgb(48, 61, 203);
-  outline: none;
-  border: #c1c4d2;
-  border-radius: 5px;
-  color: white;
-  padding-top: 8px;
-  padding-bottom: 10px;
-  cursor: pointer;
-}
 
 .drop3,
 .drop4 {
@@ -280,7 +277,7 @@ ul {
 
 /* Footer START */
 .footer {
-  background-color: #cccccc;
+  background-color: #1c55a416;
   padding: 70px 0;
   padding-top: 160px;
 }
@@ -691,9 +688,9 @@ ul {
 }
 .button-material {
   padding: 10px;
-  background-color: #0c6161;
-    background-color: #2a2a72;
+  background-color: #2a2a72;
   background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
+  opacity: 0.9;
   color: white;
   border: none;
   border-radius: 5px;
@@ -708,7 +705,7 @@ ul {
   height: 50px;
 }
 .button-material:hover {
-  background-color: #cedde9;
+  opacity: 1;
 }
 
 @media screen and (max-width: 767px) {
@@ -754,23 +751,27 @@ ul {
   align-items: center;
   justify-content: center;
   transition: 0.3s all ease;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .general-info-card:hover{
   transform: scale(1.05);
 }
 .general-info-icon{
   font-size: 4rem; 
-  color: #1e3050;
-  /* color: gray; */
 }
 .general-info-content{
   margin-top: 20%;
+
 }
 .general-info-content h1{
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 2.3rem;
   font-weight: 400;
   margin-bottom: 1px;
+  
 }
 @media(max-width: 1136px){
  .general-info-card{
@@ -890,7 +891,9 @@ ul {
 }
 .hireus-content button{
   border: none;
-  background-color: #1C55A4;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
+  opacity: 0.9;
   color: white;
   padding: 5px;
   margin-top: 20px;
@@ -903,7 +906,7 @@ ul {
   transition: 0.3s all ease;
 }
 .hireus-content button:hover{
-  opacity: 0.7;
+  opacity: 1;
 }
 .hireus-content h1{
   color: rgba(0, 0, 0, 0.719);
@@ -962,14 +965,14 @@ ul {
 /* Faq End */
 
 /* Hero start */
-.hero{
+.hero-main{
   width: 90%;
   margin: auto;
   max-width: 1500px;
   user-select: none;
   padding: 20px 0;
 }
-.hero-container{
+.hero-main-container{
   height: 100%;
   width: 100%;
   margin: auto;
@@ -1135,27 +1138,13 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.button-2 {
-  padding: 10px;
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-right: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-  height: 50px;
-}
 .button-1 {
   padding: 10px;
-  background-color: #0c6161;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
   color: white;
   border: none;
+  opacity: 0.9;
   border-radius: 5px;
   font-size: 16px;
   margin-right: 10px;
@@ -1165,16 +1154,11 @@ ul {
   align-items: center;
   justify-content: center;
   width: 150px;
+  /* margin: auto; */
   height: 50px;
 }
-.button-2:hover {
-  background-color: #cedde9;
-}
 .button-1:hover {
-  background-color: #cedde9;
-}
-.button-2 i {
-  margin-right: 5px;
+  opacity: 1;
 }
 .button-1 i {
   margin-right: 5px;
@@ -1188,14 +1172,10 @@ ul {
     margin-right: 0;
     margin-bottom: 20px;
   }
-  .button-2 {
-    margin-right: 0;
+  .button-container {
     margin-bottom: 10px;
-    width: 50%;
-  }
-  .button-1 {
-    margin-bottom: 10px;
-    width: 35%;
+    width: 100%;
+    /* margin: auto; */
   }
 }
 /* TALK WITH EXPERT ENDS  */
