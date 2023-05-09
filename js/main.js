@@ -123,7 +123,7 @@ if(document.querySelector('.footer-copyright')){
 // Particle Js
 particlesJS("particles-js", {
   particles: {
-    number: { value: 80, density: { enable: true, value_area: 800 } },
+    number: { value: 60, density: { enable: true, value_area: 900 } },
     color: { value: "#0f12c0" },
     shape: {
       type: "circle",
@@ -137,9 +137,9 @@ particlesJS("particles-js", {
       anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
     },
     size: {
-      value: 3,
-      random: true,
-      anim: { enable: true, speed: 5, size_min: 0.1, sync: false }
+      value: 2,
+      random: false,
+      anim: { enable: false, speed: 5, size_min: 0.1, sync: false }
     },
     line_linked: {
       enable: false,
@@ -147,7 +147,7 @@ particlesJS("particles-js", {
     move: {
       enable: true,
       speed: 6,
-      direction: "none",
+      direction: "bottom",
       random: false,
       straight: false,
       out_mode: "out",

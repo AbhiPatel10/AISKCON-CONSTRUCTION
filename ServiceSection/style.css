@@ -25,91 +25,144 @@
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-.services-heading{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif;
-   }
-   .services-box {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-between;
-     max-width: 90%;
-     margin: 0 auto;
-     padding: 15px;
-     box-sizing: border-box;
-   }
-  
-   .servicesection-image {
-     width: calc(31%);
-     margin: 20px 0px;
-     box-sizing: border-box;
-     position: relative;
-   }
-  
-   .servicesection-image img {
-     border-radius: 10px;
-     width: 100%;
-     height: 200px;
-     object-fit: cover;
-     transition: all 0.3s ease;
-   }
-  
-   .servicesection-image:hover img {
-     transform: scale(1.1);
-     opacity: 1;
-   }
-   .servicesection-image h3 {
-     margin: 20px 0 10px;
-     font-size: 20px;
-     font-weight: bold;
-     font-family: 'Poppins', sans-serif;
-     letter-spacing: 0.5px;
-   }
-  
-   .servicesection-image p {
-     margin: 0 0 20px;
-     font-size: 16px;
-     line-height: 1.4;
-     font-family: 'Chivo', sans-serif;
-   }
-  
-   .read-more {
-     display: inline-block;
-     padding: 8px 15px;
-     border: 1px solid #000;
-     border-radius: 20px;
-     text-decoration: none;
-     font-size: 16px;
-     color: #000;
-     transition: all 0.3s ease;
-   }
-  
-   .read-more:hover {
-     background-color: #000;
-     color: #fff;
-   }
-  
-   @media (max-width: 1200px) {
-     .servicesection-image {
-       width: calc(50% - 20px);
-     }
-     .services-heading{
-       font-size: 35px;
-     }
-   }
-  
-   @media (max-width: 768px) {
-     .servicesection-image {
-       width: 100%;
-     }
-     .services-heading{
-       font-size: 30px;
-     }
-   }
-  
+
+
+/* FEATURED WORK STARTS  */
+.feature-box {
+  max-width: auto;
+  color: #07021a;
+  width: 95%;
+  margin: auto;
+  margin: 4% auto;
+}
+
+.heading-featurebox {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  color: #07021a;
+  font-weight: 600;
+  text-align: center;
+}
+
+.work-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.imagegallery {
+  width: 30%;
+  height: 220px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 1% 1%;
+}
+
+.imagegallery img {
+  border-radius: 10px;
+  width: 100%;
+  margin: auto;
+  height: inherit;
+  object-fit: cover;
+  transition: filter 0.5s ease-out;
+}
+
+.image-text1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform-origin: top right;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.3s ease;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom-left-radius: 7px;
+}
+.image-text1 p{
+  font-family: 'Poppins', sans-serif;
+}
+
+.imagegallery:hover img {
+  filter: brightness(50%);
+}
+
+.imagegallery:hover {
+  transform: scale(1.05);
+  z-index: 0;
+}
+
+.imagegallery:hover ~ .imagegallery img {
+  filter: brightness(70%);
+}
+
+.imagegallery:hover .image-text1 {
+  opacity: 1;
+  transform: scale(1);
+  transform-origin: top right;
+}
+
+@media screen and (max-width: 991px) {
+  .imagegallery {
+    width: calc(50% - 20px);
+  }
+
+  .imagegallery:hover img {
+    filter: brightness(100%);
+  }
+
+  .imagegallery:hover {
+    transform: scale(1.05);
+  }
+
+  .imagegallery:hover ~ .imagegallery img {
+    filter: brightness(70%);
+  }
+
+  .imagegallery:hover .image-text1 {
+    opacity: 1;
+    transform: scale(1);
+    /* transform-origin: top left; */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .imagegallery {
+    width: 100%;
+  }
+
+  .imagegallery:hover img {
+    filter: brightness(100%);
+  }
+
+  .imagegallery:hover {
+    transform: scale(1.05);
+  }
+
+  .imagegallery:hover ~ .imagegallery img {
+    filter: brightness(80%);
+  }
+
+  .imagegallery:hover .image-text1 {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: top left;
+  }
+}
+@media screen and (max-width: 767px){
+  .imagegallery{
+    width: 100%;
+  }
+}
+/* FEATURED WORK ENDS */
 /* starts here */
 .cont{
   width: 100%;
