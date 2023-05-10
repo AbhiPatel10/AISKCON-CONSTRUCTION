@@ -58,15 +58,23 @@ p {
 
 /* How it started Start */
 .how-it-started {
-  width: 70%;
+  width: 55%;
   margin: 3% auto;
   text-align: center;
   padding: 20px;
 }
+@media(max-width: 767px){
+  .how-it-started{
+    width: 80%;
+  }
+  .how-it-started h1{
+    font-size: 2.21rem;
+  }
+}
 /* How it Started End */
 
 /* Founders Started */
-.founders {
+/* .founders {
   margin: 4% 0;   
   background-color: #1c55a416;
   padding: 4%;
@@ -117,7 +125,7 @@ p {
   .founders-card {
     width: 90%;
   }
-}
+} */
 /* Founders End */
 
 /* team started */
