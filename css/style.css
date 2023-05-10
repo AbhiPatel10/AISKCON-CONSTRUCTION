@@ -653,7 +653,7 @@ canvas {
 /* General Info Start */
 .general-info {
   width: 90%;
-  margin: 4% auto 4% auto;
+  margin: 7% auto 3% auto;
 }
 .general-info-row {
   display: flex;
@@ -710,8 +710,6 @@ canvas {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 0px;
-  margin-bottom: 4%;
 }
 .content-1 {
   display: flex;
@@ -797,7 +795,7 @@ canvas {
 .testimonials {
   width: 90%;
   margin: auto;
-  margin-top: 4%;
+
   margin-bottom: 5%;
 }
 .testinomial-header {
@@ -869,9 +867,15 @@ canvas {
   #testinomial-card-5 {
     grid-column: span 3 / span 4;
   }
+  .testinomial-header{
+    width: 90%;
+  }
 }
 
 @media (max-width: 767px) {
+  .testimonials{
+    margin-top: 8%;
+  }
   .testinomial-container {
     display: block;
   }
