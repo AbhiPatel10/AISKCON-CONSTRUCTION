@@ -1,6 +1,6 @@
 /* Hero Section Start */
 .hero {
-  background: url('/img/bg/contact_us.jpg');
+  background: url('../img/bg/contact_us.jpg');
   height: 250px;
   background-size: cover;
   background-attachment: fixed;
