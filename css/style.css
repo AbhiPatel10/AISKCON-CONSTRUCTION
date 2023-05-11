@@ -779,7 +779,6 @@ canvas {
 .testimonials {
   width: 90%;
   margin: auto;
-
   margin-bottom: 5%;
 }
 .testinomial-header {
@@ -862,6 +861,9 @@ canvas {
   }
   .testinomial-container {
     display: block;
+  }
+  .testinomial-card{
+    margin-top: 10px;
   }
 }
 /* Testinomial End */
