@@ -21,25 +21,25 @@ p {
   height: 450px;
 }
 #slide-1{
-  background: url('/img/bg/slide1.jpg');
+  background: url('../img/bg/slide1.jpg');
   background-size: cover;
 }
 #slide-2{
-  background: url('/img/bg/slide2.jpg');
+  background: url('../img/bg/slide2.jpg');
   background-size: cover;
 }
 #slide-3{
-  background: url('/img/bg/slide3.jpg');
+  background: url('../img/bg/slide3.jpg');
   background-size: cover;
   background-position: 0px -200px;
 }
 #slide-4{
-  background: url('/img/bg/slide4.jpg');
+  background: url('../img/bg/slide4.jpg');
   background-size: cover;
   background-position: 0px -100px;
 }
 #slide-5{
-  background: url('/img/bg/slide5.jpg');
+  background: url('../img/bg/slide5.jpg');
   background-position: 0px -250px;
   background-size: cover;
 }
@@ -58,15 +58,23 @@ p {
 
 /* How it started Start */
 .how-it-started {
-  width: 70%;
+  width: 55%;
   margin: 3% auto;
   text-align: center;
   padding: 20px;
 }
+@media(max-width: 767px){
+  .how-it-started{
+    width: 80%;
+  }
+  .how-it-started h1{
+    font-size: 2.21rem;
+  }
+}
 /* How it Started End */
 
 /* Founders Started */
-.founders {
+/* .founders {
   margin: 4% 0;   
   background-color: #1c55a416;
   padding: 4%;
@@ -117,7 +125,7 @@ p {
   .founders-card {
     width: 90%;
   }
-}
+} */
 /* Founders End */
 
 /* team started */
@@ -137,9 +145,11 @@ p {
   margin: auto;
 }
 .team-content img {
-  width: 550px;
-  width: 85%;
-  height: 83%;
+  width: 100%;
+  height: 100%;
+  min-width: 350px;
+  object-fit: contain;
+  display: block;
 }
 
 @media (max-width: 767px) {
@@ -147,6 +157,11 @@ p {
     width: 100%;
     margin-bottom: 2%;
     text-align: center;
+  }
+  .team-content img {
+    min-width: 0;
+    max-width: 500px;
+    margin: auto;
   }
 }
 /* team end */
@@ -158,7 +173,7 @@ p {
 }
 .vision-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   max-width: 1500px;
   margin: auto;
   justify-content: center;
@@ -171,6 +186,7 @@ p {
 .vision-content img {
   width: 100%;
   height: auto;
+  min-width: 400px;
 }
 
 @media (max-width: 767px) {
@@ -178,6 +194,9 @@ p {
     width: 100%;
     margin-bottom: 2%;
     text-align: center;
+  }
+  .vision-content img{
+    min-width: 0;
   }
 }
 /* Vision End */

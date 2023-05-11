@@ -3,8 +3,8 @@
 
 /* hero section start */
 .hero{
-  background: url('/img/bg/repair2.jpg');
-  height: 300px;
+  background: url('../img/bg/repair2.jpg');
+  height: 400px;
   background-size: cover;
 }
 .hero-overlay{
@@ -19,8 +19,9 @@
   align-items: center;
   color: white;
   font-size: 2.5rem;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   font-weight: 500;
+  font-family: 'Mulish', sans-serif;
 }
 /* hero section end */
 
@@ -28,7 +29,7 @@
 .home-repair, 
 .home-repair1{
   width: 90%;
-  margin: 50px auto;
+  margin: 5% auto;
   
 }
 .home-repair-container,

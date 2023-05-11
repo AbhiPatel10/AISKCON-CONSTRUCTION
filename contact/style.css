@@ -1,7 +1,7 @@
 /* Hero Section Start */
 .hero {
-  background: url('/img/bg/contact_us.jpg');
-  height: 200px;
+  background: url('../img/bg/contact_us.jpg');
+  height: 250px;
   background-size: cover;
   background-attachment: fixed;
   background-position: 80% 0px;
@@ -51,8 +51,8 @@
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.326);
   background: linear-gradient(109.6deg, rgb(25, 23, 23) 11.2%, rgb(11, 132, 145) 91.1%);
   /* background-color: #204FA1; */
-  background-color: #2a2a72ce;
-  background-image: linear-gradient(315deg, #2a2a72b0 0%, #243ee9c1 76%);
+  background-color: #000000ce;
+  background-image: linear-gradient(315deg, #2a2a72b0 0%, #021ab7c1 76%);
   padding: 26px;
   border-radius: 12px;
   text-align: center;

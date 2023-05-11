@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -26,7 +27,7 @@
           <img src="./img/logo/navLogo.png" alt="AISKCON-Construction" />
         </div>
         <ul class="list1">
-          <li id="home"><a href="/">Home</a></li>
+          <li id="home"><a href="./">Home</a></li>
           <li id="services">
             <div>
               <pre><a href="./ServiceSection">Services</a> <i class="fas fa-chevron-circle-down"></i></pre>
@@ -35,12 +36,34 @@
               <div class="empty"></div>
               <div class="non-empty">
                 <ul>
-                  <li><a href="#">Interior Designing</a></li>
-                  <li><a href="#">Construction Management</a></li>
-                  <li><a href="#">Consultancy Services</a></li>
-                  <li><a href="#">Environmental Services</a></li>
-                  <li><a href="#">Retrofication</a></li>
-                  <li><a href="#">Destructive & NDT Testing</a></li>
+                  <li>
+                    <a href="./ServiceSection#interior-designing"
+                      >Interior Designing</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./ServiceSection#construction-management"
+                      >Construction Management</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./ServiceSection#consultancy-services"
+                      >Consultancy Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./ServiceSection#environmental-services"
+                      >Environmental Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./ServiceSection#retrofication">Retrofication</a>
+                  </li>
+                  <li>
+                    <a href="./ServiceSection#destructive"
+                      >Destructive & NDT Testing</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -53,12 +76,15 @@
               <div class="empty"></div>
               <div class="non-empty">
                 <ul>
-                  <li><a href="#">Home Repairs</a></li>
-                  <li><a href="#">Kitchen Repairs</a></li>
-                  <li><a href="#">Bathroom Repair</a></li>
-                  <li><a href="#">Furniture Repair</a></li>
-                  <li><a href="#">Plumbing & Pipes</a></li>
-                  <li><a href="#">Appliance Repairs</a></li>
+                  <li><a href="./repair#home-repair">Home Repairs</a></li>
+                  <li><a href="./repair#kitchen-repair">Kitchen Repairs</a></li>
+                  <li>
+                    <a href="./repair#bathroom-repair">Bathroom Repair</a>
+                  </li>
+                  <li>
+                    <a href="./repair#furniture-repair">Furniture Repair</a>
+                  </li>
+                  <li><a href="./repair#plumbing">Plumbing & Pipes</a></li>
                 </ul>
               </div>
             </div>
@@ -75,7 +101,7 @@
     <div id="mobNavParent">
       <nav class="navBar2 navOpen">
         <ul class="list2">
-          <li><a href="/">Home</a></li>
+          <li><a href="./">Home</a></li>
           <li>
             <div id="services2">
               <pre><a href="./ServiceSection">Services </a> <i id="ser" class="fas fa-chevron-circle-down"></i></pre>
@@ -84,12 +110,34 @@
               <div class="empty"></div>
               <div>
                 <ul>
-                  <li><a href="#">Interior Designing</a></li>
-                  <li><a href="#">Construction Management</a></li>
-                  <li><a href="#">Consultancy Services</a></li>
-                  <li><a href="#">Environmental Services</a></li>
-                  <li><a href="#">Retrofication</a></li>
-                  <li><a href="#">Destructive & NDT Testing</a></li>
+                  <li>
+                    <a href="./ServiceSection#interior-designing"
+                      >Interior Designing</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./ServiceSection#construction-management"
+                      >Construction Management</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./ServiceSection#consultancy-services"
+                      >Consultancy Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./ServiceSection#environmental-services"
+                      >Environmental Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./ServiceSection#retrofication">Retrofication</a>
+                  </li>
+                  <li>
+                    <a href="./ServiceSection#destructive"
+                      >Destructive & NDT Testing</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -102,12 +150,15 @@
               <div class="empty"></div>
               <div>
                 <ul>
-                  <li><a href="#">Home Repairs</a></li>
-                  <li><a href="#">Kitchen Repairs</a></li>
-                  <li><a href="#">Bathroom Repair</a></li>
-                  <li><a href="#">Furniture Repair</a></li>
-                  <li><a href="#">Plumbing & Pipes</a></li>
-                  <li><a href="#">Appliance Repairs</a></li>
+                  <li><a href="./repair#home-repair">Home Repairs</a></li>
+                  <li><a href="./repair#kitchen-repair">Kitchen Repairs</a></li>
+                  <li>
+                    <a href="./repair#bathroom-repair">Bathroom Repair</a>
+                  </li>
+                  <li>
+                    <a href="./repair#furniture-repair">Furniture Repair</a>
+                  </li>
+                  <li><a href="./repair#plumbing">Plumbing & Pipes</a></li>
                 </ul>
               </div>
             </div>
@@ -121,24 +172,23 @@
     <!-- Navbar Section Finished -->
 
     <!-- Hero Section Start -->
-
-    <!-- <div id="particles-js"></div>
+    <div id="particles-js"></div>
     <div class="count-particles">
       <span class="js-count-particles">--</span>
-    </div> -->
+    </div>
 
     <section class="hero-main">
       <div class="hero-main-container">
         <div class="hero-content">
-          <h1>
+          <h1 data-aos="fade-up" data-aos-duration="1000">
             Transforming <br />The Built<br />
             World
           </h1>
-          <p>
+          <p data-aos="fade-up" data-aos-duration="2500">
             "Quality is never an accident. <br />It is always the result of
             Intelligent effort." - John Ruskin
           </p>
-          <button>Book Us</button>
+          <button data-aos="fade-up" data-aos-duration="3000" onclick="window.location.href='./slotBooking/form.html'">Book Us</button>
         </div>
         <div class="hero-img">
           <img src="./img/vectors/hero.gif" alt="" srcset="" />
@@ -147,49 +197,80 @@
     </section>
     <!-- Hero Section End -->
 
-    <!-- FEATURED WORK STARTS -->
-    <div class="feature-box">
-      <h1 class="heading-featurebox">Featured Work</h1>
-      <div class="work-gallery">
-        <div class="imagegallery">
-          <img src="/img/bg/hotel.jpg" />
-          <div class="image-text1">
-            <p>Hotel Construction</p>
-          </div>
+    <!-- Services Section Started -->
+    <section>
+      <h2
+        class="services-heading"
+        data-aos="fade-right"
+        data-aos-easing="ease"
+        data-aos-duration="1000"
+      >
+        OUR SERVICES
+      </h2>
+      <div
+        class="services-box"
+        data-aos="fade-up"
+        data-aos-easing="ease"
+        data-aos-duration="1000"
+      >
+        <div class="servicesection-image">
+          <img
+            src="./img/bg/generalconstruction.jpg"
+            alt="General Construction Image"
+          />
+          <h3>General Constructing</h3>
+          <p>
+            Construction work encompasses the creation and upkeep of structures
+            such as buildings, roads, bridges, and tunnels.
+          </p>
         </div>
-        <div class="imagegallery">
-          <img src="/img/bg/houseconstruction.jpg" />
-          <div class="image-text1">
-            <p>House Construction</p>
-          </div>
+        <div class="servicesection-image">
+          <img
+            src="./img/bg/constructionmanagement.jpg"
+            alt="construction management"
+          />
+          <h3>Construction Management</h3>
+          <p>
+            Construction work encompasses the creation and upkeep of structures
+            such as buildings, roads, bridges, and tunnels.
+          </p>
         </div>
-        <div class="imagegallery">
-          <img src="/img/bg/hospital.jpg" />
-          <div class="image-text1">
-            <p>HealthCare</p>
-          </div>
+        <div class="servicesection-image">
+          <img src="./img/bg/design-and-build.jpg" alt="design-and-build" />
+          <h3>Design and Build</h3>
+          <p>
+            Construction work encompasses the creation and upkeep of structures
+            such as buildings, roads, bridges, and tunnels.
+          </p>
         </div>
-        <div class="imagegallery">
-          <img src="/img/bg/falts.jpg" />
-          <div class="image-text1">
-            <p>Flats</p>
-          </div>
+        <div class="servicesection-image">
+          <img src="./img/bg/preconstruction.jpg" alt="preconstruction" />
+          <h3>Preconstruction Consulting</h3>
+          <p>
+            Construction work encompasses the creation and upkeep of structures
+            such as buildings, roads, bridges, and tunnels.
+          </p>
         </div>
-        <div class="imagegallery">
-          <img src="/img/bg/school.jpg" />
-          <div class="image-text1">
-            <p>School Construction</p>
-          </div>
+        <div class="servicesection-image">
+          <img src="./img/bg/special-projects.jpg" alt="special-projects" />
+          <h3>Special Projects</h3>
+          <p>
+            Construction work encompasses the creation and upkeep of structures
+            such as buildings, roads, bridges, and tunnels.
+          </p>
         </div>
-        <div class="imagegallery">
-          <img src="/img/bg/roads.jpg" />
-          <div class="image-text1">
-            <p>Road Construction</p>
-          </div>
+        <div class="servicesection-image">
+          <img src="./img/bg/renovation.jpg" alt="renovation" />
+          <h3>Renovations</h3>
+          <p>
+            Construction work encompasses the creation and upkeep of structures
+            such as buildings, roads, bridges, and tunnels.
+          </p>
         </div>
       </div>
-    </div>
-    <!-- FEATURED WORK ENDS -->
+    </section>
+    <!-- Services Section End -->
+
     <!-- BUILD WITH QYALITY SECTION -->
     <div class="container-buildquality">
       <div class="content-quality">
@@ -197,8 +278,16 @@
           class="image-quality"
           src="./img/vectors/build-with-quality.jpg"
           alt="Image- build-with-quality"
+          data-aos="fade-right"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
         />
-        <div class="text-qualitymaterial">
+        <div
+          class="text-qualitymaterial"
+          data-aos="fade-down"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+        >
           <h1>Build With Quality Materials</h1>
           <p>
             Every project we work on we always use selected materials to give
@@ -209,7 +298,12 @@
 
           <div>
             <div class="button-container">
-              <button class="button-material">See Material</button>
+              <button
+                class="button-material"
+                onclick="window.location.href = './aboutUs';"
+              >
+                About Us
+              </button>
             </div>
           </div>
         </div>
@@ -217,102 +311,28 @@
     </div>
     <!-- BUILD WITH QUALITY ENDS -->
 
-    <!-- Talk with Experts Section starts  -->
-    <section class="container-expert">
-      <div class="content-1">
-        <img
-          class="image-1"
-          src="/img/vectors/customer-support.png"
-          alt="Image-Talk with expert person"
-        />
-        <div class="text-contact">
-          <h1>Contact With Our Experts</h1>
-          <p>
-            Book your appointment to talk to our experts who will assist you
-            with all your doubts regarding our services.
-          </p>
-          <div>
-            <div class="button-container">
-              <button class="button-1">
-                <i class="fa fa-phone"></i> Contact
-              </button>
-              <button
-                class="button-1"
-                id="form-open"
-                onclick="window.location.href = '/slotBooking/form.html';"
-              >
-                <i class="fa fa-calendar"></i> Book Us
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Talk with Experts Section ends  -->
-
-    <!-- General Info Section Start -->
-    <section class="general-info">
-      <div class="general-info-row">
-        <div class="general-info-card">
-          <div>
-            <div class="general-info-icon">
-              <i class="fa-regular fa-clock"></i>
-            </div>
-            <div class="general-info-content">
-              <h1>8350</h1>
-              <p>Hours of Work</p>
-            </div>
-          </div>
-        </div>
-        <div class="general-info-card">
-          <div>
-            <div class="general-info-icon">
-              <i class="fa-regular fa-file-lines"></i>
-            </div>
-            <div class="general-info-content">
-              <h1>240</h1>
-              <p>Projects Completed</p>
-            </div>
-          </div>
-        </div>
-        <div class="general-info-card">
-          <div>
-            <div class="general-info-icon">
-              <i class="fa-regular fa-comment"></i>
-            </div>
-            <div class="general-info-content">
-              <h1>120</h1>
-              <p>Projects Completed</p>
-            </div>
-          </div>
-        </div>
-        <div class="general-info-card">
-          <div>
-            <div class="general-info-icon">
-              <i class="fa-solid fa-award"></i>
-            </div>
-            <div class="general-info-content">
-              <h1>10</h1>
-              <p>Awards Winning</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- General Info Section Finieshed -->
-
     <!-- Why Choose us Section Started -->
     <section class="whyChooseUs-section">
       <div class="whychooseus-overlay">
         <div class="whychooseus-container">
           <div class="whychooseus-row">
-            <div class="whychooseus-coloumn">
+            <div
+              class="whychooseus-coloumn"
+              data-aos="fade-right"
+              data-aos-easing="ease"
+              data-aos-duration="1000"
+            >
               <h2>Why Choose us?</h2>
               <hr />
               <br />
             </div>
           </div>
-          <div class="whychooseus-row">
+          <div
+            class="whychooseus-row"
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-duration="1000"
+          >
             <div class="whychooseus-block">
               <i class="fa-solid fa-check"></i>
               <div class="whychooseus-coloumn">
@@ -348,7 +368,12 @@
             </div>
           </div>
 
-          <div class="whychooseus-row">
+          <div
+            class="whychooseus-row"
+            data-aos="fade-up"
+            data-aos-easing="ease"
+            data-aos-duration="2000"
+          >
             <div class="whychooseus-block">
               <i class="fa-solid fa-check"></i>
               <div class="whychooseus-coloumn">
@@ -389,10 +414,131 @@
     </section>
     <!-- Why Choose Us Section Finished -->
 
+    <!-- General Info Section Start -->
+    <section class="general-info">
+      <div class="general-info-row">
+        <div
+          class="general-info-card"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration="500"
+        >
+          <div>
+            <div class="general-info-icon">
+              <i class="fa-solid fa-compass"></i>
+            </div>
+            <div class="general-info-content">
+              <h1>Vastu</h1>
+              <p>Consultancy</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="general-info-card"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+        >
+          <div>
+            <div class="general-info-icon">
+              <i class="fa-solid fa-vr-cardboard"></i>
+            </div>
+            <div class="general-info-content">
+              <h1>3D</h1>
+              <p>Modeling</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="general-info-card"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration="1500"
+        >
+          <div>
+            <div class="general-info-icon">
+              <i class="fa-solid fa-city"></i>
+            </div>
+            <div class="general-info-content">
+              <h1>Project</h1>
+              <p>Planning</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="general-info-card"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration="2000"
+        >
+          <div>
+            <div class="general-info-icon">
+              <i class="fa-brands fa-envira"></i>
+            </div>
+            <div class="general-info-content">
+              <h1>Green</h1>
+              <p>Designs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- General Info Section Finieshed -->
+
+    <!-- Talk with Experts Section starts  -->
+    <section class="container-expert">
+      <div class="content-1">
+        <img
+          data-aos="fade-right"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+          class="image-1"
+          src="./img/vectors/customer-support.png"
+          alt="Image-Talk with expert person"
+        />
+        <div
+          class="text-contact"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+        >
+          <h1>Contact With Our Experts</h1>
+          <p>
+            Book your appointment to talk to our experts who will assist you
+            with all your doubts regarding our services.
+          </p>
+          <div>
+            <div class="button-container">
+              <button
+                class="button-1"
+                onclick="location.href='mailto:aiskconofficial@gmail.com'"
+              >
+                <i class="fa fa-phone"></i> Contact
+              </button>
+
+              <button
+                class="button-1"
+                id="form-open"
+                onclick="window.location.href = './slotBooking/form.html';"
+              >
+                <i class="fa fa-calendar"></i> Book Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Talk with Experts Section ends  -->
+
     <!-- Testimonials Start -->
     <section class="testimonials">
       <div style="display: flex; justify-content: center; align-items: center">
-        <div class="testinomial-header">
+        <div
+          class="testinomial-header"
+          data-aos="fade-right"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+        >
           <h1>Our Clients Say!</h1>
           <p>
             Our customer satisfaction is our top priority. To do this, we pay
@@ -405,75 +551,111 @@
       </div>
 
       <div class="testinomial-container">
-        <div class="testinomial-card" id="testinomial-card-1">
+        <div
+          class="testinomial-card"
+          id="testinomial-card-1"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+        >
           <div class="testinomial-card-head">
-            <img src="/img/vectors/user.jpg" alt="img" />
+            <img src="./img/vectors/user.jpg" alt="img" />
             <div style="line-height: 1.4; font-size: 0.9rem">
-              <h3>Kartikay Asija</h3>
-              <p><a href="http://">@kartikay123</a></p>
+              <h3>Utkarsh Saxena</h3>
+              <p><a href="http://">@utkarsh123</a></p>
             </div>
           </div>
           <p>
-            As somebody who has pretty much tried all new age banks/fintechs, I
-            can certainly say it’s @sliceit_ that has hit it out of the park.
-            Great job. When you build a great product, your customers become
-            your ambassadors. As somebody who has pretty much tried all new age
-            banks/fintechs, I can certainly say it’s @sliceit_ that has hit it
-            out of the park.
+            The team at Aiskcon is highly professional, knowledgeable, and
+            dedicated to delivering exceptional results. From the very
+            beginning, I was impressed with their attention to detail and
+            commitment to quality. They worked closely with me to understand my
+            needs and preferences, and were always willing to provide valuable
+            input and suggestions to ensure that the project exceeded my
+            expectations
           </p>
         </div>
-        <div class="testinomial-card" id="testinomial-card-2">
+        <div
+          class="testinomial-card"
+          id="testinomial-card-2"
+          data-aos="fade-down"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+        >
           <div class="testinomial-card-head">
-            <img src="/img/vectors/user.jpg" alt="img" />
+            <img src="./img/vectors/user.jpg" alt="img" />
             <div style="line-height: 1.4; font-size: 0.9rem">
-              <h3>Kartikay Asija</h3>
-              <p><a href="http://">@kartikay123</a></p>
+              <h3>Abhi Patel</h3>
+              <p><a href="http://">@abhi677</a></p>
             </div>
           </div>
           <p>
-            As somebody who has pretty much tried all new age banks/fintechs, I
-            can certainly say it’s @sliceit_ that has hit it out of the park.
-            Great job. When you build a great product, your customers become
-            your ambassadors.
+            Throughout the project, the team at Aiskcon demonstrated a high
+            level of expertise, and their workmanship was top-notch. They were
+            able to navigate the complexities of the project with ease, and
+            their attention to detail and commitment to quality was evident in
+            every aspect of their work. Had an easy construction journey with
+            AISKCON.
           </p>
         </div>
-        <div class="testinomial-card">
+        <div
+          class="testinomial-card"
+          data-aos="fade-right"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+        >
           <div class="testinomial-card-head">
-            <img src="/img/vectors/user.jpg" alt="img" />
+            <img src="./img/vectors/user.jpg" alt="img" />
             <div style="line-height: 1.4; font-size: 0.9rem">
-              <h3>Kartikay Asija</h3>
-              <p><a href="http://">@kartikay123</a></p>
+              <h3>Rolika Agarwal</h3>
+              <p><a href="http://">@rolika233</a></p>
             </div>
           </div>
           <p>
-            As somebody who has pretty much tried all new age banks/fintechs,
+            What impressed me the most was their focus on customer service. The
+            team at Aiskcon was always available to answer my questions.
           </p>
         </div>
-        <div class="testinomial-card">
+        <div
+          class="testinomial-card"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+        >
           <div class="testinomial-card-head">
-            <img src="/img/vectors/user.jpg" alt="img" />
+            <img src="./img/vectors/user.jpg" alt="img" />
             <div style="line-height: 1.4; font-size: 0.9rem">
               <h3>Kartikay Asija</h3>
               <p><a href="http://">@kartikay123</a></p>
             </div>
           </div>
           <p>
-            As somebody who has pretty much tried all new age banks/fintechs,
+            I would highly recommend Aiskcon for any construction project. Their
+            professionalism and dedication to customer service make them the
+            best in the business.
           </p>
         </div>
-        <div class="testinomial-card" id="testinomial-card-5">
+        <div
+          class="testinomial-card"
+          id="testinomial-card-5"
+          data-aos="fade-down"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+        >
           <div class="testinomial-card-head">
-            <img src="/img/vectors/user.jpg" alt="img" />
+            <img src="./img/vectors/user.jpg" alt="img" />
             <div style="line-height: 1.4; font-size: 0.9rem">
-              <h3>Kartikay Asija</h3>
-              <p><a href="http://">@kartikay123</a></p>
+              <h3>Swastik</h3>
+              <p><a href="http://">@swastik67</a></p>
             </div>
           </div>
           <p>
-            As somebody who has pretty much tried all new age banks/fintechs, I
-            can certainly say it’s @sliceit_ that has hit it out of the park.
-            Great job. When you build a great product, your customers become
-            your ambassadors.
+            The team was skilled, experienced, and attentive to detail, and they
+            worked tirelessly to ensure that every aspect of the project was
+            completed to my satisfaction. The communication throughout the
+            process was excellent. I am thrilled with the final result and would
+            highly recommend Aiskcon Construction to anyone looking for a
+            reliable construction firm.
           </p>
         </div>
       </div>
@@ -486,7 +668,12 @@
         <h1>FAQs</h1>
       </div>
       <div class="faq-content">
-        <div class="faq-block">
+        <div
+          class="faq-block"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration="500"
+        >
           <div class="faq-question">
             <h2>1. Why do I need an interior designer?</h2>
             <i class="fa-solid fa-plus fa-xl"></i>
@@ -505,7 +692,12 @@
             </p>
           </div>
         </div>
-        <div class="faq-block">
+        <div
+          class="faq-block"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration="1000"
+        >
           <div class="faq-question">
             <h2>2. Why is Aiskcon perfect for your design?</h2>
             <i class="fa-solid fa-plus fa-xl"></i>
@@ -515,68 +707,80 @@
               Aiskcon is the perfect partner who can build your home interiors
               just the way you want! Our design experts customize designs as per
               your needs. They will listen to your ideas and suggest options. At
-              Livspace, we incorporate advanced technology into our modular
+              Aiskcon, we incorporate advanced technology into our modular
               solutions to create flawless interiors and also to expedite the
               process of making your dream home a reality. So, book your
               consultation today with India's Most Trusted Home Interiors Brand,
-              Livspace and talk to our designers about your project.
+              Aiskcon and talk to our designers about your project.
             </p>
           </div>
         </div>
-        <div class="faq-block">
+        <div
+          class="faq-block"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration="1500"
+        >
           <div class="faq-question">
             <h2>3. What services are included under home interior design?</h2>
             <i class="fa-solid fa-plus fa-xl"></i>
           </div>
           <div class="faq-answer">
             <p>
-              You can think of an interior designer as a film director. Their
-              job is to monitor every minute detail from start to the final cut.
-              From pre-production to the final edit, their perspective is
-              responsible for shaping the final product. Similarly, interior
-              designers are professionals who are able to gauge your needs and
-              tastes to deliver your dream home. They assist you in getting
-              custom-designed pieces that fit perfectly into your beautiful
-              vision. From raw materials to finished products, they take care of
-              everything!
+              Home interior design services typically include a wide range of
+              design and decor-related tasks that are aimed at improving the
+              functionality and aesthetics of a home's interior space. Some of
+              the most common services that are included under home interior
+              design are:
+              <br />
+              1. Space Planning <br />
+              2. Colour Selection <br />
+              3. Material Selection <br />
+              4. Lighting Design <br />
+              5. Furniture Selection <br />
+              6. Decorative Accessories
             </p>
           </div>
         </div>
-        <div class="faq-block">
+        <div
+          class="faq-block"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration="2000"
+        >
           <div class="faq-question">
             <h2>4. What will be the timelines for my project completion?</h2>
             <i class="fa-solid fa-plus fa-xl"></i>
           </div>
           <div class="faq-answer">
             <p>
-              You can think of an interior designer as a film director. Their
-              job is to monitor every minute detail from start to the final cut.
-              From pre-production to the final edit, their perspective is
-              responsible for shaping the final product. Similarly, interior
-              designers are professionals who are able to gauge your needs and
-              tastes to deliver your dream home. They assist you in getting
-              custom-designed pieces that fit perfectly into your beautiful
-              vision. From raw materials to finished products, they take care of
-              everything!
+              The timeline for a construction project completion can vary
+              depending on a number of factors, such as the size and complexity
+              of the project, the location, weather conditions, availability of
+              materials, etc. Here in Aiskcon we deliver the project efficiently
+              and on earliest possible time
             </p>
           </div>
         </div>
-        <div class="faq-block">
+        <div
+          class="faq-block"
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration="2500"
+        >
           <div class="faq-question">
             <h2>6. What are the trending interior design styles?</h2>
             <i class="fa-solid fa-plus fa-xl"></i>
           </div>
           <div class="faq-answer">
             <p>
-              You can think of an interior designer as a film director. Their
-              job is to monitor every minute detail from start to the final cut.
-              From pre-production to the final edit, their perspective is
-              responsible for shaping the final product. Similarly, interior
-              designers are professionals who are able to gauge your needs and
-              tastes to deliver your dream home. They assist you in getting
-              custom-designed pieces that fit perfectly into your beautiful
-              vision. From raw materials to finished products, they take care of
-              everything!
+              1. Minimalism <br />
+              2. Biophilic design <br />
+              3. Industrial design <br />
+              4. Scandinavian design <br />
+              5. Bohemian design <br />
+              6. Modern farmhouse <br />
+              7. Art Deco <br />
             </p>
           </div>
         </div>
@@ -586,10 +790,15 @@
 
     <!-- Hire Us Section Start -->
     <section class="hireus">
-      <div class="hireus-box">
+      <div
+        class="hireus-box"
+        data-aos="fade-up"
+        data-aos-easing="ease"
+        data-aos-duration="1000"
+      >
         <div class="hireus-content">
           <h1>Transform your living space into a work of Art!</h1>
-          <button>Hire us</button>
+          <button onclick="window.location.href='./slotBooking/form.html'">Hire us</button>
         </div>
       </div>
     </section>
@@ -601,7 +810,7 @@
         <div class="row">
           <div class="footer-col footer-brand">
             <div class="footer-logo">
-              <img src="/img/logo/aiskcon logo.png" alt="" srcset="" />
+              <img src="./img/logo/aiskcon logo.png" alt="logo" srcset="" />
             </div>
             <div class="social-links">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -614,40 +823,35 @@
             <h4>Services</h4>
             <ul>
               <li>
-                <a href="#"
+                <a href="./ServiceSection#interior-designing"
                   ><i class="fa-solid fa-angle-right"></i> Interior Designing</a
                 >
               </li>
               <li>
-                <a href="#"
+                <a href="./ServiceSection#construction-management"
                   ><i class="fa-solid fa-angle-right"></i> Construction
                   Management</a
                 >
               </li>
               <li>
-                <a href="#"
-                  ><i class="fa-solid fa-angle-right"></i> Seepage Analysis</a
-                >
-              </li>
-              <li>
-                <a href="#"
+                <a href="./ServiceSection#consultancy-services"
                   ><i class="fa-solid fa-angle-right"></i> Consultancy
                   Services</a
                 >
               </li>
               <li>
-                <a href="#"
+                <a href="./ServiceSection#environmental-services"
                   ><i class="fa-solid fa-angle-right"></i> Environmental
                   Services</a
                 >
               </li>
               <li>
-                <a href="#"
+                <a href="./ServiceSection#retrofication"
                   ><i class="fa-solid fa-angle-right"></i> Retrofication</a
                 >
               </li>
               <li>
-                <a href="#"
+                <a href="./ServiceSection#destructive"
                   ><i class="fa-solid fa-angle-right"></i> Destructive & NDT
                   Testing</a
                 >
@@ -658,33 +862,28 @@
             <h4>Repairs</h4>
             <ul>
               <li>
-                <a href="#"
-                  ><i class="fa-solid fa-angle-right"></i> Home repairs</a
+                <a href="./repair#home-repair"
+                  ><i class="fa-solid fa-angle-right"></i> Home Repairs</a
                 >
               </li>
               <li>
-                <a href="#"
-                  ><i class="fa-solid fa-angle-right"></i> Kitchen repairs</a
+                <a href="./repair#kitchen-repair"
+                  ><i class="fa-solid fa-angle-right"></i> Kitchen Repairs</a
                 >
               </li>
               <li>
-                <a href="#"
-                  ><i class="fa-solid fa-angle-right"></i> Bathroom repair</a
+                <a href="./repair#bathroom-repair"
+                  ><i class="fa-solid fa-angle-right"></i> Bathroom Repair</a
                 >
               </li>
               <li>
-                <a href="#"
-                  ><i class="fa-solid fa-angle-right"></i> Furniture repair</a
+                <a href="./repair#furniture-repair"
+                  ><i class="fa-solid fa-angle-right"></i> Furniture Repair</a
                 >
               </li>
               <li>
-                <a href="#"
-                  ><i class="fa-solid fa-angle-right"></i> Plumbing & pipes</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><i class="fa-solid fa-angle-right"></i> Appliance repairs</a
+                <a href="./repair#plumbing"
+                  ><i class="fa-solid fa-angle-right"></i> Plumbing & Pipes</a
                 >
               </li>
             </ul>
@@ -693,22 +892,25 @@
             <h4>Contact</h4>
             <ul>
               <li>
-                <a href="#"><i class="fa-solid fa-house"></i> Address</a>
-              </li>
-              <li>
-                <a href="#"
+                <a href="mailto:aiskconofficial@gmail.com"
                   ><i class="fa-solid fa-envelope"></i>
                   aiskconofficial@gmail.com</a
                 >
               </li>
               <li>
-                <a href="#"><i class="fa-solid fa-phone"></i> +91-9636243488</a>
+                <a href="tel:+919636243488"
+                  ><i class="fa-solid fa-phone"></i> +91-9636243488</a
+                >
               </li>
               <li>
-                <a href="#"><i class="fa-solid fa-phone"></i> +91-9717010172</a>
+                <a href="tel:+919717010172"
+                  ><i class="fa-solid fa-phone"></i> +91-9717010172</a
+                >
               </li>
               <li>
-                <a href="#"><i class="fa-solid fa-phone"></i> +91-6306849492</a>
+                <a href="tel:+916306849492"
+                  ><i class="fa-solid fa-phone"></i> +91-6306849492</a
+                >
               </li>
             </ul>
           </div>
@@ -721,11 +923,14 @@
         </div>
       </div>
     </footer>
-
     <!-- Footer Section Finished -->
 
-    <!-- <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/main.js"></script>
   </body>
 </html>
