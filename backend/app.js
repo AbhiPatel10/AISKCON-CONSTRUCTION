@@ -1,22 +1,22 @@
-require("dotenv").config();
-const express = require("express");
-const cors = require("cors");
+require('dotenv').config();
+import express, { urlencoded, json } from 'express';
+import cors from 'cors';
 
-const {sendMail} = require("./controller/email")
+import { sendMail } from './controller/email';
 
 const app = express();
 app.use(cors());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(urlencoded({ extended: true }));
+app.use(json());
 
-app.use("/email",sendMail);
+app.use('/email', sendMail);
 
-app.use("/",(req,res)=>{
+app.use('/', (req, res) => {
   res.status(200).json({
-    message: "Surver Running"
-  })
-})
+    message: 'Surver Running',
+  });
+});
 
-app.listen(3000,()=>{
-  console.log("server started!")
-})
+app.listen(3000, () => {
+  console.log('server started!');
+});
