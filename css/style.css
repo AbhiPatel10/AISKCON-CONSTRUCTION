@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Proza+Libre&family=Raleway:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -67,21 +68,24 @@ ul {
   margin-left: 20px;
 }
 #logo img {
-  transform: scale(1.2);
+  transform: scale(1.0);
   height: 75px;
 }
 
 #logo h1{
-  padding-left: 30px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 38px;
+  padding-left: 12px;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 35px;
   color: #2a2a72;
+  background: -webkit-linear-gradient(45deg, #1c1c4d 0%, #243fe9 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 0px;
 }
 
 @media (max-width: 1200px) {
   #logo h1 {
-    font-size: 35px;
+    font-size: 32px;
   }
 }
 
