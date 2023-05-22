@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -961,6 +962,22 @@ canvas {
   font-weight: 650;
 }
 /* Faq End */
+
+/* Scroll to top button */
+
+.gotop{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background:#2a2a72;
+  bottom: 40px;
+  right: 50px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
 
 /* Footer START */
 .footer {
