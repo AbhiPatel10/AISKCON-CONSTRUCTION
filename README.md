@@ -16,7 +16,6 @@ The Techs we have used for making this website:
 
 `Node.js`
 
-
 #### Usefull Extentions
 
 - Prettier - Code formatter
@@ -36,4 +35,11 @@ The Techs we have used for making this website:
    ```bash
   npm install
 	```
-- Open  `index.html` file and start Live Server
+- Open `index.html` file and start Live Server
+
+- For Back-End:  
+
+         cd Backend     
+         npm start
+
+
