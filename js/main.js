@@ -106,10 +106,14 @@ faqQuestions.forEach((question) => {
     if (answer.style.display === 'block') {
       icon.setAttribute('class', 'fa-solid fa-plus fa-xl');
       answer.style.display = 'none';
+      answer.style.maxHeight = null;
+
     } else{
       icon.setAttribute('class', 'fa-solid fa-minus fa-xl');
       answer.style.display = 'block';
+      answer.style.maxHeight = answer.scrollHeight + "px";
     }
+   
   });
 });
 

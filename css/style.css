@@ -951,7 +951,10 @@ canvas {
   display: none;
   margin: 20px;
   line-height: 1.6;
+  max-height: 0;
   font-family: 'poppins', sans-serif;
+  transition: max-height 0.5s;
+  overflow: hidden;
 }
 .faq-heading {
   font-family: 'Poppins', sans-serif;
