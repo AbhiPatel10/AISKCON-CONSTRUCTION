@@ -325,7 +325,11 @@ ul {
 .hero-content button:hover {
   opacity: 1;
   cursor: pointer;
+  background-color: white;
+  background-image: none;
+  color: #243fe9;
 }
+.book-now
 .hero-img {
   width: 50%;
   text-align: center;
