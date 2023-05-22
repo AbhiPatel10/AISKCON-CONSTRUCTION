@@ -6,6 +6,30 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.list1 li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.list1 li a {
+  text-decoration: none;
+  position: relative;
+}
+
+.list1 li a:hover {
+  text-decoration: none;
+}
+
+.list1 li a:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: blue; /* Change the color of the underline */
+}
+
 :root {
   --primary: #046c5c;
   --secondary: #0f2f51;
