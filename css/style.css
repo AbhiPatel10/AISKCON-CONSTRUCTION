@@ -1049,7 +1049,7 @@ canvas {
   height: 40px;
   width: 40px;
   background-color: rgb(255, 255, 255);
-  margin: 40px 10px 10px 0;
+  margin: 10px 10px 10px 0;
   text-align: center;
   line-height: 40px;
   border: 1px solid #0f0135;
@@ -1057,6 +1057,7 @@ canvas {
   color: #0f0135;
   transition: all 0.3s ease;
 }
+
 .footer-col .social-links a:nth-child(1):hover {
   color: #ffffff;
   background-color: #4267b2;
