@@ -948,11 +948,20 @@ canvas {
   text-align: right;
 }
 .faq-answer {
-  display: none;
-  margin: 20px;
   line-height: 1.6;
   font-family: 'poppins', sans-serif;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
+
+.show-answer {
+    padding: 20px;
+    max-height: fit-content;
+    opacity: 1;
+}
+
 .faq-heading {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 30px;
