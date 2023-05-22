@@ -34,7 +34,7 @@ The Techs we have used for making this website:
 
 - Clone the Forked Repository to your local machine.
 	```
-	git clone https://github.com/<YOUR_GITHUB_USER_NAME>/mern_youtube_clone.git.
+	git clone https://github.com/<YOUR_GITHUB_USER_NAME>/AISKCON-CONSTRUCTION.git.
 	```
 - Install dependancy
    ```bash
