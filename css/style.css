@@ -61,12 +61,34 @@ ul {
 }
 
 #logo {
+  display: flex;
   text-align: center;
-  margin-left: 5px;
+  align-items: center;
+  margin-left: 20px;
 }
 #logo img {
   transform: scale(1.2);
   height: 75px;
+}
+
+#logo h1{
+  padding-left: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 38px;
+  color: #2a2a72;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 1200px) {
+  #logo h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  #logo h1 {
+    font-size: 30px;
+  }
 }
 
 .list1 a:hover,
