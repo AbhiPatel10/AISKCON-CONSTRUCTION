@@ -39,7 +39,7 @@ The Techs we have used for making this website:
 
 - For Back-End:  
 
-         cd Backend     
+         cd backend     
          npm start
 
 
