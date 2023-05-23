@@ -27,6 +27,10 @@ ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.active{
+  text-decoration: underline;
+  color: #2a2a72;
+}
 .fullNav {
   height: 79px;
   display: flex;
@@ -75,6 +79,7 @@ ul {
   background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+ 
 }
 
 #bt1:hover {
