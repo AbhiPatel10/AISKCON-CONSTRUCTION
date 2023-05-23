@@ -102,13 +102,12 @@ const faqQuestions = document.querySelectorAll('.faq-question');
 faqQuestions.forEach((question) => {
   question.addEventListener('click', () => {
     const answer = question.nextElementSibling;
-    const icon = question.children[1];
-    if (answer.style.display === 'block') {
+      const icon = question.children[1];
+      answer.classList.toggle("show-answer")
+    if (!answer.classList.contains("show-answer")) {
       icon.setAttribute('class', 'fa-solid fa-plus fa-xl');
-      answer.style.display = 'none';
     } else{
       icon.setAttribute('class', 'fa-solid fa-minus fa-xl');
-      answer.style.display = 'block';
     }
   });
 });
