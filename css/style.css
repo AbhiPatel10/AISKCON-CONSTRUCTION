@@ -6,6 +6,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html {
+  scroll-padding-top: 79px;
+}
+
 :root {
   --primary: #046c5c;
   --secondary: #0f2f51;
