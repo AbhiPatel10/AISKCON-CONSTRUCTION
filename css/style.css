@@ -42,7 +42,7 @@ ul {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  font-size: 16.5px;
+  font-size: 20px;
 }
 
 .navBar1 i,
@@ -307,7 +307,8 @@ ul {
 }
 .hero-content p {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 .hero-content button {
 position: relative;
@@ -317,7 +318,7 @@ position: relative;
   border-radius: 5px;
   border: none;
   color: white;
-  font-size: 1rem;
+  font-size: 1.3rem;
   background-color: #2a2a72;
   background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
   opacity: 0.9;
@@ -428,7 +429,7 @@ canvas {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  font-size: 40px;
+  font-size: 3.3rem;
   font-family: 'Poppins', sans-serif;
 }
 .services-box {
@@ -462,7 +463,7 @@ canvas {
 }
 .servicesection-image h3 {
   margin: 20px 0 10px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.5px;
@@ -470,7 +471,7 @@ canvas {
 
 .servicesection-image p {
   margin: 0 0 20px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.4;
   font-family: 'Chivo', sans-serif;
 }
@@ -519,13 +520,13 @@ canvas {
 .text-qualitymaterial h1 {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 10px;
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #07021a;
   font-weight: 600;
 }
 .text-qualitymaterial p {
   font-family: 'Quicksand', sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -543,7 +544,7 @@ canvas {
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 20px;
   margin-right: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -585,6 +586,7 @@ canvas {
   background-size: cover;
   background-attachment: fixed;
   padding: 0;
+  text-shadow: 0 0 1px black;
 }
 .whychooseus-overlay {
   background: rgba(0, 0, 0, 0.7);
@@ -616,8 +618,11 @@ canvas {
   padding-right: 8px;
   font-size: 25px;
 }
+.whyChooseUs-section h2{
+  font-size: 2.5rem;
+}
 .whychooseus-coloumn h3 {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   /* font-size: 16px; */
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   line-height: normal;
@@ -627,8 +632,7 @@ canvas {
 }
 .whychooseus-coloumn p {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   letter-spacing: 0.099rem;
 }
@@ -693,8 +697,10 @@ canvas {
 .general-info-content h1 {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 2.3rem;
-  font-weight: 400;
   margin-bottom: 5px;
+}
+.general-info-content p{
+  font-size: 1.3rem;
 }
 @media (max-width: 1136px) {
   .general-info-card {
@@ -738,13 +744,13 @@ canvas {
 .text-contact h1 {
   flex: 1;
   text-align: center;
-  font-size: 2.1em;
+  font-size: 2.4rem;
   line-height: 1.5;
 }
 .text-contact p {
   flex: 1;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.3rem;
   line-height: 1.5;
 }
 .button-container {
@@ -762,7 +768,7 @@ canvas {
   border: none;
   opacity: 0.9;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 20px;
   margin-right: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -810,7 +816,7 @@ canvas {
 .testinomial-header h1 {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 10px;
-  font-size: 2.4rem;
+  font-size: 3.3rem;
   color: #07021a;
   font-weight: 650;
 }
@@ -818,6 +824,7 @@ canvas {
   margin-bottom: 10px;
   margin-top: 0 !important;
   font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
   color: #00000092;
 }
 
@@ -907,6 +914,7 @@ canvas {
 .hireus-content {
   width: 90%;
   margin: auto;
+  font-weight: bold;
 }
 .hireus-content button {
   border: none;
@@ -919,7 +927,8 @@ canvas {
   width: 20%;
   height: 45px;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  text-shadow: 0 0 1px black;
   color: #ffe493;
   cursor: pointer;
   transition: 0.3s all ease;
@@ -956,7 +965,7 @@ canvas {
   font-family: 'poppins', sans-serif;
 }
 .faq-question {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   letter-spacing: 1.5;
   display: flex;
   align-items: center;
@@ -986,20 +995,19 @@ canvas {
 .faq-heading {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 30px;
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #07021a;
-  font-weight: 650;
+  font-weight: 800;
+  text-align: center;
 }
 /* Faq End */
 
 /* Footer START */
 .footer {
   background-color: #1c55a416;
-  padding: 70px 0;
   padding-top: 160px;
 }
 .container {
-  max-width: 1250px;
   margin: auto;
   font-family: 'Poppins', sans-serif;
 }
@@ -1011,7 +1019,7 @@ canvas {
   padding: 0 20px;
 }
 .footer-col h4 {
-  font-size: 16px;
+  font-size: 1.3rem;
   color: #0f0135;
   margin-bottom: 35px;
   font-weight: 600;
@@ -1031,7 +1039,7 @@ canvas {
   margin-bottom: 15px;
 }
 .footer-col ul li a {
-  font-size: 15px;
+  font-size: 1.1rem;
   font-weight: 400;
   color: #1d0f44ad;
   display: block;
@@ -1108,14 +1116,23 @@ canvas {
 .footer-copyright {
   text-align: center;
   margin-top: 20px;
-  color: rgba(23, 5, 57, 0.58);
+  /* color: rgba(23, 5, 57, 0.58); */
+}
+.copyright-section{
+  background: black;
+  color: rgb(160, 158, 158);
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 25px;
+  margin-top: 60px;
+  font-size: 1rem;
 }
 .footer-copyright a {
-  color: #1d0f44ad;
+  color: rgb(151, 212, 243);
   transition: all 0.3s ease;
 }
 .footer-copyright a:hover {
-  color: #0f0135;
+  color: #9e7ff4;
   padding: 3px;
 }
 @media (max-width: 920px) {
