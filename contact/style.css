@@ -91,7 +91,16 @@
   }
 }
 /* Get in Touch End */
-.active{
-  text-decoration: underline;
+.active {
   color: #2a2a72;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust the value as per your preference */
+  width: 100%;
+  border-bottom: 2px solid;
 }
