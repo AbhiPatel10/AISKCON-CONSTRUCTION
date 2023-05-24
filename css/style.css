@@ -948,14 +948,19 @@ canvas {
   text-align: right;
 }
 .faq-answer {
-  display: none;
-  margin: 20px;
   line-height: 1.6;
   max-height: 0;
   font-family: 'poppins', sans-serif;
   transition: max-height 0.5s;
   overflow: hidden;
 }
+
+.show-answer {
+    padding: 20px;
+    max-height: fit-content;
+    opacity: 1;
+}
+
 .faq-heading {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 30px;
