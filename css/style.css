@@ -946,50 +946,57 @@ canvas {
 
 /* Faq Start */
 .faq {
-  width: 80%;
-  margin: auto;
+	max-width: 80%;
+	width: 100%;
+	background: #fff;
+	margin: auto;
+	padding: 15px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
-.faq-block {
-  margin: 15px;
-  background-color: #f4efef;
-  padding: 14px;
-  border-radius: 5px;
-  font-family: 'poppins', sans-serif;
+.faq .faq-content {
+	border-radius: 4px;
+	background: #fff7f0;
+	border: 1px solid #ffd6b3;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 }
-.faq-question {
-  font-size: 0.7rem;
-  letter-spacing: 1.5;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.822);
-  cursor: pointer;
+.faq-content.open {
+	padding-bottom: 20px;
 }
-.faq-question i {
-  text-align: right;
+.faq-content header {
+	display: flex;
+	min-height: 50px;
+	padding: 0 15px;
+	cursor: pointer;
+	align-items: center;
+	justify-content: space-between;
+	transition: all 300ms linear;
 }
-.faq-answer {
-  line-height: 1.6;
-  font-family: 'poppins', sans-serif;
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
+.faq-content.open header {
+	min-height: 35px;
 }
-
-.show-answer {
-  padding: 20px;
-  max-height: fit-content;
-  opacity: 1;
+.faq-content header .title {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #333;
 }
-
-.faq-heading {
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 30px;
-  font-size: 2rem;
-  color: #07021a;
-  font-weight: 650;
+.faq-content header i {
+	font-size: 20px;
+	color: #333;
+}
+.faq-content .description {
+	height: 0;
+	font-size: 1rem;
+	color: #333;
+	line-height: 1.6;
+	font-weight: 400;
+	padding: 0 15px;
+	transition: all 0.2s linear;
 }
 /* Faq End */
 
