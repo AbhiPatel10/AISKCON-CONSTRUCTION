@@ -28,6 +28,20 @@ ul {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.active {
+  color: #2a2a72;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust the value as per your preference */
+  width: 100%;
+  border-bottom: 2px solid;
+}
+
 .fullNav {
   height: 79px;
   display: flex;
@@ -76,6 +90,7 @@ ul {
   background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+ 
 }
 
 #bt1:hover {
