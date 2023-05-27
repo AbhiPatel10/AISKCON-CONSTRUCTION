@@ -966,20 +966,16 @@ canvas {
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
 	padding: 0 17px;
-}
-.faq-content.open {
-	padding: 17px;
 }
 .faq-content header {
 	display: flex;
 	min-height: 50px;
-	padding: 0 15px;
+	padding: 20px 15px;
 	cursor: pointer;
 	align-items: center;
 	justify-content: space-between;
-	transition: all 2000ms linear;
+	transition: all 200ms linear;
 }
 .faq-content.open header {
 	min-height: 50px;
@@ -992,6 +988,9 @@ canvas {
 .faq-content header i {
 	font-size: 20px;
 	color: #333;
+}
+.faq-content.open .description{
+  	padding: 0 17px;
 }
 .faq-content .description {
 	height: 0;
