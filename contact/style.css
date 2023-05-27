@@ -79,6 +79,37 @@
   line-height: 2;
   color: rgba(255, 255, 255, 0.833);
 }
+.getintouch-card-content a{
+  font-size: 1.1rem;
+  line-height: 2;
+  color: rgba(255, 255, 255, 0.833);
+  transition: all 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.getintouch-card-content a:hover {
+  color: #fff; /* Change color on hover */
+  text-shadow: 0px 0px 10px #fff; /* Add text-shadow on hover */
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+.button-1 {
+  border: none;
+  padding: 5px 10px;
+  margin-top: 8px;
+  margin-left: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+.button-1:hover {
+  background-color:#2a2a72b0 ;
+  color: #fff; /* Change color on hover */
+  text-shadow: 0px 0px 10px #fff; /* Add text-shadow on hover */
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+
 @media (max-width: 1200px) {
   .getintouch-contact-cards{
     width: 45%;
