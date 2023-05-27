@@ -62,6 +62,7 @@
 }
 .home-repair-col button,
 .home-repair-col1 button{
+  position:relative;
   margin: 20px 0;
   padding: 15px 10px;
   background-color: #2a2a72;
@@ -74,10 +75,34 @@
   color: white;
   transition: all 0.3s ease;
 }
-.home-repair-col button:hover,
-.home-repair-col1 button:hover{
-  opacity: 0.7;
+.home-repair-col button,
+.home-repair-col1 button:after {
+  position: absolute;
+  content:"";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3em;
+  background-image: linear-gradient(
+      45deg,
+      #2a2a72 0%,
+      #243fe9 74%
+  );
+  transition: opacity 0.3s ease-out;
+  z-index: 2;
+  opacity: 0;
 }
+.home-repair-col button,
+.home-repair-col1 button:hover:after {
+opacity: 1;
+}
+.home-repair-col button,
+.home-repair-col1 button > span {
+  position: relative;
+  z-index: 3;
+}
+
 @media (max-width: 767px) {
     .home-repair-container,
     .home-repair-container1 {

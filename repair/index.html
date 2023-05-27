@@ -1,619 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>AISKCON-Construction</title>
-    <script
-      src="https://kit.fontawesome.com/280f5d0d38.js"
-      crossorigin="anonymous"
-    ></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- Navbar Section Started -->
-    <nav class="navBar1">
-      <div class="fullNav">
-        <div id="logo">
-          <img src="../img/logo/navLogo.png" alt="AISKCON-Construction" />
-        </div>
-        <ul class="list1">
-          <li id="home"><a href="../">Home</a></li>
-          <li id="services">
-            <div>
-              <pre><a href="../ServiceSection">Services</a> <i class="fas fa-chevron-circle-down"></i></pre>
-            </div>
-            <div class="drop1">
-              <div class="empty"></div>
-              <div class="non-empty">
-                <ul>
-                  <li>
-                    <a href="../ServiceSection#interior-designing"
-                      >Interior Designing</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#construction-management"
-                      >Construction Management</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#consultancy-services"
-                      >Consultancy Services</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#environmental-services"
-                      >Environmental Services</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#retrofication">Retrofication</a>
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#destructive"
-                      >Destructive & NDT Testing</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li id="repair">
-            <div>
-              <pre><a href="../repair">Repairs</a>  <i class="fas fa-chevron-circle-down"></i></pre>
-            </div>
-            <div class="drop2">
-              <div class="empty"></div>
-              <div class="non-empty">
-                <ul>
-                  <li><a href="../repair#home-repair">Home Repairs</a></li>
-                  <li>
-                    <a href="../repair#kitchen-repair">Kitchen Repairs</a>
-                  </li>
-                  <li>
-                    <a href="../repair#bathroom-repair">Bathroom Repair</a>
-                  </li>
-                  <li>
-                    <a href="../repair#furniture-repair">Furniture Repair</a>
-                  </li>
-                  <li><a href="../repair#plumbing">Plumbing & Pipes</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li><a href="../aboutUs">About</a></li>
-          <li><a href="../contact">Contact</a></li>
-          <li></li>
-        </ul>
-        <div id="bt2">
-          <button><i class="fa-solid fa-bars"></i></button>
-        </div>
-      </div>
-    </nav>
-    <div id="mobNavParent">
-      <nav class="navBar2 navOpen">
-        <ul class="list2">
-          <li><a href="../">Home</a></li>
-          <li>
-            <div id="services2">
-              <pre><a href="../ServiceSection">Services </a> <i id="ser" class="fas fa-chevron-circle-down"></i></pre>
-            </div>
-            <div class="drop3">
-              <div class="empty"></div>
-              <div>
-                <ul>
-                  <li>
-                    <a href="../ServiceSection#interior-designing"
-                      >Interior Designing</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#construction-management"
-                      >Construction Management</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#consultancy-services"
-                      >Consultancy Services</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#environmental-services"
-                      >Environmental Services</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#retrofication">Retrofication</a>
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#destructive"
-                      >Destructive & NDT Testing</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div id="repair2">
-              <pre><a href="../repair">Repairs </a> <i id="rep" class="fas fa-chevron-circle-down"></i></pre>
-            </div>
-            <div class="drop4">
-              <div class="empty"></div>
-              <div>
-                <ul>
-                  <li><a href="../repair#home-repair">Home Repairs</a></li>
-                  <li>
-                    <a href="../repair#kitchen-repair">Kitchen Repairs</a>
-                  </li>
-                  <li>
-                    <a href="../repair#bathroom-repair">Bathroom Repair</a>
-                  </li>
-                  <li>
-                    <a href="../repair#furniture-repair">Furniture Repair</a>
-                  </li>
-                  <li><a href="../repair#plumbing">Plumbing & Pipes</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
 
-          <li><a href="../aboutUs">About</a></li>
-          <li><a href="../contact">Contact</a></li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>AISKCON-Construction</title>
+  <script src="https://kit.fontawesome.com/280f5d0d38.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navbar Section Started -->
+  <nav class="navBar1">
+    <div class="fullNav">
+      <div id="logo">
+        <img src="../img/logo/navLogo.png" alt="AISKCON-Construction" />
+      </div>
+      <ul class="list1">
+        <li id="home"><a href="../">Home</a></li>
+        <li id="services">
+          <div>
+            <pre><a href="../ServiceSection">Services</a> <i class="fas fa-chevron-circle-down"></i></pre>
+          </div>
+          <div class="drop1">
+            <div class="empty"></div>
+            <div class="non-empty">
+              <ul>
+                <li>
+                  <a href="../ServiceSection#interior-designing">Interior Designing</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#construction-management">Construction Management</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#consultancy-services">Consultancy Services</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#environmental-services">Environmental Services</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#retrofication">Retrofication</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#destructive">Destructive & NDT Testing</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="repair">
+          <div>
+            <pre><a href="../repair">Repairs</a>  <i class="fas fa-chevron-circle-down"></i></pre>
+          </div>
+          <div class="drop2">
+            <div class="empty"></div>
+            <div class="non-empty">
+              <ul>
+                <li><a href="../repair#home-repair">Home Repairs</a></li>
+                <li>
+                  <a href="../repair#kitchen-repair">Kitchen Repairs</a>
+                </li>
+                <li>
+                  <a href="../repair#bathroom-repair">Bathroom Repair</a>
+                </li>
+                <li>
+                  <a href="../repair#furniture-repair">Furniture Repair</a>
+                </li>
+                <li><a href="../repair#plumbing">Plumbing & Pipes</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="../aboutUs">About</a></li>
+        <li><a href="../contact">Contact</a></li>
+        <li></li>
+      </ul>
+      <div id="bt2">
+        <button><i class="fa-solid fa-bars"></i></button>
+      </div>
     </div>
-    <!-- Navbar Section Finished -->
-
-    <!-- Hero Section Start -->
-    <section class="hero">
-      <div class="hero-overlay">
-        <div class="hero-heading">Improvement and Repair</div>
-      </div>
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- Repair name start -->
-    <section style="padding: 20px">
-      <p><a href="../">Home</a> / Improvement & Repair</p>
-    </section>
-    <!-- Repair name end -->
-
-    <!-- repair section start -->
-    <section id="home-repair" class="home-repair1">
-      <div class="home-repair-container1">
-        <div
-          class="home-repair-col1"
-          data-aos="fade-right"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <img src="../img/vectors/home-repair.jpg" alt="Home Repair" />
-        </div>
-        <div
-          class="home-repair-col1"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <h1>Home Repair</h1>
-          <p>
-            Home repair refers to the process of fixing or improving damaged or
-            broken parts of a house, such as walls, roofs, plumbing, electrical
-            systems, and more. It can range from small, routine repairs like
-            fixing a leaky faucet or patching a hole in the wall, to complex
-            projects like replacing a roof or renovating a bathroom.
-          </p>
-          <button onclick="window.location.href = '../slotBooking/form.html';">
-            Book appointment
-          </button>
-        </div>
-      </div>
-    </section>
-    <section id="kitchen-repair" class="home-repair">
-      <div class="home-repair-container">
-        <div
-          class="home-repair-col"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <h1>Kitchen Repair</h1>
-          <p>
-            Kitchen repair involves fixing or replacing damaged or broken parts
-            of a kitchen, such as cabinets, countertops, appliances, plumbing,
-            and electrical systems. Common kitchen repairs include fixing leaky
-            faucets, repairing or replacing broken cabinets or drawers,
-            repairing appliances, and fixing or replacing damaged flooring.
-          </p>
-          <button onclick="window.location.href = '../slotBooking/form.html';">
-            Book appointment
-          </button>
-        </div>
-        <div
-          class="home-repair-col"
-          data-aos="fade-right"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <img src="../img/vectors/kitchen.jpg" alt="Kitchen Repair" />
-        </div>
-      </div>
-    </section>
-    <section id="bathroom-repair" class="home-repair1">
-      <div class="home-repair-container1">
-        <div
-          class="home-repair-col1"
-          data-aos="fade-right"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <img src="../img/vectors/bathroom-repair.jpg" alt="Bathroom Repair" />
-        </div>
-        <div
-          class="home-repair-col1"
-          data-aos="fade-down"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <h1>Bathroom Repair</h1>
-          <p>
-            Bathroom repair involves fixing or replacing damaged or broken parts
-            of a bathroom, such as the toilet, sink, shower, bathtub, flooring,
-            and plumbing. Common bathroom repairs include fixing leaks,
-            repairing or replacing damaged tiles or flooring, repairing or
-            replacing broken fixtures, and unclogging drains. Proper and timely
-            bathroom repair is important to maintain the safety, functionality,
-            and value of a home.
-          </p>
-          <button onclick="window.location.href = '../slotBooking/form.html';">
-            Book appointment
-          </button>
-        </div>
-      </div>
-    </section>
-    <section id="furniture-repair" class="home-repair">
-      <div class="home-repair-container">
-        <div
-          class="home-repair-col"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <h1>Furniture Repair</h1>
-          <p>
-            Furniture repair involves fixing or restoring damaged or broken
-            furniture pieces. Common furniture repairs include fixing or
-            replacing broken legs or arms, repairing or replacing damaged
-            upholstery or cushions, and repairing or replacing broken drawers or
-            hardware. Proper and timely furniture repair is important to
-            maintain the functionality and aesthetic appeal of furniture pieces,
-            and to ensure their longevity.
-          </p>
-          <button onclick="window.location.href = '../slotBooking/form.html';">
-            Book appointment
-          </button>
-        </div>
-        <div
-          class="home-repair-col"
-          data-aos="fade-right"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <img
-            src="../img/vectors/furniture-repair.jpg"
-            alt="Furniture Repair"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="plumbing" class="home-repair1">
-      <div class="home-repair-container1">
-        <div
-          class="home-repair-col1"
-          data-aos="fade-right"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <img src="../img/vectors/plumber_1.jpg" alt="Plumbing and Pipes" />
-        </div>
-        <div
-          class="home-repair-col1"
-          data-aos="fade-down"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <h1>Plumbing and Pipes</h1>
-          <p>
-            Plumbing and pipes are an essential part of any building's
-            infrastructure, responsible for carrying water and other liquids
-            throughout the building. Regular maintenance and repair of plumbing
-            and pipes are essential to prevent leaks, water damage, and other
-            issues. Common plumbing and pipe problems include leaks, clogs,
-            broken pipes, and low water pressure.
-          </p>
-          <button onclick="window.location.href = '../slotBooking/form.html';">
-            Book appointment
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- repair section end -->
-
-    <!-- FAQ starts -->
-    <section class="faq">
-      <div class="faq-heading">
-        <h1>FAQs</h1>
-      </div>
-      <div class="faq-content">
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="500"
-        >
-          <div class="faq-question">
-            <h2>1. Why do I need an interior designer?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
+  </nav>
+  <div id="mobNavParent">
+    <nav class="navBar2 navOpen">
+      <ul class="list2">
+        <li><a href="../">Home</a></li>
+        <li>
+          <div id="services2">
+            <pre><a href="../ServiceSection">Services </a> <i id="ser" class="fas fa-chevron-circle-down"></i></pre>
           </div>
-          <div class="faq-answer">
-            <p>
-              You can think of an interior designer as a film director. Their
-              job is to monitor every minute detail from start to the final cut.
-              From pre-production to the final edit, their perspective is
-              responsible for shaping the final product. Similarly, interior
-              designers are professionals who are able to gauge your needs and
-              tastes to deliver your dream home. They assist you in getting
-              custom-designed pieces that fit perfectly into your beautiful
-              vision. From raw materials to finished products, they take care of
-              everything!
-            </p>
-          </div>
-        </div>
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <div class="faq-question">
-            <h2>2. Why is Aiskcon perfect for your design?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
-          </div>
-          <div class="faq-answer">
-            <p>
-              Aiskcon is the perfect partner who can build your home interiors
-              just the way you want! Our design experts customize designs as per
-              your needs. They will listen to your ideas and suggest options. At
-              Aiskcon, we incorporate advanced technology into our modular
-              solutions to create flawless interiors and also to expedite the
-              process of making your dream home a reality. So, book your
-              consultation today with India's Most Trusted Home Interiors Brand,
-              Aiskcon and talk to our designers about your project.
-            </p>
-          </div>
-        </div>
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="1500"
-        >
-          <div class="faq-question">
-            <h2>3. What services are included under home interior design?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
-          </div>
-          <div class="faq-answer">
-            <p>
-              Home interior design services typically include a wide range of
-              design and decor-related tasks that are aimed at improving the
-              functionality and aesthetics of a home's interior space. Some of
-              the most common services that are included under home interior
-              design are:
-              <br />
-              1. Space Planning <br />
-              2. Colour Selection <br />
-              3. Material Selection <br />
-              4. Lighting Design <br />
-              5. Furniture Selection <br />
-              6. Decorative Accessories
-            </p>
-          </div>
-        </div>
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="2000"
-        >
-          <div class="faq-question">
-            <h2>4. What will be the timelines for my project completion?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
-          </div>
-          <div class="faq-answer">
-            <p>
-              The timeline for a construction project completion can vary
-              depending on a number of factors, such as the size and complexity
-              of the project, the location, weather conditions, availability of
-              materials, etc. Here in Aiskcon we deliver the project efficiently
-              and on earliest possible time
-            </p>
-          </div>
-        </div>
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="2500"
-        >
-          <div class="faq-question">
-            <h2>6. What are the trending interior design styles?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
-          </div>
-          <div class="faq-answer">
-            <p>
-              1. Minimalism <br />
-              2. Biophilic design <br />
-              3. Industrial design <br />
-              4. Scandinavian design <br />
-              5. Bohemian design <br />
-              6. Modern farmhouse <br />
-              7. Art Deco <br />
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- FAQ end -->
-
-    <!-- Hire Us Section Start -->
-    <section class="hireus">
-      <div
-        class="hireus-box"
-        data-aos="fade-up"
-        data-aos-easing="ease"
-        data-aos-duration="1000"
-      >
-        <div class="hireus-content">
-          <h1>Transform your living space into a work of Art!</h1>
-          <button onclick="window.location.href='../slotBooking/form.html'">
-            Hire us
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- Hire Us Section End -->
-
-    <!-- Footer Section Started -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col footer-brand">
-            <div class="footer-logo">
-              <img src="../img/logo/aiskcon logo.png" alt="logo" srcset="" />
-            </div>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <div class="drop3">
+            <div class="empty"></div>
+            <div>
+              <ul>
+                <li>
+                  <a href="../ServiceSection#interior-designing">Interior Designing</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#construction-management">Construction Management</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#consultancy-services">Consultancy Services</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#environmental-services">Environmental Services</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#retrofication">Retrofication</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#destructive">Destructive & NDT Testing</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="footer-col service">
-            <h4>Services</h4>
-            <ul>
-              <li>
-                <a href="../ServiceSection#interior-designing"
-                  ><i class="fa-solid fa-angle-right"></i> Interior Designing</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#construction-management"
-                  ><i class="fa-solid fa-angle-right"></i> Construction
-                  Management</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#consultancy-services"
-                  ><i class="fa-solid fa-angle-right"></i> Consultancy
-                  Services</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#environmental-services"
-                  ><i class="fa-solid fa-angle-right"></i> Environmental
-                  Services</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#retrofication"
-                  ><i class="fa-solid fa-angle-right"></i> Retrofication</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#destructive"
-                  ><i class="fa-solid fa-angle-right"></i> Destructive & NDT
-                  Testing</a
-                >
-              </li>
-            </ul>
+        </li>
+        <li>
+          <div id="repair2">
+            <pre><a href="../repair">Repairs </a> <i id="rep" class="fas fa-chevron-circle-down"></i></pre>
           </div>
-          <div class="footer-col repair">
-            <h4>Repairs</h4>
-            <ul>
-              <li>
-                <a href="../repair#home-repair"
-                  ><i class="fa-solid fa-angle-right"></i> Home Repairs</a
-                >
-              </li>
-              <li>
-                <a href="../repair#kitchen-repair"
-                  ><i class="fa-solid fa-angle-right"></i> Kitchen Repairs</a
-                >
-              </li>
-              <li>
-                <a href="../repair#bathroom-repair"
-                  ><i class="fa-solid fa-angle-right"></i> Bathroom Repair</a
-                >
-              </li>
-              <li>
-                <a href="../repair#furniture-repair"
-                  ><i class="fa-solid fa-angle-right"></i> Furniture Repair</a
-                >
-              </li>
-              <li>
-                <a href="../repair#plumbing"
-                  ><i class="fa-solid fa-angle-right"></i> Plumbing & Pipes</a
-                >
-              </li>
-            </ul>
+          <div class="drop4">
+            <div class="empty"></div>
+            <div>
+              <ul>
+                <li><a href="../repair#home-repair">Home Repairs</a></li>
+                <li>
+                  <a href="../repair#kitchen-repair">Kitchen Repairs</a>
+                </li>
+                <li>
+                  <a href="../repair#bathroom-repair">Bathroom Repair</a>
+                </li>
+                <li>
+                  <a href="../repair#furniture-repair">Furniture Repair</a>
+                </li>
+                <li><a href="../repair#plumbing">Plumbing & Pipes</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="footer-col contact">
-            <h4>Contact</h4>
-            <ul>
-              <li>
-                <a href="mailto:aiskconofficial@gmail.com"
-                  ><i class="fa-solid fa-envelope"></i>
-                  aiskconofficial@gmail.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+919636243488"
-                  ><i class="fa-solid fa-phone"></i> +91-9636243488</a
-                >
-              </li>
-              <li>
-                <a href="tel:+919717010172"
-                  ><i class="fa-solid fa-phone"></i> +91-9717010172</a
-                >
-              </li>
-              <li>
-                <a href="tel:+916306849492"
-                  ><i class="fa-solid fa-phone"></i> +91-6306849492</a
-                >
-              </li>
-            </ul>
-          </div>
+        </li>
+
+        <li><a href="../aboutUs">About</a></li>
+        <li><a href="../contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Navbar Section Finished -->
+
+  <!-- Hero Section Start -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-heading">Improvement and Repair</div>
+    </div>
+  </section>
+  <!-- Hero Section End -->
+
+  <!-- Repair name start -->
+  <section style="padding: 20px">
+    <p><a href="../">Home</a> / Improvement & Repair</p>
+  </section>
+  <!-- Repair name end -->
+
+  <!-- repair section start -->
+  <section id="home-repair" class="home-repair1">
+    <div class="home-repair-container1">
+      <div class="home-repair-col1" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+        <img src="../img/vectors/home-repair.jpg" alt="Home Repair" />
+      </div>
+      <div class="home-repair-col1" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <h1>Home Repair</h1>
+        <p>
+          Home repair refers to the process of fixing or improving damaged or
+          broken parts of a house, such as walls, roofs, plumbing, electrical
+          systems, and more. It can range from small, routine repairs like
+          fixing a leaky faucet or patching a hole in the wall, to complex
+          projects like replacing a roof or renovating a bathroom.
+        </p>
+        <button onclick="window.location.href = '../slotBooking/form.html';">
+          <span> Book appointment</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section id="kitchen-repair" class="home-repair">
+    <div class="home-repair-container">
+      <div class="home-repair-col" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <h1>Kitchen Repair</h1>
+        <p>
+          Kitchen repair involves fixing or replacing damaged or broken parts
+          of a kitchen, such as cabinets, countertops, appliances, plumbing,
+          and electrical systems. Common kitchen repairs include fixing leaky
+          faucets, repairing or replacing broken cabinets or drawers,
+          repairing appliances, and fixing or replacing damaged flooring.
+        </p>
+        <button onclick="window.location.href = '../slotBooking/form.html';">
+          <span> Book appointment </span>
+        </button>
+      </div>
+      <div class="home-repair-col" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+        <img src="../img/vectors/kitchen.jpg" alt="Kitchen Repair" />
+      </div>
+    </div>
+  </section>
+  <section id="bathroom-repair" class="home-repair1">
+    <div class="home-repair-container1">
+      <div class="home-repair-col1" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+        <img src="../img/vectors/bathroom-repair.jpg" alt="Bathroom Repair" />
+      </div>
+      <div class="home-repair-col1" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000">
+        <h1>Bathroom Repair</h1>
+        <p>
+          Bathroom repair involves fixing or replacing damaged or broken parts
+          of a bathroom, such as the toilet, sink, shower, bathtub, flooring,
+          and plumbing. Common bathroom repairs include fixing leaks,
+          repairing or replacing damaged tiles or flooring, repairing or
+          replacing broken fixtures, and unclogging drains. Proper and timely
+          bathroom repair is important to maintain the safety, functionality,
+          and value of a home.
+        </p>
+        <button onclick="window.location.href = '../slotBooking/form.html';">
+          <span> Book appointment </span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section id="furniture-repair" class="home-repair">
+    <div class="home-repair-container">
+      <div class="home-repair-col" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <h1>Furniture Repair</h1>
+        <p>
+          Furniture repair involves fixing or restoring damaged or broken
+          furniture pieces. Common furniture repairs include fixing or
+          replacing broken legs or arms, repairing or replacing damaged
+          upholstery or cushions, and repairing or replacing broken drawers or
+          hardware. Proper and timely furniture repair is important to
+          maintain the functionality and aesthetic appeal of furniture pieces,
+          and to ensure their longevity.
+        </p>
+        <button onclick="window.location.href = '../slotBooking/form.html';">
+          <span>Book appointment</span>
+        </button>
+      </div>
+      <div class="home-repair-col" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+        <img src="../img/vectors/furniture-repair.jpg" alt="Furniture Repair" />
+      </div>
+    </div>
+  </section>
+  <section id="plumbing" class="home-repair1">
+    <div class="home-repair-container1">
+      <div class="home-repair-col1" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+        <img src="../img/vectors/plumber_1.jpg" alt="Plumbing and Pipes" />
+      </div>
+      <div class="home-repair-col1" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000">
+        <h1>Plumbing and Pipes</h1>
+        <p>
+          Plumbing and pipes are an essential part of any building's
+          infrastructure, responsible for carrying water and other liquids
+          throughout the building. Regular maintenance and repair of plumbing
+          and pipes are essential to prevent leaks, water damage, and other
+          issues. Common plumbing and pipe problems include leaks, clogs,
+          broken pipes, and low water pressure.
+        </p>
+        <button onclick="window.location.href = '../slotBooking/form.html';">
+          <span> Book appointment</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- repair section end -->
+
+  <!-- FAQ starts -->
+  <section class="faq">
+    <div class="faq-heading">
+      <h1>FAQs</h1>
+    </div>
+    <div class="faq-content">
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">
+        <div class="faq-question">
+          <h2>1. Why do I need an interior designer?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
         </div>
-
-        <hr style="margin: 0 auto; width: 90%; margin-top: 10px" />
-
-        <div>
-          <div class="footer-copyright"></div>
+        <div class="faq-answer">
+          <p>
+            You can think of an interior designer as a film director. Their
+            job is to monitor every minute detail from start to the final cut.
+            From pre-production to the final edit, their perspective is
+            responsible for shaping the final product. Similarly, interior
+            designers are professionals who are able to gauge your needs and
+            tastes to deliver your dream home. They assist you in getting
+            custom-designed pieces that fit perfectly into your beautiful
+            vision. From raw materials to finished products, they take care of
+            everything!
+          </p>
         </div>
       </div>
-    </footer>
-    <!-- Footer Section Finished -->
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="faq-question">
+          <h2>2. Why is Aiskcon perfect for your design?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Aiskcon is the perfect partner who can build your home interiors
+            just the way you want! Our design experts customize designs as per
+            your needs. They will listen to your ideas and suggest options. At
+            Aiskcon, we incorporate advanced technology into our modular
+            solutions to create flawless interiors and also to expedite the
+            process of making your dream home a reality. So, book your
+            consultation today with India's Most Trusted Home Interiors Brand,
+            Aiskcon and talk to our designers about your project.
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500">
+        <div class="faq-question">
+          <h2>3. What services are included under home interior design?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Home interior design services typically include a wide range of
+            design and decor-related tasks that are aimed at improving the
+            functionality and aesthetics of a home's interior space. Some of
+            the most common services that are included under home interior
+            design are:
+            <br />
+            1. Space Planning <br />
+            2. Colour Selection <br />
+            3. Material Selection <br />
+            4. Lighting Design <br />
+            5. Furniture Selection <br />
+            6. Decorative Accessories
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2000">
+        <div class="faq-question">
+          <h2>4. What will be the timelines for my project completion?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            The timeline for a construction project completion can vary
+            depending on a number of factors, such as the size and complexity
+            of the project, the location, weather conditions, availability of
+            materials, etc. Here in Aiskcon we deliver the project efficiently
+            and on earliest possible time
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2500">
+        <div class="faq-question">
+          <h2>6. What are the trending interior design styles?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            1. Minimalism <br />
+            2. Biophilic design <br />
+            3. Industrial design <br />
+            4. Scandinavian design <br />
+            5. Bohemian design <br />
+            6. Modern farmhouse <br />
+            7. Art Deco <br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ end -->
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="../js/main.js"></script>
-  </body>
+  <!-- Hire Us Section Start -->
+  <section class="hireus">
+    <div class="hireus-box" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+      <div class="hireus-content">
+        <h1>Transform your living space into a work of Art!</h1>
+        <button onclick="window.location.href='../slotBooking/form.html'">
+          <span> Hire us</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Hire Us Section End -->
+
+  <!-- Footer Section Started -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <img src="../img/logo/aiskcon logo.png" alt="logo" srcset="" />
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col service">
+          <h4>Services</h4>
+          <ul>
+            <li>
+              <a href="../ServiceSection#interior-designing"><i class="fa-solid fa-angle-right"></i> Interior
+                Designing</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#construction-management"><i class="fa-solid fa-angle-right"></i> Construction
+                Management</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#consultancy-services"><i class="fa-solid fa-angle-right"></i> Consultancy
+                Services</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#environmental-services"><i class="fa-solid fa-angle-right"></i> Environmental
+                Services</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#retrofication"><i class="fa-solid fa-angle-right"></i> Retrofication</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#destructive"><i class="fa-solid fa-angle-right"></i> Destructive & NDT
+                Testing</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col repair">
+          <h4>Repairs</h4>
+          <ul>
+            <li>
+              <a href="../repair#home-repair"><i class="fa-solid fa-angle-right"></i> Home Repairs</a>
+            </li>
+            <li>
+              <a href="../repair#kitchen-repair"><i class="fa-solid fa-angle-right"></i> Kitchen Repairs</a>
+            </li>
+            <li>
+              <a href="../repair#bathroom-repair"><i class="fa-solid fa-angle-right"></i> Bathroom Repair</a>
+            </li>
+            <li>
+              <a href="../repair#furniture-repair"><i class="fa-solid fa-angle-right"></i> Furniture Repair</a>
+            </li>
+            <li>
+              <a href="../repair#plumbing"><i class="fa-solid fa-angle-right"></i> Plumbing & Pipes</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="mailto:aiskconofficial@gmail.com"><i class="fa-solid fa-envelope"></i>
+                aiskconofficial@gmail.com</a>
+            </li>
+            <li>
+              <a href="tel:+919636243488"><i class="fa-solid fa-phone"></i> +91-9636243488</a>
+            </li>
+            <li>
+              <a href="tel:+919717010172"><i class="fa-solid fa-phone"></i> +91-9717010172</a>
+            </li>
+            <li>
+              <a href="tel:+916306849492"><i class="fa-solid fa-phone"></i> +91-6306849492</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr style="margin: 0 auto; width: 90%; margin-top: 10px" />
+
+      <div>
+        <div class="footer-copyright"></div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section Finished -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../js/main.js"></script>
+</body>
+
 </html>
