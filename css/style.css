@@ -363,7 +363,7 @@ position: relative;
 @media (max-width: 1024px) {
   .hero-content h1 {
     font-size: 5vw;
-  }
+  } 
 }
 @media (max-width: 767px) {
   .hero-content {

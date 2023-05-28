@@ -1,0 +1,157 @@
+body {
+  background-color: #ffffff; /* Light mode background color */
+  color: #000000; /* Light mode text color */
+}
+
+.dark-mode {
+    background-color: #333333; /* Dark mode background color */
+    color: #ffffff; /* Dark mode text color */
+}
+
+.dark-mode #logo img{
+  -webkit-filter: invert(90%); filter: invert(90%);
+}
+
+/* Additional styles for dark mode */
+.dark-mode .navBar1,
+.dark-mode .navBar2 {
+  background-color: #262525; /* Dark mode navigation background color */
+  color: #ffffff; /* Dark mode navigation text color */
+}
+
+.dark-mode .navBar1 i,
+.dark-mode .navBar2 i {
+  /* color: rgb(48, 61, 203); */
+  color: #a1a1ba;
+  background-image: linear-gradient(315deg, #a06322 0%, #e88f09 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark-mode .list1 a:hover,
+.dark-mode .list2 a:hover {
+  color: #292828;
+  background-image: linear-gradient(315deg, #ffffff 0%, #fffdf9 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark-mode .non-empty{
+  background-color: #292323;
+}
+
+.dark-mode .drop1 a,
+.dark-mode .drop2 a {
+  color: rgb(240, 237, 237);
+}
+
+.dark-mode .drop1 li:hover,
+.dark-mode .drop2 li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .hero-content h1,
+.dark-mode .btn{
+  font-weight: bold;
+  color: #1b1611;
+  background-image: linear-gradient(315deg, #e38a24 0%, #e98324 74%);
+}
+
+.dark-mode .services-heading{
+  color: #ff7b00;
+}
+
+.dark-mode .hero-img{
+  filter: invert(80%);
+} 
+
+.dark-mode .image-quality{
+  filter: invert(95%);
+} 
+
+.dark-mode a {
+  color: #ffffff; /* Dark mode link text color */
+}
+.dark-mode h1{
+  color: white;
+}
+
+#dark-mode-toggle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#dark-mode-toggle i {
+  font-size: 24px;
+}
+
+.dark-mode .testinomial-container{
+  border-radius: 10px;
+  background-image: url(../img/bg/sevice-back.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  filter: invert(20%);
+}
+
+.dark-mode .testinomial-card {
+  box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.47);
+  border: 1px solid rgba(0, 0, 0, 0.576);
+}
+
+.dark-mode .testinomial-header p {
+  margin-bottom: 10px;
+  margin-top: 0 !important;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffffb7;
+}
+
+.dark-mode .footer-col h4{
+  color: #ffffff;
+}
+
+.dark-mode .footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e1e0e6;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.dark-mode .footer-col ul li a{
+  color:#eeececc7;
+}
+
+.dark-mode .footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.dark-mode .general-info-card {
+  background-color: #b7b7c5;
+  background-image: linear-gradient(315deg, #dcd3cc 0%, #f79b12 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark-mode .hireus-box{
+   background-color: #1014e6;
+}
+
+.dark-mode .footer-logo img{
+  filter: invert(90%);
+}
