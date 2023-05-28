@@ -848,7 +848,7 @@ canvas {
   grid-column: -3 / span 2;
 }
 .testinomial-card-head {
-  display: flex;
+  display: flex; 
   align-items: center;
 }
 .testinomial-card-head img {

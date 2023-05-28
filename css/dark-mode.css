@@ -101,19 +101,29 @@ body {
   background-image: url(../img/bg/sevice-back.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  filter: invert(20%);
+  /* filter: invert(20%); */
 }
 
 .dark-mode .testinomial-card {
-  box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.47);
-  border: 1px solid rgba(0, 0, 0, 0.576);
+  box-shadow: 2px 5px 10px 2px rgba(69, 68, 68, 0.47);
+  border: 1px solid rgba(0, 0, 0, 0.276);
+  background-color: #000000cd;
+}
+
+.dark-mode .testinomial-card p{
+  color: rgb(185, 183, 183);
 }
 
 .dark-mode .testinomial-header p {
   margin-bottom: 10px;
   margin-top: 0 !important;
   font-family: 'Poppins', sans-serif;
-  color: #ffffffb7;
+  color: #e5e3e3e4;
+}
+
+.dark-mode .testinomial-card h3,
+.dark-mode .testinomial-card a{
+   color:#e27c07;
 }
 
 .dark-mode .footer-col h4{
@@ -154,4 +164,8 @@ body {
 
 .dark-mode .footer-logo img{
   filter: invert(90%);
+}
+
+.dark-mode .footer-copyright {
+  color: rgba(223, 222, 225, 0.81);
 }
