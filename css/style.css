@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -101,6 +102,7 @@ ul {
   position: absolute;
   min-width: 160px;
   z-index: 1;
+  opacity: 95%;
 }
 
 .empty {
@@ -112,6 +114,7 @@ ul {
   border: 1.5px solid rgba(128, 128, 128, 0.395);
   padding: 10px;
   border-radius: 5px;
+  opacity: 95%;
 }
 
 .drop1 a,
@@ -310,6 +313,7 @@ ul {
   font-size: 1.1rem;
 }
 .hero-content button {
+position: relative;
   margin: 30px 0;
   width: 150px;
   height: 50px;
@@ -320,11 +324,31 @@ ul {
   background-color: #2a2a72;
   background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
   opacity: 0.9;
-  transition: 0.3s all ease;
-}
-.hero-content button:hover {
-  opacity: 1;
   cursor: pointer;
+}
+.hero-content button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3em;
+    background-image: linear-gradient(
+        45deg,
+        #2a2a72 0%,
+        #243fe9 74%
+    );
+    transition: opacity 0.3s ease-out;
+    z-index: 2;
+    opacity: 0;
+}
+.hero-content button:hover:after {
+  opacity: 1;
+}
+.hero-content button > span {
+    position: relative;
+    z-index: 3;
 }
 .hero-img {
   width: 50%;
@@ -850,19 +874,19 @@ canvas {
   #testinomial-card-5 {
     grid-column: span 3 / span 4;
   }
-  .testinomial-header{
+  .testinomial-header {
     width: 90%;
   }
 }
 
 @media (max-width: 767px) {
-  .testimonials{
+  .testimonials {
     margin-top: 8%;
   }
   .testinomial-container {
     display: block;
   }
-  .testinomial-card{
+  .testinomial-card {
     margin-top: 10px;
   }
 }
@@ -948,11 +972,20 @@ canvas {
   text-align: right;
 }
 .faq-answer {
-  display: none;
-  margin: 20px;
   line-height: 1.6;
   font-family: 'poppins', sans-serif;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
+
+.show-answer {
+  padding: 20px;
+  max-height: fit-content;
+  opacity: 1;
+}
+
 .faq-heading {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 30px;
@@ -961,6 +994,25 @@ canvas {
   font-weight: 650;
 }
 /* Faq End */
+
+/* Scroll to top button */
+
+.gotop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  /* color: #2a2a72; */
+  background: linear-gradient(315deg, #2a2a72 20%, #14227b 20%, #243fe9 60%);
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  bottom: 40px;
+  right: 50px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
 
 /* Footer START */
 .footer {

@@ -19,19 +19,19 @@ document.querySelector('#bt2 button').addEventListener('click', () => {
   document.getElementById('rep').setAttribute('class', 'fas fa-chevron-circle-down');
   document.querySelector('.drop3').style.display = 'none';
   document.querySelector('.drop4').style.display = 'none';
-  if (document.querySelector('.navBar2').style.display == 'block')
-   {
+  if (document.querySelector('.navBar2').style.display == 'block') {
     document.querySelector('.navBar2').classList.replace('navOpen', 'navClose');
     document.querySelector('.navBar1').style.boxShadow = 'none';
-    setTimeout(()=>{
+    setTimeout(() => {
+      document.querySelector('#bt2 button i').classList.replace('fa-times', 'fa-bars');
       document.querySelector('.navBar2').style.display = 'none';
     }, 750);
-  } 
-  else
-   {
+  }
+  else {
     document.querySelector('.navBar2').style.display = 'block';
     document.querySelector('.navBar2').classList.replace('navClose', 'navOpen');
-    document.querySelector('.navBar1').style.boxShadow ='0px 24px 3px -24px gray';
+    document.querySelector('.navBar1').style.boxShadow = '0px 24px 3px -24px gray';
+    document.querySelector('#bt2 button i').classList.replace('fa-bars', 'fa-times');
   }
 });
 
@@ -44,7 +44,7 @@ document.querySelector('#services2').addEventListener('click', () => {
     document.getElementById('ser').setAttribute('class', 'fas fa-chevron-circle-down');
   if (document.querySelector('.drop3').style.display == 'block')
     document.querySelector('.drop3').style.display = 'none';
-  else 
+  else
     document.querySelector('.drop3').style.display = 'block';
 });
 document.querySelector('#repair2').addEventListener('click', () => {
@@ -56,7 +56,7 @@ document.querySelector('#repair2').addEventListener('click', () => {
     document.getElementById('rep').setAttribute('class', 'fas fa-chevron-circle-down');
   if (document.querySelector('.drop4').style.display == 'block')
     document.querySelector('.drop4').style.display = 'none';
-  else 
+  else
     document.querySelector('.drop4').style.display = 'block';
 });
 document.querySelector('#services2').addEventListener('mouseover', () => {
@@ -103,18 +103,17 @@ faqQuestions.forEach((question) => {
   question.addEventListener('click', () => {
     const answer = question.nextElementSibling;
     const icon = question.children[1];
-    if (answer.style.display === 'block') {
+    answer.classList.toggle("show-answer")
+    if (!answer.classList.contains("show-answer")) {
       icon.setAttribute('class', 'fa-solid fa-plus fa-xl');
-      answer.style.display = 'none';
-    } else{
+    } else {
       icon.setAttribute('class', 'fa-solid fa-minus fa-xl');
-      answer.style.display = 'block';
     }
   });
 });
 
 
-if(document.querySelector('.footer-copyright')){
+if (document.querySelector('.footer-copyright')) {
   let year = new Date();
   year = year.getFullYear();
   document.querySelector('.footer-copyright').innerHTML = 'Copyright &#169; ' + year + ' <a href="./">Aiskcon</a>, All Rights Reserved';
@@ -166,7 +165,7 @@ particlesJS("particles-js", {
       grab: { distance: 400, line_linked: { opacity: 1 } },
       bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
       repulse: { distance: 150, duration: 0.8 },
-      push: { particles_nb: 10,},
+      push: { particles_nb: 10, },
       remove: { particles_nb: 2 }
     }
   },
