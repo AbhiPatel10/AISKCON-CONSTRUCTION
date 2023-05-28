@@ -1005,9 +1005,11 @@ canvas {
 /* Footer START */
 .footer {
   background-color: #1c55a416;
+  padding: 70px 0;
   padding-top: 160px;
 }
 .container {
+  max-width: 1250px;
   margin: auto;
   font-family: 'Poppins', sans-serif;
 }
@@ -1116,23 +1118,15 @@ canvas {
 .footer-copyright {
   text-align: center;
   margin-top: 20px;
-  /* color: rgba(23, 5, 57, 0.58); */
+  color: rgba(23, 5, 57, 0.58);
 }
-.copyright-section{
-  background: black;
-  color: rgb(160, 158, 158);
-  width: 100%;
-  padding-top: 8px;
-  padding-bottom: 25px;
-  margin-top: 60px;
-  font-size: 1rem;
-}
+
 .footer-copyright a {
-  color: rgb(151, 212, 243);
+  color: #1d0f44ad;
   transition: all 0.3s ease;
 }
 .footer-copyright a:hover {
-  color: #9e7ff4;
+  color: #0f0135;
   padding: 3px;
 }
 @media (max-width: 920px) {
