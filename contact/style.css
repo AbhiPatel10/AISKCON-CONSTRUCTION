@@ -1,7 +1,7 @@
 /* Hero Section Start */
 .hero {
   background: url('../img/bg/contact_us.jpg');
-  height: 250px;
+  height: 300px;
   background-size: cover;
   background-attachment: fixed;
   background-position: 80% 0px;
@@ -44,21 +44,18 @@
   margin-top: 2%;
   display: flex;
   flex-wrap: wrap;
+  color:#00308F
 }
 .getintouch-contact-cards{
   width: 23%;
   margin: 1% auto 1%;
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.326);
-  background: linear-gradient(109.6deg, rgb(25, 23, 23) 11.2%, rgb(11, 132, 145) 91.1%);
-  /* background-color: #204FA1; */
-  background-color: #000000ce;
-  background-image: linear-gradient(315deg, #2a2a72b0 0%, #021ab7c1 76%);
   padding: 26px;
-  border-radius: 12px;
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+  border: 1px solid transparent;
   text-align: center;
   height: 220px;
-  line-height: 2;
-  color: white;
+  line-height: 2.3;
+  display: block;
   cursor: pointer;
 }
 .getintouch-icon{
@@ -68,29 +65,25 @@
 .getintouch-card-content{
   width: 100%;
   text-align: center;
+  color:#00308F;
 }
 .getintouch-card-content h3{
   font-size: 1.4rem;
   margin-bottom: 10px;
-  color: rgb(255, 255, 255);
   letter-spacing: 1.2px;
 }
 .getintouch-card-content p{
   font-size: 1.1rem;
   line-height: 2;
-  color: rgba(255, 255, 255, 0.833);
 }
 .getintouch-card-content a{
   font-size: 1.1rem;
   line-height: 2;
-  color: rgba(255, 255, 255, 0.833);
-  transition: all 0.3s ease-in-out; /* Add transition for smooth effect */
 }
 
-.getintouch-card-content a:hover {
-  color: #fff; /* Change color on hover */
-  text-shadow: 0px 0px 10px #fff; /* Add text-shadow on hover */
-  cursor: pointer; /* Add pointer cursor on hover */
+.getintouch-contact-cards:hover {
+  border-color: rgba(0, 0, 0, .08);
+    box-shadow: none;
 }
 
 @media (max-width: 1200px) {
