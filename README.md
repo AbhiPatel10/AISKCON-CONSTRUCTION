@@ -18,7 +18,9 @@ We at Aiskcon Construction helps people with construction projects. We are proud
       <br>
       <img src="https://img.shields.io/badge/Project%20Admin-AbhiPatel10-blue?style=for-the-badge" />
       <img src="https://img.shields.io/badge/Project%20Mentor-PiyushLakheda-green?style=for-the-badge" />
- </div>
+      <img src="https://img.shields.io/badge/Project%20Mentor-kartikayasija-green?style=for-the-badge" />
+      <img src="https://img.shields.io/badge/Project%20Mentor-Rolikaagarwal-green?style=for-the-badge" />
+</div>
 ### Techstacks:
 The Techs we have used for making this website:
 
