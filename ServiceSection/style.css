@@ -11,7 +11,9 @@
 .serviceimg-container img {
   width: 100%;
   height: 100%;
-  opacity: 0.9;
+  filter: brightness(.9);
+  object-fit: cover;
+  object-position: 15%;
 }
 
 .OUR-services {
