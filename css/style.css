@@ -934,7 +934,8 @@ canvas {
   /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
   /* box-shadow: rgb(95, 95, 95) 3px 3px 6px 0px inset, rgba(82, 81, 81, 0.5) -3px -3px 6px 1px inset; */
   /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset; */
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  /* box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   /* background-color: #f4efef; */
   /* background-image: linear-gradient(40deg, #DECBA4, #dbd0b2); */
   padding: 14px;
