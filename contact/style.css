@@ -1,6 +1,6 @@
 /* Hero Section Start */
 .hero {
-  background: url('../img/bg/contact_us.webp');
+  background: url('../img/bg/contact.jpg');
   height: 250px;
   background-size: cover;
   background-attachment: fixed;
@@ -74,6 +74,10 @@
   margin-bottom: 10px;
   color: rgb(255, 255, 255);
   letter-spacing: 1.2px;
+}
+.getintouch-card-content h3:hover{
+  color: black;
+  background-color: whitesmoke;
 }
 .getintouch-card-content p{
   font-size: 1.1rem;
