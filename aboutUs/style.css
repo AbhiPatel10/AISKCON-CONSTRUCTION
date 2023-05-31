@@ -3,6 +3,18 @@
 a{
   color: #1c55a4;
 }
+.text
+{
+    color: #1c55a4;
+    margin-left: 10px; /* Adjust the value as per your requirement */
+    vertical-align: middle; /* Aligns the text vertically with the image */
+    position: relative;
+    font-size: 50px;
+    position: absolute;
+    bottom: 10px; /* Adjust the value as needed */
+    font-weight: bolder;
+  }
+  
 h1 {
   font-family: 'Mulish', sans-serif;
   margin-bottom: 20px;
