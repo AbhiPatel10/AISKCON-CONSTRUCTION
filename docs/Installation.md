@@ -3,7 +3,7 @@
 
 
 ##  Cloning a repository-
-&bull; On GitHub.com, navigate to the main page of the repository..
+&bull; On GitHub.com, navigate to the main page of the repository...
 -  Above the list of files, **click  Code**. 
 
 ![new code](https://user-images.githubusercontent.com/81984963/233764153-251f9cde-0d94-46f1-bf51-2709649b6a0b.jpg)
