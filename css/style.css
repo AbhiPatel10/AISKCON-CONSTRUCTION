@@ -27,6 +27,18 @@ ul {
   z-index: 2;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.nav{
+  display: flex;
+  justify-content: center;
+}
+.header{
+  color:#046c5c;
+  margin-top:22px ;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
 
 .fullNav {
   height: 79px;
