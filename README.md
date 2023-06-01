@@ -21,19 +21,52 @@ We at Aiskcon Construction helps people with construction projects. We are proud
       <img src="https://img.shields.io/badge/Project%20Mentor-kartikayasija-green?style=for-the-badge" />
       <img src="https://img.shields.io/badge/Project%20Mentor-Rolikaagarwal-green?style=for-the-badge" />
 </div>
-### Techstacks:
-The Techs we have used for making this website:
+<!-- ### Techstacks:
+The Techs we have used for making this website: -->
+<div align="center">
+<h2><img src="https://github.com/Shrejal123/DataScienceWebsite.github.io/assets/114261409/e325eb32-a9c4-448a-a6bc-74430172d515" alt="High Voltage" width="50" height="50" /><font size="8">Tech Stack</font></h2>
+</div>
+<div align="center">
+<p>
+	**For Frontend**
+	<br>
+	<br>
+<img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white">
+<img src="https://img.shields.io/badge/CSS-1572B6.svg?style=for-the-badge&logo=CSS3&logoColor=black">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black">
+<br>
+<br>
+**For Back-End**
+	<br>
+<img src="https://github.com/Shrejal123/AISKCON-CONSTRUCTION/assets/114261409/5b9fc8ef-9082-4dc5-a0e8-49f43646e729 width="70" height="70" />
+</p>
+</div>
+																	 
+**Components of Website**
+																	 
+**Landing Page**
+																	 
+This is the initial page a user sees when the website is opened. The navigation bar on the website is divided into several areas, including about, courses, FAQ, and contact.	
+																	 
+![a1](https://github.com/Shrejal123/AISKCON-CONSTRUCTION/assets/114261409/62a393de-86c1-4b4d-ba47-ff661fe75102)
+																	 
+**Our Services**
 
-#### For Front-End:
+![a2](https://github.com/Shrejal123/AISKCON-CONSTRUCTION/assets/114261409/5193c936-14a6-4235-97d8-45539d7d5979)
 
-`HTML`
-`CSS`
-`JAVASCRIPT`
+**Repairs Section**																	 
+																	 
+![a3](https://github.com/Shrejal123/AISKCON-CONSTRUCTION/assets/114261409/1cc663b8-7f68-45f0-9844-3923ce6718e3)
+																	 
+**About Section**
+																	 
+![a4](https://github.com/Shrejal123/AISKCON-CONSTRUCTION/assets/114261409/82d84aac-317d-4446-848d-66822ae933ee)
 
-#### For Back-End
-
-`Node.js`
-
+**Contacts**
+																	 
+![a5](https://github.com/Shrejal123/AISKCON-CONSTRUCTION/assets/114261409/9d6bb186-64e7-4312-ba78-a1ad0b7c8462)
+																	 
+																	 
 #### Usefull Extentions
 
 - Prettier - Code formatter
@@ -60,4 +93,4 @@ The Techs we have used for making this website:
          cd backend     
          npm start
 
-
+### Show some ❤ by starring ⭐ the repository
