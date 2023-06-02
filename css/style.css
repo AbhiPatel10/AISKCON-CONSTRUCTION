@@ -35,7 +35,9 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-
+.nav_fix{
+  position: sticky !important;
+}
 .list1 {
   gap: 50px;
   display: flex;
