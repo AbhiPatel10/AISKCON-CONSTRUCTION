@@ -250,6 +250,40 @@
                 <p>Choose appointment mode!</p>
               </div>
             </div>
+
+            <div class="form-input">
+              <label for="time">Type of Service <span>*</span></label>
+              <div>
+                <select name="service" id="service">
+                  <option value="">Select</option>
+                  <option value="InteriorDesigining">Interior Desigining</option>
+                  <option value="ConstructionManagement">Construction Management</option>
+                  <option value="ConsultancyServices">Consultancy Services</option>
+                  <option value="EnvironmentalServices">Environmental Services</option>
+                  <option value="Retrofication">Retrofication</option>
+                  <option value="Destructive&NDTTesting">Destructive and NDT Testing</option>
+                  <option value="none">None</option>
+                </select>
+                <p>Choose Type Of Service!</p>
+              </div>
+            </div>
+
+            <div class="form-input">
+              <label for="time">Type of Repair <span>*</span></label>
+              <div>
+                <select name="repair" id="repair">
+                  <option value="">Select</option>
+                  <option value="HomeRepairs">Home Repairs</option>
+                  <option value="KitchenRepairs">Kitchen Repairs</option>
+                  <option value="BathroomRepairs">Bathroom Repairs</option>
+                  <option value="FurnitureRepairs">Furniture Repairs</option>
+                  <option value="PlumbingRepairs">Plumbing Repairs</option>
+                  <option value="none">None</option>
+                </select>
+                <p>Choose Type Of Repair!</p>
+              </div>
+            </div>
+
             <div class="form-input">
               <label for="address">Address <span>*</span></label>
               <div>
@@ -275,14 +309,14 @@
               </div>
             </div>
             <div class="form-input">
-              <label for="pinCode">Message <span>*</span></label>
+              <label for="pinCode">Service / Repair Description <span>*</span></label>
               <div>
                 <textarea
                   name="message"
                   id="message"
                   cols="30"
                   rows="1"
-                  placeholder="Enter your project details here..."
+                  placeholder="Describe the issue here..."
                 ></textarea>
                 <p>Enter project details!</p>
               </div>
