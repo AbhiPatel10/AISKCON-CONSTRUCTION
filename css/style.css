@@ -1106,8 +1106,8 @@ canvas {
 /* chatbot START */
 .chatbot-btn {
     position: fixed;
-    right: 8rem;
-    bottom: 2.5rem;
+    right: 3.125rem;
+    bottom: 6rem;
     width: 50px;
     height: 50px;
     background-color: #2a2a72;
@@ -1144,7 +1144,7 @@ canvas {
 }
 .chat-container {
     position: fixed;
-    bottom: 7rem;
+    bottom: 10rem;
     right: 3rem;
     z-index: 3;
     background-color: white;
