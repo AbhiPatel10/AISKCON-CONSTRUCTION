@@ -21,3 +21,16 @@ To get an overview of the project, read the README.md Here are some steps to hel
  - As you update your PR and apply changes, ***mark each conversation as resolved.***
 
  - **Once your PR is merged, your contributions will be publicly visible.**
+
+### General Rules :
+These are general rules that you should  follow when contributing to an Open Source project :
+
+- Be Nice, Be Respectful (BNBR)
+- Check if the issue you opened exists or not. If it exists do not reopen it.
+- While opening a new issue, make sure you describe the issue clearly.
+- Write proper commit messages and document your PR well.
+- Always add comments in your code and explain it at points, if possible add Doctest.
+- Write clean code and follow proper coding conventions.
+
+
+Thank you ❤
