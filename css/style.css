@@ -1411,5 +1411,35 @@ canvas {
   .footer-col .social-links a {
     margin: 30px 25px 10px 0px;
   }
+  
+  
+  
+  /* scroll bar style */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #251e1e;
+  border-radius: 4px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #333;
+}
+
 }
 /* FOOTER END */
