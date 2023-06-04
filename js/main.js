@@ -143,6 +143,119 @@ if (document.querySelector('.footer-copyright')) {
   document.querySelector('.footer-copyright').innerHTML = 'Copyright &#169; ' + year + ' <a href="./">Aiskcon</a>, All Rights Reserved';
 }
 
+// ******************* CHATBOT Start ***********************
+const responseArr = [
+    {
+        hello: "Hello I am AiBot, What would you like to know?",
+    },
+
+    {
+        faq1: "Why do I need an interior designer?",
+        faq2: "Why is Aiskcon perfect for your design?",
+        faq3: "What services are included under home interior design",
+        faq4: "What will be the timelines for my project completion?",
+        faq5: "What are the trending interior design styles?",
+    },
+
+    {
+        answer1:
+            "Interior designers are professionals who are able to gauge your needs and tastes to deliver your dream home. They assist you in getting custom-designed pieces that fit perfectly into your beautiful vision.",
+        answer2:
+            "Aiskcon is the perfect partner who can build your home interiors just the way you want! Our design experts customize designs as per your needs. They will listen to your ideas and suggest options. At Aiskcon, we incorporate advanced technology into our modular solutions to create flawless interiors and also to expedite the process of making your dream home a reality.",
+        answer3:
+            "Some of the most common services that are included under home interior design are: Space planning, Colour Selection, Material Selection, Lighting Design, Furniture Selection, Decorative Accessories",
+        answer4:
+            "The timeline for a construction project completion can vary depending on a number of factors, such as the size and complexity of the project, the location, weather conditions, availability of materials",
+        answer5:
+            "Minimalism, Biophilic design, Industrial design, Scandinavian design, Bohemian design, Modern farmhouse, Art Deco",
+    },
+];
+const chatBotBtn = document.querySelector(".chatbot-btn");
+const chatContainer = document.querySelector(".chat-container")
+const chatBody = document.querySelector(".chat-body");
+const chatInput = document.querySelector(".chat-input");
+const chatForm = document.querySelector(".chat-form");
+const chatFormBtn = document.querySelector(".chatform-btn");
+
+chatBotBtn.addEventListener("click", () => {
+    chatContainer.classList.toggle("show-chat")
+    if (!chatContainer.classList.contains("show-chat")) {
+        clearChatBody()
+    }
+})
+
+chatInput.addEventListener("input", () => {
+    if (!chatInput.value.trim() == "") {
+        chatFormBtn.removeAttribute("disabled")
+    } else {
+        chatFormBtn.setAttribute("disabled", true)
+    }
+});
+
+chatForm.addEventListener("submit", (e) => {
+    e.preventDefault()
+    renderMessages()
+    clearInput()
+})
+
+const renderMessages = () => {
+    renderUserMessage()
+    renderChatBotMessage()
+}
+
+const renderUserMessage = () => {
+    const userInput = chatInput.value;
+    const messageElement = document.createElement("div");
+    messageElement.textContent = userInput;
+    messageElement.classList.add("user-message");
+    chatBody.append(messageElement);
+};
+
+const renderChatBotMessage = () => {
+    const userInput = chatInput.value;
+    const response = getChatBotResponse();
+    let botMessageElement = document.createElement("div");
+    const faq = document.createElement("div");
+    botMessageElement.textContent = response;
+    faq.innerHTML = `
+    <div> ${responseArr[1]["faq1"]} </div> 
+    <div> ${responseArr[1]["faq2"]} </div> 
+    <div> ${responseArr[1]["faq3"]} </div> 
+    <div> ${responseArr[1]["faq4"]} </div> 
+    <div> ${responseArr[1]["faq5"]} </div>`;
+    faq.classList.add("chat-faqs")
+    botMessageElement.classList.add("bot-message");
+    chatBody.append(botMessageElement);
+    chatBody.append(faq);
+
+    faq.querySelectorAll("div").forEach((child, index) => {
+        child.addEventListener("click", () => {
+            botMessageElement.textContent = responseArr[2][`answer${index + 1}`]
+            botMessageElement.classList.add("bot-message")
+            chatBody.append(botMessageElement)
+            scrollPosition()
+        })
+    })
+};
+
+const getChatBotResponse = () => {
+    return responseArr[0]["hello"];
+};
+
+const clearInput = () => {
+    chatInput.value = "";
+};
+
+const clearChatBody = () => {
+    chatBody.innerHTML = "";
+}
+
+const scrollPosition = () => {
+    chatBody.scrollTop = chatBody.scrollHeight
+}
+
+// ******************* CHATBOT End *************************
+
 // Particle Js
 particlesJS("particles-js", {
   particles: {

@@ -1,694 +1,577 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>AISKCON-Construction</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico" />
-    <script
-      src="https://kit.fontawesome.com/280f5d0d38.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- Navbar Section Started -->
-    <nav class="navBar1">
-      <div class="fullNav">
-        <div id="logo">
-          <img src="../img/logo/navLogo.png" alt="AISKCON-Construction" />
-        </div>
-        <ul class="list1">
-          <li id="home"><a href="../">Home</a></li>
-          <li id="services">
-            <div>
-              <pre><a href="../ServiceSection">Services</a> <i class="fas fa-chevron-circle-down"></i></pre>
-            </div>
-            <div class="drop1">
-              <div class="empty"></div>
-              <div class="non-empty">
-                <ul>
-                  <li>
-                    <a href="../ServiceSection#interior-designing"
-                      >Interior Designing</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#construction-management"
-                      >Construction Management</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#consultancy-services"
-                      >Consultancy Services</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#environmental-service"
-                      >Environmental Services</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#retrofication">Retrofication</a>
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#destructive"
-                      >Destructive & NDT Testing</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li id="repair">
-            <div>
-              <pre><a href="../repair">Repairs</a>  <i class="fas fa-chevron-circle-down"></i></pre>
-            </div>
-            <div class="drop2">
-              <div class="empty"></div>
-              <div class="non-empty">
-                <ul>
-                  <li><a href="../repair#home-repair">Home Repairs</a></li>
-                  <li>
-                    <a href="../repair#kitchen-repair">Kitchen Repairs</a>
-                  </li>
-                  <li>
-                    <a href="../repair#bathroom-repair">Bathroom Repair</a>
-                  </li>
-                  <li>
-                    <a href="../repair#furniture-repair">Furniture Repair</a>
-                  </li>
-                  <li><a href="../repair#plumbing">Plumbing & Pipes</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li><a href="../aboutUs">About</a></li>
-          <li><a href="../contact">Contact</a></li>
-          <li></li>
-        </ul>
-        <div id="bt2">
-          <button><i class="fa-solid fa-bars"></i></button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>AISKCON-Construction</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico" />
+  <script src="https://kit.fontawesome.com/280f5d0d38.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navbar Section Started -->
+  <nav class="navBar1">
+    <div class="fullNav">
+      <div id="logo">
+        <img src="../img/logo/navLogo.png" alt="AISKCON-Construction" />
       </div>
+      <ul class="list1">
+        <li id="home"><a href="../">Home</a></li>
+        <li id="services">
+          <div>
+            <pre><a href="../ServiceSection">Services</a> <i class="fas fa-chevron-circle-down"></i></pre>
+          </div>
+          <div class="drop1">
+            <div class="empty"></div>
+            <div class="non-empty">
+              <ul>
+                <li>
+                  <a href="../ServiceSection#interior-designing">Interior Designing</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#construction-management">Construction Management</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#consultancy-services">Consultancy Services</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#environmental-service">Environmental Services</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#retrofication">Retrofication</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#destructive">Destructive & NDT Testing</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="repair">
+          <div>
+            <pre><a href="../repair">Repairs</a>  <i class="fas fa-chevron-circle-down"></i></pre>
+          </div>
+          <div class="drop2">
+            <div class="empty"></div>
+            <div class="non-empty">
+              <ul>
+                <li><a href="../repair#home-repair">Home Repairs</a></li>
+                <li>
+                  <a href="../repair#kitchen-repair">Kitchen Repairs</a>
+                </li>
+                <li>
+                  <a href="../repair#bathroom-repair">Bathroom Repair</a>
+                </li>
+                <li>
+                  <a href="../repair#furniture-repair">Furniture Repair</a>
+                </li>
+                <li><a href="../repair#plumbing">Plumbing & Pipes</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="../aboutUs">About</a></li>
+        <li><a href="../contact">Contact</a></li>
+        <li></li>
+      </ul>
+      <div id="bt2">
+        <button><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+  <div id="mobNavParent">
+    <nav class="navBar2 navOpen">
+      <ul class="list2">
+        <li><a href="../">Home</a></li>
+        <li>
+          <div id="services2">
+            <pre><a href="../ServiceSection">Services </a> <i id="ser" class="fas fa-chevron-circle-down"></i></pre>
+          </div>
+          <div class="drop3">
+            <div class="empty"></div>
+            <div>
+              <ul>
+                <li>
+                  <a href="../ServiceSection#interior-designing">Interior Designing</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#construction-management">Construction Management</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#consultancy-services">Consultancy Services</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#environmental-service">Environmental Services</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#retrofication">Retrofication</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#destructive">Destructive & NDT Testing</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div id="repair2">
+            <pre><a href="../repair">Repairs </a> <i id="rep" class="fas fa-chevron-circle-down"></i></pre>
+          </div>
+          <div class="drop4">
+            <div class="empty"></div>
+            <div>
+              <ul>
+                <li><a href="../repair#home-repair">Home Repairs</a></li>
+                <li>
+                  <a href="../repair#kitchen-repair">Kitchen Repairs</a>
+                </li>
+                <li>
+                  <a href="../repair#bathroom-repair">Bathroom Repair</a>
+                </li>
+                <li>
+                  <a href="../repair#furniture-repair">Furniture Repair</a>
+                </li>
+                <li><a href="../repair#plumbing">Plumbing & Pipes</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="../aboutUs">About</a></li>
+        <li><a href="../contact">Contact</a></li>
+      </ul>
     </nav>
-    <div id="mobNavParent">
-      <nav class="navBar2 navOpen">
-        <ul class="list2">
-          <li><a href="../">Home</a></li>
-          <li>
-            <div id="services2">
-              <pre><a href="../ServiceSection">Services </a> <i id="ser" class="fas fa-chevron-circle-down"></i></pre>
-            </div>
-            <div class="drop3">
-              <div class="empty"></div>
-              <div>
-                <ul>
-                  <li>
-                    <a href="../ServiceSection#interior-designing"
-                      >Interior Designing</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#construction-management"
-                      >Construction Management</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#consultancy-services"
-                      >Consultancy Services</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#environmental-service"
-                      >Environmental Services</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#retrofication">Retrofication</a>
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#destructive"
-                      >Destructive & NDT Testing</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div id="repair2">
-              <pre><a href="../repair">Repairs </a> <i id="rep" class="fas fa-chevron-circle-down"></i></pre>
-            </div>
-            <div class="drop4">
-              <div class="empty"></div>
-              <div>
-                <ul>
-                  <li><a href="../repair#home-repair">Home Repairs</a></li>
-                  <li>
-                    <a href="../repair#kitchen-repair">Kitchen Repairs</a>
-                  </li>
-                  <li>
-                    <a href="../repair#bathroom-repair">Bathroom Repair</a>
-                  </li>
-                  <li>
-                    <a href="../repair#furniture-repair">Furniture Repair</a>
-                  </li>
-                  <li><a href="../repair#plumbing">Plumbing & Pipes</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
+  </div>
+  <!-- Navbar Section Finished -->
 
-          <li><a href="../aboutUs">About</a></li>
-          <li><a href="../contact">Contact</a></li>
-        </ul>
-      </nav>
+  <!-- Hero Section -->
+  <div class="swiper" style="z-index: 0">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide hero-bg" id="slide-1"></div>
+      <div class="swiper-slide hero-bg" id="slide-2"></div>
+      <div class="swiper-slide hero-bg" id="slide-3"></div>
+      <div class="swiper-slide hero-bg" id="slide-4"></div>
+      <div class="swiper-slide hero-bg" id="slide-5"></div>
     </div>
-    <!-- Navbar Section Finished -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- Hero Section End -->
+  <!-- About name -->
+  <section class="aboutus">
+    <p><a href="../">Home</a> / About us</p>
+  </section>
+  <!-- About name end -->
 
-    <!-- Hero Section -->
-    <div class="swiper" style="z-index: 0">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide hero-bg" id="slide-1"></div>
-        <div class="swiper-slide hero-bg" id="slide-2"></div>
-        <div class="swiper-slide hero-bg" id="slide-3"></div>
-        <div class="swiper-slide hero-bg" id="slide-4"></div>
-        <div class="swiper-slide hero-bg" id="slide-5"></div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-    <!-- Hero Section End -->
-    <!-- About name -->
-    <section class="aboutus">
-      <p><a href="../">Home</a> / About us</p>
-    </section>
-    <!-- About name end -->
+  <!-- How it Started Section Started -->
+  <section class="how-it-started">
+    <h1 data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+      How it Started?
+    </h1>
+    <p data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+      Aiskcon construction started with the vision of delivering exceptional
+      projects while fostering innovation, sustainability, and social
+      responsibility.
+      <br />
+      Aims to provide our clients with high-quality, cost-effective
+      construction solutions that meet their unique needs.
+    </p>
+  </section>
+  <!-- How it Started Section End -->
 
-    <!-- How it Started Section Started -->
-    <section class="how-it-started">
-      <h1 data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
-        How it Started?
-      </h1>
-      <p data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
-        Aiskcon construction started with the vision of delivering exceptional
-        projects while fostering innovation, sustainability, and social
-        responsibility.
-        <br />
-        Aims to provide our clients with high-quality, cost-effective
-        construction solutions that meet their unique needs.
-      </p>
-    </section>
-    <!-- How it Started Section End -->
-
-    <!-- Vision Section Started -->
-    <section class="vision">
-      <div class="vision-container">
-        <div
-          class="vision-content"
-          data-aos="fade-down"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <h1>Our Vision</h1>
-          <p>
-            Aiskcon construction is committed to creating superior quality,
-            sustainable, and innovative solutions for all your construction
-            needs. We strive to transform the construction industry by
-            implementing the latest technologies and innovative techniques to
-            deliver superior results. We aim to create buildings and structures
-            that not only meet the functional requirements of our clients, but
-            also enhance the lives of those who inhabit them. <br />
-            <br />
-            At Aiskcon, our vision is to create a better world through
-            sustainable construction practices and exceptional service. Join us
-            in shaping the future of the construction industry.
-          </p>
-        </div>
-
-        <div
-          class="vision-content"
-          data-aos="fade-right"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <img src="../img/vectors/vision.webp" alt="vision" />
-        </div>
-      </div>
-    </section>
-    <!-- Vision Section End -->
-
-    <!-- Team Section Started -->
-    <section class="team">
-      <div class="team-container">
-        <div
-          class="team-content"
-          data-aos="fade-right"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <img src="../img/vectors/collage.webp" alt="team" />
-        </div>
-        <div
-          class="team-content"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <h1>Meet our Tech Team</h1>
-          <p>
-            Our tech team is an unstoppable force of brilliance and innovation.
-            Comprised of exceptional minds with diverse backgrounds and
-            expertise, they are the driving factor behind our continuous
-            success.
-            <br /><br />
-            With their deep understanding of the latest technologies and their
-            ability to turn ideas into reality, they consistently deliver
-            groundbreaking solutions that propel our organization forward.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- Team Section End -->
-
-    <!-- General Info Section Start -->
-    <section class="general-info">
-      <div class="general-info-row">
-        <div
-          class="general-info-card"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="500"
-        >
-          <div>
-            <div class="general-info-icon">
-              <i class="fa-solid fa-compass"></i>
-            </div>
-            <div class="general-info-content">
-              <h1>Vastu</h1>
-              <p>Consultancy</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="general-info-card"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <div>
-            <div class="general-info-icon">
-              <i class="fa-solid fa-vr-cardboard"></i>
-            </div>
-            <div class="general-info-content">
-              <h1>3D</h1>
-              <p>Modeling</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="general-info-card"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="1500"
-        >
-          <div>
-            <div class="general-info-icon">
-              <i class="fa-solid fa-city"></i>
-            </div>
-            <div class="general-info-content">
-              <h1>Project</h1>
-              <p>Planning</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="general-info-card"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="2000"
-        >
-          <div>
-            <div class="general-info-icon">
-              <i class="fa-brands fa-envira"></i>
-            </div>
-            <div class="general-info-content">
-              <h1>Green</h1>
-              <p>Designs</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- General Info Section Finieshed -->
-
-    <!-- Meet Section Start -->
-    <section class="meet">
-      <div class="meet-container">
-        <div
-          class="meet-content"
-          data-aos="fade-right"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <h1>See. Touch. Experience.</h1>
-          <p>
-            Come to our Experience Centre and get a look and <br />feel of what
-            we do!
-          </p>
+  <!-- Vision Section Started -->
+  <section class="vision">
+    <div class="vision-container">
+      <div class="vision-content" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000">
+        <h1>Our Vision</h1>
+        <p>
+          Aiskcon construction is committed to creating superior quality,
+          sustainable, and innovative solutions for all your construction
+          needs. We strive to transform the construction industry by
+          implementing the latest technologies and innovative techniques to
+          deliver superior results. We aim to create buildings and structures
+          that not only meet the functional requirements of our clients, but
+          also enhance the lives of those who inhabit them. <br />
           <br />
-          <p>
-            <a href="mailto:aiskconofficial@gmail.com"
-              >Let's meet <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </p>
-        </div>
-        <div
-          class="meet-content"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <img src="../img/vectors/office.webp" alt="" srcset="" />
-        </div>
+          At Aiskcon, our vision is to create a better world through
+          sustainable construction practices and exceptional service. Join us
+          in shaping the future of the construction industry.
+        </p>
       </div>
-    </section>
-    <!-- Meet Section End -->
 
-    <!-- Mission Section Start -->
-    <section class="mission">
-      <div class="mission-container">
-        <div
-          class="mission-content"
-          data-aos="fade-right"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <img src="../img/vectors/mission.webp" alt="mission" />
-        </div>
-        <div
-          class="mission-content"
-          data-aos="fade-down"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <h1>Our mission</h1>
-          <p>
-            At Aiskcon, our mission is to provide our clients with superior
-            quality construction services that are safe, efficient, and
-            sustainable. We aim to achieve this by Delivering exceptional
-            service, Embracing innovation, Building with safety in mind,
-            Promoting sustainability, Fostering teamwork, Striving for
-            excellence. <br /><br />At Aiskcon, our mission is to be the
-            construction company of choice for clients who demand exceptional
-            service, innovation, and sustainability. Join us in building a
-            better future.
-          </p>
-        </div>
+      <div class="vision-content" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+        <img src="../img/vectors/vision.webp" alt="vision" />
       </div>
-    </section>
-    <!-- Mission Section End -->
+    </div>
+  </section>
+  <!-- Vision Section End -->
 
-    <!-- FAQ starts -->
-    <section class="faq">
-      <div class="faq-heading">
-        <h1>FAQs</h1>
+  <!-- Team Section Started -->
+  <section class="team">
+    <div class="team-container">
+      <div class="team-content" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+        <img src="../img/vectors/collage.webp" alt="team" />
       </div>
-      <div class="faq-content">
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="500"
-        >
-          <div class="faq-question">
-            <h2>1. Why do I need an interior designer?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
-          </div>
-          <div class="faq-answer">
-            <p>
-              You can think of an interior designer as a film director. Their
-              job is to monitor every minute detail from start to the final cut.
-              From pre-production to the final edit, their perspective is
-              responsible for shaping the final product. Similarly, interior
-              designers are professionals who are able to gauge your needs and
-              tastes to deliver your dream home. They assist you in getting
-              custom-designed pieces that fit perfectly into your beautiful
-              vision. From raw materials to finished products, they take care of
-              everything!
-            </p>
-          </div>
-        </div>
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <div class="faq-question">
-            <h2>2. Why is Aiskcon perfect for your design?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
-          </div>
-          <div class="faq-answer">
-            <p>
-              Aiskcon is the perfect partner who can build your home interiors
-              just the way you want! Our design experts customize designs as per
-              your needs. They will listen to your ideas and suggest options. At
-              Aiskcon, we incorporate advanced technology into our modular
-              solutions to create flawless interiors and also to expedite the
-              process of making your dream home a reality. So, book your
-              consultation today with India's Most Trusted Home Interiors Brand,
-              Aiskcon and talk to our designers about your project.
-            </p>
-          </div>
-        </div>
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="1500"
-        >
-          <div class="faq-question">
-            <h2>3. What services are included under home interior design?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
-          </div>
-          <div class="faq-answer">
-            <p>
-              Home interior design services typically include a wide range of
-              design and decor-related tasks that are aimed at improving the
-              functionality and aesthetics of a home's interior space. Some of
-              the most common services that are included under home interior
-              design are:
-              <br />
-              1. Space Planning <br />
-              2. Colour Selection <br />
-              3. Material Selection <br />
-              4. Lighting Design <br />
-              5. Furniture Selection <br />
-              6. Decorative Accessories
-            </p>
-          </div>
-        </div>
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="2000"
-        >
-          <div class="faq-question">
-            <h2>4. What will be the timelines for my project completion?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
-          </div>
-          <div class="faq-answer">
-            <p>
-              The timeline for a construction project completion can vary
-              depending on a number of factors, such as the size and complexity
-              of the project, the location, weather conditions, availability of
-              materials, etc. Here in Aiskcon we deliver the project efficiently
-              and on earliest possible time
-            </p>
-          </div>
-        </div>
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="2500"
-        >
-          <div class="faq-question">
-            <h2>6. What are the trending interior design styles?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
-          </div>
-          <div class="faq-answer">
-            <p>
-              1. Minimalism <br />
-              2. Biophilic design <br />
-              3. Industrial design <br />
-              4. Scandinavian design <br />
-              5. Bohemian design <br />
-              6. Modern farmhouse <br />
-              7. Art Deco <br />
-            </p>
-          </div>
-        </div>
+      <div class="team-content" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <h1>Meet our Tech Team</h1>
+        <p>
+          Our tech team is an unstoppable force of brilliance and innovation.
+          Comprised of exceptional minds with diverse backgrounds and
+          expertise, they are the driving factor behind our continuous
+          success.
+          <br /><br />
+          With their deep understanding of the latest technologies and their
+          ability to turn ideas into reality, they consistently deliver
+          groundbreaking solutions that propel our organization forward.
+        </p>
       </div>
-    </section>
-    <!-- FAQ end -->
+    </div>
+  </section>
+  <!-- Team Section End -->
 
-    <!-- Hire Us Section Start -->
-    <section class="hireus">
-      <div
-        class="hireus-box"
-        data-aos="fade-up"
-        data-aos-easing="ease"
-        data-aos-duration="1000"
-      >
-        <div class="hireus-content">
-          <h1>Transform your living space into a work of Art!</h1>
-          <button onclick="window.location.href='../slotBooking/form.html'">
-            Hire us
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- Hire Us Section End -->
-
-    <a class="gotop" href="#"><i class="fa-solid fa-arrow-up fa-lg"></i></a>
-
-    <!-- Footer Section Started -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col footer-brand">
-            <div class="footer-logo">
-              <img src="../img/logo/aiskcon logo.png" alt="logo" srcset="" />
-            </div>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-          <div class="footer-col service">
-            <h4>Services</h4>
-            <ul>
-              <li>
-                <a href="../ServiceSection#interior-designing"
-                  ><i class="fa-solid fa-angle-right"></i> Interior Designing</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#construction-management"
-                  ><i class="fa-solid fa-angle-right"></i> Construction
-                  Management</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#consultancy-services"
-                  ><i class="fa-solid fa-angle-right"></i> Consultancy
-                  Services</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#environmental-service"
-                  ><i class="fa-solid fa-angle-right"></i> Environmental
-                  Services</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#retrofication"
-                  ><i class="fa-solid fa-angle-right"></i> Retrofication</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#destructive"
-                  ><i class="fa-solid fa-angle-right"></i> Destructive & NDT
-                  Testing</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col repair">
-            <h4>Repairs</h4>
-            <ul>
-              <li>
-                <a href="../repair#home-repair"
-                  ><i class="fa-solid fa-angle-right"></i> Home Repairs</a
-                >
-              </li>
-              <li>
-                <a href="../repair#kitchen-repair"
-                  ><i class="fa-solid fa-angle-right"></i> Kitchen Repairs</a
-                >
-              </li>
-              <li>
-                <a href="../repair#bathroom-repair"
-                  ><i class="fa-solid fa-angle-right"></i> Bathroom Repair</a
-                >
-              </li>
-              <li>
-                <a href="../repair#furniture-repair"
-                  ><i class="fa-solid fa-angle-right"></i> Furniture Repair</a
-                >
-              </li>
-              <li>
-                <a href="../repair#plumbing"
-                  ><i class="fa-solid fa-angle-right"></i> Plumbing & Pipes</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col contact">
-            <h4>Contact</h4>
-            <ul>
-              <li>
-                <a href="mailto:aiskconofficial@gmail.com"
-                  ><i class="fa-solid fa-envelope"></i>
-                  aiskconofficial@gmail.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+919636243488"
-                  ><i class="fa-solid fa-phone"></i> +91-9636243488</a
-                >
-              </li>
-              <li>
-                <a href="tel:+919717010172"
-                  ><i class="fa-solid fa-phone"></i> +91-9717010172</a
-                >
-              </li>
-              <li>
-                <a href="tel:+916306849492"
-                  ><i class="fa-solid fa-phone"></i> +91-6306849492</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <hr style="margin: 0 auto; width: 90%; margin-top: 10px" />
-
+  <!-- General Info Section Start -->
+  <section class="general-info">
+    <div class="general-info-row">
+      <div class="general-info-card" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">
         <div>
-          <div class="footer-copyright"></div>
+          <div class="general-info-icon">
+            <i class="fa-solid fa-compass"></i>
+          </div>
+          <div class="general-info-content">
+            <h1>Vastu</h1>
+            <p>Consultancy</p>
+          </div>
         </div>
       </div>
-    </footer>
-    <!-- Footer Section Finished -->
+      <div class="general-info-card" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <div>
+          <div class="general-info-icon">
+            <i class="fa-solid fa-vr-cardboard"></i>
+          </div>
+          <div class="general-info-content">
+            <h1>3D</h1>
+            <p>Modeling</p>
+          </div>
+        </div>
+      </div>
+      <div class="general-info-card" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500">
+        <div>
+          <div class="general-info-icon">
+            <i class="fa-solid fa-city"></i>
+          </div>
+          <div class="general-info-content">
+            <h1>Project</h1>
+            <p>Planning</p>
+          </div>
+        </div>
+      </div>
+      <div class="general-info-card" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2000">
+        <div>
+          <div class="general-info-icon">
+            <i class="fa-brands fa-envira"></i>
+          </div>
+          <div class="general-info-content">
+            <h1>Green</h1>
+            <p>Designs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- General Info Section Finieshed -->
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="../js/main.js"></script>
-    <script src="./main.js"></script>
-  </body>
+  <!-- Meet Section Start -->
+  <section class="meet">
+    <div class="meet-container">
+      <div class="meet-content" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+        <h1>See. Touch. Experience.</h1>
+        <p>
+          Come to our Experience Centre and get a look and <br />feel of what
+          we do!
+        </p>
+        <br />
+        <p>
+          <a href="mailto:aiskconofficial@gmail.com">Let's meet <i class="fa-solid fa-arrow-right"></i></a>
+        </p>
+      </div>
+      <div class="meet-content" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <img src="../img/vectors/office.webp" alt="" srcset="" />
+      </div>
+    </div>
+  </section>
+  <!-- Meet Section End -->
+
+  <!-- Mission Section Start -->
+  <section class="mission">
+    <div class="mission-container">
+      <div class="mission-content" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+        <img src="../img/vectors/mission.webp" alt="mission" />
+      </div>
+      <div class="mission-content" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000">
+        <h1>Our mission</h1>
+        <p>
+          At Aiskcon, our mission is to provide our clients with superior
+          quality construction services that are safe, efficient, and
+          sustainable. We aim to achieve this by Delivering exceptional
+          service, Embracing innovation, Building with safety in mind,
+          Promoting sustainability, Fostering teamwork, Striving for
+          excellence. <br /><br />At Aiskcon, our mission is to be the
+          construction company of choice for clients who demand exceptional
+          service, innovation, and sustainability. Join us in building a
+          better future.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Mission Section End -->
+  <!-- Safety Section Start -->
+  <section class="meet">
+    <div class="meet-container">
+      <div class="meet-content" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+        <h1>Our Commitment to Safety</h1>
+        <p>
+          We have taken various resolutions to ensure safety.
+          <br> <b>Your safety is most important to US</b>
+        </p>
+        <br />
+        <!-- <p> -->
+         <ul>
+          <li>Safety training and education  </li>
+          <li>Use of Personal protective equipment (PPE) </li>
+          <li>Emergency preparedness   </li>
+          <li> Equipment safety Assurance</li>
+          <li>Fall protection</li>
+          <li>Hazardous materials management</li>
+          <li>Regular inspections and audits to ensure compliance with safety standards</li>
+         </ul>
+        <!-- </p> -->
+      </div>
+      <div class="meet-content" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <img src="../img/vectors/safety (1).png" alt="" srcset="" height="550px" width="50px"/>
+      </div>
+    </div>
+  </section>
+  <!-- Safety Section End -->
+  <!-- FAQ starts -->
+  <section class="faq">
+    <div class="faq-heading">
+      <h1>FAQs</h1>
+    </div>
+    <div class="faq-content">
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">
+        <div class="faq-question">
+          <h2>1. Why do I need an interior designer?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            You can think of an interior designer as a film director. Their
+            job is to monitor every minute detail from start to the final cut.
+            From pre-production to the final edit, their perspective is
+            responsible for shaping the final product. Similarly, interior
+            designers are professionals who are able to gauge your needs and
+            tastes to deliver your dream home. They assist you in getting
+            custom-designed pieces that fit perfectly into your beautiful
+            vision. From raw materials to finished products, they take care of
+            everything!
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="faq-question">
+          <h2>2. Why is Aiskcon perfect for your design?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Aiskcon is the perfect partner who can build your home interiors
+            just the way you want! Our design experts customize designs as per
+            your needs. They will listen to your ideas and suggest options. At
+            Aiskcon, we incorporate advanced technology into our modular
+            solutions to create flawless interiors and also to expedite the
+            process of making your dream home a reality. So, book your
+            consultation today with India's Most Trusted Home Interiors Brand,
+            Aiskcon and talk to our designers about your project.
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500">
+        <div class="faq-question">
+          <h2>3. What services are included under home interior design?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Home interior design services typically include a wide range of
+            design and decor-related tasks that are aimed at improving the
+            functionality and aesthetics of a home's interior space. Some of
+            the most common services that are included under home interior
+            design are:
+            <br />
+            1. Space Planning <br />
+            2. Colour Selection <br />
+            3. Material Selection <br />
+            4. Lighting Design <br />
+            5. Furniture Selection <br />
+            6. Decorative Accessories
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2000">
+        <div class="faq-question">
+          <h2>4. What will be the timelines for my project completion?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            The timeline for a construction project completion can vary
+            depending on a number of factors, such as the size and complexity
+            of the project, the location, weather conditions, availability of
+            materials, etc. Here in Aiskcon we deliver the project efficiently
+            and on earliest possible time
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2500">
+        <div class="faq-question">
+          <h2>6. What are the trending interior design styles?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            1. Minimalism <br />
+            2. Biophilic design <br />
+            3. Industrial design <br />
+            4. Scandinavian design <br />
+            5. Bohemian design <br />
+            6. Modern farmhouse <br />
+            7. Art Deco <br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ end -->
+
+  <!-- Hire Us Section Start -->
+  <section class="hireus">
+    <div class="hireus-box" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+      <div class="hireus-content">
+        <h1>Transform your living space into a work of Art!</h1>
+        <button onclick="window.location.href='../slotBooking/form.html'">
+          <span> Hire us</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Hire Us Section End -->
+
+  <a class="gotop" href="#"><i class="fa-solid fa-arrow-up fa-lg"></i></a>
+
+  <!-- Footer Section Started -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <img src="../img/logo/aiskcon logo.png" alt="logo" srcset="" />
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col service">
+          <h4>Services</h4>
+          <ul>
+            <li>
+              <a href="../ServiceSection#interior-designing"><i class="fa-solid fa-angle-right"></i> Interior
+                Designing</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#construction-management"><i class="fa-solid fa-angle-right"></i> Construction
+                Management</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#consultancy-services"><i class="fa-solid fa-angle-right"></i> Consultancy
+                Services</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#environmental-service"><i class="fa-solid fa-angle-right"></i> Environmental
+                Services</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#retrofication"><i class="fa-solid fa-angle-right"></i> Retrofication</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#destructive"><i class="fa-solid fa-angle-right"></i> Destructive & NDT
+                Testing</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col repair">
+          <h4>Repairs</h4>
+          <ul>
+            <li>
+              <a href="../repair#home-repair"><i class="fa-solid fa-angle-right"></i> Home Repairs</a>
+            </li>
+            <li>
+              <a href="../repair#kitchen-repair"><i class="fa-solid fa-angle-right"></i> Kitchen Repairs</a>
+            </li>
+            <li>
+              <a href="../repair#bathroom-repair"><i class="fa-solid fa-angle-right"></i> Bathroom Repair</a>
+            </li>
+            <li>
+              <a href="../repair#furniture-repair"><i class="fa-solid fa-angle-right"></i> Furniture Repair</a>
+            </li>
+            <li>
+              <a href="../repair#plumbing"><i class="fa-solid fa-angle-right"></i> Plumbing & Pipes</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>
+              <a href="mailto:aiskconofficial@gmail.com"><i class="fa-solid fa-envelope"></i>
+                aiskconofficial@gmail.com</a>
+            </li>
+            <li>
+              <a href="tel:+919636243488"><i class="fa-solid fa-phone"></i> +91-9636243488</a>
+            </li>
+            <li>
+              <a href="tel:+919717010172"><i class="fa-solid fa-phone"></i> +91-9717010172</a>
+            </li>
+            <li>
+              <a href="tel:+916306849492"><i class="fa-solid fa-phone"></i> +91-6306849492</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr style="margin: 0 auto; width: 90%; margin-top: 10px" />
+
+      <div>
+        <div class="footer-copyright"></div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section Finished -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../js/main.js"></script>
+  <script src="./main.js"></script>
+</body>
+
 </html>
