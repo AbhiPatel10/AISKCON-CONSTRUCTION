@@ -78,8 +78,8 @@
 .home-repair-col1 button {
   position: relative;
     margin: 30px 0;
-    width: 150px;
-    height: 50px;
+    width: 160px;
+    height: 40px;
     border-radius: 5px;
     border: none;
     color: white;
@@ -112,9 +112,9 @@
     opacity: 1;
   }
   .home-repair-col button{
-    width: 200px;
+    width: 160px;
     height: 40px;
-    margin-left: 80px;
+    margin-left: -2px;
   }
 
   .home-repair-col button{
