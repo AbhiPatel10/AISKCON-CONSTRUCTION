@@ -115,16 +115,14 @@
     width: 160px;
     height: 40px;
     margin-left: -2px;
-  }
-
-  .home-repair-col button{
     background-image: linear-gradient(
       45deg,
       #2a2a72 0%,
       #243fe9 74%
-);  }
+);
+ }
 
-  .home-repair-col button,
+.home-repair-col button,
 .home-repair-col1 button > span {
       position: relative;
       z-index: 3;
