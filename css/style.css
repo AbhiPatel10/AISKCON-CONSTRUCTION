@@ -1,8 +1,6 @@
-/* This is the Root CSS file which previously contained all styles. Now, the styles are seperated in different 
-  files. They are named according to their sections in home page. 
+/* This is the main style.css file for the Home page. It contains style for Navbar, General Info section, 
+  Hire us section, FAQs Section, scroll to top button, footer.
 */
-
-/* This file contains the styles for General Info and Go to top button */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 * {
@@ -26,7 +24,6 @@ ul {
 }
 
 /* Navbar start */
-
 .navBar1 {
   background-color: white;
   position: sticky;
@@ -81,7 +78,6 @@ ul {
 .list2 a:hover {
   color: #2a2a72;
   background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
-  transform: scale(1.1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -286,18 +282,6 @@ ul {
 }
 /* Navbar end */
 
-/* Hero start */
-/* Hero End */
-
-/* Service Start */
-/* Service End */
-
-/* Build with quality starts */
-/* Build with quality ends */
-
-/* Why choose us Start */
-/* why choose us end */
-
 /* General Info Start */
 .general-info {
   width: 90%;
@@ -456,9 +440,6 @@ ul {
 }
 /* "Contact Us" section Ends / TALK WITH EXPERT PAGE ENDS  */
 
-/* Testimonial Start */
-/* Testinomial End */
-
 /* Hire us Start */
 .hireus-box {
   background-color: #fac213;
@@ -615,9 +596,6 @@ ul {
   line-height: 50px;
   color: white;
 }
-
-/* chatbot START */
-/* chatbot END */
 
 /* Footer START */
 
