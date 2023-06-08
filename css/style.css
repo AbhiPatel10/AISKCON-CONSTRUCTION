@@ -1094,7 +1094,7 @@ canvas {
   background: linear-gradient(315deg, #2a2a72 20%, #14227b 20%, #243fe9 60%);
   /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
-  bottom: 40px;
+  bottom: 6rem;
   right: 50px;
   border-radius: 50px;
   text-decoration: none;
@@ -1107,7 +1107,7 @@ canvas {
 .chatbot-btn {
     position: fixed;
     right: 3.125rem;
-    bottom: 6rem;
+    bottom: 40px;
     width: 50px;
     height: 50px;
     background-color: #2a2a72;
