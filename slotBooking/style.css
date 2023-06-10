@@ -50,7 +50,13 @@ body{
     opacity: 0;
     transform: translateY(100%);
     transition: all 0.3s ease-in-out;
-}
+     /* new addition */
+     border:2px solid blue;
+     border-radius:10px;
+     box-shadow:5px 4px 20px 0px;
+    }
+    
+
 
 @keyframes slide-in {
     0% {
