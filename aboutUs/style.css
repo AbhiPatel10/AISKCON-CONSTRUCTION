@@ -15,6 +15,7 @@ p {
 ul{
   font-family: 'Open Sans', sans-serif;
   line-height: 2;
+  list-style: circle;
 }
 
 .aboutus{
