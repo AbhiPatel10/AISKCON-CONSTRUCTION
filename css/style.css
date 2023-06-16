@@ -22,8 +22,9 @@ ul {
 /* Navbar start */
 .navBar1 {
   background-color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 2;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -300,6 +301,7 @@ ul {
 }
 .hero-content h1 {
   font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
   margin-bottom: 10px;
   font-size: 3.5rem;
   font-weight: 650;
