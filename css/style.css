@@ -22,9 +22,7 @@ ul {
 /* Navbar start */
 .navBar1 {
   background-color: white;
-  position: fixed;
-  right: 0;
-  left: 0;
+  position: sticky;
   top: 0;
   z-index: 2;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -287,8 +285,6 @@ ul {
   max-width: 1500px;
   user-select: none;
   padding: 20px 0;
-
-  margin-top: 80px;
 }
 .hero-main-container {
   height: 100%;
@@ -626,7 +622,6 @@ canvas {
 .whyChooseUs-section {
   background: url('../img/bg/whychooseus.webp');
   background-size: cover;
-  background-attachment: fixed;
   padding: 0;
 }
 .whychooseus-overlay {
