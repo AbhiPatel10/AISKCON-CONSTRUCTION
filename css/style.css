@@ -622,7 +622,6 @@ canvas {
 .whyChooseUs-section {
   background: url('../img/bg/whychooseus.webp');
   background-size: cover;
-  background-attachment: fixed;
   padding: 0;
 }
 .whychooseus-overlay {
