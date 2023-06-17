@@ -4,8 +4,9 @@
 /* hero section start */
 .hero{
   background: url('../img/bg/repair2.webp');
-  height: 400px;
-  background-size: cover;
+  height: 400px;  
+  background-size: cover;  
+  background-position: center;
 }
 .hero-overlay{
   height: 100%;
