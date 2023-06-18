@@ -36,11 +36,11 @@ To get started with contributing to the AISKCON Construction project, please fol
 
 3. Clone the forked repository to your local machine using the following command:
 
-   """bash
-   git clone https://github.com/<YOUR_GITHUB_USER_NAME>/AISKCON-CONSTRUCTION.git """
+   '''bash
+   git clone https://github.com/<YOUR_GITHUB_USER_NAME>/AISKCON-CONSTRUCTION.git'''
 
 4. Install project dependencies by running the following command:
-"""npm install"""
+'''npm install'''
 For Front-End development, open the index.html file and start the Live Server.
 5. For Back-End development, navigate to the backend directory using the following command:
 """cd backend"""
