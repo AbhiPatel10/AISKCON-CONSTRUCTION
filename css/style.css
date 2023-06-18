@@ -7,6 +7,28 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+  width: 0.8em;
+  height: 1em;
+}
+
+::-webkit-scrollbar-track{
+  background: #d1e5ff;
+  border-radius: 100vw;
+  margin-block: .1em;
+}
+
+::-webkit-scrollbar-thumb{
+  /* background: #243fe9; */
+  background:  linear-gradient(#556bfa, #142384);
+  border: 0.1em solid #d1e5ff;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:  linear-gradient(#2a2a72c4, #243ee9cd);
+}
+
 :root {
   --primary: #046c5c;
   --secondary: #0f2f51;
