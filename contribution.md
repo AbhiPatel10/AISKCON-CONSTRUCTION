@@ -36,29 +36,28 @@ To get started with contributing to the AISKCON Construction project, please fol
 
 3. Clone the forked repository to your local machine using the following command:
 
-   '''bash
-   git clone https://github.com/<YOUR_GITHUB_USER_NAME>/AISKCON-CONSTRUCTION.git'''
+   ```git clone https://github.com/<YOUR_GITHUB_USER_NAME>/AISKCON-CONSTRUCTION.git```
 
 4. Install project dependencies by running the following command:
-'''npm install'''
+```npm install```
 For Front-End development, open the index.html file and start the Live Server.
 5. For Back-End development, navigate to the backend directory using the following command:
-"""cd backend"""
+```cd backend```
 6. Start the server using the following command:
- """npm start"""
+ ```npm start```
 
 ## Contribution Process
 1. To contribute to the AISKCON Construction project, please follow these steps:
 
 2. Create a new branch in your local repository to make your changes:
-git checkout -b <BRANCH_NAME>
+```git checkout -b <BRANCH_NAME>```
 Implement your desired changes and improvements in the codebase.
 
 3. Commit your changes with a clear and descriptive commit message:
-git commit -m "Your commit message here"
+```git commit -m "Your commit message here"```
 
 4. Push your changes to your forked repository on GitHub:
-git push origin <BRANCH_NAME>
+```git push origin <BRANCH_NAME>```
 
 5. Open a pull request from your forked repository to the main AISKCON Construction repository.
 
