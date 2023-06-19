@@ -1,6 +1,6 @@
 # AISKCON-CONSTRUCTION![Gif](https://github.com/tuhinaww/Animating-Buttons/assets/119059108/55243a1c-ef56-4e37-86ef-48f2b1036c76)
 
-We at Aiskcon Construction helps people with construction projects. We are proud of the high-quality work we do for our customers. Our team of experts, like architects, engineers, and craftsmen, work together to make your ideas become a reality. We can handle different types of projects, whether it's building homes, offices, or factories. We offer a wide range of services to meet your needs.
+We at Aiskcon Construction help people with construction projects. We are proud of the high-quality work we do for our customers. Our team of experts, like architects, engineers, and craftsmen, work together to make your ideas become a reality. We can handle different types of projects, whether it's building homes, offices, or factories. We offer a wide range of services to meet your needs.
 <div align="center">
       <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
       <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
@@ -34,26 +34,26 @@ The Techs we have used for making this website:
 
 `Node.js`
 
-#### Usefull Extentions
+#### Usefull Extensions
 
 - Prettier - Code formatter
 - ESLint
 
 ### Project Initialization
 
-- Download node package From [nodejs.org](https://nodejs.org/en/download/)
+- Download the node package From [nodejs.org](https://nodejs.org/en/download/)
 
-- Fork the repo to your Github.
+- Fork the repo to your GitHub.
 
 - Clone the Forked Repository to your local machine.
-	```
-	git clone https://github.com/<YOUR_GITHUB_USER_NAME>/AISKCON-CONSTRUCTION.git.
-	```
-- Install dependancy
+      ```
+      git clone https://github.com/<YOUR_GITHUB_USER_NAME>/AISKCON-CONSTRUCTION.git.
+      ```
+- Install dependency
    ```bash
   npm install
-	```
-- Open `index.html` file and start Live Server
+      ```
+- Open the `index.html` file and start Live Server
 
 - For Back-End:  
 
