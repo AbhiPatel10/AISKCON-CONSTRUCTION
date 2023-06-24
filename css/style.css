@@ -642,7 +642,7 @@ canvas {
 
 /* Why choose us Start */
 .whyChooseUs-section {
-  background: url('../img/bg/whychooseus.png');
+  background: url('../img/bg/whychooseus.jpg');
   background-size: cover;
 
   padding: 0;
@@ -650,7 +650,7 @@ canvas {
 }
 .whychooseus-overlay {
   
-  background: rgba(0, 0, 0, .040);
+  background: rgba(0, 0, 0, .30);
   background-size: cover;
   padding-top: 70px;
   padding-bottom: 80px;
