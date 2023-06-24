@@ -642,9 +642,10 @@ canvas {
 
 /* Why choose us Start */
 .whyChooseUs-section {
-  background: url('../img/bg/whychooseus.webp');
+  background: url('../img/bg/whychooseus.png');
   background-size: cover;
   padding: 0;
+  
 }
 .whychooseus-overlay {
   background: rgba(0, 0, 0, 0.7);
