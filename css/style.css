@@ -52,7 +52,7 @@ ul {
   position: sticky;
   top: 0;
   z-index: 2;
-  box-shadow: 0 8px 16px rgba(6, 2, 243, 0.425);
+  box-shadow: 0 4px 6px rgba(6, 2, 243, 0.233);
 }
 
 .fullNav {
