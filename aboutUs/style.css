@@ -344,3 +344,29 @@ ul{
   }
 }
 /* General Info End */
+
+
+/* hover on heading in footer */
+.footer .container .row .h-effect h4{
+ transition: 0.5s ease-in-out;
+}
+.footer .container .row .h-effect h4:hover{
+  letter-spacing: 0.25rem;
+  color:#1c55a4;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color:#79aaef;  /* #9d7aff; */
+  height: 2.25px;
+  box-sizing: border-box;
+  width: 50px;
+  transition: 0.5s ease-in-out;
+}
+.footer .container .row .h-effect h4:hover::before {
+  background-color:#1c55a4;
+  width: 80px;
+}
