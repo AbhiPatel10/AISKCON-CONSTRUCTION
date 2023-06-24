@@ -644,11 +644,13 @@ canvas {
 .whyChooseUs-section {
   background: url('../img/bg/whychooseus.png');
   background-size: cover;
+
   padding: 0;
   
 }
 .whychooseus-overlay {
-  background: rgba(0, 0, 0, 0.7);
+  
+  background: rgba(0, 0, 0, .040);
   background-size: cover;
   padding-top: 70px;
   padding-bottom: 80px;
