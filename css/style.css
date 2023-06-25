@@ -43,16 +43,16 @@ ul {
 
 /* Navbar start */
 .navBar1 {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.35);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(5.5px);
-  -webkit-backdrop-filter: blur(5.5px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   position: sticky;
   top: 0;
   z-index: 2;
-  box-shadow: 0 4px 6px rgba(6, 2, 243, 0.233);
+  box-shadow: 0 4px 6px rgba(6, 2, 243, 0.425);
 }
 
 .fullNav {
@@ -105,10 +105,8 @@ ul {
 }
 
 .list1 a:hover,
-.list2 a:hover {
-  color: #030008;
-  text-shadow: 0 0 5px #0423f0, 0 0 25px #243fe9, 0 0 50px #243fe9,
-    0 0 100px #243fe9;
+.list1 a:hover {
+  color: #1e0388;
 }
 
 #bt1:hover {
