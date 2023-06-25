@@ -642,15 +642,23 @@ canvas {
 
 /* Why choose us Start */
 .whyChooseUs-section {
-  background: url('../img/bg/whychooseus.webp');
+  background: url('../img/bg/whychooseus.jpg');
   background-size: cover;
   padding: 0;
+  
 }
 .whychooseus-overlay {
-  background: rgba(0, 0, 0, 0.7);
+  
+  background: rgba(0, 0, 0,0.5);
   background-size: cover;
   padding-top: 70px;
   padding-bottom: 80px;
+  transition: 0.6s;
+}
+
+.whychooseus-overlay:hover{
+   background-color:rgba(0, 0, 0,0.7); 
+    
 }
 .whychooseus-container {
   background-size: cover;
@@ -672,7 +680,7 @@ canvas {
   margin: 10px;
 }
 .whychooseus-block i {
-  color: #ffffff;
+  color: #ffffff; 
   padding-right: 8px;
   font-size: 25px;
 }
