@@ -649,7 +649,7 @@ canvas {
 }
 .whychooseus-overlay {
   
-  background: rgba(0, 0, 0,0.09);
+  background: rgba(0, 0, 0,0.5);
   background-size: cover;
   padding-top: 70px;
   padding-bottom: 80px;
@@ -657,7 +657,7 @@ canvas {
 }
 
 .whychooseus-overlay:hover{
-   background-color:rgba(0, 0, 0,0.3); 
+   background-color:rgba(0, 0, 0,0.7); 
     
 }
 .whychooseus-container {
