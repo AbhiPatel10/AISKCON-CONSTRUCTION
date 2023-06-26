@@ -76,16 +76,16 @@
 .image-text1 {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: auto;
   transform-origin: top right;
   transform: scale(0);
   opacity: 0;
   transition: all 0.3s ease;
   text-align: center;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 500;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
   border-bottom-left-radius: 7px;
 }
 .image-text1 p {
