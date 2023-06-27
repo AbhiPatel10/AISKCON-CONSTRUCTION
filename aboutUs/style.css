@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+a{
+  color: #1c55a4;
+}
+h1 {
+  font-family: 'Mulish', sans-serif;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+ul{
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2;
+ list-style: none;
+}
+
+.aboutus{
+  padding: 30px;
+}
+
+
+/* Hero Section Start */
+.hero-heading {
+  background-color: rgb(31, 27, 27);
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.5rem;
+  color: white;
+}
+.hero-bg{
+  height: 450px;
+}
+#slide-1{
+  background: url('../img/bg/slide1.webp');
+  background-size: cover;
+
+}
+#slide-2{
+  background: url('../img/bg/slide2.webp');
+  background-size: cover;
+
+
+}
+#slide-3{
+  background: url('../img/bg/slide3.webp');
+  background-size: cover;
+  background-position: 0px -200px;
+
+
+
+}
+#slide-4{
+  background: url('../img/bg/slide4.webp');
+  background-size: cover;
+  background-position: 0px -100px;
+
+
+}
+#slide-5{
+  background: url('../img/bg/slide5.webp');
+  background-position: 0px -250px;
+  background-size: cover;
+
+
+
+}
+@media(max-width:973px){
+  #slide-3{
+    background-position: 0px 0px;
+  }
+  #slide-4{
+    background-position: 0px 0px;
+  }
+  #slide-5{
+    background-position: 0px 0px;
+  }
+}
+/* Hero Section End */
+
+/* How it started Start */
+.how-it-started {
+  width: 55%;
+  margin: 3% auto;
+  text-align: center;
+  padding: 20px;
+}
+@media(max-width: 767px){
+  .how-it-started{
+    width: 80%;
+  }
+  .how-it-started h1{
+    font-size: 2.21rem;
+  }
+}
+/* How it Started End */
+
+/* Founders Started */
+/* .founders {
+  margin: 4% 0;   
+  background-color: #1c55a416;
+  padding: 4%;
+  width: 100%;
+}
+.founders-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+.founders-col {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+}
+.founders-card {
+  width: 400px;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  padding: 25px;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 2px 10px 10px 2px rgba(0, 0, 0, 0.17);
+}
+.founders-card img {
+  width: 150px;
+  height: 150px;
+}
+.founders-card h3 {
+  margin: 5px 0px;
+  font-size: 1.5rem;
+}
+.founders-card h5 {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1100px) {
+  .founders-col {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+}
+
+@media (max-width: 500px) {
+  .founders-card {
+    width: 90%;
+  }
+} */
+/* Founders End */
+
+/* team started */
+.team {
+  margin: 2% 0;
+  width: 100%;
+  padding: 25px;
+}
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: auto;
+}
+.team-content {
+  width: 40%;
+  margin: auto;
+}
+.team-content img {
+  width: 100%;
+  height: 100%;
+  min-width: 350px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .team-content {
+    width: 100%;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+  .team-content img {
+    min-width: 0;
+    max-width: 500px;
+    margin: auto;
+  }
+}
+/* team end */
+
+/* Vision Started */
+.vision {
+  margin: 20px auto;
+  width: 80%;
+}
+.vision-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  max-width: 1500px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.vision-content {
+  width: 50%;
+  /* margin: auto; */
+}
+.vision-content img {
+  width: 100%;
+  height: auto;
+  min-width: 400px;
+}
+
+@media (max-width: 767px) {
+  .vision-content {
+    width: 100%;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+  .vision-content img{
+    min-width: 0;
+  }
+}
+/* Vision End */
+
+/* Meet Start */
+.meet{
+  margin: 4% 0;   
+  background-color: #1c55a416;
+  padding: 60px 0;
+  width: 100%;
+}
+.meet-container{
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.meet-content{
+  width: 50%;
+}
+.meet-content img{
+  margin: 10px;
+  width: 95%;
+  border-radius: 5px;
+}
+
+@media(max-width: 767px){
+  .meet-content{
+    width: 100%;
+  }
+}
+/* Meet End */
+
+/* Mission Start */
+.mission {
+  margin: 20px auto;
+  width: 90%;
+}
+.mission-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.mission-content {
+  width: 50%;
+  margin: auto;
+}
+.mission-content img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .mission-content {
+    width: 100%;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+}
+/* Mission End */
+
+/* General Info Start */
+.general-info {
+  padding: 60px 0;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  /* background-color: #1c55a416; */
+}
+.general-info-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+.general-info-card {
+  width: 24%;
+  margin: auto;
+  height: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.317);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.17);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.general-info-icon {
+  font-size: 4rem;
+  color: #1e3050;
+  /* color: gray; */
+}
+.general-info-content {
+  margin-top: 20%;
+}
+.general-info-content h1 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+  margin-bottom: 1px;
+}
+@media (max-width: 1136px) {
+  .general-info-card {
+    width: 48%;
+    margin-bottom: 1%;
+  }
+}
+@media (max-width: 767px) {
+  .general-info-card {
+    width: 100%;
+  }
+}
+/* General Info End */
+
