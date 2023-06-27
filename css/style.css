@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -1164,8 +1166,10 @@ canvas {
 }
 .chat-container {
     position: fixed;
+    background-size: cover;
     bottom: 7rem;
     right: 3rem;
+    font-family: Lora;
     z-index: 3;
     background-color: rgb(219, 230, 247);
     border-radius: 0.7rem;
@@ -1179,6 +1183,8 @@ canvas {
 
 .chat-body {
     display: flex;
+    
+    background-size: contain;
     flex-direction: column;
     align-items: flex-end;
     height: 0;
@@ -1210,7 +1216,7 @@ canvas {
     align-self: flex-start;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    max-width: 85%;
+    max-width: 80%;
     text-align: center;
     margin-bottom: 1rem;
     border-radius: 10px;
@@ -1218,8 +1224,9 @@ canvas {
 
 .chat-faqs > div {
     /* margin-top: 0.5rem; */
-    background-color: rgb(179, 181, 182);
+    /* background-color: rgb(179, 181, 182); */
     border-radius: 10px;
+    border: 1px solid rgb(110, 110, 110);
     width: fit-content;
     padding: 0.5rem;
     font-size: 0.8rem;
@@ -1271,6 +1278,7 @@ canvas {
 
 .show-chat .chat-header {
     display: flex;
+    /* background-image: url("img/logo/navLogo.png"); */
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
@@ -1278,9 +1286,9 @@ canvas {
 
 .chat-header div{
   display: inline-block;
-  border: 2px solid rgb(253, 253, 253);
-  background-color: #8accef;
-  box-shadow: 0px 2px 5px #3e3f3f;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #e4e9eb;
+  /* box-shadow: 0px 2px 5px #3e3f3f; */
   border-radius: 50%;
   width: 35px;
   height: 35px;

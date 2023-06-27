@@ -147,7 +147,7 @@ const responseArr = [
     },
 ];
 const chatBotBtn = document.querySelector(".chatbot-btn");
-const chatContainer = document.querySelector(".chat-container")
+const chatContainer = document.querySelector(".chat-container");
 const chatBody = document.querySelector(".chat-body");
 const chatInput = document.querySelector(".chat-input");
 const chatForm = document.querySelector(".chat-form");
@@ -191,6 +191,7 @@ const renderChatBotMessage = () => {
     const userInput = chatInput.value;
     const response = getChatBotResponse();
     let botMessageElement = document.createElement("div");
+    let botImageElement = document.createElement("img");
     const faq = document.createElement("div");
     botMessageElement.textContent = response;
     faq.innerHTML = `
@@ -208,8 +209,9 @@ const renderChatBotMessage = () => {
         child.addEventListener("click", () => {
             botMessageElement.textContent = responseArr[2][`answer${index + 1}`]
             botMessageElement.classList.add("bot-message")
-            chatBody.append(botMessageElement)
-            scrollPosition()
+            botImageElement.src = "img/logo/navLogo.png";
+            chatBody.append(botMessageElement);
+            scrollPosition();
         })
     })
 };
