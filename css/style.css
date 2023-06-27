@@ -19,14 +19,13 @@
 }
 
 ::-webkit-scrollbar-thumb{
-  /* background: #243fe9; */
-  background:  linear-gradient(#556bfa, #142384);
+  background: #72b5e2;
   border: 0.1em solid #d1e5ff;
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background:  linear-gradient(#2a2a72c4, #243ee9cd);
+
 }
 
 :root {
@@ -1168,21 +1167,16 @@ canvas {
     bottom: 7rem;
     right: 3rem;
     z-index: 3;
-    background-color: white;
-    border-radius: 1rem;
+    background-color: rgb(219, 230, 247);
+    border-radius: 0.7rem;
+    overflow: hidden;
+    background-size: contain;
     height: 0;
     width: 350px;
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
     transition: height 0.5s linear;
 }
-.chat-header {
-    border-radius: 1rem 1rem 0 0;
-    background-color: #2a2a72;
-    background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
-    color: white;
-    padding: 0.5rem 1rem;
-    display: none;
-}
+
 .chat-body {
     display: flex;
     flex-direction: column;
@@ -1192,38 +1186,44 @@ canvas {
     scroll-behavior: smooth;
 }
 .user-message {
-    background-color: #2a2a72;
-    background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     width: fit-content;
+    max-width: 85%;
+    overflow-wrap: anywhere;
     padding: 0.5rem 1rem;
     margin-bottom: 1rem;
     border-radius: 15px 15px 5px 15px;
 }
 .bot-message {
-    background-color: rgb(210, 210, 210);
+    background-color: #7eb7dc;
     width: fit-content;
+    max-width: 85%;
     padding: 0.5rem 1rem;
     margin-bottom: 1rem;
-    border-radius: 5px 15px 15px 15px;
+    border-radius: 15px 15px 15px 5px;
     align-self: flex-start;
     line-height: 1.3;
 }
 .chat-faqs {
     display: grid;
+    align-self: flex-start;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    max-width: 85%;
+    text-align: center;
     margin-bottom: 1rem;
+    border-radius: 10px;
 }
+
 .chat-faqs > div {
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
+    background-color: rgb(179, 181, 182);
     border-radius: 10px;
     width: fit-content;
     padding: 0.5rem;
-    border-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%) 10%;
-    border-width: 1px;
-    border-style: solid;
     font-size: 0.8rem;
+    transition: 0.3s;
     cursor: pointer;
 }
 .chat-faqs > div:hover {
@@ -1237,20 +1237,22 @@ canvas {
 }
 .chat-input {
     width: 90%;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
     padding: 0 1rem;
     font: normal 1rem 'Roboto', sans-serif;
-    border-radius: 7px;
-    border: 1px solid rgb(210, 210, 210);
+    border-radius: 25px;
+    border: 1px solid rgb(180, 179, 179);
 }
 .chat-input:focus, 
 .chat-input:active {
     outline: none;
-    border: 1px solid rgb(48, 61, 203);
+    border: 1px solid #7eb7dc;
 }
 .chatform-btn {
     position: absolute;
     right: 2rem;
-    top: 0.8rem;
+    top: 1.7rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -1259,8 +1261,38 @@ canvas {
     height: 450px;
 }
 
+.chat-header {
+  background-image: linear-gradient(315deg, #7eb7dc 0%, #7eb7dc 74%);
+  color: white;
+  padding: 0.5rem 0.8rem;
+  display: none;
+  font-family:'Courier New', Courier, monospace;
+}
+
 .show-chat .chat-header {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.chat-header div{
+  display: inline-block;
+  border: 2px solid rgb(253, 253, 253);
+  background-color: #8accef;
+  box-shadow: 0px 2px 5px #3e3f3f;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+}
+
+.chat-header div img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.25);
+  translate: 0px -2px ;
 }
 
 .show-chat .chat-body {
@@ -1318,15 +1350,16 @@ canvas {
   margin-bottom: 15px;
 }
 .footer-col ul li a {
-  font-size: 15px;
+  font-size: 0.9em;
   font-weight: 400;
   color: #1d0f44ad;
   display: block;
-  transition: all 0.3s ease;
+  transition: 0.2s;
 }
 .footer-col ul li a:hover {
   color: #0f0135;
-  padding-left: 8px;
+  /* padding-left: 0.1em; */
+  transform: scale(1.05);
 }
 .footer-brand {
   text-align: center;
@@ -1384,7 +1417,8 @@ canvas {
 }
 .footer-col .social-links a:nth-child(3):hover {
   color: #ffffff;
-  background: #e1306c;
+  /* background: #e1306c; */
+  background-image: linear-gradient(to bottom left,rgb(120, 15, 120), rgb(182, 39, 151),rgb(232, 70, 121), rgb(236, 193, 63), rgb(218, 225, 88));
   border: none;
 }
 .footer-col .social-links a:nth-child(4):hover {
