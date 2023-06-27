@@ -1300,7 +1300,8 @@ canvas {
 .footer-col h4 {
   font-size: 16px;
   color: #0f0135;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  line-height: 0.5rem;
   font-weight: 600;
   position: relative;
 }
@@ -1309,11 +1310,30 @@ canvas {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #0f0135;
-  height: 2px;
+  background-image: linear-gradient(to right,#cde2ff,#1c55a4);
+  height: 2.25px;
   box-sizing: border-box;
   width: 50px;
+  transition: 0.5s ease-in-out;
+  border-radius: 40%;
 }
+
+/* hover on heading in footer */
+
+.footer-col h4{
+  transition: 0.5s ease-in-out;
+ }
+ .footer-col h4:hover{
+   letter-spacing: 0.25rem;
+   cursor: pointer;
+ }
+ 
+ .footer-col h4:hover::before {
+   background-color:#1c55a4;
+   width: 80px;
+ }
+
+
 .footer-col ul li {
   margin-bottom: 15px;
 }
@@ -1339,7 +1359,6 @@ canvas {
   height: 170px;
   overflow: hidden;
 }
-
 .footer-logo img {
   transform: scale(1.7);
   width: 200px;
