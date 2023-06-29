@@ -876,7 +876,28 @@ canvas {
   .button-container {
     margin-bottom: 10px;
     width: 100%;
+    gap: 20px;
     /* margin: auto; */
+  }
+  .button-container > .button-1{
+    margin-right: 0;
+    width: 100%;
+    max-width: 150px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .button-container > .button-1{
+    width: fit-content;
+    padding: 0 15px;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 276px) {
+  .button-container {
+    flex-direction: column;
+  }
+  .button-container > .button-1{
+    margin: 0;
   }
 }
 /* TALK WITH EXPERT ENDS  */
@@ -992,37 +1013,27 @@ canvas {
 .hireus-content {
   width: 90%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
 }
 .hireus-content button {
-  position: relative;
-  border: none;
-  background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
-  opacity: 0.9;
-  color: white;
-  padding: 5px;
-  margin-top: 20px;
-  width: 20%;
-  height: 45px;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  color: #ffe493;
-  cursor: pointer;
   transition: 0.3s all ease;
-}
-.hireus-content button {
   position: relative;
-    margin: 30px 0;
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    background-color: #2a2a72;
-    background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
-    opacity: 0.9;
-    cursor: pointer;
+  padding: 5px;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
+  opacity: 0.9;
+  cursor: pointer;
+  margin: 0;
   }
   .hireus-content button:after {
       position: absolute;
@@ -1131,7 +1142,16 @@ canvas {
   line-height: 50px;
   color: white;
 }
-
+@media (max-width: 769px) {
+  .gotop{
+    right: 1.5rem;
+  }
+}
+@media (max-width: 426px) {
+  .gotop{
+    right: 1rem;
+  }
+}
 /* chatbot START */
 .chatbot-btn {
     position: fixed;
@@ -1284,6 +1304,17 @@ canvas {
     .chat-container {
         right: 1rem;
     }
+}
+@media (max-width: 769px) {
+  .chatbot-btn{
+    right: 1.5rem;
+    bottom: 6.5rem;
+  }
+}
+@media (max-width: 426px) {
+  .chatbot-btn{
+    right: 1rem;
+  }
 }
 /* chatbot END */
 
@@ -1439,6 +1470,17 @@ canvas {
   }
   .footer-col .social-links a {
     margin: 30px 25px 10px 0px;
+  }
+}
+@media (max-width:425px){
+  .social-links {
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .footer-col .social-links a{
+    margin-right: 0;
   }
 }
 /* FOOTER END */
