@@ -132,12 +132,12 @@ const validateForm=(e)=>{
         document.getElementById('slotForm').elements[2].nextElementSibling.style.display = 'none';
 
     let pinFormat = /^\d{6}$/;
-    if((arr[7].value == '' || arr[7].value == null) || !document.getElementById('slotForm').elements[7].value.match(pinFormat)){
-        validate(7);
+    if((arr[9].value == '' || arr[9].value == null) || !document.getElementById('slotForm').elements[9].value.match(pinFormat)){
+        validate(9);
         notSubmit = 1;
     }
     else
-        document.getElementById('slotForm').elements[7].nextElementSibling.style.display = 'none';
+        document.getElementById('slotForm').elements[9].nextElementSibling.style.display = 'none';
 
     if(notSubmit == 0){
         const formData = new FormData(document.getElementById("slotForm"));
