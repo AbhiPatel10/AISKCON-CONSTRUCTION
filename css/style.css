@@ -1341,10 +1341,7 @@ canvas {
 @media (max-height: 590px) {
   .chat-container{
     top: 5%;
-  }
-}
-@media (max-height: 485px) {
-  .chat-container{
+    right: 15%;
     width: 83%;
     max-height: 90vh;
     display: flex;
@@ -1355,6 +1352,12 @@ canvas {
   }
   .chatform-btn{
     right: 5vw;
+  }
+}
+@media only screen and  (max-height: 570px) and (min-width: 769px) and (max-width: 1170px){
+  .chatbot-btn{
+    right: 3rem;
+    bottom: 6.5rem;
   }
 }
 /* chatbot END */
