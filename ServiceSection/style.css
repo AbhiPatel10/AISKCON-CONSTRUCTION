@@ -75,17 +75,15 @@
 
 .image-text1 {
   position: absolute;
-  bottom: 0;
+  bottom: 45.75%;
   left: auto;
   transform-origin: top right;
   transform: scale(0);
   opacity: 0;
   transition: all 0.3s ease;
-  text-align: center;
   color: white;
   font-size: 16px;
   font-weight: 500;
-  padding: 10px;
   border-bottom-left-radius: 7px;
 }
 .image-text1 p {
