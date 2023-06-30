@@ -1263,6 +1263,7 @@ canvas {
     display: none;
     justify-content: center;
     height: 0;
+    margin: 1rem 0;
 }
 .chat-input {
     width: 90%;
@@ -1326,7 +1327,7 @@ canvas {
   .chat-container{
     max-width: 80vw;
     right: 3.2rem;
-    max-height: 436px;
+    max-height: 448px;
     bottom: 7.2rem;
   }
 }
@@ -1334,8 +1335,26 @@ canvas {
   .chat-container{
     max-width: 90vw;
     right: 5vw;
-    max-height: 436px;
     bottom: 8rem;
+  }
+}
+@media (max-height: 590px) {
+  .chat-container{
+    top: 5%;
+  }
+}
+@media (max-height: 485px) {
+  .chat-container{
+    width: 83%;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .chat-input{
+    height: 37px;
+  }
+  .chatform-btn{
+    right: 5vw;
   }
 }
 /* chatbot END */
