@@ -9,6 +9,7 @@ body{
     /* background-color: rgb(92, 144, 189); */
     background-image: url("https://images.unsplash.com/photo-1505843513577-22bb7d21e455?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2532&q=80");
     background-repeat: no-repeat;
+    /* background-color: #2a2a72; */
 
 }
 
@@ -44,7 +45,8 @@ body{
     padding: 10px 20px;
     font-size: 1.5em;
     border: none;
-    background-color: #c4a18d;
+    /* background-color: #c4a18d; */
+    background-color: #ffb703;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     animation-name: fade-in;
     animation-duration: 1s;
