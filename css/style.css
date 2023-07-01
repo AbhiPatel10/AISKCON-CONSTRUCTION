@@ -644,15 +644,23 @@ canvas {
 
 /* Why choose us Start */
 .whyChooseUs-section {
-  background: url('../img/bg/whychooseus.webp');
+  background: url('../img/bg/whychooseus.jpg');
   background-size: cover;
   padding: 0;
+  
 }
 .whychooseus-overlay {
-  background: rgba(0, 0, 0, 0.7);
+  
+  background: rgba(0, 0, 0,0.5);
   background-size: cover;
   padding-top: 70px;
   padding-bottom: 80px;
+  transition: 0.6s;
+}
+
+.whychooseus-overlay:hover{
+   background-color:rgba(0, 0, 0,0.7); 
+    
 }
 .whychooseus-container {
   background-size: cover;
@@ -674,7 +682,7 @@ canvas {
   margin: 10px;
 }
 .whychooseus-block i {
-  color: #ffffff;
+  color: #ffffff; 
   padding-right: 8px;
   font-size: 25px;
 }
@@ -870,7 +878,28 @@ canvas {
   .button-container {
     margin-bottom: 10px;
     width: 100%;
+    gap: 20px;
     /* margin: auto; */
+  }
+  .button-container > .button-1{
+    margin-right: 0;
+    width: 100%;
+    max-width: 150px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .button-container > .button-1{
+    width: fit-content;
+    padding: 0 15px;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 276px) {
+  .button-container {
+    flex-direction: column;
+  }
+  .button-container > .button-1{
+    margin: 0;
   }
 }
 /* TALK WITH EXPERT ENDS  */
@@ -986,37 +1015,27 @@ canvas {
 .hireus-content {
   width: 90%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
 }
 .hireus-content button {
-  position: relative;
-  border: none;
-  background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 90%);
-  opacity: 0.9;
-  color: white;
-  padding: 5px;
-  margin-top: 20px;
-  width: 20%;
-  height: 45px;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  color: #ffe493;
-  cursor: pointer;
   transition: 0.3s all ease;
-}
-.hireus-content button {
   position: relative;
-    margin: 30px 0;
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    background-color: #2a2a72;
-    background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
-    opacity: 0.9;
-    cursor: pointer;
+  padding: 5px;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
+  opacity: 0.9;
+  cursor: pointer;
+  margin: 0;
   }
   .hireus-content button:after {
       position: absolute;
@@ -1125,7 +1144,16 @@ canvas {
   line-height: 50px;
   color: white;
 }
-
+@media (max-width: 769px) {
+  .gotop{
+    right: 1.5rem;
+  }
+}
+@media (max-width: 426px) {
+  .gotop{
+    right: 1rem;
+  }
+}
 /* chatbot START */
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
@@ -1398,6 +1426,17 @@ li.chat-faqs{
     align-self: flex-start;
     line-height: 1.3;
 }
+@media (max-width: 769px) {
+  .chatbot-btn{
+    right: 1.5rem;
+    bottom: 6.5rem;
+  }
+}
+@media (max-width: 426px) {
+  .chatbot-btn{
+    right: 1rem;
+  }
+}
 /* chatbot END */
 
 /* Footer START */
@@ -1421,7 +1460,8 @@ li.chat-faqs{
 .footer-col h4 {
   font-size: 16px;
   color: #0f0135;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  line-height: 0.5rem;
   font-weight: 600;
   position: relative;
 }
@@ -1430,11 +1470,30 @@ li.chat-faqs{
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #0f0135;
-  height: 2px;
+  background-image: linear-gradient(to right,#cde2ff,#1c55a4);
+  height: 2.25px;
   box-sizing: border-box;
   width: 50px;
+  transition: 0.5s ease-in-out;
+  border-radius: 40%;
 }
+
+/* hover on heading in footer */
+
+.footer-col h4{
+  transition: 0.5s ease-in-out;
+ }
+ .footer-col h4:hover{
+   letter-spacing: 0.25rem;
+   cursor: pointer;
+ }
+ 
+ .footer-col h4:hover::before {
+   background-color:#1c55a4;
+   width: 80px;
+ }
+
+
 .footer-col ul li {
   margin-bottom: 15px;
 }
@@ -1461,7 +1520,6 @@ li.chat-faqs{
   height: 170px;
   overflow: hidden;
 }
-
 .footer-logo img {
   transform: scale(1.7);
   width: 200px;
@@ -1557,3 +1615,16 @@ li.chat-faqs{
   }
 }
 /* FOOTER END */
+@media (max-width:425px){
+  .social-links {
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .footer-col .social-links a{
+    margin-right: 0;
+  }
+}
+/* FOOTER END */
+
