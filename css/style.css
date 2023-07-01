@@ -1340,7 +1340,7 @@ canvas {
 }
 @media (max-height: 590px) {
   .chat-container{
-    top: 5%;
+    bottom: 5%;
     right: 15%;
     width: 83%;
     max-height: 90vh;
