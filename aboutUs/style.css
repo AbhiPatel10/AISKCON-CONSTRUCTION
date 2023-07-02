@@ -37,6 +37,10 @@ ul{
 .hero-bg{
   height: 450px;
 }
+
+.swiper-pagination-bullet{
+  background-color: azure;
+}
 #slide-1{
   background: url('../img/bg/slide1.webp');
   background-size: cover;
