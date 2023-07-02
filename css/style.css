@@ -1143,17 +1143,9 @@ canvas {
   text-align: center;
   line-height: 50px;
   color: white;
+  z-index: 10;
 }
-@media (max-width: 769px) {
-  .gotop{
-    right: 1.5rem;
-  }
-}
-@media (max-width: 426px) {
-  .gotop{
-    right: 1rem;
-  }
-}
+
 /* chatbot START */
 .chatbot-toggler {
   position: fixed;
@@ -1168,8 +1160,25 @@ canvas {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  z-index: 10;
   background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
   transition: all 0.2s ease;
+}
+@media (max-width: 769px) {
+  .gotop{
+    right: 1.5rem;
+  }
+  .chatbot-toggler{
+    right: 6rem;
+  }
+}
+@media (max-width: 426px) {
+  .gotop{
+    right: 1rem;
+  }
+  .chatbot-toggler{
+    right: 5.5rem;
+  }
 }
 body.show-chatbot .chatbot-toggler {
   transform: rotate(90deg);
@@ -1416,14 +1425,11 @@ li.chat-faqs{
     align-self: flex-start;
     line-height: 1.3;
 }
-<<<<<<< HEAD
 @media (max-width: 470px){
   .chatbot{
     right: 3rem;
   }
-
 }
-
 @media (max-height: 660px){
   .chatbot .chatbox{
     height: 300px;
@@ -1474,17 +1480,6 @@ li.chat-faqs{
   }
   .chatbot header span {
     display: block;
-=======
-@media (max-width: 769px) {
-  .chatbot-btn{
-    right: 1.5rem;
-    bottom: 6.5rem;
-  }
-}
-@media (max-width: 426px) {
-  .chatbot-btn{
-    right: 1rem;
->>>>>>> ea43c3ff432714ffdc8146077d3dc993970f832f
   }
 }
 /* chatbot END */
@@ -1548,16 +1543,15 @@ li.chat-faqs{
   margin-bottom: 15px;
 }
 .footer-col ul li a {
-  font-size: 0.9em;
+  font-size: 15px;
   font-weight: 400;
   color: #1d0f44ad;
   display: block;
-  transition: 0.2s;
+  transition: all 0.3s ease;
 }
 .footer-col ul li a:hover {
   color: #0f0135;
-  /* padding-left: 0.1em; */
-  transform: scale(1.05);
+  padding-left: 8px;
 }
 .footer-brand {
   text-align: center;
@@ -1614,8 +1608,7 @@ li.chat-faqs{
 }
 .footer-col .social-links a:nth-child(3):hover {
   color: #ffffff;
-  /* background: #e1306c; */
-  background-image: linear-gradient(to bottom left,rgb(120, 15, 120), rgb(182, 39, 151),rgb(232, 70, 121), rgb(236, 193, 63), rgb(218, 225, 88));
+  background: #e1306c;
   border: none;
 }
 .footer-col .social-links a:nth-child(4):hover {
