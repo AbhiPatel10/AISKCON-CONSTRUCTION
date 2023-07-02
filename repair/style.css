@@ -3,9 +3,10 @@
 
 /* hero section start */
 .hero{
-  background: url('../img/bg/repair2.jpg');
-  height: 400px;
-  background-size: cover;
+  background: url('../img/bg/repair2.webp');
+  height: 400px;  
+  background-size: cover;  
+  background-position: center;
 }
 .hero-overlay{
   height: 100%;
@@ -16,9 +17,10 @@
   display: flex;
   height: 100%;
   justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 2.5rem;
+  color: antiquewhite;
+  padding-top: 7.7%;
+  padding-left: 1.2%;
+  font-size: 2.8rem;
   letter-spacing: 2px;
   font-weight: 500;
   font-family: 'Mulish', sans-serif;
@@ -63,7 +65,7 @@
 .home-repair-col button,
 .home-repair-col1 button{
   margin: 20px 0;
-  padding: 15px 10px;
+  padding: 5px 10px;
   background-color: #2a2a72;
   background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
   /* background-color: #0077cc; */
@@ -74,10 +76,59 @@
   color: white;
   transition: all 0.3s ease;
 }
-.home-repair-col button:hover,
-.home-repair-col1 button:hover{
-  opacity: 0.7;
-}
+.home-repair-col button,
+.home-repair-col1 button {
+  position: relative;
+    margin: 30px 0;
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  .home-repair-col button:after,
+.home-repair-col1 button:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.3em;
+      background-image: linear-gradient(
+          45deg,
+          #2a2a72 0%,
+          #243fe9 74%
+      );
+      transition: opacity 0.3s ease-out;
+      z-index: 2;
+      opacity: 0;
+  }
+  .home-repair-col button,
+.home-repair-col1 button:hover:after {
+    opacity: 1;
+  }
+  .home-repair-col button{
+    width: 160px;
+    height: 40px;
+    margin-left: -2px;
+    background-image: linear-gradient(
+      45deg,
+      #2a2a72 0%,
+      #243fe9 74%
+);
+ }
+
+.home-repair-col button,
+.home-repair-col1 button > span {
+      position: relative;
+      z-index: 3;
+  }
 @media (max-width: 767px) {
     .home-repair-container,
     .home-repair-container1 {

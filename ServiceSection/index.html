@@ -1,701 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>AISKCON-Construction</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico" />
-    <script
-      src="https://kit.fontawesome.com/280f5d0d38.js"
-      crossorigin="anonymous"
-    ></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- Navbar Section Started -->
-    <nav class="navBar1">
-      <div class="fullNav">
-        <div id="logo">
-          <img src="../img/logo/navLogo.png" alt="AISKCON-Construction" />
-        </div>
-        <ul class="list1">
-          <li id="home"><a href="../">Home</a></li>
-          <li id="services">
-            <div>
-              <pre><a href="../ServiceSection">Services</a> <i class="fas fa-chevron-circle-down"></i></pre>
-            </div>
-            <div class="drop1">
-              <div class="empty"></div>
-              <div class="non-empty">
-                <ul>
-                  <li>
-                    <a href="../ServiceSection#interior-designing"
-                      >Interior Designing</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#construction-management"
-                      >Construction Management</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#consultancy-services"
-                      >Consultancy Services</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#environmental-service"
-                      >Environmental Services</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#retrofication">Retrofication</a>
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#destructive"
-                      >Destructive & NDT Testing</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li id="repair">
-            <div>
-              <pre><a href="../repair">Repairs</a>  <i class="fas fa-chevron-circle-down"></i></pre>
-            </div>
-            <div class="drop2">
-              <div class="empty"></div>
-              <div class="non-empty">
-                <ul>
-                  <li><a href="../repair#home-repair">Home Repairs</a></li>
-                  <li>
-                    <a href="../repair#kitchen-repair">Kitchen Repairs</a>
-                  </li>
-                  <li>
-                    <a href="../repair#bathroom-repair">Bathroom Repair</a>
-                  </li>
-                  <li>
-                    <a href="../repair#furniture-repair">Furniture Repair</a>
-                  </li>
-                  <li><a href="../repair#plumbing">Plumbing & Pipes</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li><a href="../aboutUs">About</a></li>
-          <li><a href="../contact">Contact</a></li>
-          <li></li>
-        </ul>
-        <div id="bt2">
-          <button><i class="fa-solid fa-bars"></i></button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>AISKCON-Construction</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico" />
+  <script src="https://kit.fontawesome.com/280f5d0d38.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico" />
+</head>
+
+<body>
+  <!-- Navbar Section Started -->
+  <nav class="navBar1">
+    <div class="fullNav">
+      <div id="logo">
+        <a href="../index.html"><img src="../img/logo/navLogo.png" alt="AISKCON-Construction" /></a>
       </div>
+      <ul class="list1">
+        <li id="home"><a href="../">Home</a></li>
+        <li id="services">
+          <div>
+            <pre><a href="../ServiceSection">Services</a> <i class="fas fa-chevron-circle-down"></i></pre>
+          </div>
+          <div class="drop1">
+            <div class="empty"></div>
+            <div class="non-empty">
+              <ul>
+                <li>
+                  <a href="../ServiceSection#interior-designing">Interior Designing</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#construction-management">Construction Management</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#consultancy-services">Consultancy Services</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#environmental-service">Environmental Services</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#retrofication">Retrofication</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#destructive">Destructive & NDT Testing</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li id="repair">
+          <div>
+            <pre><a href="../repair">Repairs</a>  <i class="fas fa-chevron-circle-down"></i></pre>
+          </div>
+          <div class="drop2">
+            <div class="empty"></div>
+            <div class="non-empty">
+              <ul>
+                <li><a href="../repair#home-repair">Home Repairs</a></li>
+                <li>
+                  <a href="../repair#kitchen-repair">Kitchen Repairs</a>
+                </li>
+                <li>
+                  <a href="../repair#bathroom-repair">Bathroom Repair</a>
+                </li>
+                <li>
+                  <a href="../repair#furniture-repair">Furniture Repair</a>
+                </li>
+                <li><a href="../repair#plumbing">Plumbing & Pipes</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="../aboutUs">About</a></li>
+        <li><a href="../contact">Contact</a></li>
+        <li></li>
+      </ul>
+      <div id="bt2">
+        <button><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+  <div id="mobNavParent">
+    <nav class="navBar2 navOpen">
+      <ul class="list2">
+        <li><a href="../">Home</a></li>
+        <li>
+          <div id="services2">
+            <pre><a href="../ServiceSection">Services </a> <i id="ser" class="fas fa-chevron-circle-down"></i></pre>
+          </div>
+          <div class="drop3">
+            <div class="empty"></div>
+            <div>
+              <ul>
+                <li>
+                  <a href="../ServiceSection#interior-designing">Interior Designing</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#construction-management">Construction Management</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#consultancy-services">Consultancy Services</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#environmental-service">Environmental Services</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#retrofication">Retrofication</a>
+                </li>
+                <li>
+                  <a href="../ServiceSection#destructive">Destructive & NDT Testing</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div id="repair2">
+            <pre><a href="../repair">Repairs </a> <i id="rep" class="fas fa-chevron-circle-down"></i></pre>
+          </div>
+          <div class="drop4">
+            <div class="empty"></div>
+            <div>
+              <ul>
+                <li><a href="../repair#home-repair">Home Repairs</a></li>
+                <li>
+                  <a href="../repair#kitchen-repair">Kitchen Repairs</a>
+                </li>
+                <li>
+                  <a href="../repair#bathroom-repair">Bathroom Repair</a>
+                </li>
+                <li>
+                  <a href="../repair#furniture-repair">Furniture Repair</a>
+                </li>
+                <li><a href="../repair#plumbing">Plumbing & Pipes</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="../aboutUs">About</a></li>
+        <li><a href="../contact">Contact</a></li>
+      </ul>
     </nav>
-    <div id="mobNavParent">
-      <nav class="navBar2 navOpen">
-        <ul class="list2">
-          <li><a href="../">Home</a></li>
-          <li>
-            <div id="services2">
-              <pre><a href="../ServiceSection">Services </a> <i id="ser" class="fas fa-chevron-circle-down"></i></pre>
-            </div>
-            <div class="drop3">
-              <div class="empty"></div>
-              <div>
-                <ul>
-                  <li>
-                    <a href="../ServiceSection#interior-designing"
-                      >Interior Designing</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#construction-management"
-                      >Construction Management</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#consultancy-services"
-                      >Consultancy Services</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#environmental-service"
-                      >Environmental Services</a
-                    >
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#retrofication">Retrofication</a>
-                  </li>
-                  <li>
-                    <a href="../ServiceSection#destructive"
-                      >Destructive & NDT Testing</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div id="repair2">
-              <pre><a href="../repair">Repairs </a> <i id="rep" class="fas fa-chevron-circle-down"></i></pre>
-            </div>
-            <div class="drop4">
-              <div class="empty"></div>
-              <div>
-                <ul>
-                  <li><a href="../repair#home-repair">Home Repairs</a></li>
-                  <li>
-                    <a href="../repair#kitchen-repair">Kitchen Repairs</a>
-                  </li>
-                  <li>
-                    <a href="../repair#bathroom-repair">Bathroom Repair</a>
-                  </li>
-                  <li>
-                    <a href="../repair#furniture-repair">Furniture Repair</a>
-                  </li>
-                  <li><a href="../repair#plumbing">Plumbing & Pipes</a></li>
-                </ul>
-              </div>
-            </div>
-          </li>
+  </div>
+  <!-- Navbar Section Finished -->
+  <!-- OUR SERVICES PAGE STARTS -->
+  <div class="serviceimg-container">
+    <img src="../img/bg/servicenew.jpg" alt="SERVICES" />
+    <!-- <img src="../img/bg/services.webp" alt="SERVICES" /> -->
+    <div class="OUR-services">SERVICES</div>
+  </div>
 
-          <li><a href="../aboutUs">About</a></li>
-          <li><a href="../contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <!-- Navbar Section Finished -->
-    <!-- OUR SERVICES PAGE STARTS -->
-    <div class="serviceimg-container">
-      <img src="../img/bg/services2.png" alt="SERVICES" />
-      <!-- <img src="../img/bg/services.jpg" alt="SERVICES" /> -->
-      <div class="OUR-services">SERVICES</div>
-    </div>
-
-    <!-- FEATURED WORK STARTS -->
-    <div class="feature-box">
-      <h1
-        class="heading-featurebox"
-        data-aos="fade-right"
-        data-aos-easing="ease"
-        data-aos-duration="1000"
-      >
-        Featured Work
-      </h1>
-      <div
-        class="work-gallery"
-        data-aos="fade-up"
-        data-aos-easing="ease"
-        data-aos-duration="1000"
-      >
-        <div class="imagegallery">
-          <img src="../img/bg/hotel.jpg" />
-          <div class="image-text1">
-            <p>Hotel Construction</p>
-          </div>
+  <!-- FEATURED WORK STARTS -->
+  <div class="feature-box">
+    <h1 class="heading-featurebox" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+      Featured Work
+    </h1>
+    <div class="work-gallery" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+      <div class="imagegallery">
+        <img src="../img/bg/hotel.webp" />
+        <div class="image-text1">
+          <p>Hotel Construction</p>
         </div>
-        <div class="imagegallery">
-          <img src="../img/bg/houseconstruction.jpg" />
-          <div class="image-text1">
-            <p>House Construction</p>
-          </div>
+      </div>
+      <div class="imagegallery">
+        <img src="../img/bg/houseconstruction.webp" />
+        <div class="image-text1">
+          <p>House Construction</p>
         </div>
-        <div class="imagegallery">
-          <img src="../img/bg/hospital.jpg" />
-          <div class="image-text1">
-            <p>HealthCare</p>
-          </div>
+      </div>
+      <div class="imagegallery">
+        <img src="../img/bg/hospital.webp" />
+        <div class="image-text1">
+          <p>HealthCare</p>
         </div>
-        <div class="imagegallery">
-          <img src="../img/bg/falts.jpg" />
-          <div class="image-text1">
-            <p>Flats</p>
-          </div>
+      </div>
+      <div class="imagegallery">
+        <img src="../img/bg/falts.webp" />
+        <div class="image-text1">
+          <p>Flats</p>
         </div>
-        <div class="imagegallery">
-          <img src="../img/bg/school.jpg" />
-          <div class="image-text1">
-            <p>School Construction</p>
-          </div>
+      </div>
+      <div class="imagegallery">
+        <img src="../img/bg/school.webp" />
+        <div class="image-text1">
+          <p>School Construction</p>
         </div>
-        <div class="imagegallery">
-          <img src="../img/bg/roads.jpg" />
-          <div class="image-text1">
-            <p>Road Construction</p>
-          </div>
+      </div>
+      <div class="imagegallery">
+        <img src="../img/bg/roads.webp" />
+        <div class="image-text1">
+          <p>Road Construction</p>
         </div>
       </div>
     </div>
-    <!-- FEATURED WORK ENDS -->
+  </div>
+  <!-- FEATURED WORK ENDS -->
 
-    <!-- starts here -->
-    <section id="interior-designing">
-      <div class="cont">
-        <div class="contents-cont">
-          <img
-            src="../img/bg/interior.jpg"
-            alt="construction"
-            data-aos="fade-right"
-            data-aos-easing="ease"
-            data-aos-duration="1000"
-          />
-          <div
-            class="inner-items"
-            data-aos="fade-up"
-            data-aos-easing="ease"
-            data-aos-duration="1000"
-          >
-            <h1>INTERIOR DESIGNING</h1>
-            <p>
-              Interior design is the art and science of enhancing the interior
-              of a building or space to create a functional and aesthetically
-              pleasing environment. It involves the selection and arrangement of
-              furniture, color schemes, lighting, and accessories to create a
-              specific mood or atmosphere. Aiskcon, work with clients to
-              understand their needs and preferences, and create designs that
-              meet their requirements while also staying within their budget.
-            </p>
-          </div>
+  <!-- starts here -->
+  <section id="interior-designing">
+    <div class="cont">
+      <div class="contents-cont">
+        <img src="../img/bg/interior.webp" alt="construction" data-aos="fade-right" data-aos-easing="ease"
+          data-aos-duration="1000" />
+        <div class="inner-items" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+          <h1>INTERIOR DESIGNING</h1>
+          <p>
+            Interior design is the art and science of enhancing the interior
+            of a building or space to create a functional and aesthetically
+            pleasing environment. It involves the selection and arrangement of
+            furniture, color schemes, lighting, and accessories to create a
+            specific mood or atmosphere. Aiskcon, work with clients to
+            understand their needs and preferences, and create designs that
+            meet their requirements while also staying within their budget.
+          </p>
         </div>
       </div>
-    </section>
-    <section id="construction-management">
-      <div class="cont-right">
-        <div class="contents-right">
-          <div
-            class="inner-itemsleft"
-            data-aos="fade-right"
-            data-aos-easing="ease"
-            data-aos-duration="1000"
-          >
-            <h1>CONSTRUCTION MANAGEMENT</h1>
-            <p>
-              Construction management is the process of planning, coordinating,
-              and controlling a construction project from start to finish. It
-              involves overseeing all aspects of the construction process,
-              including budgeting, scheduling, procurement, and quality control.
-            </p>
-          </div>
+    </div>
+  </section>
+  <section id="construction-management">
+    <div class="cont-right">
+      <div class="contents-right">
+        <div class="inner-itemsleft" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+          <h1>CONSTRUCTION MANAGEMENT</h1>
+          <p>
+            Construction management is the process of planning, coordinating,
+            and controlling a construction project from start to finish. It
+            involves overseeing all aspects of the construction process,
+            including budgeting, scheduling, procurement, and quality control.
+          </p>
+        </div>
 
-          <img
-            src="../img/bg/constructionmanagement.jpg"
-            alt="construction"
-            data-aos="fade-down"
-            data-aos-easing="ease"
-            data-aos-duration="1000"
-          />
+        <img src="../img/bg/constructionmanagement.webp" alt="construction" data-aos="fade-down" data-aos-easing="ease"
+          data-aos-duration="1000" />
+      </div>
+    </div>
+  </section>
+  <section id="consultancy-services">
+    <div class="cont">
+      <div class="contents-cont">
+        <img src="../img/bg/preconstruction.webp" alt="construction" data-aos="fade-right" data-aos-easing="ease"
+          data-aos-duration="1000" />
+        <div class="inner-items" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+          <h1>CONSULTANCY SERVICES</h1>
+          <p>
+            Aiskcon offers specialized consulting services to clients. These
+            services are designed to help clients plan, manage, and execute
+            construction projects more effectively. Construction consultants
+            work closely with clients to identify their needs and goals, and
+            to develop customized solutions that address their specific
+            requirements. Some of the key services offered by Aiskcon
+            consultants include project management, cost estimation, risk
+            assessment, quality control, and sustainability consulting
+          </p>
         </div>
       </div>
-    </section>
-    <section id="consultancy-services">
-      <div class="cont">
-        <div class="contents-cont">
-          <img
-            src="../img/bg/preconstruction.jpg"
-            alt="construction"
-            data-aos="fade-right"
-            data-aos-easing="ease"
-            data-aos-duration="1000"
-          />
-          <div
-            class="inner-items"
-            data-aos="fade-up"
-            data-aos-easing="ease"
-            data-aos-duration="1000"
-          >
-            <h1>CONSULTANCY SERVICES</h1>
-            <p>
-              Aiskcon offers specialized consulting services to clients. These
-              services are designed to help clients plan, manage, and execute
-              construction projects more effectively. Construction consultants
-              work closely with clients to identify their needs and goals, and
-              to develop customized solutions that address their specific
-              requirements. Some of the key services offered by Aiskcon
-              consultants include project management, cost estimation, risk
-              assessment, quality control, and sustainability consulting
-            </p>
-          </div>
+    </div>
+  </section>
+  <section id="environmental-service">
+    <div class="cont-right">
+      <div class="contents-right">
+        <div class="inner-itemsleft" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+          <h1>ENVIRONMENTAL SERVICE</h1>
+          <p>
+            Aiskcon provides a wide range of environmental services, including
+            garden design, landscaping, and ecological restoration. These
+            services are designed to help clients create sustainable and
+            environmentally friendly outdoor spaces that promote biodiversity
+            and enhance the quality of life Effective environmental services
+            require a thorough understanding of environmental science,
+            horticulture, and landscape design, as well as a commitment to
+            sustainability and ecological stewardship.
+          </p>
+        </div>
+
+        <img src="../img/bg/preconstruction.webp" alt="construction" data-aos="fade-down" data-aos-easing="ease"
+          data-aos-duration="1000" />
+      </div>
+    </div>
+  </section>
+  <section id="retrofication">
+    <div class="cont">
+      <div class="contents-cont">
+        <img src="../img/bg/retro.webp" alt="construction" data-aos="fade-right" data-aos-easing="ease"
+          data-aos-duration="1000" />
+        <div class="inner-items" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+          <h1>RETROFICATION</h1>
+          <p>
+            Retrofication in the construction industry describes the process
+            of upgrading or modifying existing buildings to make them more
+            energy-efficient and sustainable. This may involve adding
+            insulation, upgrading HVAC systems, installing solar panels, or
+            making other improvements that reduce energy consumption and
+            environmental impact. It is becoming increasingly popular as more
+            property owners seek to reduce their carbon footprint and improve
+            the value of their buildings.
+          </p>
         </div>
       </div>
-    </section>
-    <section id="environmental-service">
-      <div class="cont-right">
-        <div class="contents-right">
-          <div
-            class="inner-itemsleft"
-            data-aos="fade-right"
-            data-aos-easing="ease"
-            data-aos-duration="1000"
-          >
-            <h1>ENVIRONMENTAL SERVICE</h1>
-            <p>
-              Aiskcon provides a wide range of environmental services, including
-              garden design, landscaping, and ecological restoration. These
-              services are designed to help clients create sustainable and
-              environmentally friendly outdoor spaces that promote biodiversity
-              and enhance the quality of life Effective environmental services
-              require a thorough understanding of environmental science,
-              horticulture, and landscape design, as well as a commitment to
-              sustainability and ecological stewardship.
-            </p>
-          </div>
+    </div>
+  </section>
+  <section id="destructive">
+    <div class="cont-right">
+      <div class="contents-right">
+        <div class="inner-itemsleft" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+          <h1>DESTRUCTIVE AND NDT TESTING</h1>
+          <p>
+            Destructive and non-destructive testing (NDT) are two common
+            methods used in the construction industry to evaluate the
+            strength, durability, and quality of materials and structures.
+            Destructive testing involves physically damaging a sample of the
+            material or structure in order to evaluate its performance and
+            characteristics.<br /><br />Effective testing in the construction
+            industry requires a thorough understanding of the materials and
+            structures being evaluated, as well as the appropriate testing
+            methods and equipment.
+          </p>
+        </div>
 
-          <img
-            src="../img/bg/preconstruction.jpg"
-            alt="construction"
-            data-aos="fade-down"
-            data-aos-easing="ease"
-            data-aos-duration="1000"
-          />
+        <img src="../img/bg/preconstruction.webp" alt="construction" data-aos="fade-down" data-aos-easing="ease"
+          data-aos-duration="1000" />
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR SERVICES PAGE ENDS -->
+
+  <!-- FAQ starts -->
+  <section class="faq">
+    <div class="faq-heading">
+      <h1>FAQs</h1>
+    </div>
+    <div class="faq-content">
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">
+        <div class="faq-question">
+          <h2>1. Why do I need an interior designer?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            You can think of an interior designer as a film director. Their
+            job is to monitor every minute detail from start to the final cut.
+            From pre-production to the final edit, their perspective is
+            responsible for shaping the final product. Similarly, interior
+            designers are professionals who are able to gauge your needs and
+            tastes to deliver your dream home. They assist you in getting
+            custom-designed pieces that fit perfectly into your beautiful
+            vision. From raw materials to finished products, they take care of
+            everything!
+          </p>
         </div>
       </div>
-    </section>
-    <section id="retrofication">
-      <div class="cont">
-        <div class="contents-cont">
-          <img
-            src="../img/bg/retro.jpg"
-            alt="construction"
-            data-aos="fade-right"
-            data-aos-easing="ease"
-            data-aos-duration="1000"
-          />
-          <div
-            class="inner-items"
-            data-aos="fade-up"
-            data-aos-easing="ease"
-            data-aos-duration="1000"
-          >
-            <h1>RETROFICATION</h1>
-            <p>
-              Retrofication in the construction industry describes the process
-              of upgrading or modifying existing buildings to make them more
-              energy-efficient and sustainable. This may involve adding
-              insulation, upgrading HVAC systems, installing solar panels, or
-              making other improvements that reduce energy consumption and
-              environmental impact. It is becoming increasingly popular as more
-              property owners seek to reduce their carbon footprint and improve
-              the value of their buildings.
-            </p>
-          </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="faq-question">
+          <h2>2. Why is Aiskcon perfect for your design?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Aiskcon is the perfect partner who can build your home interiors
+            just the way you want! Our design experts customize designs as per
+            your needs. They will listen to your ideas and suggest options. At
+            Aiskcon, we incorporate advanced technology into our modular
+            solutions to create flawless interiors and also to expedite the
+            process of making your dream home a reality. So, book your
+            consultation today with India's Most Trusted Home Interiors Brand,
+            Aiskcon and talk to our designers about your project.
+          </p>
         </div>
       </div>
-    </section>
-    <section id="destructive">
-      <div class="cont-right">
-        <div class="contents-right">
-          <div
-            class="inner-itemsleft"
-            data-aos="fade-right"
-            data-aos-easing="ease"
-            data-aos-duration="1000"
-          >
-            <h1>DESTRUCTIVE AND NDT TESTING</h1>
-            <p>
-              Destructive and non-destructive testing (NDT) are two common
-              methods used in the construction industry to evaluate the
-              strength, durability, and quality of materials and structures.
-              Destructive testing involves physically damaging a sample of the
-              material or structure in order to evaluate its performance and
-              characteristics.<br /><br />Effective testing in the construction
-              industry requires a thorough understanding of the materials and
-              structures being evaluated, as well as the appropriate testing
-              methods and equipment.
-            </p>
-          </div>
-
-          <img
-            src="../img/bg/preconstruction.jpg"
-            alt="construction"
-            data-aos="fade-down"
-            data-aos-easing="ease"
-            data-aos-duration="1000"
-          />
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500">
+        <div class="faq-question">
+          <h2>3. What services are included under home interior design?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Home interior design services typically include a wide range of
+            design and decor-related tasks that are aimed at improving the
+            functionality and aesthetics of a home's interior space. Some of
+            the most common services that are included under home interior
+            design are:
+            <br />
+            1. Space Planning <br />
+            2. Colour Selection <br />
+            3. Material Selection <br />
+            4. Lighting Design <br />
+            5. Furniture Selection <br />
+            6. Decorative Accessories
+          </p>
         </div>
       </div>
-    </section>
-
-    <!-- OUR SERVICES PAGE ENDS -->
-
-    <!-- FAQ starts -->
-    <section class="faq">
-      <div class="faq-heading">
-        <h1>FAQs</h1>
-      </div>
-      <div class="faq-content">
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="500"
-        >
-          <div class="faq-question">
-            <h2>1. Why do I need an interior designer?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
-          </div>
-          <div class="faq-answer">
-            <p>
-              You can think of an interior designer as a film director. Their
-              job is to monitor every minute detail from start to the final cut.
-              From pre-production to the final edit, their perspective is
-              responsible for shaping the final product. Similarly, interior
-              designers are professionals who are able to gauge your needs and
-              tastes to deliver your dream home. They assist you in getting
-              custom-designed pieces that fit perfectly into your beautiful
-              vision. From raw materials to finished products, they take care of
-              everything!
-            </p>
-          </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2000">
+        <div class="faq-question">
+          <h2>4. What will be the timelines for my project completion?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
         </div>
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="1000"
-        >
-          <div class="faq-question">
-            <h2>2. Why is Aiskcon perfect for your design?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
-          </div>
-          <div class="faq-answer">
-            <p>
-              Aiskcon is the perfect partner who can build your home interiors
-              just the way you want! Our design experts customize designs as per
-              your needs. They will listen to your ideas and suggest options. At
-              Aiskcon, we incorporate advanced technology into our modular
-              solutions to create flawless interiors and also to expedite the
-              process of making your dream home a reality. So, book your
-              consultation today with India's Most Trusted Home Interiors Brand,
-              Aiskcon and talk to our designers about your project.
-            </p>
-          </div>
-        </div>
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="1500"
-        >
-          <div class="faq-question">
-            <h2>3. What services are included under home interior design?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
-          </div>
-          <div class="faq-answer">
-            <p>
-              Home interior design services typically include a wide range of
-              design and decor-related tasks that are aimed at improving the
-              functionality and aesthetics of a home's interior space. Some of
-              the most common services that are included under home interior
-              design are:
-              <br />
-              1. Space Planning <br />
-              2. Colour Selection <br />
-              3. Material Selection <br />
-              4. Lighting Design <br />
-              5. Furniture Selection <br />
-              6. Decorative Accessories
-            </p>
-          </div>
-        </div>
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="2000"
-        >
-          <div class="faq-question">
-            <h2>4. What will be the timelines for my project completion?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
-          </div>
-          <div class="faq-answer">
-            <p>
-              The timeline for a construction project completion can vary
-              depending on a number of factors, such as the size and complexity
-              of the project, the location, weather conditions, availability of
-              materials, etc. Here in Aiskcon we deliver the project efficiently
-              and on earliest possible time
-            </p>
-          </div>
-        </div>
-        <div
-          class="faq-block"
-          data-aos="fade-up"
-          data-aos-easing="ease"
-          data-aos-duration="2500"
-        >
-          <div class="faq-question">
-            <h2>6. What are the trending interior design styles?</h2>
-            <i class="fa-solid fa-plus fa-xl"></i>
-          </div>
-          <div class="faq-answer">
-            <p>
-              1. Minimalism <br />
-              2. Biophilic design <br />
-              3. Industrial design <br />
-              4. Scandinavian design <br />
-              5. Bohemian design <br />
-              6. Modern farmhouse <br />
-              7. Art Deco <br />
-            </p>
-          </div>
+        <div class="faq-answer">
+          <p>
+            The timeline for a construction project completion can vary
+            depending on a number of factors, such as the size and complexity
+            of the project, the location, weather conditions, availability of
+            materials, etc. Here in Aiskcon we deliver the project efficiently
+            and on earliest possible time
+          </p>
         </div>
       </div>
-    </section>
-    <!-- FAQ end -->
-
-    <!-- Hire Us Section Start -->
-    <section class="hireus">
-      <div
-        class="hireus-box"
-        data-aos="fade-up"
-        data-aos-easing="ease"
-        data-aos-duration="1000"
-      >
-        <div class="hireus-content">
-          <h1>Transform your living space into a work of Art!</h1>
-          <button onclick="window.location.href='../slotBooking/form.html'">
-            Hire us
-          </button>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2500">
+        <div class="faq-question">
+          <h2>6. What are the trending interior design styles?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            1. Minimalism <br />
+            2. Biophilic design <br />
+            3. Industrial design <br />
+            4. Scandinavian design <br />
+            5. Bohemian design <br />
+            6. Modern farmhouse <br />
+            7. Art Deco <br />
+          </p>
         </div>
       </div>
-    </section>
-    <!-- Hire Us Section End -->
+    </div>
+  </section>
+  <!-- FAQ end -->
 
-    <a class="gotop" href="#"><i class="fa-solid fa-arrow-up fa-lg"></i></a>
+  <!-- Hire Us Section Start -->
+  <section class="hireus">
+    <div class="hireus-box" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+      <div class="hireus-content">
+        <h1>Transform your living space into a work of Art!</h1>
+        <button onclick="window.location.href='../slotBooking/form.html'">
+          <span>Hire us</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Hire Us Section End -->
 
-    <!-- Footer Section Started -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col footer-brand">
-            <div class="footer-logo">
-              <img src="../img/logo/aiskcon logo.png" alt="logo" srcset="" />
-            </div>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+  <a class="gotop" href="#"><i class="fa-solid fa-arrow-up fa-lg"></i></a>
+
+  <!-- Footer Section Started -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <img src="../img/logo/aiskcon logo.png" alt="logo" srcset="" />
           </div>
-          <div class="footer-col service">
-            <h4>Services</h4>
-            <ul>
-              <li>
-                <a href="../ServiceSection#interior-designing"
-                  ><i class="fa-solid fa-angle-right"></i> Interior Designing</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#construction-management"
-                  ><i class="fa-solid fa-angle-right"></i> Construction
-                  Management</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#consultancy-services"
-                  ><i class="fa-solid fa-angle-right"></i> Consultancy
-                  Services</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#environmental-service"
-                  ><i class="fa-solid fa-angle-right"></i> Environmental
-                  Services</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#retrofication"
-                  ><i class="fa-solid fa-angle-right"></i> Retrofication</a
-                >
-              </li>
-              <li>
-                <a href="../ServiceSection#destructive"
-                  ><i class="fa-solid fa-angle-right"></i> Destructive & NDT
-                  Testing</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col repair">
-            <h4>Repairs</h4>
-            <ul>
-              <li>
-                <a href="../repair#home-repair"
-                  ><i class="fa-solid fa-angle-right"></i> Home Repairs</a
-                >
-              </li>
-              <li>
-                <a href="../repair#kitchen-repair"
-                  ><i class="fa-solid fa-angle-right"></i> Kitchen Repairs</a
-                >
-              </li>
-              <li>
-                <a href="../repair#bathroom-repair"
-                  ><i class="fa-solid fa-angle-right"></i> Bathroom Repair</a
-                >
-              </li>
-              <li>
-                <a href="../repair#furniture-repair"
-                  ><i class="fa-solid fa-angle-right"></i> Furniture Repair</a
-                >
-              </li>
-              <li>
-                <a href="../repair#plumbing"
-                  ><i class="fa-solid fa-angle-right"></i> Plumbing & Pipes</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-col contact">
-            <h4>Contact</h4>
-            <ul>
-              <li>
-                <a href="mailto:aiskconofficial@gmail.com"
-                  ><i class="fa-solid fa-envelope"></i>
-                  aiskconofficial@gmail.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+919636243488"
-                  ><i class="fa-solid fa-phone"></i> +91-9636243488</a
-                >
-              </li>
-              <li>
-                <a href="tel:+919717010172"
-                  ><i class="fa-solid fa-phone"></i> +91-9717010172</a
-                >
-              </li>
-              <li>
-                <a href="tel:+916306849492"
-                  ><i class="fa-solid fa-phone"></i> +91-6306849492</a
-                >
-              </li>
-            </ul>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
-
-        <hr style="margin: 0 auto; width: 90%; margin-top: 10px" />
-
-        <div>
-          <div class="footer-copyright"></div>
+        <div class="footer-col service">
+          <h4><a href="../ServiceSection" style="color:black">Services</a></h4>
+          <ul>
+            <li>
+              <a href="../ServiceSection#interior-designing"><i class="fa-solid fa-angle-right"></i> Interior
+                Designing</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#construction-management"><i class="fa-solid fa-angle-right"></i> Construction
+                Management</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#consultancy-services"><i class="fa-solid fa-angle-right"></i> Consultancy
+                Services</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#environmental-service"><i class="fa-solid fa-angle-right"></i> Environmental
+                Services</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#retrofication"><i class="fa-solid fa-angle-right"></i> Retrofication</a>
+            </li>
+            <li>
+              <a href="../ServiceSection#destructive"><i class="fa-solid fa-angle-right"></i> Destructive & NDT
+                Testing</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col repair">
+          <h4><a href="../repair" style="color:black">Repairs</a></h4>
+          <ul>
+            <li>
+              <a href="../repair#home-repair"><i class="fa-solid fa-angle-right"></i> Home Repairs</a>
+            </li>
+            <li>
+              <a href="../repair#kitchen-repair"><i class="fa-solid fa-angle-right"></i> Kitchen Repairs</a>
+            </li>
+            <li>
+              <a href="../repair#bathroom-repair"><i class="fa-solid fa-angle-right"></i> Bathroom Repair</a>
+            </li>
+            <li>
+              <a href="../repair#furniture-repair"><i class="fa-solid fa-angle-right"></i> Furniture Repair</a>
+            </li>
+            <li>
+              <a href="../repair#plumbing"><i class="fa-solid fa-angle-right"></i> Plumbing & Pipes</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col contact">
+          <h4><a href="../contact" style="color:black">Contact</a></h4>
+          <ul>
+            <li>
+              <a href="mailto:aiskconofficial@gmail.com"><i class="fa-solid fa-envelope"></i>
+                aiskconofficial@gmail.com</a>
+            </li>
+            <li>
+              <a href="tel:+919636243488"><i class="fa-solid fa-phone"></i> +91-9636243488</a>
+            </li>
+            <li>
+              <a href="tel:+919717010172"><i class="fa-solid fa-phone"></i> +91-9717010172</a>
+            </li>
+            <li>
+              <a href="tel:+916306849492"><i class="fa-solid fa-phone"></i> +91-6306849492</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-    <!-- Footer Section Finished -->
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="../js/main.js"></script>
-  </body>
+      <hr style="margin: 0 auto; width: 90%; margin-top: 10px" />
+
+      <div>
+        <div class="footer-copyright"></div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section Finished -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../js/main.js"></script>
+</body>
+
 </html>
