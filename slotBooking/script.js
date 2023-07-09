@@ -92,6 +92,7 @@ const validateForm=(e)=>{
         let sibling = parent.previousElementSibling;
         sibling.firstElementChild.style.visibility = 'visible';
         arr[index].nextElementSibling.style.display = 'block';
+        arr[index].nextElementSibling.style.opacity = 1;
     };
     let arr = document.getElementById('slotForm').elements;
     let notSubmit = 0;
