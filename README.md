@@ -21,6 +21,7 @@ We at Aiskcon Construction helps people with construction projects. We are proud
       <img src="https://img.shields.io/badge/Project%20Mentor-kartikayasija-green?style=for-the-badge" />
       <img src="https://img.shields.io/badge/Project%20Mentor-Rolikaagarwal-green?style=for-the-badge" />
 </div>
+
 ### Techstacks:
 The Techs we have used for making this website:
 
@@ -49,7 +50,7 @@ The Techs we have used for making this website:
 	```
 	git clone https://github.com/<YOUR_GITHUB_USER_NAME>/AISKCON-CONSTRUCTION.git.
 	```
-- Install dependancy
+- Install dependency
    ```bash
   npm install
 	```
