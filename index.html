@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/dark-mode.css" />
   <title>AISKCON-Construction</title>
   <link rel="icon" type="image/x-icon" href="./img/favicon_io/favicon.ico" />
   <script src="https://kit.fontawesome.com/280f5d0d38.js" crossorigin="anonymous"></script>
@@ -14,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
-
+ 
 <body>
   <!-- Navbar Section Started -->
   <nav class="navBar1">
@@ -77,7 +78,9 @@
         </li>
         <li><a href="./aboutUs">About</a></li>
         <li><a href="./contact">Contact</a></li>
-        <li></li>
+        <li>
+          <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+       </li>
       </ul>
       <div id="bt2">
         <button><i class="fa-solid fa-bars"></i></button>
@@ -164,7 +167,7 @@
           "Quality is never an accident. <br />It is always the result of
           Intelligent effort." - John Ruskin
         </p>
-        <button data-aos="fade-up" data-aos-duration="3000"
+        <button class="btn" data-aos="fade-up" data-aos-duration="3000"
           onclick="window.location.href='./slotBooking/form.html'"><span>Book Us</span></button>
       </div>
       <div class="hero-img">
@@ -246,10 +249,10 @@
           durable.
         </p>
 
-        <div>
+       <div>
           <div class="button-container">
-            <button class="button-material" onclick="window.location.href = './aboutUs';">
-              <span> About Us</span>
+            <button class="button-material btn" onclick="window.location.href = './aboutUs';">
+              About Us
             </button>
           </div>
         </div>
@@ -410,12 +413,12 @@
         </p>
         <div>
           <div class="button-container">
-            <button class="button-1" onclick="location.href='mailto:aiskconofficial@gmail.com'">
-              <span> <i class="fa fa-phone"></i> Contact</span>
+            <button class="button-1 btn" onclick="location.href='mailto:aiskconofficial@gmail.com'">
+              <i class="fa fa-phone"></i> Contact
             </button>
 
-            <button class="button-1" id="form-open" onclick="window.location.href = './slotBooking/form.html';">
-              <span> <i class="fa fa-calendar"></i> Book Us</span>
+            <button class="button-1 btn" id="form-open" onclick="window.location.href = './slotBooking/form.html';">
+              <i class="fa fa-calendar"></i> Book Us
             </button>
           </div>
         </div>
@@ -428,7 +431,7 @@
   <section class="testimonials">
     <div style="display: flex; justify-content: center; align-items: center">
       <div class="testinomial-header" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
-        <h1>Our Clients Say!</h1>
+        <h2 class="services-heading" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">Our Clients Say!</h2>
         <p>
           Our customer satisfaction is our top priority. To do this, we pay
           attention to your concerns, difficulties, and ambitions and
@@ -628,16 +631,16 @@
   <!-- FAQ end -->
 
   <!-- Hire Us Section Start -->
-  <section class="hireus">
+<section class="hireus">
     <div class="hireus-box" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
       <div class="hireus-content">
         <h1>Transform your living space into a work of Art!</h1>
-        <button onclick="window.location.href='./slotBooking/form.html'">
-          <span> Hire us</span>
+        <button class="btn" onclick="window.location.href='./slotBooking/form.html'">
+          Hire us
         </button>
       </div>
     </div>
-  </section>
+</section>
   <!-- Hire Us Section End -->
 
   <a class="gotop" href="#"><i class="fa-solid fa-arrow-up fa-lg"></i></a>

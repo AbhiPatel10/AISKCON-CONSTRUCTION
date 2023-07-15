@@ -1,3 +1,27 @@
+// dark mode
+document.querySelector('#services').addEventListener('mouseover', () => {
+  document.querySelector('#services i').setAttribute('class', 'fas fa-chevron-circle-up');
+});
+document.querySelector('#services').addEventListener('mouseout', () => {
+  document.querySelector('#services i').setAttribute('class', 'fas fa-chevron-circle-down');
+}); 
+
+document.querySelector('#repair').addEventListener('mouseover', () => {
+  document.querySelector('#repair i').setAttribute('class', 'fas fa-chevron-circle-up');
+});  
+document.querySelector('#repair').addEventListener('mouseout', () => {
+  document.querySelector('#repair i').setAttribute('class', 'fas fa-chevron-circle-down');
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var darkModeToggle = document.querySelector("#dark-mode-toggle");
+  var body = document.body;
+
+  darkModeToggle.addEventListener("click", function() {
+    body.classList.toggle("dark-mode");
+    
+  });
+});
 
 // Navbar start
 document.querySelector('#services').addEventListener('mouseover', () => {
