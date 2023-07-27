@@ -640,7 +640,9 @@
   </section>
   <!-- Hire Us Section End -->
 
-  <a class="gotop" href="#"><i class="fa-solid fa-arrow-up fa-lg"></i></a>
+  <!-- <a class="gotop" href="#"><i class="fa-solid fa-arrow-up fa-lg"></i></a> -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up fa-lg"></i></button>
+
 
   <!-- chatbot start -->
   <button type="button" aria-label="Open chatbot" class="chatbot-btn">
@@ -760,6 +762,25 @@
     AOS.init();
   </script>
   <script src="./js/main.js"></script>
+
+  <script>
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 </body>
 
 </html>
