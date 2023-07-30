@@ -1093,6 +1093,9 @@ canvas {
   border-radius: 5px;
   font-family: 'poppins', sans-serif;
 }
+.faq-block.aos-init.aos-animate:hover {
+  box-shadow: 2px 2px 1pc #98bbe0;
+}
 .faq-question {
   font-size: 0.7rem;
   letter-spacing: 1.5;
@@ -1509,3 +1512,36 @@ canvas {
   }
 }
 /* FOOTER END */
+
+
+
+#myBtn {
+  display: none; 
+  position: fixed;
+  right: 2.5rem;
+  bottom: 2.5rem;
+  width: 50px;
+  height: 50px;
+  z-index: 99; 
+  border: none;
+  outline: none;
+  background-color: red; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 50%; 
+  font-size: 18px;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #243fe9 74%);
+}
+
+#myBtn:hover {
+  background-color: #555;
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+  50%{
+    transform: translateY(-5px);
+  }
+}
