@@ -23,7 +23,7 @@ We at Aiskcon Construction helps people with construction projects. We are proud
 </div>
 
 ### Techstacks:
-The Techs we have used for making this website:
+The Techstack that we have used for making this website are:
 
 #### For Front-End:
 
