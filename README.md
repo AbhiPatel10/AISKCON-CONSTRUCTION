@@ -61,4 +61,6 @@ The Techs we have used for making this website:
          cd backend     
          npm start
 
+- To Run Webite using Docker, shoot a new terminal and write   
 
+         docker-compose up -d
