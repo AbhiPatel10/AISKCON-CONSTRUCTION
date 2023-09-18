@@ -1456,6 +1456,11 @@ canvas {
   background: #0077b5;
   border: none;
 }
+.footer-col .social-links a:nth-child(5):hover {
+  color: #ffffff;
+  background: #02040a;
+  border: none;
+}
 .footer-copyright {
   text-align: center;
   margin-top: 20px;
