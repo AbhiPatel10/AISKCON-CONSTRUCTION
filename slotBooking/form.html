@@ -14,6 +14,25 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+
+    <style>
+        body{
+            background-color: #e5e5e5;
+        }
+        .aptForm {
+          display: flex;
+          width: 800px;
+          /* background-image: url("https://img.freepik.com/premium-photo/house-loan-concept-isolated-white-background_53876-33025.jpg?w=1800");
+          background-size: 1500px; */
+          opacity: 0.90;
+          
+        }
+      
+        .container {
+          margin-top: 350px;
+        }
+
+    </style>
     <script
       src="https://kit.fontawesome.com/280f5d0d38.js"
       crossorigin="anonymous"
@@ -177,10 +196,13 @@
 
     <!-- Slot Booking start -->
     <div id="infoHead">
-      <h1>Book an appointment</h1>
+      <div class="typewrite">
+      <h1 data-text="animate"> Book an appointment</h1>
+    </div>
       <h3>Book now, build your dream later.</h3>
     </div>
-    <div class="aptForm">
+    <div
+    class="aptForm">
       <div class="infoMain">
         <form
           action="../index.html"
@@ -188,7 +210,13 @@
           name="slotForm"
           onsubmit="return validateForm()"
         >
-          <div class="input-container">
+          <div 
+          
+         
+          
+          style=" background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+          url(https://img.freepik.com/premium-photo/house-loan-concept-isolated-white-background_53876-33025.jpg?w=1800),";
+          class="input-container">
             <div class="form-input">
               <label for="name">Name <span>*</span></label>
               <div>
@@ -198,7 +226,7 @@
                   id="name"
                   placeholder="Enter Your Name"
                 />
-                <p>This field is required!</p>
+                <!-- <p>This field is required!</p> -->
               </div>
             </div>
             <div class="form-input">
@@ -242,7 +270,7 @@
             <div class="form-input">
               <label for="time">Mode <span>*</span></label>
               <div>
-                <select name="mode" id="mode">
+                <select style="color: gray;" name="mode" id="mode">
                   <option value="">Select</option>
                   <option value="online">Online</option>
                   <option value="offline">Offline</option>
@@ -264,7 +292,7 @@
             </div>
             <div class="form-input">
               <label for="pinCode">Postal Code <span>*</span></label>
-              <div>
+              <div style="color: white;">
                 <input
                   type="text"
                   name="pinCode"
