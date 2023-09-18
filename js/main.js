@@ -120,115 +120,246 @@ if (document.querySelector('.footer-copyright')) {
 }
 
 // ******************* CHATBOT Start ***********************
+
 const responseArr = [
-    {
-        hello: "Hello I am AiBot, What would you like to know?",
-    },
+  {
+    hello: "Hello I am AiBot, What would you like to know?",
+  },
 
-    {
-        faq1: "Why do I need an interior designer?",
-        faq2: "Why is Aiskcon perfect for your design?",
-        faq3: "What services are included under home interior design",
-        faq4: "What will be the timelines for my project completion?",
-        faq5: "What are the trending interior design styles?",
-    },
+  {
+    faq1: "Why do I need an interior designer?",
+    faq2: "Why is Aiskcon perfect for your design?",
+    faq3: "What services are included under home interior design",
+    faq4: "What will be the timelines for my project completion?",
+    faq5: "What are the trending interior design styles?",
+  },
 
-    {
-        answer1:
-            "Interior designers are professionals who are able to gauge your needs and tastes to deliver your dream home. They assist you in getting custom-designed pieces that fit perfectly into your beautiful vision.",
-        answer2:
-            "Aiskcon is the perfect partner who can build your home interiors just the way you want! Our design experts customize designs as per your needs. They will listen to your ideas and suggest options. At Aiskcon, we incorporate advanced technology into our modular solutions to create flawless interiors and also to expedite the process of making your dream home a reality.",
-        answer3:
-            "Some of the most common services that are included under home interior design are: Space planning, Colour Selection, Material Selection, Lighting Design, Furniture Selection, Decorative Accessories",
-        answer4:
-            "The timeline for a construction project completion can vary depending on a number of factors, such as the size and complexity of the project, the location, weather conditions, availability of materials",
-        answer5:
-            "Minimalism, Biophilic design, Industrial design, Scandinavian design, Bohemian design, Modern farmhouse, Art Deco",
-    },
+  {
+    answer1:
+      "Interior designers are professionals who are able to gauge your needs and tastes to deliver your dream home. They assist you in getting custom-designed pieces that fit perfectly into your beautiful vision.",
+    answer2:
+      "Aiskcon is the perfect partner who can build your home interiors just the way you want! Our design experts customize designs as per your needs. They will listen to your ideas and suggest options. At Aiskcon, we incorporate advanced technology into our modular solutions to create flawless interiors and also to expedite the process of making your dream home a reality.",
+    answer3:
+      "Some of the most common services that are included under home interior design are: Space planning, Colour Selection, Material Selection, Lighting Design, Furniture Selection, Decorative Accessories",
+    answer4:
+      "The timeline for a construction project completion can vary depending on a number of factors, such as the size and complexity of the project, the location, weather conditions, availability of materials",
+    answer5:
+      "Minimalism, Biophilic design, Industrial design, Scandinavian design, Bohemian design, Modern farmhouse, Art Deco",
+  },
 ];
-const chatBotBtn = document.querySelector(".chatbot-btn");
-const chatContainer = document.querySelector(".chat-container")
-const chatBody = document.querySelector(".chat-body");
-const chatInput = document.querySelector(".chat-input");
-const chatForm = document.querySelector(".chat-form");
-const chatFormBtn = document.querySelector(".chatform-btn");
 
-chatBotBtn.addEventListener("click", () => {
-    chatContainer.classList.toggle("show-chat")
-    if (!chatContainer.classList.contains("show-chat")) {
-        clearChatBody()
-    }
-})
+const chatbotToggler = document.querySelector(".chatbot-toggler");
+const closeBtn = document.querySelector(".close-btn");
+const chatbox = document.querySelector(".chatbox");
+const chatInput = document.querySelector(".chat-input textarea");
+const sendChatBtn = document.querySelector(".chat-input span");
 
-chatInput.addEventListener("input", () => {
-    if (!chatInput.value.trim() == "") {
-        chatFormBtn.removeAttribute("disabled")
-    } else {
-        chatFormBtn.setAttribute("disabled", true)
-    }
-});
+const inputInitHeight = chatInput.scrollHeight;
 
-chatForm.addEventListener("submit", (e) => {
-    e.preventDefault()
-    renderMessages()
-    clearInput()
-})
-
-const renderMessages = () => {
-    renderUserMessage()
-    renderChatBotMessage()
+const createChatLi = (message, className) => {
+  // Create a chat <li> element with passed message and className
+  const chatLi = document.createElement("li");
+  chatLi.classList.add("chat", `${className}`);
+  let chatContent = className === "outgoing" ? `<p></p><span class="userAvatar"><img src="img/logo/userAvatar.png" alt=""></span>` : `<span class="material-symbols-outlined"><img src="img/logo/navLogo.png" alt=""></span><p></p>`;
+  chatLi.innerHTML = chatContent;
+  chatLi.querySelector("p").textContent = message;
+  return chatLi; // return chat <li> element
 }
 
-const renderUserMessage = () => {
-    const userInput = chatInput.value;
-    const messageElement = document.createElement("div");
-    messageElement.textContent = userInput;
-    messageElement.classList.add("user-message");
-    chatBody.append(messageElement);
-};
+const generateResponse = (chatElement) => {
+  const messageElement = chatElement.querySelector("p");
+  const userMessage = messageElement.textContent; // Get the user's message
+  messageElement.textContent = responseArr[0].hello;
+  const chatBox = document.querySelector(".chatbox");
+
+  const userInput = chatInput.value;
+  // const response = getChatBotResponse();
+  let botMessageElement = document.createElement("li");
+  botMessageElement.classList.add("chat")
+  botMessageElement.classList.add("incoming")
+  let botImageElement = document.createElement("img");
+  const faq = document.createElement("li");
+  // botMessageElement.textContent = response;
+  faq.innerHTML = `
+    <p> ${responseArr[1]["faq1"]} </p> 
+    <p> ${responseArr[1]["faq2"]} </p> 
+    <p> ${responseArr[1]["faq3"]} </p> 
+    <p> ${responseArr[1]["faq4"]} </p> 
+    <p> ${responseArr[1]["faq5"]} </p>`;
+  faq.classList.add("chat-faqs")
+  // faq.classList.add("chat")
+  // faq.classList.add("incoming")
+  // botMessageElement.classList.add("bot-message");
+  // messageElement.append(botMessageElement);
+  chatBox.append(faq);
+
+  faq.querySelectorAll("p").forEach((child, index) => {
+    child.addEventListener("click", () => {
+      // botMessageElement.textContent = responseArr[2][`answer${index + 1}`]
+      // botMessageElement.classList.add("chatbox")
+      // botMessageElement.classList.add("js-incoming")
+      // botImageElement.src = "img/logo/navLogo.png";
+      botMessageElement.innerHTML = 
+      `<span class="material-symbols-outlined"><img src="img/logo/navLogo.png" alt=""></span>
+      <p>${responseArr[2][`answer${index + 1}`]}</p>`
+      chatBox.append(botMessageElement);
+      scrollPosition();
+    })
+  })
+}
+
+const handleChat = () => {
+  userMessage = chatInput.value.trim(); // Get user entered message and remove extra whitespace
+  if (!userMessage) return;
+
+  // Clear the input textarea and set its height to default
+  chatInput.value = "";
+  chatInput.style.height = `${inputInitHeight}px`;
+
+  // Append the user's message to the chatbox
+  chatbox.appendChild(createChatLi(userMessage, "outgoing"));
+  chatbox.scrollTo(0, chatbox.scrollHeight);
+
+  setTimeout(() => {
+    // Display "Thinking..." message while waiting for the response
+    const incomingChatLi = createChatLi("...", "incoming");
+    chatbox.appendChild(incomingChatLi);
+    chatbox.scrollTo(0, chatbox.scrollHeight);
+    generateResponse(incomingChatLi);
+  }, 600);
+}
+
+chatInput.addEventListener("input", () => {
+  // Adjust the height of the input textarea based on its content
+  chatInput.style.height = `${inputInitHeight}px`;
+  chatInput.style.height = `${chatInput.scrollHeight}px`;
+});
+
+chatInput.addEventListener("keydown", (e) => {
+  // If Enter key is pressed without Shift key and the window 
+  // width is greater than 800px, handle the chat
+  if (e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
+    e.preventDefault();
+    handleChat();
+  }
+});
+
+sendChatBtn.addEventListener("click", handleChat);
+closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+
+
+// const responseArr = [
+//     {
+//         hello: "Hello I am AiBot, What would you like to know?",
+//     },
+
+//     {
+//         faq1: "Why do I need an interior designer?",
+//         faq2: "Why is Aiskcon perfect for your design?",
+//         faq3: "What services are included under home interior design",
+//         faq4: "What will be the timelines for my project completion?",
+//         faq5: "What are the trending interior design styles?",
+//     },
+
+//     {
+//         answer1:
+//             "Interior designers are professionals who are able to gauge your needs and tastes to deliver your dream home. They assist you in getting custom-designed pieces that fit perfectly into your beautiful vision.",
+//         answer2:
+//             "Aiskcon is the perfect partner who can build your home interiors just the way you want! Our design experts customize designs as per your needs. They will listen to your ideas and suggest options. At Aiskcon, we incorporate advanced technology into our modular solutions to create flawless interiors and also to expedite the process of making your dream home a reality.",
+//         answer3:
+//             "Some of the most common services that are included under home interior design are: Space planning, Colour Selection, Material Selection, Lighting Design, Furniture Selection, Decorative Accessories",
+//         answer4:
+//             "The timeline for a construction project completion can vary depending on a number of factors, such as the size and complexity of the project, the location, weather conditions, availability of materials",
+//         answer5:
+//             "Minimalism, Biophilic design, Industrial design, Scandinavian design, Bohemian design, Modern farmhouse, Art Deco",
+//     },
+// ];
+// const chatBotBtn = document.querySelector(".chatbot-btn");
+// const chatContainer = document.querySelector(".chat-container");
+// const chatBody = document.querySelector(".chat-body");
+// const chatInput = document.querySelector(".chat-input");
+// const chatForm = document.querySelector(".chat-form");
+// const chatFormBtn = document.querySelector(".chatform-btn");
+
+// chatBotBtn.addEventListener("click", () => {
+//     chatContainer.classList.toggle("show-chat")
+//     if (!chatContainer.classList.contains("show-chat")) {
+//         clearChatBody()
+//     }
+// })
+
+// chatInput.addEventListener("input", () => {
+//     if (!chatInput.value.trim() == "") {
+//         chatFormBtn.removeAttribute("disabled")
+//     } else {
+//         chatFormBtn.setAttribute("disabled", true)
+//     }
+// });
+
+// chatForm.addEventListener("submit", (e) => {
+//     e.preventDefault()
+//     renderMessages()
+//     clearInput()
+// })
+
+// const renderMessages = () => {
+//     renderUserMessage()
+//     renderChatBotMessage()
+// }
+
+// const renderUserMessage = () => {
+//     const userInput = chatInput.value;
+//     const messageElement = document.createElement("div");
+//     messageElement.textContent = userInput;
+//     messageElement.classList.add("user-message");
+//     chatBody.append(messageElement);
+// };
 
 const renderChatBotMessage = () => {
-    const userInput = chatInput.value;
-    const response = getChatBotResponse();
-    let botMessageElement = document.createElement("div");
-    const faq = document.createElement("div");
-    botMessageElement.textContent = response;
-    faq.innerHTML = `
+  const userInput = chatInput.value;
+  const response = getChatBotResponse();
+  let botMessageElement = document.createElement("div");
+  let botImageElement = document.createElement("img");
+  const faq = document.createElement("div");
+  botMessageElement.textContent = response;
+  faq.innerHTML = `
     <div> ${responseArr[1]["faq1"]} </div> 
     <div> ${responseArr[1]["faq2"]} </div> 
     <div> ${responseArr[1]["faq3"]} </div> 
     <div> ${responseArr[1]["faq4"]} </div> 
     <div> ${responseArr[1]["faq5"]} </div>`;
-    faq.classList.add("chat-faqs")
-    botMessageElement.classList.add("bot-message");
-    chatBody.append(botMessageElement);
-    chatBody.append(faq);
+  faq.classList.add("chat-faqs")
+  botMessageElement.classList.add("bot-message");
+  chatBody.append(botMessageElement);
+  chatBody.append(faq);
 
-    faq.querySelectorAll("div").forEach((child, index) => {
-        child.addEventListener("click", () => {
-            botMessageElement.textContent = responseArr[2][`answer${index + 1}`]
-            botMessageElement.classList.add("bot-message")
-            chatBody.append(botMessageElement)
-            scrollPosition()
-        })
+  faq.querySelectorAll("div").forEach((child, index) => {
+    child.addEventListener("click", () => {
+      botMessageElement.textContent = responseArr[2][`answer${index + 1}`]
+      botMessageElement.classList.add("bot-message")
+      botImageElement.src = "img/logo/navLogo.png";
+      chatBody.append(botMessageElement);
+      scrollPosition();
     })
+  })
 };
 
-const getChatBotResponse = () => {
-    return responseArr[0]["hello"];
-};
+// const getChatBotResponse = () => {
+//     return responseArr[0]["hello"];
+// };
 
-const clearInput = () => {
-    chatInput.value = "";
-};
+// const clearInput = () => {
+//     chatInput.value = "";
+// };
 
-const clearChatBody = () => {
-    chatBody.innerHTML = "";
-}
+// const clearChatBody = () => {
+//     chatBody.innerHTML = "";
+// }
 
-const scrollPosition = () => {
-    chatBody.scrollTop = chatBody.scrollHeight
-}
+// const scrollPosition = () => {
+//     chatBody.scrollTop = chatBody.scrollHeight
+// }
 
 // ******************* CHATBOT End *************************
 
