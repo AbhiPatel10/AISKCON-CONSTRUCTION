@@ -298,6 +298,12 @@ ul {
     display: none;
   }
 }
+
+@media(min-width:1136px){
+  .navBar2{
+    visibility: hidden;
+  }
+}
 /* Navbar end */
 
 /* Hero start */
