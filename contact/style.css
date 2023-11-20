@@ -58,6 +58,9 @@
   display: block;
   cursor: pointer;
 }
+.getintouch-contact-cards:hover{
+  transform: scale(1.05) !important;
+}
 .getintouch-icon{
   align-items: center;
   margin-bottom: 5px;
